@@ -1,0 +1,762 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Urbanist', sans-serif;
+    line-height: 1.6;
+}
+
+a {
+    text-decoration: none; /* Removes underline */
+    color: inherit; /* Inherits color from the parent element */
+}
+
+/*///////////////////////////// SITE /////////////////////////////////////*/
+
+/* Header Styles */
+.site-header {
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+    top:0;
+    background-color: white; /* White background */
+    border-bottom: 2px solid black; /* 3px black border */
+    padding: 0.2rem 3rem 0.2rem 4.2rem;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: auto;
+}
+
+/* Left Section: Logo/Icon */
+.header-left .logo {
+    max-width: 3rem; /* Adjust as needed */
+}
+
+/* Right Section: CTA Links */
+.header-right {
+    text-align: right;
+    right: -2rem;
+}
+
+.header-nav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.header-nav li {
+    margin-left: 20px;
+}
+
+.header-nav a {
+    text-decoration: none;
+    color: black;
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+
+.header-nav a:hover {
+    color: #ff6b6b; /* Hover color for CTA links */
+}
+
+/* Mobile Responsive Design */
+@media (max-width: 768px) {
+    .header-content {
+        flex-direction: column;
+    }
+
+    .header-nav {
+        flex-direction: column;
+        margin-top: 1rem;
+    }
+
+    .header-nav li {
+        margin: 10px 0;
+    }
+}
+
+/*////////////////////////////////////////////////////////////////////////*/
+
+/*/////////////// Banner Styles////////////////////////*/
+/* Moving Banner Section */
+.moving-banner {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    height: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.moving-banner-b {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    height: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Style the banner text */
+.banner-text {
+    display: flex;
+    width: 100%;
+}
+.banner-text-b {
+    display: flex;
+    width: 100%;
+}
+
+/* The UL should scroll horizontally */
+.banner-text ul {
+    display: flex;
+    justify-content: space-around;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    animation: move-text 50s linear infinite; /* Adjust time for faster/slower scrolling */
+    width: 100%;
+}
+
+.banner-text-b ul {
+    display: flex;
+    justify-content: space-around;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    animation: move-text-b 50s linear infinite; /* Adjust time for faster/slower scrolling */
+    width: 100%;
+}
+
+/* Style for individual list items */
+.banner-text li {
+    padding: 0rem 0rem; /* Space between each word */
+    font-size: 1rem;
+    font-family: 'Urbanist', sans-serif;
+    font-weight: 700;
+    color: black;
+}
+
+.banner-text-b li {
+    padding: 0rem 0rem; /* Space between each word */
+    font-size: 1rem;
+    font-family: 'Urbanist', sans-serif;
+    font-weight: 700;
+    color: black;
+}
+
+/* Animation for scrolling text */
+@keyframes move-text {
+    0% {
+        transform: translateX(100%); /* Start from right */
+    }
+    100% {
+        transform: translateX(-100%); /* Move all the way to the left */
+    }
+}
+@keyframes move-text-b {
+    0% {
+        transform: translateX(-100%); /* Start from right */
+    }
+    100% {
+        transform: translateX(100%); /* Move all the way to the left */
+    }
+}
+
+
+/* Example for media queries (optional) for mobile */
+@media (max-width: 768px) {
+    .banner-text {
+        font-size: 1.2rem;
+    }
+}
+
+/*//////////////////////////////// HERO ////////////////////////////////////////*/
+
+/* Hero Section */
+.hero {
+    background-color: white;
+    padding: 4rem 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5rem;
+}
+
+.hero-content {
+    display: flex;
+    max-width: 1200px;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* Left: Image Section */
+.hero-image {
+    flex: 1;
+}
+
+.hero-image img {
+    width: 100%;
+    max-width: 500px; /* Adjust according to your design */
+    border-radius: 10px; /* Optional */
+}
+
+/* Right: Text Section */
+.hero-text {
+    flex: 1;
+    padding-left: 2rem;
+    text-align: left;
+}
+
+.hero-text h1 {
+    font-size: 3rem; /* Adjust according to your design */
+    font-family: 'Urbanist', sans-serif;
+    margin-bottom: 1rem;
+    font-weight: 700; /* Bold text */
+}
+
+.hero-text p {
+    font-size: 1.2rem;
+    font-family: 'Urbanist', sans-serif;
+    line-height: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+/*///////////////////////////////// LINES OF WORK CARDS ///////////////////////////////////////*/
+
+/* Card Container */
+.card-container {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    padding: 7rem 5rem;
+}
+
+/* Card Styling */
+.card {
+    background-color: white;
+    border-radius: 15px;
+    width: 17rem;
+    height: 27rem;
+    padding: 1rem;
+    text-align: center;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+}
+
+/* Specific Border Colors */
+.activismo {
+    border: 3px solid #D9A9FB;
+}
+
+.formacion {
+    border: 3px solid #FF8080;
+}
+
+.consumo {
+    border: 3px solid #99CC33;
+}
+
+/* Card Image */
+.card-image {
+    width: 100%;
+    max-width: 150px;
+    height: auto;
+    margin-bottom: 1rem;
+    border-radius: 50%; /* Optional circular style */
+}
+
+/* Card Title */
+.card h3 {
+    font-family: 'Urbanist', sans-serif;
+    font-weight: 700;
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+    color: #333;
+}
+
+/* Card Description */
+.card p {
+    font-family: 'Urbanist', sans-serif;
+    font-weight: 400;
+    font-size: 1rem;
+    color: #666;
+    padding: 0 0.5rem;
+}
+
+/*/////////////////////////////// ABOUT US /////////////////////////////////////////*/
+
+/* Conócenos Section Styling */
+.conocenos-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 3rem 9rem;
+    background-color: #ffffff; /* Optional background color */
+}
+
+.conocenos-text {
+    flex: 1;
+    text-align: center;
+    padding: 2rem;
+}
+
+.conocenos-text h2 {
+    font-family: 'Urbanist', sans-serif;
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    color: #000000;
+}
+
+.conocenos-text p {
+    font-family: 'Urbanist', sans-serif;
+    font-size: 1.2rem;
+    font-weight: 400;
+    line-height: 1.2;
+    margin-bottom: 1rem;
+    color: #000000;
+}
+
+.conocenos-text .cta-button {
+    padding: 0.7rem 1.5rem;
+    background-color: #D9A9FB;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-family: 'Urbanist', sans-serif;
+    font-weight: 500;
+    transition: background-color 0.3s;
+}
+
+.conocenos-text .cta-button:hover {
+    background-color: #bd64fc;
+}
+
+/* Right Side: Image Styling */
+.conocenos-image {
+    flex: 1;
+    text-align: center;
+}
+
+.conocenos-image img {
+    width: 100%;
+    max-width: 400px; /* Adjust as needed */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .conocenos-section {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .conocenos-text {
+        padding-right: 0;
+        margin-bottom: 2rem;
+    }
+
+    .conocenos-image img {
+        max-width: 300px; /* Adjust for smaller screens */
+    }
+}
+
+/*/////////////////////////////// VISIT US /////////////////////////////////////////*/
+
+/* Visítanos Section Styling */
+.visitanos-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 3rem 9rem;
+    background-color: #ffffff; /* Optional background color */
+}
+
+.visitanos-image {
+    flex: 1;
+    text-align: center;
+}
+
+.visitanos-image img {
+    width: 100%;
+    max-width: 400px; /* Adjust as needed */
+}
+
+/* Right Side: Text and CTA */
+.visitanos-text {
+    flex: 1;
+    padding: 2rem;
+    text-align: center;
+}
+
+.visitanos-text h2 {
+    font-family: 'Urbanist', sans-serif;
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    color: #000000;
+}
+
+.visitanos-text p {
+    font-family: 'Urbanist', sans-serif;
+    font-size: 1.2rem;
+    font-weight: 400;
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
+    color: #000000;
+}
+
+.visitanos-text .cta-button {
+    padding: 0.7rem 1.5rem;
+    background-color: #FF8080;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-family: 'Urbanist', sans-serif;
+    font-weight: 500;
+    transition: background-color 0.3s;
+}
+
+.visitanos-text .cta-button:hover {
+    background-color: #ff4f4f;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .visitanos-section {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .visitanos-text {
+        padding-left: 0;
+        margin-top: 2rem;
+    }
+
+    .visitanos-image img {
+        max-width: 300px; /* Adjust for smaller screens */
+    }
+}
+
+
+/*/////////////////////////////// FOOTER /////////////////////////////////////////*/
+
+/* Footer Styles */
+.site-footer {
+    background-color: white; /* White background */
+    border-top: 2px solid black; /* 3px black border */
+    padding: 2rem 1rem;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 1200px;
+}
+
+/* Left Section: Contact Info */
+.footer-left {
+    text-align: left;
+    flex: 1;
+}
+
+/* Center Section: Trademark */
+.footer-center {
+    text-align: center;
+    flex: 1;
+}
+
+/* Right Section: Social Media Icons */
+.footer-right {
+    text-align: right;
+    flex: 1;
+}
+
+.footer-right a {
+    margin: 0 10px;
+    color: black; /* Default icon color */
+    font-size: 1.2rem;
+    text-decoration: none;
+}
+
+.footer-right a:hover {
+    color: #ff6b6b; /* Hover color for icons */
+}
+
+/* Mobile Responsive Design */
+@media (max-width: 768px) {
+    .footer-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .footer-left,
+    .footer-center,
+    .footer-right {
+        margin-bottom: 1rem;
+    }
+}
+
+/*///////////////////////////////// BLOG ///////////////////////////////////////*/
+
+/* Blog Filters */
+.blog-filters {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+
+.blog-filters label {
+    margin-right: 0.5rem;
+}
+
+.blog-filters select,
+.blog-filters input {
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Blog Entries */
+.blog-entry {
+    margin-bottom: 2rem;
+    padding: 1.5rem;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.blog-entry h2 {
+    margin-bottom: 0.5rem;
+}
+
+.blog-entry p.meta {
+    font-size: 0.9rem;
+    color: #888;
+}
+
+/*//////////////////////////////// DONATE ////////////////////////////////////////*/
+
+/* Donations Section Layout */
+.donations-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 3rem 1rem;
+    background-color: white;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+    margin: 2rem 0;
+    border-radius: 10px;
+}
+
+.donations-content {
+    display: flex;
+    max-width: 1200px;
+    width: 100%;
+    align-items: center;
+    gap: 2rem;
+}
+
+.donations-text {
+    flex: 1;
+    text-align: left;
+}
+
+.donations-text h2 {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #333;
+    font-family: 'Urbanist', sans-serif;
+    margin-bottom: 1rem;
+}
+
+.donations-text p {
+    font-size: 1.1rem;
+    color: #666;
+    font-family: 'Urbanist', sans-serif;
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
+}
+
+.donations-text ul {
+    list-style-type: disc;
+    padding-left: 1.5rem;
+    margin-bottom: 1.5rem;
+    color: #666;
+}
+
+.donations-text ul li {
+    margin-bottom: 0.5rem;
+}
+
+/* CTA Button */
+.cta-button {
+    display: inline-block;
+    padding: 0.7rem 1.5rem;
+    background-color: #ff6b6b;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-family: 'Urbanist', sans-serif;
+    font-weight: 500;
+    transition: background-color 0.3s;
+}
+
+.cta-button:hover {
+    background-color: #ff4747;
+}
+
+/* Donations Image Styling */
+.donations-image {
+    flex: 1;
+    text-align: center;
+}
+
+.donations-image img {
+    max-width: 100%;
+    border-radius: 10px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .donations-section {
+        flex-direction: column;
+    }
+
+    .donations-content {
+        flex-direction: column;
+    }
+
+    .donations-text, .donations-image {
+        text-align: center;
+    }
+
+    .donations-image img {
+        max-width: 300px; /* Ajuste para pantallas pequeñas */
+    }
+}
+
+
+/*////////////////////////////////////////////////////////////////////////*/
+
+/*/////////////////////////// SUMATE ////////////////////////////////*/
+
+/* Line of Work Section */
+.line-of-work {
+    padding: 2rem 15rem;
+    background-color: #fff;
+    margin-bottom: 2rem;
+    text-align: center;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+}
+
+.line-of-work h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.line-of-work p {
+    font-size: 1.1rem;
+    margin-bottom: 1rem;
+}
+
+.cta-button {
+    display: inline-block;
+    padding: 0.7rem 1.5rem;
+    background-color: #ff6b6b;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 1rem;
+}
+
+.cta-button:hover {
+    background-color: #ff4747;
+}
+
+/* Join CTA Section */
+.join-cta {
+    text-align: center;
+    padding: 2rem 1rem;
+    background-color: #f4f4f4;
+    border-radius: 10px;
+    margin-top: 2rem;
+}
+
+.join-cta h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+
+}
+
+.join-cta p {
+    font-size: 1.2rem;
+    margin-bottom: 1.5rem;
+}
+
+/*////////////////////////////////////////////////////////////////////////*/
+
+/*//////////////////////////// VISITANOS //////////////////////////////*/
+
+/* Map Section */
+.visit-map {
+    text-align: center;
+    padding: 2rem 0;
+}
+
+.visit-map h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.visit-map iframe {
+    margin: 1rem auto;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+/* Contact Details Section */
+.visit-contact {
+    text-align: center;
+    padding: 2rem;
+    background-color: #f4f4f4;
+    border-radius: 10px;
+}
+
+.visit-contact h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.visit-contact p {
+    font-size: 1.1rem;
+    margin-bottom: 1rem;
+}
