@@ -231,6 +231,7 @@ a {
 
 .hero-text p {
     font-size: 1.5em;  /* Ajusta el tamaño de fuente de los párrafos */
+    font-weight: bold;
     color: #FFFF;    /* Cambia el color del texto de los párrafos */
     max-width: 450px;  /* Cambia el ancho máximo de los párrafos */
     line-height: 1.6;
@@ -451,7 +452,7 @@ a {
     border-radius: 10px;
 }
 
-/*/////////////////////////////// WE - MISION VISION STRATEGY ///////////////////////*/
+/*////////// WE - MISION VISION STRATEGY //////////////////*/
 
 .about-section {
     background: linear-gradient(135deg, #220863, #2c5b81);
@@ -478,9 +479,10 @@ a {
     color: #33ef26;
 }
 
-.header h1 {
+.about-text .header h1 {
     padding-bottom: 2%;
     font-size: 2.5rem;
+    color: #ffffff !important; /* Ensure the color applies */
 }
 
 .about-image {
@@ -512,9 +514,18 @@ a {
     transition-property: background-color;
 }
 
-.tab h4{
-        color: #e7005c;
+/* Default tab style */
+.tab h4 {
+    color: #e7005c;
     font-size: 1.2rem;
+    transition: color 0.3s ease, text-decoration 0.3s ease; /* Smooth transition */
+}
+
+/* Active tab style */
+.tab.active h4 {
+    color: #007bff; /* Color for active tab */
+    font-weight: bold;
+    text-decoration: underline; /* Single underline for active tab */
 }
 
 .tab.selected {
@@ -529,12 +540,6 @@ a {
     height: 3px;
     background-color: transparent;
     transition: background-color 0.3s ease;
-}
-
-.tab.active h4 {
-    color: #007bff; /* Change to your preferred color */
-    font-weight: bold;
-    border-bottom: 2px solid #007bff; /* Optional styling for the active tab */
 }
 
 .content-text {
@@ -593,464 +598,320 @@ a {
         text-align: center;
     }
 }
+/*////////// END WE - MISION VISION STRATEGY //////////////////*/
 
 
 
+/*////////// START WHY CHOOSE US //////////////////*/
 
-/*/////////////////////////////// ABOUT US /////////////////////////////////////////*/
+/* WHY CHOOSE US SECTION */
+.why-choose-us {
+    display: flex;
+    justify-content: center;
+    background-color: #ffffff; /* Light green background */
+    color: white;
+    padding: 40px;
+    border-radius: 8px;
+}
 
-/* Conócenos Section Styling */
-.conocenos-section {
+.choose-us-content {
+    display: flex;
+    flex-direction: row-reverse; /* Image on the left, text on the right */
+    gap: 20px;
+    max-width: 1200px;
+    width: 100%;
+}
+
+/* Left Side: Image */
+.choose-us-image {
+    flex: 1;
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 3rem 9rem;
-    background-color: #ffffff; /* Optional background color */
 }
 
-.conocenos-text {
-    flex: 1;
-    text-align: center;
-    padding: 2rem;
-}
-
-.conocenos-text h2 {
-    font-family: 'Urbanist', sans-serif;
-    font-size: 2.5rem;
-    font-weight: 700;
-    margin-bottom: 1rem;
-    color: #000000;
-}
-
-.conocenos-text p {
-    font-family: 'Urbanist', sans-serif;
-    font-size: 1.2rem;
-    font-weight: 400;
-    line-height: 1.2;
-    margin-bottom: 1rem;
-    color: #000000;
-}
-
-.conocenos-text .cta-button {
-    padding: 0.7rem 1.5rem;
-    background-color: #D9A9FB;
-    color: white;
-    text-decoration: none;
-    border-radius: 5px;
-    font-family: 'Urbanist', sans-serif;
-    font-weight: 500;
-    transition: background-color 0.3s;
-}
-
-.conocenos-text .cta-button:hover {
-    background-color: #bd64fc;
-}
-
-/* Right Side: Image Styling */
-.conocenos-image {
-    flex: 1;
-    text-align: center;
-}
-
-.conocenos-image img {
+.choose-us-image img {
     width: 100%;
-    max-width: 400px; /* Adjust as needed */
+    height: auto;
+    border-radius: 8px;
 }
 
-/* Responsive Design */
+/* Right Side: Text Content */
+.choose-us-text {
+    flex: 1;
+    text-align: right;
+}
+
+.header h1 {
+    padding-bottom: 2%;
+    font-size: 3.5rem;
+    color: #000000;
+}
+
+.choose-us-message {
+    font-size: 1.2rem;
+    padding-bottom: 20px;
+    color: #555;
+}
+
+/* Keywords Section - 2x2 Grid Layout */
+.keywords {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2 columns */
+    grid-gap: 15px;
+    justify-items: center;
+}
+
+.keyword {
+    background-color: #333;
+    padding: 15px;
+    border-radius: 8px;
+    width: 100%;
+    max-width: 250px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.keyword:hover {
+    transform: translateY(-10px); /* Animation on hover */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3); /* Shadow effect on hover */
+}
+
+.keyword h4 {
+    color: #dadd16;
+    font-size: 1.3rem;
+    margin-bottom: 10px;
+}
+
+.keyword-icon {
+    width: 40px;
+    height: 40px;
+    margin-bottom: 10px;
+    filter: invert(100%); /* Inverts icon color to white */
+}
+
+.keyword p {
+    font-size: 1rem;
+    color: #9d9ea6;
+}
+
+/* Responsive Adjustments */
 @media (max-width: 768px) {
-    .conocenos-section {
+    .choose-us-content {
         flex-direction: column;
         text-align: center;
     }
 
-    .conocenos-text {
-        padding-right: 0;
-        margin-bottom: 2rem;
-    }
-
-    .conocenos-image img {
-        max-width: 300px; /* Adjust for smaller screens */
-    }
-}
-
-/*/////////////////////////////// VISIT US /////////////////////////////////////////*/
-
-/* Visítanos Section Styling */
-.visitanos-section {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 3rem 9rem;
-    background-color: #ffffff; /* Optional background color */
-}
-
-.visitanos-image {
-    flex: 1;
-    text-align: center;
-}
-
-.visitanos-image img {
-    width: 100%;
-    max-width: 400px; /* Adjust as needed */
-}
-
-/* Right Side: Text and CTA */
-.visitanos-text {
-    flex: 1;
-    padding: 2rem;
-    text-align: center;
-}
-
-.visitanos-text h2 {
-    font-family: 'Urbanist', sans-serif;
-    font-size: 2.5rem;
-    font-weight: 700;
-    margin-bottom: 1rem;
-    color: #000000;
-}
-
-.visitanos-text p {
-    font-family: 'Urbanist', sans-serif;
-    font-size: 1.2rem;
-    font-weight: 400;
-    line-height: 1.6;
-    margin-bottom: 1.5rem;
-    color: #000000;
-}
-
-.visitanos-text .cta-button {
-    padding: 0.7rem 1.5rem;
-    background-color: #FF8080;
-    color: white;
-    text-decoration: none;
-    border-radius: 5px;
-    font-family: 'Urbanist', sans-serif;
-    font-weight: 500;
-    transition: background-color 0.3s;
-}
-
-.visitanos-text .cta-button:hover {
-    background-color: #ff4f4f;
-}
-
-/* Responsive Design */
-@media (max-width: 768px) {
-    .visitanos-section {
-        flex-direction: column;
+    .choose-us-text {
         text-align: center;
     }
 
-    .visitanos-text {
-        padding-left: 0;
-        margin-top: 2rem;
-    }
-
-    .visitanos-image img {
-        max-width: 300px; /* Adjust for smaller screens */
+    .keywords {
+        grid-template-columns: 1fr; /* Stack keywords in one column on small screens */
     }
 }
+/*////////// END WHY CHOOSE US //////////////////*/
 
 
-/*/////////////////////////////// FOOTER /////////////////////////////////////////*/
-
-/* Footer Styles */
-.site-footer {
-    background-color: white; /* White background */
-    border-top: 2px solid black; /* 3px black border */
-    padding: 2rem 1rem;
+/* LATEST NEWS & INSIGHTS SECTION */
+.news-insights {
     text-align: center;
+    padding: 60px 20px;
+    background: linear-gradient(135deg, #3a6073, #16222a);
+}
+
+.news-insights h2 {
+    font-size: 2.5rem;
+    color: #ffffff;
+    margin-bottom: 10px;
+}
+
+.impact-text {
+    font-size: 1.2rem;
+    color: #d8d8e3;
+    margin-bottom: 40px;
+    max-width: 800px; /* Limits the width of the text */
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center; /* Centers the text content */
+}
+
+.news-grid {
     display: flex;
+    gap: 20px;
     justify-content: center;
-    align-items: center;
+    flex-wrap: wrap;
+}
+
+.news-item {
+    max-width: 300px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    text-align: left;
+    transition: transform 0.3s ease;
+}
+
+.news-item:hover {
+    transform: scale(1.05); /* Slightly zooms on hover */
+}
+
+.news-image-link {
+    display: block;
+    overflow: hidden;
+}
+
+.news-image {
+    width: 100%;
+    height: auto;
+    transition: transform 0.3s ease;
+    border-radius: 8px 8px 0 0; /* Round top corners only */
+}
+
+.news-image-link:hover .news-image {
+    transform: scale(1.1); /* Slight zoom on hover */
+}
+
+.category {
+    color: #146297;
+    font-size: 0.8rem;
+    padding: 10px;
+    font-weight: bold;
+}
+
+.news-title-link {
+    text-decoration: none;
+}
+
+.news-title {
+    color: #2c3e50;
+    font-size: 1.2rem;
+    padding: 0 10px;
+    margin: 10px 0;
+    transition: color 0.3s ease;
+}
+
+.news-title-link:hover .news-title {
+    color: #cc1250;
+    text-decoration: underline;
+}
+
+.read-more {
+    display: block;
+    text-align: left;
+    color: #e7005c;
+    font-weight: normal;
+    padding: 10px;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.read-more:hover {
+    color: #007bff;
+}
+
+/*//////// footer section & copyrights //////*/
+/* FOOTER SECTION */
+.footer {
+    background-color: #2c3e50;
+    color: #ffffff;
+    padding: 40px 20px;
+    font-family: Arial, sans-serif;
 }
 
 .footer-content {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-    max-width: 1200px;
-}
-
-/* Left Section: Contact Info */
-.footer-left {
-    text-align: left;
-    flex: 1;
-}
-
-/* Center Section: Trademark */
-.footer-center {
-    text-align: center;
-    flex: 1;
-}
-
-/* Right Section: Social Media Icons */
-.footer-right {
-    text-align: right;
-    flex: 1;
-}
-
-.footer-right a {
-    margin: 0 10px;
-    color: black; /* Default icon color */
-    font-size: 1.2rem;
-    text-decoration: none;
-}
-
-.footer-right a:hover {
-    color: #ff6b6b; /* Hover color for icons */
-}
-
-/* Mobile Responsive Design */
-@media (max-width: 768px) {
-    .footer-content {
-        flex-direction: column;
-        text-align: center;
-    }
-
-    .footer-left,
-    .footer-center,
-    .footer-right {
-        margin-bottom: 1rem;
-    }
-}
-
-/*///////////////////////////////// BLOG ///////////////////////////////////////*/
-
-/* Blog Filters */
-.blog-filters {
-    display: flex;
     flex-wrap: wrap;
-    gap: 1rem;
-    margin-bottom: 2rem;
-}
-
-.blog-filters label {
-    margin-right: 0.5rem;
-}
-
-.blog-filters select,
-.blog-filters input {
-    padding: 0.5rem;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-}
-
-/* Blog Entries */
-.blog-entry {
-    margin-bottom: 2rem;
-    padding: 1.5rem;
-    background-color: #f9f9f9;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-}
-
-.blog-entry h2 {
-    margin-bottom: 0.5rem;
-}
-
-.blog-entry p.meta {
-    font-size: 0.9rem;
-    color: #888;
-}
-
-/*//////////////////////////////// DONATE ////////////////////////////////////////*/
-
-/* Donations Section Layout */
-.donations-section {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 3rem 1rem;
-    background-color: white;
-    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
-    margin: 2rem 0;
-    border-radius: 10px;
-}
-
-.donations-content {
-    display: flex;
+    gap: 20px;
+    justify-content: space-between;
     max-width: 1200px;
-    width: 100%;
-    align-items: center;
-    gap: 2rem;
+    margin: 0 auto;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #777;
 }
 
-.donations-text {
+.footer-section {
     flex: 1;
-    text-align: left;
+    min-width: 200px;
 }
 
-.donations-text h2 {
-    font-size: 2rem;
-    font-weight: 700;
-    color: #333;
-    font-family: 'Urbanist', sans-serif;
-    margin-bottom: 1rem;
+.footer-section h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #33ef26; /* Optional accent color */
 }
 
-.donations-text p {
-    font-size: 1.1rem;
-    color: #666;
-    font-family: 'Urbanist', sans-serif;
-    line-height: 1.6;
-    margin-bottom: 1.5rem;
-}
-
-.donations-text ul {
-    list-style-type: disc;
-    padding-left: 1.5rem;
-    margin-bottom: 1.5rem;
-    color: #666;
-}
-
-.donations-text ul li {
-    margin-bottom: 0.5rem;
-}
-
-/* CTA Button */
-.cta-button {
-    display: inline-block;
-    padding: 0.7rem 1.5rem;
-    background-color: #ff6b6b;
-    color: white;
+.footer-section p,
+.footer-section ul,
+.footer-section a {
+    font-size: 1rem;
+    color: #ffffff;
+    margin-bottom: 10px;
     text-decoration: none;
-    border-radius: 5px;
-    font-family: 'Urbanist', sans-serif;
-    font-weight: 500;
-    transition: background-color 0.3s;
 }
 
-.cta-button:hover {
-    background-color: #ff4747;
+.footer-section ul {
+    list-style-type: none;
+    padding: 0;
 }
 
-/* Donations Image Styling */
-.donations-image {
-    flex: 1;
+.footer-section ul li {
+    margin-bottom: 5px;
+}
+
+.footer-section ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-section ul li a:hover {
+    color: #33ef26; /* Hover color for links */
+}
+
+/* Contact Icons */
+.footer-section.contact p i {
+    margin-right: 10px;
+}
+
+/* Social Media Icons */
+.footer-section.social a {
+    font-size: 1.5rem;
+    color: #ffffff;
+    margin-right: 15px;
+    transition: color 0.3s ease;
+}
+
+.footer-section.social a:hover {
+    color: #33ef26; /* Hover color for social icons */
+}
+
+/* Footer Bottom */
+.footer-bottom {
     text-align: center;
-}
-
-.donations-image img {
-    max-width: 100%;
-    border-radius: 10px;
-    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+    padding-top: 20px;
+    font-size: 0.9rem;
+    color: #bbb;
 }
 
 /* Responsive Design */
 @media (max-width: 768px) {
-    .donations-section {
+    .footer-content {
         flex-direction: column;
+        align-items: center;
     }
 
-    .donations-content {
-        flex-direction: column;
-    }
-
-    .donations-text, .donations-image {
+    .footer-section {
         text-align: center;
     }
 
-    .donations-image img {
-        max-width: 300px; /* Ajuste para pantallas pequeñas */
+    .footer-section.social {
+        display: flex;
+        justify-content: center;
     }
 }
 
-
-/*////////////////////////////////////////////////////////////////////////*/
-
-/*/////////////////////////// SUMATE ////////////////////////////////*/
-
-/* Line of Work Section */
-.line-of-work {
-    padding: 2rem 15rem;
-    background-color: #fff;
-    margin-bottom: 2rem;
-    text-align: center;
-    border: 1px solid #ddd;
-    border-radius: 10px;
-}
-
-.line-of-work h2 {
-    font-size: 2rem;
-    margin-bottom: 1rem;
-}
-
-.line-of-work p {
-    font-size: 1.1rem;
-    margin-bottom: 1rem;
-}
-
-.cta-button {
-    display: inline-block;
-    padding: 0.7rem 1.5rem;
-    background-color: #ff6b6b;
-    color: white;
-    text-decoration: none;
-    border-radius: 5px;
-    margin-top: 1rem;
-}
-
-.cta-button:hover {
-    background-color: #ff4747;
-}
-
-/* Join CTA Section */
-.join-cta {
-    text-align: center;
-    padding: 2rem 1rem;
-    background-color: #f4f4f4;
-    border-radius: 10px;
-    margin-top: 2rem;
-}
-
-.join-cta h2 {
-    font-size: 2rem;
-    margin-bottom: 1rem;
-
-}
-
-.join-cta p {
-    font-size: 1.2rem;
-    margin-bottom: 1.5rem;
-}
-
-/*////////////////////////////////////////////////////////////////////////*/
-
-/*//////////////////////////// VISITANOS //////////////////////////////*/
-
-/* Map Section */
-.visit-map {
-    text-align: center;
-    padding: 2rem 0;
-}
-
-.visit-map h2 {
-    font-size: 2rem;
-    margin-bottom: 1rem;
-}
-
-.visit-map iframe {
-    margin: 1rem auto;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-}
-
-/* Contact Details Section */
-.visit-contact {
-    text-align: center;
-    padding: 2rem;
-    background-color: #f4f4f4;
-    border-radius: 10px;
-}
-
-.visit-contact h2 {
-    font-size: 2rem;
-    margin-bottom: 1rem;
-}
-
-.visit-contact p {
-    font-size: 1.1rem;
-    margin-bottom: 1rem;
-}

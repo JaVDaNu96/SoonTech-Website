@@ -55,7 +55,6 @@ function filterBlogs() {
 
 ///////////////////// MISSION VISION STRATEGY //////////////////
 
-// Wait for the document to load
 document.addEventListener("DOMContentLoaded", function() {
     // Select all tab elements
     const tabs = document.querySelectorAll(".tab");
@@ -83,3 +82,4 @@ document.addEventListener("DOMContentLoaded", function() {
     tabs[0].classList.add("active"); // Make the first tab active
     contentTexts[0].style.display = "block"; // Show the first content section
 });
+

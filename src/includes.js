@@ -9,33 +9,30 @@ fetch('footer.html')
     .then(data => document.getElementById('footer-placeholder').innerHTML = data);
 
 // ABOUT US //
-// Select all tabs and content elements
-const tabs = document.querySelectorAll(".tab");
-const contentTexts = document.querySelectorAll(".content-text");
+document.addEventListener("DOMContentLoaded", function() {
+    // Select all tab elements
+    const tabs = document.querySelectorAll(".tab");
+    // Select all content elements
+    const contentTexts = document.querySelectorAll(".content-text");
 
-// Function to handle tab click
-function handleTabClick(event) {
-    const selectedContent = event.currentTarget.getAttribute("data-content");
+    // Loop through each tab and add a click event listener
+    tabs.forEach(tab => {
+        tab.addEventListener("click", () => {
+            // Remove 'active' class from all tabs
+            tabs.forEach(t => t.classList.remove("active"));
+            // Add 'active' class to the clicked tab
+            tab.classList.add("active");
 
-    // Remove active state from all tabs and contents
-    tabs.forEach(tab => tab.classList.remove("selected"));
-    contentTexts.forEach(content => content.classList.remove("active"));
+            // Hide all content sections
+            contentTexts.forEach(content => content.style.display = "none");
 
-    // Add active state to the clicked tab and corresponding content
-    event.currentTarget.classList.add("selected");
-    document.getElementById(selectedContent).classList.add("active");
-}
+            // Show the selected content based on the data-content attribute
+            const selectedContent = tab.getAttribute("data-content");
+            document.getElementById(selectedContent).style.display = "block";
+        });
+    });
 
-// Add event listeners to each tab
-tabs.forEach(tab => {
-    tab.addEventListener("click", handleTabClick);
-
-    // Append the tab indicator to each tab
-    const indicator = document.createElement("div");
-    indicator.classList.add("tab-indicator");
-    tab.appendChild(indicator);
+    // Initial setup - Show the first content by default
+    tabs[0].classList.add("active"); // Make the first tab active
+    contentTexts[0].style.display = "block"; // Show the first content section
 });
-
-// Initially show the first tab content (optional)
-tabs[0].classList.add("selected");
-document.getElementById("mission").classList.add("active");
