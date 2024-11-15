@@ -6,8 +6,7 @@
 }
 
 body {
-    font-family: 'Urbanist', sans-serif;
-    line-height: 1.6;
+    font-family: 'Overpass', sans-serif;
 }
 
 a {
@@ -190,8 +189,7 @@ a {
 /* Hero Section */
 /* Estilos para Hero */
 .hero-section {
-    background-color: rgb(178, 210, 53);
-    color: #fff;
+    background-color: #a5c158;
     text-align: center;
     padding: 30px 120px;
 }
@@ -200,8 +198,7 @@ a {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 60px 20px;
-    
+    padding: 60px 20px;  
 }
 
 .hero-image {
@@ -211,6 +208,7 @@ a {
 }
 
 .hero-image img {
+    padding-top: 4.5rem;
     width: 100%; /* Asegura que la imagen se ajuste al 50% de la sección */
     max-width: 400px; /* Ajusta este valor según el diseño */
     object-fit: cover;
@@ -224,15 +222,16 @@ a {
 
 .hero-text h1 {
     font-size: 3em;  /* Ajusta el tamaño de fuente del h1 */
-    color: #000000;    /* Cambia el color del texto del h1 */
+    color: #12222e;    /* Cambia el color del texto del h1 */
+    font-weight: 700;
     max-width: 600px;  /* Cambia el ancho máximo del h1 */
     margin-bottom: 20px;
 }
 
 .hero-text p {
-    font-size: 1.5em;  /* Ajusta el tamaño de fuente de los párrafos */
-    font-weight: bold;
-    color: #FFFF;    /* Cambia el color del texto de los párrafos */
+    font-size: 1.4em;  /* Ajusta el tamaño de fuente de los párrafos */
+    font-weight: 500;
+    color: #ffffff;    /* Cambia el color del texto de los párrafos */
     max-width: 450px;  /* Cambia el ancho máximo de los párrafos */
     line-height: 1.6;
     margin-bottom: 15px;
@@ -240,12 +239,11 @@ a {
 
 .hero-text p1 {
     font-size: 1.5em;  /* Ajusta el tamaño de fuente de los párrafos */
-    color: #555555;    /* Cambia el color del texto de los párrafos */
+    color: #333333;    /* Cambia el color del texto de los párrafos */
     max-width: 450px;  /* Cambia el ancho máximo de los párrafos */
     line-height: 1.6;
     margin-bottom: 15px;
 }
-
 
 .hero-buttons {
     padding-top: 4%;
@@ -256,57 +254,60 @@ a {
 .hero-button {
     text-decoration: none;
     padding: 10px 20px;
-    background-color: #ff4d6d;
-    color: white;
+    background-color: #e7005c;
+    color: #ffffff;
     border-radius: 10px;
     font-weight: bold;
 }
 
 .hero-button:hover {
-    background-color: #e0435c;
+    background-color: #c5004b;
 }
 
 
-
-/* Servicios montados en el Hero */
+/* SERVICES SECTION */
 .services-section {
+    background-color: #f7f7f7; /* Light Gray Background specifically for services section */
+    padding: 20px;
     display: flex;
     justify-content: space-around;
-    padding: 20px;
-    background-color: #fff;
-    position: absolute;
-    bottom: 1rem; /* Ajusta el valor para solapamiento */
-    left: 50%;
-    transform: translateX(-50%);
-    width: 80%; /* Ajusta el ancho según tu diseño */
-    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2); /* Añade sombra para dar efecto de elevación */
-    border-radius: 8px; /* Opcional: redondeo de bordes */
+    align-items: center;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
-.service {
+.service-item {
     text-align: center;
-    font-family: Arial, sans-serif;
+    max-width: 200px;
+    background-color: #ffffff; /* White background for each item */
+    padding: 10px;
+    border-radius: 8px;
+}
+
+.service-item h3 {
+    color: #12222e; /* Dark Blue for Titles */
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.service-item p {
+    color: #555555; /* Medium Gray for Descriptions */
+    font-size: 1rem;
+    margin-top: 5px;
+}
+
+.divider {
+    width: 2px;
+    height: 40px;
+    background-color: #e7005c; /* Accent Color for Dividers */
     margin: 0 10px;
 }
 
-.service-icon {
-    color: #e00; /* Color del separador */
-    font-size: 35px;
-    margin-bottom: 10px;
+/* Optional Hover Effect */
+.service-item:hover h3 {
+    color: #e7005c; /* Change title color on hover */
+    cursor: pointer;
 }
-
-.service h3 {
-    font-size: 18px;
-    color: #222;
-    margin: 0;
-}
-
-.service p {
-    font-size: 14px;
-    color: #999;
-    margin: 5px 0 0;
-}
-
 
 
 /*///////////////////////////////// SERVICE CARDS ///////////////////////////////////////*/
@@ -914,4 +915,3 @@ a {
         justify-content: center;
     }
 }
-
