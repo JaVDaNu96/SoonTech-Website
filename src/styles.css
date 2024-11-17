@@ -63,8 +63,8 @@ a {
 .header-nav a {
     text-decoration: none;
     color: black;
-    font-size: 1.1rem;
-    font-weight: bold;
+    font-size: 1rem;
+    font-weight: normal;
 }
 
 .header-nav a:hover {
@@ -152,7 +152,7 @@ a {
 /* Hero Section */
 /* Estilos para Hero */
 .hero-section {
-    background-color: #a5c158;
+    background-color: transparent;
     text-align: center;
     padding: 30px 120px;
 }
@@ -164,22 +164,86 @@ a {
     padding: 60px 20px;  
 }
 
+/* Positioning for Hero Section */
+.hero-section {
+    position: relative;
+}
+
+/* CTA Buttons Positioned Over Hero Image */
+.cta-buttons {
+    position: absolute;
+    top: 120px; /* Adjust as needed to position vertically */
+    left: 120px; /* Adjust as needed to position horizontally */
+    display: flex;
+    align-items: center;
+    gap: 0; /* Remove gap to create overlap effect */
+    z-index: 10; /* Ensures buttons appear over the hero image */
+}
+
+/* Common Styles for Both Buttons */
+.cta-button {
+    padding: 10px 20px;
+    font-size: 1.5rem;
+    font-weight: normal;
+    color: black;
+    text-decoration: none;
+    border-radius: 20px;
+    transition: background-color 0.3s ease;
+    position: relative;
+    z-index: 1; /* Make sure the active button appears on top */
+}
+
+/* Specific Styles for Each Button */
+.cta-button.home {
+    background-color: #33a1fd; /* Blue color for Home button */
+    color: white;
+    z-index: 2; /* Higher z-index to place this button on top */
+    border-radius: 30px 30px 30px 30px; /* Rounded both sides */
+}
+
+.cta-button.business {
+    background-color: #c5e8bc; /* Light blue color for Business button */
+    color: black;
+    margin-left: -20px; /* Creates the overlap effect */
+    border-radius: 0 30px 30px 0; /* Rounded right side */
+}
+
+/* Hover Effects */
+.cta-button:hover {
+    background-color: #060706; /* Change color on hover */
+    color: white;
+}
+
+/* Active Button Style */
+.cta-button.active {
+    background-color: #4da53b; /* Ensures active button stays highlighted */
+    color: white;
+}
+
+/* Hero Image Styling */
+.hero-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+
 .hero-image {
     flex: 1; /* Ocupa el 50% del espacio */
     display: flex;
-    justify-content: center;
+    justify-content: left;
 }
 
 .hero-image img {
-    padding-top: 4.5rem;
+    padding-top: 6rem;
     width: 100%; /* Asegura que la imagen se ajuste al 50% de la sección */
-    max-width: 400px; /* Ajusta este valor según el diseño */
+    max-width: 570px; /* Ajusta este valor según el diseño */
     object-fit: cover;
 }
 
 .hero-text {
     flex: 1; /* Ocupa el otro 50% del espacio */
-    max-width: 800px; /* Limita el ancho del contenido de texto */
+    max-width: 700px; /* Limita el ancho del contenido de texto */
     text-align: left;
 }
 
@@ -189,13 +253,14 @@ a {
     font-weight: 700;
     max-width: 600px;  /* Cambia el ancho máximo del h1 */
     margin-bottom: 20px;
+    margin-top: 7%;
 }
 
 .hero-text p {
-    font-size: 1.4em;  /* Ajusta el tamaño de fuente de los párrafos */
+    font-size: 1.2rem;  /* Ajusta el tamaño de fuente de los párrafos */
     font-weight: 500;
-    color: #ffffff;    /* Cambia el color del texto de los párrafos */
-    max-width: 450px;  /* Cambia el ancho máximo de los párrafos */
+    color: #b2d235;    /* Cambia el color del texto de los párrafos */
+    max-width: 600px;  /* Cambia el ancho máximo de los párrafos */
     line-height: 1.6;
     margin-bottom: 15px;
 }
@@ -220,7 +285,8 @@ a {
     background-color: #e7005c;
     color: #ffffff;
     border-radius: 10px;
-    font-weight: bold;
+    font-weight: normal;
+    font-size: large;
 }
 
 .hero-button:hover {
@@ -230,7 +296,7 @@ a {
 
 /* SERVICES SECTION */
 .services-section {
-    background-color: #f7f7f7; /* Light Gray Background specifically for services section */
+    background-color: rgb(250, 249, 249); /* Light Gray Background specifically for services section */
     padding: 20px;
     display: flex;
     justify-content: space-around;
@@ -241,8 +307,9 @@ a {
 
 .service-item {
     text-align: center;
-    max-width: 200px;
-    background-color: #ffffff; /* White background for each item */
+    flex: 1;
+    max-width: 300px;
+    background-color: transparent; /* White background for each item */
     padding: 10px;
     border-radius: 8px;
 }
