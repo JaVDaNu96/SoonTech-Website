@@ -24,6 +24,7 @@ a {
     top:0;
     background-color: white; /* White background */
     border-bottom: 1px solid black; /* 3px black border */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow under border */
     padding: 0.2rem 3rem 0.2rem 4.2rem;
     justify-content: center;
     align-items: center;
@@ -112,11 +113,7 @@ a {
 .header-nav a {
     text-decoration: none;
     color: black;
-<<<<<<< HEAD
     font-size: 1rem;
-=======
-    font-size: 0.95rem;
->>>>>>> 25346ebf1a5384f8110c4d3771c5677f1dbb7277
     font-weight: normal;
 }
 
@@ -543,7 +540,7 @@ a {
 /*////////// WE - MISION VISION STRATEGY //////////////////*/
 
 .about-section {
-    background: linear-gradient(135deg, #220863, #2c5b81);
+    background: linear-gradient(135deg, #12222e, #b2d235);
     color: white;
     padding: 40px;
     border-radius: 8px;
@@ -560,24 +557,34 @@ a {
 
 .about-text {
     flex: 1;
+    
 }
 .header h3 {
     padding-bottom: 5%;
-    font-size: 1.2rem;
-    color: #33ef26;
+    font-size: 1rem;
+    color: #c8dbc6;
 }
 
 .about-text .header h1 {
     padding-bottom: 2%;
     font-size: 2.5rem;
+    width: 600px;
     color: #ffffff !important; /* Ensure the color applies */
 }
 
 .about-image {
     flex: 1;
-    display: flex;
+    display: none; /*image hide to insert video*/
     align-items: center;
     justify-content: center;
+}
+
+.video-player {
+    flex: 1;
+    width: 640px; /* Adjust the width */
+    height: 400px; /* Adjust the height */
+    border: transparent; /* Optional: add a border */
+    border-radius: 8px; /* Optional: rounded corners */
 }
 
 .about-image img {
@@ -604,14 +611,15 @@ a {
 
 /* Default tab style */
 .tab h4 {
-    color: #e7005c;
+    color: rgb(38, 240, 27);
     font-size: 1.2rem;
+    font-weight: normal;
     transition: color 0.3s ease, text-decoration 0.3s ease; /* Smooth transition */
 }
 
 /* Active tab style */
 .tab.active h4 {
-    color: #007bff; /* Color for active tab */
+    color: #ffffff; /* Color for active tab */
     font-weight: bold;
     text-decoration: underline; /* Single underline for active tab */
 }
@@ -686,7 +694,9 @@ a {
         text-align: center;
     }
 }
-/*////////// END WE - MISION VISION STRATEGY //////////////////*/
+/*////////// END Mission-Vision-Strategy //////////////////*/
+
+
 
 /*////////// START WHY CHOOSE US //////////////////*/
 
@@ -701,49 +711,35 @@ a {
 }
 
 .choose-us-content {
-    display: flex;
     flex-direction: row-reverse; /* Image on the left, text on the right */
     gap: 20px;
     max-width: 1200px;
     width: 100%;
 }
 
-/* Left Side: Image */
-.choose-us-image {
-    flex: 1;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.choose-us-image img {
-    width: 100%;
-    height: auto;
-    border-radius: 8px;
-}
-
-/* Right Side: Text Content */
+/* Center Side: Text Content */
 .choose-us-text {
     flex: 1;
-    text-align: right;
+    text-align: center;
 }
 
 .header h1 {
     padding-bottom: 2%;
-    font-size: 3.5rem;
+    font-size: 4rem;
     color: #000000;
 }
 
 .choose-us-message {
-    font-size: 1.2rem;
-    padding-bottom: 20px;
+    font-size: 1.3rem;
+    padding-left: 10%; padding-right: 10%;
+    padding-bottom: 40px;
     color: #555;
 }
 
-/* Keywords Section - 2x2 Grid Layout */
+/* Keywords Section - 4x1 Grid Layout */
 .keywords {
     display: grid;
-    grid-template-columns: repeat(2, 1fr); /* 2 columns */
+    grid-template-columns: repeat(4, 1fr); /* 2 columns */
     grid-gap: 15px;
     justify-items: center;
 }
@@ -767,7 +763,7 @@ a {
 }
 
 .keyword h4 {
-    color: #dadd16;
+    color: #51f737;
     font-size: 1.3rem;
     margin-bottom: 10px;
 }
@@ -781,7 +777,7 @@ a {
 
 .keyword p {
     font-size: 1rem;
-    color: #9d9ea6;
+    color: #bcbdc4;
 }
 
 /* Responsive Adjustments */
@@ -799,18 +795,19 @@ a {
         grid-template-columns: 1fr; /* Stack keywords in one column on small screens */
     }
 }
-/*////////// END WHY CHOOSE US //////////////////*/
+/*////////// End Why Choose US //////////////////*/
+
 
 
 /* LATEST NEWS & INSIGHTS SECTION */
 .news-insights {
     text-align: center;
     padding: 60px 20px;
-    background: linear-gradient(135deg, #3a6073, #16222a);
+    background: #597b51;
 }
 
 .news-insights h2 {
-    font-size: 2.5rem;
+    font-size: 3.5rem;
     color: #ffffff;
     margin-bottom: 10px;
 }
@@ -863,8 +860,8 @@ a {
 }
 
 .category {
-    color: #146297;
-    font-size: 0.8rem;
+    color: black;
+    font-size: 1rem;
     padding: 10px;
     font-weight: bold;
 }
@@ -874,7 +871,7 @@ a {
 }
 
 .news-title {
-    color: #2c3e50;
+    color: #595b5d;
     font-size: 1.2rem;
     padding: 0 10px;
     margin: 10px 0;
@@ -882,8 +879,8 @@ a {
 }
 
 .news-title-link:hover .news-title {
-    color: #cc1250;
-    text-decoration: underline;
+    color: #2c7313;
+    text-decoration: underline #5da74c;
 }
 
 .read-more {
@@ -900,10 +897,12 @@ a {
     color: #007bff;
 }
 
+
+
 /*//////// footer section & copyrights //////*/
 /* FOOTER SECTION */
 .footer {
-    background-color: #2c3e50;
+    background-color: black;
     color: #ffffff;
     padding: 40px 20px;
     font-family: Arial, sans-serif;
