@@ -37,17 +37,22 @@ a {
     align-items: center;
     width: 100%;
     max-width: auto;
+    margin: 1rem 0;
 }
 
+.site-header .header-left {
+    max-width: 5rem; /* Adjust as needed */
+}
 /* Left Section: Logo/Icon */
-.header-left .logo {
+.site-header .header-left .logo {
     max-width: 12rem; /* Adjust as needed */
 }
 
 /* Right Section: CTA Links */
-.header-right {
+.site-header .header-right {
     text-align: right;
-    right: -2rem;
+    padding: 0;
+    max-width: 40rem;
 }
 
 .header-nav {
@@ -57,8 +62,14 @@ a {
     display: flex;
 }
 
+.header-nav .nav-button {
+    margin: 0.5rem;
+    padding: 0 0.5rem ;
+}
+
 .header-nav li {
-    margin-left: 20px;
+    margin: 0.5rem 1rem;
+    padding: 0 1rem;
 }
 
 /* Add triangle (Zaeta) next to nav items */
@@ -66,8 +77,8 @@ a {
 .nav-item > a::after {
     content: "";
     position: absolute;
-    top: 50%; /* Centered vertically */
-    right: -15px; /* Adjust spacing as needed */
+    top: 38%; /* Centered vertically */
+    left: 6rem; /* Adjust spacing as needed */
     transform: translateY(-50%); /* Keeps it centered initially */
     border-style: solid;
     border-width: 6px 0 6px 8px; /* Creates the triangle pointing right */
@@ -78,7 +89,7 @@ a {
 /* Hover effect: Change triangle direction to ▼ */
 .nav-item:hover > a::after {
     border-width: 8px 6px 0 6px; /* Adjusts the triangle to point down */
-    border-color: #007bff transparent transparent transparent; /* Changes triangle color */
+    border-color: #20b000 transparent transparent transparent; /* Changes triangle color */
     transform: translateY(-50%); /* Keeps it vertically aligned */
 }
 
@@ -147,6 +158,10 @@ a {
 .menu-right {
     display: flex;
     align-items: center;
+    flex-direction: row-reverse;
+    flex-wrap: nowrap;
+    align-content: normal; 
+    justify-content: space-between;
     width: 30px;
     gap: 25px; /* Space between each element */
 }
@@ -164,6 +179,13 @@ a {
     padding: 5px;
     border-radius: 5px;
     cursor: pointer;
+    right: 15rem;
+    position: inherit;
+}
+
+.language-selector option{
+    display: block;
+    position: inherit;
 }
 
 /* Search Bar Styling */
@@ -174,6 +196,8 @@ a {
     border-radius: 5px;
     overflow: hidden;
     margin: 1rem;
+    max-width: 15rem;
+    max-height: 2.5rem;
 }
 
 .search-bar input {
@@ -203,6 +227,24 @@ a {
 
 
 /* Mobile Responsive Design */
+@media (max-width: 480px) {
+    .site-header {
+        max-height: 20px;
+        min-width: 100%;
+    }
+    .header-content {
+        flex-direction: column;
+    }
+
+    .header-nav {
+        flex-direction: column;
+        margin-top: 1rem;
+    }
+
+    .header-nav li {
+        margin: 10px 0;
+    }
+}
 @media (max-width: 768px) {
     .header-content {
         flex-direction: column;
@@ -925,8 +967,8 @@ a {
 /*//////// footer section & copyrights //////*/
 /* FOOTER SECTION */
 .footer {
-    background-color: black;
-    color: #ffffff;
+    background-color: rgb(255, 255, 255);
+    color: #333;
     padding: 40px 20px;
     font-family: Arial, sans-serif;
 }
@@ -957,7 +999,7 @@ a {
 .footer-section ul,
 .footer-section a {
     font-size: 1rem;
-    color: #ffffff;
+    color: #333;
     margin-bottom: 10px;
     text-decoration: none;
 }
@@ -972,7 +1014,7 @@ a {
 }
 
 .footer-section ul li a {
-    color: #ffffff;
+    color: #333;
     text-decoration: none;
     transition: color 0.3s ease;
 }
@@ -989,7 +1031,7 @@ a {
 /* Social Media Icons */
 .footer-section.social a {
     font-size: 1.5rem;
-    color: #ffffff;
+    color: #333;
     margin-right: 15px;
     transition: color 0.3s ease;
 }
@@ -1003,7 +1045,7 @@ a {
     text-align: center;
     padding-top: 20px;
     font-size: 0.9rem;
-    color: #bbb;
+    color: #333;
 }
 
 /* Responsive Design */
