@@ -60,6 +60,28 @@ a {
 .header-nav li {
     margin-left: 20px;
 }
+
+/* Add triangle (Zaeta) next to nav items */
+/* Base triangle styling: Pointing right (►) */
+.nav-item > a::after {
+    content: "";
+    position: absolute;
+    top: 50%; /* Centered vertically */
+    right: -15px; /* Adjust spacing as needed */
+    transform: translateY(-50%); /* Keeps it centered initially */
+    border-style: solid;
+    border-width: 6px 0 6px 8px; /* Creates the triangle pointing right */
+    border-color: transparent transparent transparent #12222e; /* Triangle color */
+    transition: transform 0.3s ease, border-width 0.3s ease, border-color 0.3s ease;
+}
+
+/* Hover effect: Change triangle direction to ▼ */
+.nav-item:hover > a::after {
+    border-width: 8px 6px 0 6px; /* Adjusts the triangle to point down */
+    border-color: #007bff transparent transparent transparent; /* Changes triangle color */
+    transform: translateY(-50%); /* Keeps it vertically aligned */
+}
+
 /* Dropdown container */
 .dropdown {
     position: relative;
@@ -125,7 +147,8 @@ a {
 .menu-right {
     display: flex;
     align-items: center;
-    gap: 15px; /* Space between each element */
+    width: 30px;
+    gap: 25px; /* Space between each element */
 }
 
 /* Language Selector Styling */
@@ -332,7 +355,7 @@ a {
 .hero-button {
     text-decoration: none;
     padding: 10px 20px;
-    background-color: #e7005c;
+    background-color: #237e2e;
     color: #ffffff;
     border-radius: 10px;
     font-weight: normal;
