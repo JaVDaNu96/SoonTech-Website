@@ -494,7 +494,7 @@ a {
 }
 
 /* Encabezado de la Sección */
-.section-header {
+.services-section-cards .section-header {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -503,7 +503,7 @@ a {
     padding: 0 5rem;
 }
 
-.header-left {
+.services-section-cards .header-left {
     flex: 1;
     text-align: left;
     min-width: 300px;
@@ -511,7 +511,7 @@ a {
     padding-right: 6%;
 }
 
-.header-right {
+.services-section-cards .header-right {
     flex: 1;
     text-align: left;
     min-width: 250px;
@@ -519,7 +519,7 @@ a {
     padding-right: 6%;
 }
 
-.section-header .tagline {
+.services-section-cards .section-header .tagline {
     color: #959193; /* Color green para el tagline */
     font-weight: normal;
     font-size: 18px;
@@ -530,13 +530,13 @@ a {
 
 }
 
-.section-header h2 {
+.services-section-cards .section-header h2 {
     font-size: 40px;
     color: #222;
     margin: -4px 0;
 }
 
-.section-header .description {
+.services-section-cards .section-header .description {
     font-size: 24px;
     color: #555;
     margin-top: 0;
@@ -544,7 +544,7 @@ a {
 }
 
 /* Contenedor de la cuadrícula de servicios */
-.services-grid {
+.services-section-cards .services-grid {
     display: flex;
     gap: 20px;
     justify-content: center;
@@ -552,7 +552,7 @@ a {
 }
 
 /* Estilos de la tarjeta de servicio */
-.service-card {
+.services-section-cards .service-card {
     position: relative;
     width: 300px;
     height: 500px;
@@ -561,16 +561,16 @@ a {
     transition: transform 0.3s ease;
 }
 
-.service-card:hover .card-content {
+.services-section-cards .service-card:hover .card-content {
     transform: translateY(-50px); /* Desliza el contenido hacia arriba al hacer hover */
 }
 
-.service-card:hover .card-footer {
+.services-section-cards .service-card:hover .card-footer {
     transform: translateY(0); /* Muestra el pie de la tarjeta */
 }
 
 /* Contenido de la tarjeta */
-.card-content {
+.services-section-cards .card-content {
     padding: 20px;
     text-align: center;
     display: flex;
@@ -584,25 +584,25 @@ a {
 }
 
 
-.card-content .icon img {
+.services-section-cards .card-content .icon img {
     width: 60px;
     height: 60px;
     margin-bottom: 20px;
 }
 
-.card-content h3 {
+.services-section-cards .card-content h3 {
     font-size: 20px;
     color: #222;
     margin: 10px 0;
 }
 
-.card-content p {
+.services-section-cards .card-content p {
     font-size: 14px;
     color: #555;
     margin: 10px 0;
 }
 
-.details-link {
+.services-section-cards .details-link {
     margin-top: auto;
     padding: 10px 20px;
     background-color: #fff;
@@ -614,12 +614,12 @@ a {
     transition: background-color 0.3s ease;
 }
 
-.details-link:hover {
+.services-section-cards .details-link:hover {
     background-color: #eee;
 }
 
 /* Pie de la tarjeta */
-.card-footer {
+.services-section-cards .card-footer {
     position: absolute;
     bottom: 0;
     left: 5%;
@@ -641,7 +641,6 @@ a {
     background: linear-gradient(135deg, #12222e, #b2d235);
     color: white;
     padding: 40px;
-    border-radius: 8px;
     display: flex;
     justify-content: center;
 }
@@ -1002,7 +1001,7 @@ a {
 .footer {
     background-color: rgb(255, 255, 255);
     color: #333;
-    padding: 40px 20px;
+    padding: 3rem 5rem;
     font-family: Arial, sans-serif;
 }
 
@@ -1289,7 +1288,6 @@ a {
     background-color: #e6e6e6;
     border-radius: 25px;
     padding: 5px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     font-family: 'Overpass', sans-serif;
     overflow: hidden;
 }
@@ -1304,6 +1302,10 @@ a {
     z-index: 2;
     cursor: pointer;
     transition: color 0.3s ease;
+}
+
+.slider-label.active {
+    color: #fff;
 }
 /* Toggle Slider */
 .slider-toggle {
@@ -1654,9 +1656,168 @@ a {
 /* Other sections follow the same naming convention with "hns-" prefix. */
 
 
-/*//// END HOME NETWORK SECURITY AN PROTECTION ///*/
+/*//// END HOME NETWORK SECURITY AND PROTECTION ///*/
 /* Active State */
 .theme-slider.active .slider-indicator {
     left: 120px; /* Position for Business */
     background-color: #33a1fd;
 }
+
+/*/////////////////////// SERVICES PAGE //////////////////*/
+/* Hero Section */
+.services-hero {
+    background-color: #e6f4e6;
+    text-align: center;
+    padding: 10rem 10rem;
+    color: #12222e;
+}
+
+.services-hero h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+.services-hero p {
+    font-size: 1.2rem;
+    color: #555;
+}
+
+/* Services Overview */
+.services-overview {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 40px 20px;
+    background-color: #ffffff;
+}
+
+.service-card {
+    display: flex;
+    width: 100%;
+    max-width: 800px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.service-image {
+    width: 20%;
+}
+
+.service-image img {
+    width: 100%;
+    max-width: 300px;
+    object-fit: cover;
+}
+
+.service-text {
+    flex: 1;
+    padding: 1rem 0 0 5rem;
+    text-align: left;
+}
+
+.service-text h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #12222e;
+}
+
+.service-text p {
+    font-size: 1rem;
+    margin-bottom: 15px;
+    color: #555;
+}
+
+.service-text ul {
+    list-style-type: disc;
+    margin-left: 20px;
+    margin-bottom: 15px;
+    color: #555;
+}
+
+.read-more {
+    text-decoration: none;
+    color: #4da53b;
+    font-weight: bold;
+}
+
+
+/*////////////////////////////////////////////////////// */
+
+/*////////////////////// INDIVIDUAL SERVICE PAGE ////////////////////////// */
+
+/* Service Header */
+.service-header {
+    background-color: #e6f4e6;
+    text-align: center;
+    padding: 50px 20px;
+    color: #12222e;
+}
+
+.service-header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+.service-header p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+.service-header .cta {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #4da53b;
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+/* Service Details */
+.service-details {
+    padding: 40px 20px;
+    background-color: #ffffff;
+}
+
+.detail-section {
+    margin-bottom: 30px;
+}
+
+.detail-section h2 {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+    color: #12222e;
+}
+
+.detail-section p,
+.detail-section ul {
+    font-size: 1rem;
+    color: #555;
+}
+
+.detail-section ul {
+    list-style-type: disc;
+    margin-left: 20px;
+}
+
+/* FAQ CTA */
+.faq-cta {
+    text-align: center;
+    background-color: #f9f9f9;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.faq-cta a {
+    color: #4da53b;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+/*////////////////////////////////////////////////////// */
+
+/*////////////////////////////////////////////////////// */
+/*////////////////////////////////////////////////////// */
