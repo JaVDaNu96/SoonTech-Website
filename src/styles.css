@@ -1655,14 +1655,6 @@ a {
 
 /* Other sections follow the same naming convention with "hns-" prefix. */
 
-
-/*//// END HOME NETWORK SECURITY AND PROTECTION ///*/
-/* Active State */
-.theme-slider.active .slider-indicator {
-    left: 120px; /* Position for Business */
-    background-color: #33a1fd;
-}
-
 /*/////////////////////// SERVICES PAGE //////////////////*/
 /* Hero Section */
 .services-hero {
@@ -1693,28 +1685,32 @@ a {
 
 .service-card {
     display: flex;
-    width: 100%;
-    max-width: 800px;
-    background-color: #f9f9f9;
+    width: 80%;
+    max-width: 80rem;
+    background-color: #fff;
     border: 1px solid #ddd;
     border-radius: 8px;
     overflow: hidden;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 2rem;
 }
 
 .service-image {
-    width: 20%;
+    height: 100%;
+    width: 50%;
+    margin: 2rem 1rem;    
 }
 
 .service-image img {
-    width: 100%;
-    max-width: 300px;
+    width: 15rem;
+    height: auto;
+    max-width: 50rem;
     object-fit: cover;
 }
 
 .service-text {
     flex: 1;
-    padding: 1rem 0 0 5rem;
+    padding: 1rem 4rem;
     text-align: left;
 }
 
@@ -1746,13 +1742,13 @@ a {
 
 /*////////////////////////////////////////////////////// */
 
-/*////////////////////// INDIVIDUAL SERVICE PAGE ////////////////////////// */
+/*///////////////// INDIVIDUAL SERVICE PAGE ////////////// */
 
 /* Service Header */
 .service-header {
     background-color: #e6f4e6;
     text-align: center;
-    padding: 50px 20px;
+    padding: 10rem 5rem 5rem 5rem;
     color: #12222e;
 }
 
@@ -1778,7 +1774,7 @@ a {
 
 /* Service Details */
 .service-details {
-    padding: 40px 20px;
+    padding: 4rem 4rem;
     background-color: #ffffff;
 }
 
