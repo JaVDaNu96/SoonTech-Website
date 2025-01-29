@@ -24,6 +24,282 @@
 <body>
     <!-- Hero Section -->
     <header class="hns-hero-section">
+        <video autoplay muted loop class="background-video">
+            <source src="assets/videos/hero-video.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <div class="hns-hero-content">
+            <h1>Secure Your Home Network with Confidence</h1>
+            <p>Fast, reliable, and secure solutions tailored for your family and home office.</p>
+            <a href="contact.html" class="hns-cta-button">Schedule a Free Consultation</a>
+        </div>
+    </header>
+    
+    <!-- Introduction Section -->
+    <section class="hns-introduction">
+        <div class="hns-intro-container">
+            <!-- Left Column: Text -->
+            <div class="hns-intro-text">
+                <h2>Why Home Network Security Matters</h2>
+                <p>
+                    Every year, millions of families face cyber threats. Protecting your home network is essential for your privacy and safety. 
+                    SoonTech offers solutions that keep your family connected and secure, ensuring peace of mind in today’s digital world.
+                </p>
+            </div>
+    
+            <!-- Right Column: Image -->
+            <div class="hns-intro-image">
+                <img src="assets/images/hacker-man-laptop.jpg" alt="Family using secure Wi-Fi">
+            </div>
+        </div>
+    </section>
+    
+    <!-- Key Features Section -->
+    <section class="hns-key-features">
+        <h2>Our Key Features</h2>
+        <div class="hns-features-grid">
+            <div class="hns-feature">
+                <img src="assets/icons/secure-wifi.png" alt="Secure Wi-Fi">
+                <h3>Secure Wi-Fi Setup</h3>
+                <p>Encrypted and optimized for safety.</p>
+            </div>
+            <div class="hns-feature">
+                <img src="assets/icons/firewall.png" alt="Firewall Configuration">
+                <h3>Firewall Configuration</h3>
+                <p>Protection against hackers and intrusions.</p>
+            </div>
+            <div class="hns-feature">
+                <img src="assets/icons/parental-controls.png" alt="Parental Controls">
+                <h3>Parental Controls</h3>
+                <p>Safe browsing for your kids.</p>
+            </div>
+            <div class="hns-feature">
+                <img src="assets/icons/monitoring.png" alt="Regular Monitoring">
+                <h3>Regular Monitoring</h3>
+                <p>Stay ahead of threats with proactive alerts.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works Section -->
+    <section class="hns-how-it-works">
+        <h2>How It Works</h2>
+        <div class="process-steps">
+            <!-- Step 1 -->
+            <div class="step">
+                <div class="step-icon">1</div>
+                <h3>Assessment</h3>
+                <p>Review your current network to identify vulnerabilities and needs.</p>
+            </div>
+    
+            <!-- Step 2 -->
+            <div class="step">
+                <div class="step-icon">2</div>
+                <h3>Setup</h3>
+                <p>Install and configure the necessary tools to secure your network.</p>
+            </div>
+    
+            <!-- Step 3 -->
+            <div class="step">
+                <div class="step-icon">3</div>
+                <h3>Support</h3>
+                <p>Provide ongoing monitoring, updates, and technical assistance as needed.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="hns-testimonials">
+        <h2>What Our Customers Say</h2>
+        <div class="testimonial-carousel">
+            <!-- Testimonial 1 -->
+            <div class="testimonial-card active">
+                <p>"SoonTech transformed our home network. We feel safe knowing our family is protected!"</p>
+                <h4>- Sarah Johnson</h4>
+            </div>
+    
+            <!-- Testimonial 2 -->
+            <div class="testimonial-card">
+                <p>"As a remote worker, I needed a reliable setup. Thanks to SoonTech, I never have to worry about my connection!"</p>
+                <h4>- Michael Carter</h4>
+            </div>
+    
+            <!-- Testimonial 3 -->
+            <div class="testimonial-card">
+                <p>"SoonTech helped secure my devices and keep my kids safe online. I highly recommend their services!"</p>
+                <h4>- Emily Martinez</h4>
+            </div>
+    
+            <!-- Testimonial 4 -->
+            <div class="testimonial-card">
+                <p>"Their professional-grade solutions and ongoing support have been a lifesaver for my home office."</p>
+                <h4>- David Anderson</h4>
+            </div>
+        </div>
+        <!-- Navigation Buttons -->
+        <div class="carousel-controls">
+            <button class="prev">❮</button>
+            <button class="next">❯</button>
+        </div>
+    </section>        
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const testimonials = document.querySelectorAll(".testimonial-card");
+            const prevButton = document.querySelector(".prev");
+            const nextButton = document.querySelector(".next");
+    
+            let currentIndex = 0;
+    
+            // Show the current testimonial
+            function showTestimonial(index) {
+                testimonials.forEach((testimonial, i) => {
+                    testimonial.classList.remove("active");
+                    if (i === index) {
+                        testimonial.classList.add("active");
+                    }
+                });
+            }
+    
+            // Navigate to the previous testimonial
+            prevButton.addEventListener("click", () => {
+                currentIndex = (currentIndex === 0) ? testimonials.length - 1 : currentIndex - 1;
+                showTestimonial(currentIndex);
+            });
+    
+            // Navigate to the next testimonial
+            nextButton.addEventListener("click", () => {
+                currentIndex = (currentIndex === testimonials.length - 1) ? 0 : currentIndex + 1;
+                showTestimonial(currentIndex);
+            });
+    
+            // Initialize the carousel
+            showTestimonial(currentIndex);
+        });
+    </script>
+    
+
+    <!-- FAQs Section -->
+    <section class="hns-faqs">
+        <h2>Frequently Asked Questions</h2>
+        <div class="hns-faq-item">
+            <h3 class="hns-faq-question">What devices are included in the setup?</h3>
+            <div class="hns-faq-answer">
+                <p>We secure all your home devices, including laptops, tablets, smartphones, and smart home systems.</p>
+            </div>
+        </div>
+        <div class="hns-faq-item">
+            <h3 class="hns-faq-question">How do you ensure my Wi-Fi is secure?</h3>
+            <div class="hns-faq-answer">
+                <p>We implement advanced encryption protocols, firewall settings, and network monitoring tools.</p>
+            </div>
+        </div>
+        <div class="hns-faq-item">
+            <h3 class="hns-faq-question">Can you secure my smart home devices?</h3>
+            <div class="hns-faq-answer">
+                <p>Yes, we provide solutions to protect smart home devices like cameras, thermostats, and voice assistants from cyber threats.</p>
+            </div>
+        </div>
+        <div class="hns-faq-item">
+            <h3 class="hns-faq-question">What is the cost of your service?</h3>
+            <div class="hns-faq-answer">
+                <p>Our pricing is based on the specific needs of your home network. Contact us for a free consultation and estimate.</p>
+            </div>
+        </div>
+        <div class="hns-faq-item">
+            <h3 class="hns-faq-question">How often should my network security be updated?</h3>
+            <div class="hns-faq-answer">
+                <p>We recommend regular updates at least once every six months to ensure optimal security.</p>
+            </div>
+        </div>
+        <div class="hns-faq-item">
+            <h3 class="hns-faq-question">Do you offer ongoing monitoring services?</h3>
+            <div class="hns-faq-answer">
+                <p>Yes, we offer 24/7 monitoring services to detect and prevent any potential threats in real time.</p>
+            </div>
+        </div>
+        <div class="hns-faq-item">
+            <h3 class="hns-faq-question">What happens if I experience an issue after setup?</h3>
+            <div class="hns-faq-answer">
+                <p>Our support team is always available to assist you with any issues or questions after setup.</p>
+            </div>
+        </div>
+        <div class="hns-faq-item">
+            <h3 class="hns-faq-question">Can you set up parental controls on my network?</h3>
+            <div class="hns-faq-answer">
+                <p>Absolutely! We can configure parental controls to block inappropriate content and set usage limits.</p>
+            </div>
+        </div>
+        <div class="hns-faq-item">
+            <h3 class="hns-faq-question">Do you support remote workers?</h3>
+            <div class="hns-faq-answer">
+                <p>Yes, we specialize in creating secure and reliable networks for professionals working from home.</p>
+            </div>
+        </div>
+        <div class="hns-faq-item">
+            <h3 class="hns-faq-question">What type of encryption do you use?</h3>
+            <div class="hns-faq-answer">
+                <p>We use industry-standard encryption protocols such as WPA3 to ensure your network remains secure.</p>
+            </div>
+        </div>
+    </section>
+    
+    <script>
+        // FAQ Toggle Functionality
+        document.addEventListener("DOMContentLoaded", function() {
+            const faqQuestions = document.querySelectorAll(".hns-faq-question");
+    
+            faqQuestions.forEach(question => {
+                question.addEventListener("click", () => {
+                    const answer = question.nextElementSibling;
+    
+                    // Toggle visibility
+                    if (answer.style.display === "block") {
+                        answer.style.display = "none";
+                    } else {
+                        answer.style.display = "block";
+                    }
+    
+                    // Optional: Change question appearance on click
+                    question.classList.toggle("active");
+                });
+            });
+        });
+    </script>
+
+<section class="hns-cta-section">
+    <h2>Ready to Secure Your Home?</h2>
+    <a href="contact.html" class="hns-cta-button">Contact Us Today</a>
+</section>
+
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Protect your home network with SoonTech's expert solutions. Secure Wi-Fi, firewall setup, and ongoing monitoring for your safety.">
+    <title>Home Network Security Protection</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<!-- Duplicate Header.html-->
+<div id="header"></div>
+
+<script>
+    // Load the header
+    fetch('header.html')
+        .then(response => response.text())
+        .then(data => {
+            document.getElementById('header').innerHTML = data;
+        })
+        .catch(error => console.error('Error loading header:', error));
+</script>
+
+<body>
+    <!-- Hero Section -->
+    <header class="hns-hero-section">
         <h1>Secure Your Home Network with Confidence</h1>
         <p>Fast, reliable, and secure solutions tailored for your family and home office.</p>
         <a href="contact.html" class="hns-cta-button">Schedule a Free Consultation</a>
