@@ -24,18 +24,36 @@
 <body>
     <!-- Hero Section -->
     <header class="hns-hero-section">
-        <h1>Secure Your Home Network with Confidence</h1>
-        <p>Fast, reliable, and secure solutions tailored for your family and home office.</p>
-        <a href="contact.html" class="hns-cta-button">Schedule a Free Consultation</a>
+        <video autoplay muted loop class="background-video">
+            <source src="assets/videos/hns-hero-video.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <div class="hns-hero-content">
+            <h1>Secure Your Home Network with Confidence</h1>
+            <p>Fast, reliable, and secure solutions tailored for your family and home office.</p>
+            <a href="contact.html" class="hns-cta-button">Schedule a Free Consultation</a>
+        </div>
     </header>
-
+    
     <!-- Introduction Section -->
     <section class="hns-introduction">
-        <h2>Why Home Network Security Matters</h2>
-        <p>Every year, millions of families face cyber threats. Protecting your home network is essential for your privacy and safety. SoonTech offers solutions that keep your family connected and secure.</p>
-        <img src="assets/images/family-wifi.jpg" alt="Family using secure Wi-Fi">
+        <div class="hns-intro-container">
+            <!-- Left Column: Text -->
+            <div class="hns-intro-text">
+                <h2>Why Home Network Security Matters</h2>
+                <p>
+                    Every year, millions of families face cyber threats. Protecting your home network is essential for your privacy and safety. 
+                    SoonTech offers solutions that keep your family connected and secure, ensuring peace of mind in today’s digital world.
+                </p>
+            </div>
+    
+            <!-- Right Column: Image -->
+            <div class="hns-intro-image">
+                <img src="assets/images/hacker-man-laptop.jpg" alt="Family using secure Wi-Fi">
+            </div>
+        </div>
     </section>
-
+    
     <!-- Key Features Section -->
     <section class="hns-key-features">
         <h2>Our Key Features</h2>
@@ -165,20 +183,95 @@
     <section class="hns-faqs">
         <h2>Frequently Asked Questions</h2>
         <div class="hns-faq-item">
-            <h3>What devices are included in the setup?</h3>
-            <p>We secure all your home devices, including laptops, tablets, smartphones, and smart home systems.</p>
+            <h3 class="hns-faq-question">What devices are included in the setup?</h3>
+            <div class="hns-faq-answer">
+                <p>We secure all your home devices, including laptops, tablets, smartphones, and smart home systems.</p>
+            </div>
         </div>
         <div class="hns-faq-item">
-            <h3>How do you ensure my Wi-Fi is secure?</h3>
-            <p>We implement advanced encryption protocols, firewall settings, and network monitoring tools.</p>
+            <h3 class="hns-faq-question">How do you ensure my Wi-Fi is secure?</h3>
+            <div class="hns-faq-answer">
+                <p>We implement advanced encryption protocols, firewall settings, and network monitoring tools.</p>
+            </div>
+        </div>
+        <div class="hns-faq-item">
+            <h3 class="hns-faq-question">Can you secure my smart home devices?</h3>
+            <div class="hns-faq-answer">
+                <p>Yes, we provide solutions to protect smart home devices like cameras, thermostats, and voice assistants from cyber threats.</p>
+            </div>
+        </div>
+        <div class="hns-faq-item">
+            <h3 class="hns-faq-question">What is the cost of your service?</h3>
+            <div class="hns-faq-answer">
+                <p>Our pricing is based on the specific needs of your home network. Contact us for a free consultation and estimate.</p>
+            </div>
+        </div>
+        <div class="hns-faq-item">
+            <h3 class="hns-faq-question">How often should my network security be updated?</h3>
+            <div class="hns-faq-answer">
+                <p>We recommend regular updates at least once every six months to ensure optimal security.</p>
+            </div>
+        </div>
+        <div class="hns-faq-item">
+            <h3 class="hns-faq-question">Do you offer ongoing monitoring services?</h3>
+            <div class="hns-faq-answer">
+                <p>Yes, we offer 24/7 monitoring services to detect and prevent any potential threats in real time.</p>
+            </div>
+        </div>
+        <div class="hns-faq-item">
+            <h3 class="hns-faq-question">What happens if I experience an issue after setup?</h3>
+            <div class="hns-faq-answer">
+                <p>Our support team is always available to assist you with any issues or questions after setup.</p>
+            </div>
+        </div>
+        <div class="hns-faq-item">
+            <h3 class="hns-faq-question">Can you set up parental controls on my network?</h3>
+            <div class="hns-faq-answer">
+                <p>Absolutely! We can configure parental controls to block inappropriate content and set usage limits.</p>
+            </div>
+        </div>
+        <div class="hns-faq-item">
+            <h3 class="hns-faq-question">Do you support remote workers?</h3>
+            <div class="hns-faq-answer">
+                <p>Yes, we specialize in creating secure and reliable networks for professionals working from home.</p>
+            </div>
+        </div>
+        <div class="hns-faq-item">
+            <h3 class="hns-faq-question">What type of encryption do you use?</h3>
+            <div class="hns-faq-answer">
+                <p>We use industry-standard encryption protocols such as WPA3 to ensure your network remains secure.</p>
+            </div>
         </div>
     </section>
+    
+    <script>
+        // FAQ Toggle Functionality
+        document.addEventListener("DOMContentLoaded", function() {
+            const faqQuestions = document.querySelectorAll(".hns-faq-question");
+    
+            faqQuestions.forEach(question => {
+                question.addEventListener("click", () => {
+                    const answer = question.nextElementSibling;
+    
+                    // Toggle visibility
+                    if (answer.style.display === "block") {
+                        answer.style.display = "none";
+                    } else {
+                        answer.style.display = "block";
+                    }
+    
+                    // Optional: Change question appearance on click
+                    question.classList.toggle("active");
+                });
+            });
+        });
+    </script>
 
     <!-- Call to Action Section -->
     <footer class="hns-cta-section">
         <h2>Ready to Secure Your Home?</h2>
         <a href="contact.html" class="hns-cta-button">Contact Us Today</a>
-        <a href="index.html" class="back-button">← Back to Home</a>
     </footer>
+
 </body>
 </html>
