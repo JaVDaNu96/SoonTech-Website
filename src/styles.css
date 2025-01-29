@@ -1705,18 +1705,22 @@ a {
 </style>
 
 /* Call to Action Section */
-footer.hns-cta-section {
-    background-color: #195c14;
+.hns-cta-section {
+    background: none;
+    background-color: #7a2a45 !important; /* Force the color */
     text-align: center;
     padding: 40px 20px;
 }
 
+/* Title Styling */
 .hns-cta-section h2 {
     margin-bottom: 20px;
     font-size: 2.5rem;
     text-align: center;
+    color: white; /* Ensure text is visible */
 }
 
+/* CTA Button */
 .hns-cta-section .hns-cta-button {
     background-color: #b2d235;
     color: #007bff;
