@@ -1659,55 +1659,53 @@ a {
 }
 
 /* FAQs Section */
-<style>
-    .hns-faqs {
-        padding: 40px 20px;
-        background-color: #f7f7f7;
-    }
+.hns-faqs {
+    padding: 40px 20px;
+    background-color: #f7f7f7;
+}
 
-    .hns-faqs h2 {
-        text-align: center;
-        font-size: 3rem;
-        margin-bottom: 30px;
-        margin-top: 30px;
-        color: #12222e;
-    }
+.hns-faqs h2 {
+    text-align: center;
+    font-size: 3rem;
+    margin-bottom: 30px;
+    margin-top: 30px;
+    color: #12222e;
+}
 
-    .hns-faq-item {
-        margin-bottom: 20px;
-        border-bottom: 1px solid #ddd;
-        padding-bottom: 10px;
-        margin-left: 80px; /* Adds a discrete margin on the left */
-        margin-right: 120px; /* Adds a discrete margin on the right */
-    }
+.hns-faq-item {
+    margin-bottom: 20px;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 10px;
+    margin-left: 80px; /* Adds a discrete margin on the left */
+    margin-right: 120px; /* Adds a discrete margin on the right */
+}
 
-    .hns-faq-question {
-        font-size: 1.2rem;
-        cursor: pointer;
-        color: dimgrey;
-        transition: color 0.3s ease;
-    }
+.hns-faq-question {
+    font-size: 1.2rem;
+    cursor: pointer;
+    color: dimgrey;
+    transition: color 0.3s ease;
+}
 
-    .hns-faq-question:hover {
-        color: black;
-    }
+.hns-faq-question:hover {
+    color: black;
+}
 
-    .hns-faq-question.active {
-        font-weight: bold;
-    }
+.hns-faq-question.active {
+    font-weight: bold;
+}
 
-    .hns-faq-answer {
-        display: none; /* Hidden by default */
-        font-size: 1rem;
-        color: #555;
-        margin-top: 10px;
-    }
-</style>
+.hns-faq-answer {
+    display: none; /* Hidden by default */
+    font-size: 1rem;
+    color: #555;
+    margin-top: 10px;
+}
 
 /* Call to Action Section */
 .hns-cta-section {
     background: none;
-    background-color: #7a2a45 !important; /* Force the color */
+    background-color: #5c142c !important; /* Force the color */
     text-align: center;
     padding: 40px 20px;
 }
