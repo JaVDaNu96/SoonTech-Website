@@ -52,6 +52,7 @@ a {
 .site-header .header-right {
     text-align: right;
     padding: 0;
+    margin: 0 0 0 7rem;;
     max-width: 40rem;
 }
 
@@ -155,16 +156,13 @@ a {
     color: #20b000; /* Hover color for CTA links */
 }
 
-/* Container Styling */
+/* Language selector styling */
 .menu-right {
-    display: flex;
+    display: block;
     align-items: center;
-    flex-direction: row-reverse;
-    flex-wrap: nowrap;
-    align-content: normal; 
-    justify-content: space-between;
-    width: 30px;
-    gap: 25px; /* Space between each element */
+    gap: 10px; /* Reduce gap so elements are closer */
+    position: relative; /* Ensures child elements align properly */
+    left: 18rem;
 }
 
 /* Language Selector Styling */
@@ -174,19 +172,18 @@ a {
 }
 
 .language-selector {
-    background-color: transparent;
+    background-color: white;
     border: 1px solid #12222e;
     color: #12222e;
     padding: 5px;
     border-radius: 5px;
     cursor: pointer;
-    right: 15rem;
-    position: inherit;
+    position: relative; /* Change from inherit */
+    width: 120px; /* Set a proper width */
 }
 
-.language-selector option{
-    display: block;
-    position: inherit;
+.language-selector option {
+    position: static;
 }
 
 /* Search Bar Styling */
