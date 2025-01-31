@@ -3522,9 +3522,9 @@ a {
 /* Call to Action Section */
 .hns-cta-section {
     background: none;
-    background-color: #5c142c !important; /* Force the color */
+    background-color: #12222e !important; /* Force the color */
     text-align: center;
-    padding: 40px 20px;
+    padding: 50px 40px;
 }
 
 /* Title Styling */
@@ -3537,8 +3537,8 @@ a {
 
 /* CTA Button */
 .hns-cta-section .hns-cta-button {
-    background-color: #b2d235;
-    color: #007bff;
+    background-color: #ffffff;
+    color: #000000;
     padding: 10px 20px;
     border-radius: 25px;
     font-weight: bold;
@@ -3546,8 +3546,8 @@ a {
 }
 
 .hns-cta-section .hns-cta-button:hover {
-    background-color: #f7f7f7;
-    color: #12222e;
+    background-color:#0f5015;
+    color: #ffffff;
 }
 
 /*//// END HOME NETWORK SECURITY AND PROTECTION ///*/
