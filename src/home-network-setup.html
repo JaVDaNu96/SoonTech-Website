@@ -9,6 +9,7 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
     <script src="includes.js" defer></script>
     <script src="filter.js" defer></script>
+    <script src="specific-service.js" defer></script>
 </head>
 
     <!-- Header -->
@@ -16,10 +17,10 @@
     <div id="header-placeholder"></div>
     
     <!-- Introduction Section -->
-    <section class="hns-introduction">
-        <div class="hns-intro-container">
+    <section class="specific-service-introduction">
+        <div class="specific-service-intro-container">
             <!-- Left Column: Text -->
-            <div class="hns-intro-text">
+            <div class="specific-service-intro-text">
                 <h2>Why Home Network Security Matters</h2>
                 <p>
                     Every year, millions of families face cyber threats. Protecting your home network is essential for your privacy and safety. 
@@ -28,32 +29,32 @@
             </div>
     
             <!-- Right Column: Image -->
-            <div class="hns-intro-image">
+            <div class="specific-service-intro-image">
                 <img src="assets/images/hacker-man-laptop.jpg" alt="Family using secure Wi-Fi">
             </div>
         </div>
     </section>
     
     <!-- Key Features Section -->
-    <section class="hns-key-features">
+    <section class="specific-service-key-features">
         <h2>Our Key Features</h2>
-        <div class="hns-features-grid">
-            <div class="hns-feature">
+        <div class="specific-service-features-grid">
+            <div class="specific-service-feature">
                 <img src="assets/icons/secure-wifi.png" alt="Secure Wi-Fi">
                 <h3>Secure Wi-Fi Setup</h3>
                 <p>Encrypted and optimized for safety.</p>
             </div>
-            <div class="hns-feature">
+            <div class="specific-service-feature">
                 <img src="assets/icons/firewall.png" alt="Firewall Configuration">
                 <h3>Firewall Configuration</h3>
                 <p>Protection against hackers and intrusions.</p>
             </div>
-            <div class="hns-feature">
+            <div class="specific-service-feature">
                 <img src="assets/icons/parental-controls.png" alt="Parental Controls">
                 <h3>Parental Controls</h3>
                 <p>Safe browsing for your kids.</p>
             </div>
-            <div class="hns-feature">
+            <div class="specific-service-feature">
                 <img src="assets/icons/monitoring.png" alt="Regular Monitoring">
                 <h3>Regular Monitoring</h3>
                 <p>Stay ahead of threats with proactive alerts.</p>
@@ -62,7 +63,7 @@
     </section>
 
     <!-- How It Works Section -->
-    <section class="hns-how-it-works">
+    <section class="specific-service-how-it-works">
         <h2>How It Works</h2>
         <div class="process-steps">
             <!-- Step 1 -->
@@ -89,7 +90,7 @@
     </section>
 
     <!-- Testimonials Section -->
-    <section class="hns-testimonials">
+    <section class="specific-service-testimonials">
         <h2>What Our Customers Say</h2>
         <div class="testimonial-carousel">
             <!-- Testimonial 1 -->
@@ -122,103 +123,66 @@
             <button class="next">❯</button>
         </div>
     </section>        
-
-    <script>
-        document.addEventListener("DOMContentLoaded", function () {
-            const testimonials = document.querySelectorAll(".testimonial-card");
-            const prevButton = document.querySelector(".prev");
-            const nextButton = document.querySelector(".next");
-    
-            let currentIndex = 0;
-    
-            // Show the current testimonial
-            function showTestimonial(index) {
-                testimonials.forEach((testimonial, i) => {
-                    testimonial.classList.remove("active");
-                    if (i === index) {
-                        testimonial.classList.add("active");
-                    }
-                });
-            }
-    
-            // Navigate to the previous testimonial
-            prevButton.addEventListener("click", () => {
-                currentIndex = (currentIndex === 0) ? testimonials.length - 1 : currentIndex - 1;
-                showTestimonial(currentIndex);
-            });
-    
-            // Navigate to the next testimonial
-            nextButton.addEventListener("click", () => {
-                currentIndex = (currentIndex === testimonials.length - 1) ? 0 : currentIndex + 1;
-                showTestimonial(currentIndex);
-            });
-    
-            // Initialize the carousel
-            showTestimonial(currentIndex);
-        });
-    </script>
-    
-
     <!-- FAQs Section -->
-    <section class="hns-faqs">
+    <section class="specific-service-faqs">
         <h2>Frequently Asked Questions</h2>
-        <div class="hns-faq-item">
-            <h3 class="hns-faq-question">What devices are included in the setup?</h3>
-            <div class="hns-faq-answer">
+        <div class="specific-service-faq-item">
+            <h3 class="specific-service-faq-question">What devices are included in the setup?</h3>
+            <div class="specific-service-faq-answer">
                 <p>We secure all your home devices, including laptops, tablets, smartphones, and smart home systems.</p>
             </div>
         </div>
-        <div class="hns-faq-item">
-            <h3 class="hns-faq-question">How do you ensure my Wi-Fi is secure?</h3>
-            <div class="hns-faq-answer">
+        <div class="specific-service-faq-item">
+            <h3 class="specific-service-faq-question">How do you ensure my Wi-Fi is secure?</h3>
+            <div class="specific-service-faq-answer">
                 <p>We implement advanced encryption protocols, firewall settings, and network monitoring tools.</p>
             </div>
         </div>
-        <div class="hns-faq-item">
-            <h3 class="hns-faq-question">Can you secure my smart home devices?</h3>
-            <div class="hns-faq-answer">
+        <div class="specific-service-faq-item">
+            <h3 class="specific-service-faq-question">Can you secure my smart home devices?</h3>
+            <div class="specific-service-faq-answer">
                 <p>Yes, we provide solutions to protect smart home devices like cameras, thermostats, and voice assistants from cyber threats.</p>
             </div>
         </div>
-        <div class="hns-faq-item">
-            <h3 class="hns-faq-question">What is the cost of your service?</h3>
-            <div class="hns-faq-answer">
+        <div class="specific-service-faq-item">
+            <h3 class="specific-service-faq-question">What is the cost of your service?</h3>
+            <div class="specific-service-faq-answer">
                 <p>Our pricing is based on the specific needs of your home network. Contact us for a free consultation and estimate.</p>
             </div>
         </div>
-        <div class="hns-faq-item">
-            <h3 class="hns-faq-question">How often should my network security be updated?</h3>
-            <div class="hns-faq-answer">
+        <div class="specific-service-faq-item">
+            <h3 class="specific-service-faq-question">How often should my network security be updated?</h3>
+            <div class="specific-service-faq-answer">
                 <p>We recommend regular updates at least once every six months to ensure optimal security.</p>
             </div>
         </div>
-        <div class="hns-faq-item">
-            <h3 class="hns-faq-question">Do you offer ongoing monitoring services?</h3>
-            <div class="hns-faq-answer">
+        <div class="specific-service-faq-item">
+            <h3 class="specific-service-faq-question">Do you offer ongoing monitoring services?</h3>
+            <div class="specific-service-faq-answer">
                 <p>Yes, we offer 24/7 monitoring services to detect and prevent any potential threats in real time.</p>
             </div>
         </div>
-        <div class="hns-faq-item">
-            <h3 class="hns-faq-question">What happens if I experience an issue after setup?</h3>
-            <div class="hns-faq-answer">
+        <div class="specific-service-faq-item">
+            <h3 class="specific-service-faq-question">What happens if I experience an issue after setup?</h3>
+            <div class="specific-service-faq-answer">
                 <p>Our support team is always available to assist you with any issues or questions after setup.</p>
             </div>
         </div>
-        <div class="hns-faq-item">
-            <h3 class="hns-faq-question">Can you set up parental controls on my network?</h3>
-            <div class="hns-faq-answer">
+        <div class="specific-service-faq-item">
+            <h3 class="specific-service-faq-question">Can you set up parental controls on my network?</h3>
+            <div class="specific-service-faq-answer">
                 <p>Absolutely! We can configure parental controls to block inappropriate content and set usage limits.</p>
             </div>
         </div>
-        <div class="hns-faq-item">
-            <h3 class="hns-faq-question">Do you support remote workers?</h3>
-            <div class="hns-faq-answer">
+        <div class="specific-service-faq-item">
+            <h3 class="specific-service-faq-question">Do you support remote workers?</h3>
+            <div class="specific-service-faq-answer">
                 <p>Yes, we specialize in creating secure and reliable networks for professionals working from home.</p>
             </div>
         </div>
-        <div class="hns-faq-item">
-            <h3 class="hns-faq-question">What type of encryption do you use?</h3>
-            <div class="hns-faq-answer">
+        <div class="specific-service-faq-item">
+            <h3 class="specific-service-faq-question">What type of encryption do you use?</h3>
+            <div class="specific-service-faq-answer">
                 <p>We use industry-standard encryption protocols such as WPA3 to ensure your network remains secure.</p>
             </div>
         </div>
@@ -227,7 +191,7 @@
     <script>
         // FAQ Toggle Functionality
         document.addEventListener("DOMContentLoaded", function() {
-            const faqQuestions = document.querySelectorAll(".hns-faq-question");
+            const faqQuestions = document.querySelectorAll(".specific-service-faq-question");
     
             faqQuestions.forEach(question => {
                 question.addEventListener("click", () => {
@@ -247,9 +211,9 @@
         });
     </script>
 
-<section class="hns-cta-section">
+<section class="specific-service-cta-section">
     <h2>Ready to Secure Your Home?</h2>
-    <a href="contact.html" class="hns-cta-button">Contact Us Today</a>
+    <a href="contact.html" class="specific-service-cta-button">Contact Us Today</a>
 </section>
 <div id="footer-placeholder"></div>
 </body>

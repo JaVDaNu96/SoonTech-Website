@@ -1367,24 +1367,24 @@ a {
 /*///// HOME NETWORK SECURITY AND PROTECTION /////*/
 
 /* Hero Section */
-.hns-hero-section {
+.specific-service-hero-section {
     background: linear-gradient(135deg, #347e44, #b2d235);
     color: white;
     text-align: center;
     padding: 90px 20px;
 }
 
-.hns-hero-section h1 {
+.specific-service-hero-section h1 {
     font-size: 2.5rem;
     margin-bottom: 10px;
 }
 
-.hns-hero-section p {
+.specific-service-hero-section p {
     font-size: 1.2rem;
     margin-bottom: 35px;
 }
 
-.hns-cta-button {
+.specific-service-cta-button {
     background-color: #f7f7f7;
     color: #12222e;
     padding: 10px 20px;
@@ -1394,19 +1394,19 @@ a {
     transition: background-color 0.3s ease, color 0.3s ease;
 }
 
-.hns-cta-button:hover {
+.specific-service-cta-button:hover {
     background-color: #007bff;
     color: white;
 }
 
 /* Introduction Section */
-.hns-introduction {
+.specific-service-introduction {
     padding: 40px 20px;
     text-align: center;
     background-color: #f7f7f7;
 }
 
-.hns-introduction img {
+.specific-service-introduction img {
     width: 80%;
     max-width: 400px;
     margin-top: 20px;
@@ -1415,22 +1415,22 @@ a {
 }
 
 /* Key Features Section */
-.hns-key-features {
+.specific-service-key-features {
     padding: 40px 20px;
     text-align: center;
 }
 
-.hns-key-features h2 {
+.specific-service-key-features h2 {
     margin-bottom: 20px;
 }
 
-.hns-features-grid {
+.specific-service-features-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 20px;
 }
 
-.hns-feature {
+.specific-service-feature {
     background-color: #f7f7f7;
     border-radius: 8px;
     padding: 20px;
@@ -1439,25 +1439,25 @@ a {
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.hns-feature:hover {
+.specific-service-feature:hover {
     transform: translateY(-5px);
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
-.hns-feature img {
+.specific-service-feature img {
     width: 50px;
     height: 50px;
     margin-bottom: 10px;
 }
 
 /* How It Works Section */
-.hns-how-it-works {
+.specific-service-how-it-works {
     padding: 40px 20px;
     background-color: rgba(250, 247, 247, 0.979);
     text-align: center;
 }
 
-.hns-how-it-works h2 {
+.specific-service-how-it-works h2 {
     margin-bottom: 30px;
     font-size: 2rem;
     color: #12222e;
@@ -1525,14 +1525,14 @@ a {
 }
 
 /* Testimonials Section */
-.hns-testimonials {
+.specific-service-testimonials {
     padding: 40px 20px;
     background-color: #b2d235; /* Light green background */
     color: white;
     text-align: center;
 }
 
-.hns-testimonials h2 {
+.specific-service-testimonials h2 {
     font-size: 2rem;
     margin-bottom: 30px;
 }
@@ -1595,38 +1595,38 @@ a {
 }
 
 /* FAQs Section */
-.hns-faqs {
+.specific-service-faqs {
     padding: 40px 20px;
     background-color: #f7f7f7;
 }
 
-.hns-faqs h2 {
+.specific-service-faqs h2 {
     margin-bottom: 20px;
 }
 
-.hns-faq-item {
+.specific-service-faq-item {
     margin-bottom: 20px;
     border-bottom: 1px solid #ddd;
     padding-bottom: 15px;
 }
 
-.hns-faq-item h3 {
+.specific-service-faq-item h3 {
     margin-bottom: 10px;
 }
 
 /* Call to Action Section */
-.hns-cta-section {
+.specific-service-cta-section {
     background: linear-gradient(135deg, #33a1fd, #007bff);
     color: white;
     text-align: center;
     padding: 40px 20px;
 }
 
-.hns-cta-section h2 {
+.specific-service-cta-section h2 {
     margin-bottom: 20px;
 }
 
-.hns-cta-section .cta-button {
+.specific-service-cta-section .cta-button {
     background-color: white;
     color: #007bff;
     padding: 10px 20px;
@@ -1635,7 +1635,7 @@ a {
     transition: background-color 0.3s ease, color 0.3s ease;
 }
 
-.hns-cta-section .cta-button:hover {
+.specific-service-cta-section .cta-button:hover {
     background-color: #f7f7f7;
     color: #12222e;
 }
@@ -1651,7 +1651,7 @@ a {
     text-decoration: underline;
 }
 
-/* Other sections follow the same naming convention with "hns-" prefix. */
+/* Other sections follow the same naming convention with "specific-service-" prefix. */
 
 /*/////////////////////// SERVICES PAGE //////////////////*/
 /* Hero Section */
@@ -3186,7 +3186,7 @@ a {
 /*///// HOME NETWORK SECURITY AND PROTECTION /////*/
 
 /* Hero Section */
-.hns-hero-section {
+.specific-service-hero-section {
     position: relative;
     overflow: hidden;
     height: 100vh; /* Full viewport height */
@@ -3207,23 +3207,23 @@ a {
     z-index: -1; /* Places the video behind the content */
 }
 
-.hns-hero-content {
+.specific-service-hero-content {
     position: relative;
     z-index: 1; /* Ensures the content appears above the video */
 }
 
-.hns-hero-section h1 {
+.specific-service-hero-section h1 {
     font-size: 3rem;
     margin-bottom: 15px;
 }
 
-.hns-hero-section p {
+.specific-service-hero-section p {
     font-size: 1.5rem;
     margin-bottom: 20px;
     padding-bottom: 2rem;
 }
 
-.hns-cta-button {
+.specific-service-cta-button {
     background-color: #f7f7f7;
     color: #12222e;
     padding: 10px 20px;
@@ -3233,49 +3233,50 @@ a {
     transition: background-color 0.3s ease, color 0.3s ease;
 }
 
-.hns-cta-button:hover {
+.specific-service-cta-button:hover {
     background-color: #3a7c56;
     color: white;
 }
 
 /* Introduction Section */
-.hns-introduction {
-    padding: 60px 120px 60px;
+.specific-service-introduction {
+    margin: 5rem 0;
+    padding: 3rem 3rem 1rem 3rem;
     background-color: #ffffff; /* Light background */
 }
 
-.hns-intro-container {
+.specific-service-intro-container {
     display: flex;
     flex-wrap: wrap; /* Ensures responsiveness */
     align-items: center;
     gap: 50px; /* Space between columns */
 }
 
-.hns-intro-text {
+.specific-service-intro-text {
     flex: 1; /* Takes equal width with image */
     max-width: 600px;
     text-align: left;
 }
 
-.hns-intro-text h2 {
+.specific-service-intro-text h2 {
     font-size: 3rem;
     margin-bottom: 30px;
     color: #12222e;
 }
 
-.hns-intro-text p {
+.specific-service-intro-text p {
     font-size: 1.3rem;
     line-height: 1.6;
     color: #555;
 }
 
-.hns-intro-image {
+.specific-service-intro-image {
     flex: 1; /* Takes equal width with text */
     max-width: 600px;
     text-align: center; /* Center image for better alignment */
 }
 
-.hns-intro-image img {
+.specific-service-intro-image img {
     width: 100%; /* Image scales to column size */
     max-width: 600px;
     border-radius: 8px;
@@ -3284,34 +3285,34 @@ a {
 
 /* Responsive Design */
 @media (max-width: 768px) {
-    .hns-intro-container {
+    .specific-service-intro-container {
         flex-direction: column; /* Stack columns vertically */
     }
 
-    .hns-intro-text, .intro-image {
+    .specific-service-intro-text, .intro-image {
         max-width: 100%;
     }
 }
 
 /* Key Features Section */
-.hns-key-features {
+.specific-service-key-features {
     padding: 40px 120px 60px;
     text-align: center;
 }
 
-.hns-key-features h2 {
+.specific-service-key-features h2 {
     margin-bottom: 20px;
     font-size: 3rem;
     padding: 30px 30px;
 }
 
-.hns-features-grid {
+.specific-service-features-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 20px;
 }
 
-.hns-feature {
+.specific-service-feature {
     background-color: #f7f7f7;
     border-radius: 8px;
     padding: 20px;
@@ -3320,25 +3321,25 @@ a {
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.hns-feature:hover {
+.specific-service-feature:hover {
     transform: translateY(-5px);
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
-.hns-feature img {
+.specific-service-feature img {
     width: 50px;
     height: 50px;
     margin-bottom: 10px;
 }
 
 /* How It Works Section */
-.hns-how-it-works {
+.specific-service-how-it-works {
     padding: 40px 20px 60px;
     background-color: #ffffff;
     text-align: center;
 }
 
-.hns-how-it-works h2 {
+.specific-service-how-it-works h2 {
     margin-bottom: 40px;
     font-size: 3rem;
     color: #12222e;
@@ -3406,14 +3407,14 @@ a {
 }
 
 /* Testimonials Section */
-.hns-testimonials {
+.specific-service-testimonials {
     padding: 40px 20px;
     background-color: #12222e; /* Light green background */
     color: white;
     text-align: center;
 }
 
-.hns-testimonials h2 {
+.specific-service-testimonials h2 {
     font-size: 3rem;
     margin-bottom: 30px;
 }
@@ -3476,12 +3477,12 @@ a {
 }
 
 /* FAQs Section */
-.hns-faqs {
+.specific-service-faqs {
     padding: 40px 20px;
     background-color: #f7f7f7;
 }
 
-.hns-faqs h2 {
+.specific-service-faqs h2 {
     text-align: center;
     font-size: 3rem;
     margin-bottom: 30px;
@@ -3489,7 +3490,7 @@ a {
     color: #12222e;
 }
 
-.hns-faq-item {
+.specific-service-faq-item {
     margin-bottom: 20px;
     border-bottom: 1px solid #ddd;
     padding-bottom: 10px;
@@ -3497,22 +3498,22 @@ a {
     margin-right: 120px; /* Adds a discrete margin on the right */
 }
 
-.hns-faq-question {
+.specific-service-faq-question {
     font-size: 1.2rem;
     cursor: pointer;
     color: dimgrey;
     transition: color 0.3s ease;
 }
 
-.hns-faq-question:hover {
+.specific-service-faq-question:hover {
     color: black;
 }
 
-.hns-faq-question.active {
+.specific-service-faq-question.active {
     font-weight: bold;
 }
 
-.hns-faq-answer {
+.specific-service-faq-answer {
     display: none; /* Hidden by default */
     font-size: 1rem;
     color: #555;
@@ -3520,7 +3521,7 @@ a {
 }
 
 /* Call to Action Section */
-.hns-cta-section {
+.specific-service-cta-section {
     background: none;
     background-color: #12222e !important; /* Force the color */
     text-align: center;
@@ -3528,7 +3529,7 @@ a {
 }
 
 /* Title Styling */
-.hns-cta-section h2 {
+.specific-service-cta-section h2 {
     margin-bottom: 20px;
     font-size: 2.5rem;
     text-align: center;
@@ -3536,7 +3537,7 @@ a {
 }
 
 /* CTA Button */
-.hns-cta-section .hns-cta-button {
+.specific-service-cta-section .specific-service-cta-button {
     background-color: #ffffff;
     color: #000000;
     padding: 10px 20px;
@@ -3545,7 +3546,7 @@ a {
     transition: background-color 0.3s ease, color 0.3s ease;
 }
 
-.hns-cta-section .hns-cta-button:hover {
+.specific-service-cta-section .specific-service-cta-button:hover {
     background-color:#0f5015;
     color: #ffffff;
 }
@@ -3589,27 +3590,28 @@ a {
 .service-card {
     display: flex;
     width: 100%;
-    max-width: 800px;
-    background-color: #f9f9f9;
+    max-width: 90vw;
+    background-color: #ffffff;
     border: 1px solid #ddd;
     border-radius: 8px;
     overflow: hidden;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin: 2rem 5rem;
 }
 
 .service-image {
-    width: 20%;
+    width: 30vw;
 }
 
 .service-image img {
     width: 100%;
-    max-width: 300px;
+    max-width: 40vw;
     object-fit: cover;
 }
 
 .service-text {
     flex: 1;
-    padding: 1rem 0 0 5rem;
+    padding: 1rem 2rem 0 5rem;
     text-align: left;
 }
 
@@ -3620,9 +3622,11 @@ a {
 }
 
 .service-text p {
-    font-size: 1rem;
+    font-size: 1.1rem;
     margin-bottom: 15px;
     color: #555;
+    line-height: 1.5;
+    text-align: justify;
 }
 
 .service-text ul {
@@ -3630,12 +3634,14 @@ a {
     margin-left: 20px;
     margin-bottom: 15px;
     color: #555;
+    font-size: 1.1rem;
 }
 
 .read-more {
     text-decoration: none;
     color: #4da53b;
     font-weight: bold;
+    font-size: 1.1rem;
 }
 
 
@@ -3673,7 +3679,7 @@ a {
 
 /* Service Details */
 .service-details {
-    padding: 40px 20px;
+    padding: 5rem 4rem;
     background-color: #ffffff;
 }
 
@@ -3682,21 +3688,35 @@ a {
 }
 
 .detail-section h2 {
-    font-size: 1.8rem;
+    font-size: 1.5rem;
     margin-bottom: 10px;
     color: #12222e;
 }
 
 .detail-section p,
 .detail-section ul {
-    font-size: 1rem;
+    font-size: 1.1rem;
     color: #555;
+    padding: 0 4rem 0 0;
 }
 
 .detail-section ul {
     list-style-type: disc;
     margin-left: 20px;
 }
+
+.mit-image {
+    margin: 5rem 1rem;
+    width: 80vw;
+    height: 100%;
+}
+
+.mit-image img{
+    width: 100%;
+    max-width: 40vw;
+    object-fit: cover;
+}
+
 
 /* FAQ CTA */
 .faq-cta {
