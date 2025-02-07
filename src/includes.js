@@ -8,87 +8,73 @@ fetch('footer.html')
     .then(response => response.text())
     .then(data => document.getElementById('footer-placeholder').innerHTML = data);
 
-/////// SLIDER /////////
+/////// SLIDER & CONTENT TOGGLE /////////
 document.addEventListener('DOMContentLoaded', () => {
     const themeSlider = document.querySelector('.theme-slider');
     const indicator = document.querySelector('.slider-indicator');
     const labels = document.querySelectorAll('.slider-label');
+    const homeContents = document.querySelectorAll('.home-content');
+    const businessContents = document.querySelectorAll('.business-content');
 
+    function toggleContent(isHome) {
+        // Toggle Active State on Labels
+        labels.forEach(lbl => lbl.classList.remove('active'));
+        labels[isHome ? 0 : 1].classList.add('active');
+
+        // Update Indicator Position
+        indicator.style.left = isHome ? '0' : '120px';
+
+        // Toggle Content Visibility
+        homeContents.forEach(content => {
+            content.style.display = isHome ? 'block' : 'none';
+            content.classList.toggle('hidden', !isHome);
+        });
+
+        businessContents.forEach(content => {
+            content.style.display = isHome ? 'none' : 'block';
+            content.classList.toggle('hidden', isHome);
+        });
+    }
+
+    // Add click handlers to labels
     labels.forEach(label => {
         label.addEventListener('click', () => {
             const isHome = label.classList.contains('home');
-
-            // Toggle Active State on Labels
-            labels.forEach(lbl => lbl.classList.remove('active'));
-            label.classList.add('active');
-
-            // Update Indicator Position
-            indicator.style.left = isHome ? '0' : '120px';
-
-            // Additional: Trigger Content Change (Optional)
-            if (isHome) {
-                console.log('Switching to Home');
-                // Insert logic to display Home content
-            } else {
-                console.log('Switching to Business');
-                // Insert logic to display Business content
-            }
+            toggleContent(isHome);
         });
     });
+
+    // Initialize with home view
+    toggleContent(true);
 });
 
-// TOGGLE HERO CONTENT//
-
-document.addEventListener('DOMContentLoaded', () => {
-    const labels = document.querySelectorAll('.slider-label');
-    const homeContent = document.querySelector('.home-content');
-    const businessContent = document.querySelector('.business-content');
-
-    labels.forEach(label => {
-        label.addEventListener('click', () => {
-            const isHome = label.classList.contains('home');
-
-            // Toggle Active Content
-            if (isHome) {
-                homeContent.style.display = 'block';
-                homeContent.classList.remove('hidden');
-                businessContent.style.display = 'none';
-                businessContent.classList.add('hidden');
-            } else {
-                homeContent.style.display = 'none';
-                homeContent.classList.add('hidden');
-                businessContent.style.display = 'block';
-                businessContent.classList.remove('hidden');
-            }
-        });
-    });
-});
-
-// ABOUT US //
+// ABOUT US TABS //
 document.addEventListener("DOMContentLoaded", function() {
-    // Select all tab elements
     const tabs = document.querySelectorAll(".tab");
-    // Select all content elements
     const contentTexts = document.querySelectorAll(".content-text");
 
-    // Loop through each tab and add a click event listener
-    tabs.forEach(tab => {
-        tab.addEventListener("click", () => {
-            // Remove 'active' class from all tabs
-            tabs.forEach(t => t.classList.remove("active"));
-            // Add 'active' class to the clicked tab
-            tab.classList.add("active");
+    function initializeTabs(tabsContainer) {
+        const tabs = tabsContainer.querySelectorAll(".tab");
+        const contents = tabsContainer.querySelectorAll(".content-text");
 
-            // Hide all content sections
-            contentTexts.forEach(content => content.style.display = "none");
+        tabs.forEach(tab => {
+            tab.addEventListener("click", () => {
+                tabs.forEach(t => t.classList.remove("active"));
+                tab.classList.add("active");
 
-            // Show the selected content based on the data-content attribute
-            const selectedContent = tab.getAttribute("data-content");
-            document.getElementById(selectedContent).style.display = "block";
+                contents.forEach(content => content.style.display = "none");
+                const selectedContent = tab.getAttribute("data-content");
+                tabsContainer.querySelector(`#${selectedContent}`).style.display = "block";
+            });
         });
-    });
 
-    // Initial setup - Show the first content by default
-    tabs[0].classList.add("active"); // Make the first tab active
-    contentTexts[0].style.display = "block"; // Show the first content section
+        // Initial setup
+        tabs[0].classList.add("active");
+        contents[0].style.display = "block";
+    }
+
+    // Initialize tabs for both home and business sections
+    document.querySelectorAll('.about-section').forEach(section => {
+        initializeTabs(section);
+    });
 });

@@ -1,3 +1,11 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
 <header class="site-header">
     <div class="header-content">
         <!-- Left Section: Logo/Icon -->
@@ -54,20 +62,23 @@
 
         <!-- Language Selector and Account -->
         <div class="menu-right">
-            <img src="/Assets/Icons/globe-icon.png" alt="Language Selector Icon" class="language-icon">
-            <select class="language-selector">
-                <option>English</option>
-                <option>Francais</option>
-                <option>Español</option>
-            </select>
+            <div class="language-selector">
+                <i class="fas fa-globe"></i>
+                <select>
+                    <option value="en">English</option>
+                    <option value="es">Español</option>
+                </select>
+            </div>
         </div>
             
         <!-- Search Bar -->
         <div class="search-bar">
             <input type="text" placeholder="Search...">
             <button type="submit">
-                <img src="/Assets/Icons/search-icon.png" alt="Search Icon" class="search-icon">
+                <i class="fas fa-search"></i>
             </button>
         </div>
     </div>
 </header>
+</body>
+</html>
