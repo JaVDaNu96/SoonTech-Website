@@ -622,7 +622,7 @@ a {
 .about-section {
     background: linear-gradient(135deg, var(--primary-green), var(--secondary-green));
     color: var(--pure-white);
-    padding: 2rem 13rem;
+    padding: 2rem 10rem;
     display: flex;
     justify-content: center;
 }
