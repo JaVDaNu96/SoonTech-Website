@@ -334,13 +334,13 @@ a {
 
 .hero-image {
     flex: 1; /* Ocupa el 50% del espacio */
-    display: flex;
+    display: block;
     justify-content: left;
-    padding: 0 2rem;
+    padding: 10px 50px 20px;
 }
 
 .hero-image img {
-    padding-top: 6rem;
+    padding-top: 0;
     width: 100%; /* Asegura que la imagen se ajuste al 50% de la sección */
     max-width: 570px; /* Ajusta este valor según el diseño */
     object-fit: cover;
@@ -348,17 +348,17 @@ a {
 
 .hero-text {
     flex: 1; /* Ocupa el otro 50% del espacio */
-    max-width: 700px; /* Limita el ancho del contenido de texto */
+    max-width: 500px; /* Limita el ancho del contenido de texto */
     text-align: left;
 }
 
 .hero-text h1 {
-    font-size: 3em;  /* Ajusta el tamaño de fuente del h1 */
+    font-size: 3rem;  /* Ajusta el tamaño de fuente del h1 */
     color: #12222e;    /* Cambia el color del texto del h1 */
     font-weight: 700;
-    max-width: 600px;  /* Cambia el ancho máximo del h1 */
-    margin-bottom: 20px;
-    margin-top: 7%;
+    max-width: 700px;  /* Cambia el ancho máximo del h1 */
+    margin-bottom: 15px;
+    margin-top: 1%;
 }
 
 .hero-text p {
@@ -371,7 +371,7 @@ a {
 }
 
 .hero-text p1 {
-    font-size: 1.5em;  /* Ajusta el tamaño de fuente de los párrafos */
+    font-size: 1.2rem;  /* Ajusta el tamaño de fuente de los párrafos */
     color: #333333;    /* Cambia el color del texto de los párrafos */
     max-width: 450px;  /* Cambia el ancho máximo de los párrafos */
     line-height: 1.6;
@@ -507,7 +507,7 @@ a {
 /* Contenedor de la cuadrícula de servicios */
 .services-section-cards .services-grid {
     display: flex;
-    gap: 15px;
+    gap: 5px;
     justify-content: center;
     flex-wrap: nowrap; /* Prevent wrapping */
     padding: 0 20px;
@@ -519,9 +519,6 @@ a {
 .services-section-cards .service-card,
 .services-section-cards .business-content .service-card {
     position: relative;
-    width: 23%; /* Set to percentage for equal distribution */
-    min-width: 250px; /* Minimum width to maintain readability */
-    height: 380px;
     background-color: var(--pure-white);
     overflow: hidden;
     transition: transform 0.3s ease;
@@ -1712,15 +1709,13 @@ a {
 }
 
 .service-card {
-    padding: 1rem 2rem 2rem 2rem;
+    padding: 5rem 2rem 2rem 2rem;
     display: flex;
-    width: 100%;
-    max-width: 90vw;
+    max-width: 20vw;
+    min-height: auto;
     background-color: #ffffff;
-    border: 1px solid #ddd;
     border-radius: 8px;
     overflow: hidden;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 .service-image {
