@@ -1696,6 +1696,7 @@ a {
 }
 
 .services-hero p {
+    margin: 1rem 10rem;
     font-size: 1.2rem;
     color: #555;
 }
@@ -1732,6 +1733,7 @@ a {
 }
 
 .service-image {
+    margin: 2rem 0 1rem 0;
     width: 30vw;
 }
 
