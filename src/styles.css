@@ -787,7 +787,8 @@ a {
     justify-content: center;
     background-color: var(--pure-white); /* Light green background */
     color: white;
-    padding: 40px;
+    padding: 2rem auto;
+    margin: 3rem 7rem;
     border-radius: 8px;
 }
 
