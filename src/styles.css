@@ -853,7 +853,6 @@ a {
     width: 40px;
     height: 40px;
     margin-bottom: 10px;
-    filter: invert(100%); /* Inverts icon color to white */
 }
 
 .keyword p {
@@ -1704,12 +1703,24 @@ a {
 /* Services Overview */
 .services-overview {
     display: flex;
+    flex-direction: column;
+    align-items: center;
     flex-wrap: wrap;
     gap: 20px;
     padding: 3rem 2rem 1rem 5rem;
     background-color: #ffffff;
 }
 
+.services-overview .service-card {
+    padding: 1rem 2rem 2rem 2rem;
+    display: flex;
+    max-width: 70vw;
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
 .service-card {
     padding: 5rem 2rem 2rem 2rem;
     display: flex;
