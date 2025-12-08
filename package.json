@@ -1,0 +1,29 @@
+{
+  "name": "soontech-website",
+  "version": "1.0.0",
+  "description": "This is SoonTech Inc's website repo",
+  "main": "index.js",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JaVDaNu96/SoonTech-Website.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/JaVDaNu96/SoonTech-Website/issues"
+  },
+  "homepage": "https://github.com/JaVDaNu96/SoonTech-Website#readme",
+  "devDependencies": {
+    "sharp": "^0.34.5",
+    "vite": "^7.2.7",
+    "vite-plugin-html-inject": "^1.1.2"
+  }
+}
