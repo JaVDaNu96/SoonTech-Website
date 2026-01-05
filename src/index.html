@@ -1,514 +1,554 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SoonTech - IT & Cloud Services</title>
     <link href="https://fonts.googleapis.com/css2?family=Overpass:wght@300;400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="main.css">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
     <script src="includes.js" defer></script>
     <script src="filter.js" defer></script>
+    <script src="main.js" type="module" defer></script>
 </head>
+
 <body>
-    
+
     <!-- Header Section -->
     <div id="header-placeholder"></div>
     <!-- Page Version Slider  -->
-    <div class="theme-slider">
-        <span class="slider-label home active">Home</span>
-        <div class="slider-toggle">
-            <div class="slider-indicator"></div>
+    <div class="slider-container-wrapper">
+        <div class="theme-slider">
+            <span class="slider-label home active">Home</span>
+            <div class="slider-toggle">
+                <div class="slider-indicator"></div>
+            </div>
+            <span class="slider-label business">Business</span>
         </div>
-        <span class="slider-label business">Business</span>
-    </div> 
+    </div>
 
     <div class="content-wrapper">
         <div class="content home-content">
-        <!-- Hero Section - Home -->
-        <section class="hero-section">
-            <div class="hero-content">        
-                <div class="hero-image">
-                    <img src="Assets/Images/hero-image.jpg" alt="Hero Image">
-                </div>
-                <div class="hero-text">
-                    <h1>Tech Support That Feels Like Family</h1>
-                    <p class="hero-subtitle">Your Personal IT Team</p>
-                    <p1 class="hero-description">No more tech stress. Get expert help setting up, securing, and maintaining your home technology. Clear answers, fast solutions, and peace of mind.</p1>
-                    <div class="hero-buttons">
-                        <a href="#about" class="hero-button see-all-services">Get Started Today</a>
+            <!-- Hero Section - Home -->
+            <section class="hero-section">
+                <div class="hero-content">
+                    <div class="hero-image">
+                        <img src="Assets/Images/hero-image.jpg" alt="Hero Image">
+                    </div>
+                    <div class="hero-text">
+                        <h1>Tech Support That Feels Like Family</h1>
+                        <p class="hero-subtitle">Your Personal IT Team</p>
+                        <p1 class="hero-description">No more tech stress. Get expert help setting up, securing, and
+                            maintaining your home technology. Clear answers, fast solutions, and peace of mind.</p1>
+                        <div class="hero-buttons">
+                            <a href="contact-us.html" class="hero-button see-all-services">Get Started Today</a>
+                        </div>
                     </div>
                 </div>
-            </div>
 
-            <!-- Services Summary -->
-            <div class="services-section">
-                <div class="service-item">
-                    <h3>Quick Setup</h3>
-                    <p>Get your devices working perfectly from day one.</p>
+                <!-- Services Summary -->
+                <div class="services-section">
+                    <div class="service-item" data-title="Quick Setup"
+                        data-text="We provide expert assistance to get your devices running perfectly from day one, handling configuration, updates, and optimization.">
+                        <h3>Quick Setup</h3>
+                        <p>Get your devices working perfectly from day one.</p>
+                    </div>
+                    <div class="divider"></div>
+                    <div class="service-item" data-title="Smart Security"
+                        data-text="Comprehensive protection for your home network. We configure firewalls, secure Wi-Fi, and implement parental controls to keep your family safe.">
+                        <h3>Smart Security</h3>
+                        <p>Keep your family safe from digital threats.</p>
+                    </div>
+                    <div class="divider"></div>
+                    <div class="service-item" data-title="Easy Backup"
+                        data-text="Never lose a memory again. We set up automated cloud and local backups so your photos and documents are safe and recoverable.">
+                        <h3>Easy Backup</h3>
+                        <p>Never lose precious memories or important files.</p>
+                    </div>
+                    <div class="divider"></div>
+                    <div class="service-item" data-title="24/7 Support"
+                        data-text="Round-the-clock technical assistance. Whether it's a printer issue or a connectivity drop, our team is just a call or message away.">
+                        <h3>24/7 Support</h3>
+                        <p>Help is just one call away, anytime, anywhere.</p>
+                    </div>
                 </div>
-                <div class="divider"></div>
-                <div class="service-item">
-                    <h3>Smart Security</h3>
-                    <p>Keep your family safe from digital threats.</p>
-                </div>
-                <div class="divider"></div>
-                <div class="service-item">
-                    <h3>Easy Backup</h3>
-                    <p>Never lose precious memories or important files.</p>
-                </div>
-                <div class="divider"></div>
-                <div class="service-item">
-                    <h3>24/7 Support</h3>
-                    <p>Help is just one call away, anytime, anywhere.</p>
-                </div>
-            </div>
-        </section>
+            </section>
         </div>
 
         <div class="content business-content" style="display: none;">
-        <!-- Hero Section - Business -->
-        <section class="hero-section">
-            <div class="hero-content">        
-                <div class="hero-image">
-                    <img src="Assets/Images/hero-image.jpg" alt="Hero Image">
+            <!-- Hero Section - Business -->
+            <section class="hero-section">
+                <div class="hero-content">
+                    <div class="hero-image">
+                        <img src="Assets/Images/hero-image.jpg" alt="Hero Image">
+                    </div>
+                    <div class="hero-text">
+                        <h1>Enterprise IT, Small Business Budget</h1>
+                        <p class="hero-subtitle">Your Competitive Edge</p>
+                        <p1 class="hero-description">Stop worrying about technology and focus on growth. Get reliable IT
+                            support, robust security, and strategic guidance tailored to your business.</p1>
+                        <div class="hero-buttons">
+                            <a href="/services-business.html" class="hero-button see-all-services">Boost Your
+                                Business</a>
+                        </div>
+                    </div>
                 </div>
-                <div class="hero-text">
-                    <h1>Enterprise IT, Small Business Budget</h1>
-                    <p class="hero-subtitle">Your Competitive Edge</p>
-                    <p1 class="hero-description">Stop worrying about technology and focus on growth. Get reliable IT support, robust security, and strategic guidance tailored to your business.</p1>
-                    <div class="hero-buttons">
-                        <a href="/services-business.html" class="hero-button see-all-services">Boost Your Business</a>
+
+                <!-- Services Summary -->
+                <div class="services-section">
+                    <div class="service-item">
+                        <h3>Managed IT</h3>
+                        <p>Proactive support to prevent downtime.</p>
+                    </div>
+                    <div class="divider"></div>
+                    <div class="service-item">
+                        <h3>Cloud Solutions</h3>
+                        <p>Work from anywhere, securely.</p>
+                    </div>
+                    <div class="divider"></div>
+                    <div class="service-item">
+                        <h3>Cybersecurity</h3>
+                        <p>Enterprise-grade protection for your data.</p>
+                    </div>
+                    <div class="divider"></div>
+                    <div class="service-item">
+                        <h3>IT Strategy</h3>
+                        <p>Technology that drives growth.</p>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+
+    <!-- SERVICE SECTION HOME -->
+    <section class="services-section-cards home-content">
+        <div class="section-header">
+            <div class="header-left">
+                <p class="tagline">Smart Solutions for Modern Living</p>
+                <h2>Technology That Works For You, Not Against You</h2>
+            </div>
+            <div class="header-right">
+                <p class="description">Experience hassle-free technology at home and work. Our solutions keep you
+                    connected, protected, and productive in today's digital world.</p>
+            </div>
+        </div>
+
+        <div class="services-grid">
+            <div class="service-card">
+                <div class="card-content">
+                    <div class="icon">
+                        <img src="Assets/Icons/home-network-icon.png" alt="Network Security">
+                    </div>
+                    <h3>Smart & Secure Networks</h3>
+                    <p>Get lightning-fast, secure Wi-Fi throughout your home. Perfect for streaming, gaming, and remote
+                        work. We set up advanced security to protect every device on your network, from phones to smart
+                        home gadgets.</p>
+                    <a href="home-network-setup.html" class="details-link">Secure Your Network →</a>
+                </div>
+                <div class="card-footer">
+                    Fast, Safe, Reliable
+                </div>
+            </div>
+
+            <div class="service-card">
+                <div class="card-content">
+                    <div class="icon">
+                        <img src="Assets/Icons/troubleshoot-icon.png" alt="Device Setup">
+                    </div>
+                    <h3>Effortless Device Setup</h3>
+                    <p>From new laptops to smart home devices, we handle the setup so you don't have to. Get your
+                        devices working perfectly together, optimized for performance, and ready for daily use.</p>
+                    <a href="home-device-setup.html" class="details-link">Setup Made Easy →</a>
+                </div>
+                <div class="card-footer">
+                    Expert Configuration
+                </div>
+            </div>
+
+            <div class="service-card">
+                <div class="card-content">
+                    <div class="icon">
+                        <img src="Assets/Icons/data-recovery-icon.png" alt="Data Backup">
+                    </div>
+                    <h3>Smart Data Backup</h3>
+                    <p>Keep your memories and work safe. Automatic cloud backup for your photos, documents, and files.
+                        Quick recovery when you need it, and easy access from any device.</p>
+                    <a href="home-data-backup.html" class="details-link">Protect Your Data →</a>
+                </div>
+                <div class="card-footer">
+                    Peace of Mind
+                </div>
+            </div>
+
+            <div class="service-card">
+                <div class="card-content">
+                    <div class="icon">
+                        <img src="Assets/Icons/digital-helath-icon.png" alt="Digital Health">
+                    </div>
+                    <h3>Digital Wellness</h3>
+                    <p>Create a healthy digital environment at home. Smart parental controls, screen time management,
+                        and privacy protection for the whole family.</p>
+                    <a href="home-privacy-and-digital-health.html" class="details-link">Get Started →</a>
+                </div>
+                <div class="card-footer">
+                    Family-First Tech
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!--BUSINESS SERVICES SECTION-->
+    <section class="services-section-cards business-content" style="display: none;">
+        <div class="section-header">
+            <div class="header-left">
+                <p class="tagline">Enterprise Solutions, Small Business Agility</p>
+                <h2>Powering Business Growth Through Technology</h2>
+            </div>
+            <div class="header-right">
+                <p class="description">Transform your business with scalable IT solutions. We deliver enterprise-grade
+                    technology that fits your budget and drives growth.</p>
+            </div>
+        </div>
+
+        <div class="services-grid">
+            <div class="service-card">
+                <div class="card-content">
+                    <div class="icon">
+                        <img src="Assets/Icons/managed-it-icon.png" alt="Managed IT">
+                    </div>
+                    <h3>Managed IT Services</h3>
+                    <p>Complete IT management that keeps your business running smoothly. 24/7 monitoring, maintenance,
+                        and support for all your technology needs.</p>
+                    <a href="managed-IT.html" class="details-link">Explore IT Solutions →</a>
+                </div>
+                <div class="card-footer">
+                    Proactive Support
+                </div>
+            </div>
+
+            <div class="service-card">
+                <div class="card-content">
+                    <div class="icon">
+                        <img src="Assets/Icons/cloud-icon.png" alt="Cloud Solutions">
+                    </div>
+                    <h3>Cloud Solutions</h3>
+                    <p>Secure cloud services that scale with your business. Access your data anywhere, collaborate
+                        efficiently, and reduce IT costs.</p>
+                    <a href="business-MIT-cloud-services.html" class="details-link">Go Cloud →</a>
+                </div>
+                <div class="card-footer">
+                    Future-Ready
+                </div>
+            </div>
+
+            <div class="service-card">
+                <div class="card-content">
+                    <div class="icon">
+                        <img src="Assets/Icons/security-icon.png" alt="Cybersecurity">
+                    </div>
+                    <h3>Business Security</h3>
+                    <p>Enterprise-grade protection for your business data. Advanced threat detection, secure networks,
+                        and compliance management.</p>
+                    <a href="cybersecurity.html" class="details-link">Secure Your Business →</a>
+                </div>
+                <div class="card-footer">
+                    Total Protection
+                </div>
+            </div>
+
+            <div class="service-card">
+                <div class="card-content">
+                    <div class="icon">
+                        <img src="Assets/Icons/consulting-icon.png" alt="IT Consulting">
+                    </div>
+                    <h3>IT Strategy & Consulting</h3>
+                    <p>Strategic technology planning that aligns with your business goals. Expert guidance for digital
+                        transformation and growth.</p>
+                    <a href="business-MIT-network-management.html" class="details-link">Plan Your Growth →</a>
+                </div>
+                <div class="card-footer">
+                    Strategic Growth
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--WE VISSION MISION STRATEGY-->
+
+    <section class="about-section home-content">
+        <div class="about-content">
+            <!-- Left Side: Text Content -->
+            <div class="about-text">
+                <!-- Header Section -->
+                <div class="header">
+                    <h3>Your Tech Partner</h3>
+                    <h1>Making Technology Work For You</h1>
+                </div>
+                <!-- Tabs Section -->
+                <div class="tabs">
+                    <div class="tab" data-content="mission">
+                        <h4>Mission</h4>
+                    </div>
+                    <div class="tab" data-content="vision">
+                        <h4>Vision</h4>
+                    </div>
+                    <div class="tab" data-content="strategy">
+                        <h4>Strategy</h4>
+                    </div>
+                </div>
+                <!-- Content Section -->
+                <div class="content">
+                    <p id="mission" class="content-text">To make technology simple, secure, and accessible for every
+                        home and business.</p>
+                    <p id="vision" class="content-text">To be your trusted tech partner, delivering solutions that
+                        enhance daily life and business success.</p>
+                    <p id="strategy" class="content-text">We combine expertise with personalized service to solve your
+                        unique tech challenges.</p>
+                </div>
+                <!-- Contact Information -->
+                <div class="contact-info">
+                    <p>Call us for inquiry: Monday to Friday: 9 am – 5 pm</p>
+                    <div class="contact-phone">
+                        <img src="Assets/Icons/contact-info.png" alt="Contact Icon" class="contact-icon">
+                        <span>+1 (778) 862 4365</span>
                     </div>
                 </div>
             </div>
+            <!-- Right Side: Image -->
+            <div class="about-image">
+                <img src="Assets/Images/about-us.jpg" alt="About Us Image">
+            </div>
+            <!-- Insert video -->
+            <video class="video-player" autoplay loop muted>
+                <source src="Assets/Videos/video-AboutUs.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+    </section>
 
-            <!-- Services Summary -->
-            <div class="services-section">
-                <div class="service-item">
-                    <h3>Managed IT</h3>
-                    <p>Proactive support to prevent downtime.</p>
+    <section class="about-section business-content" style="display: none;">
+        <div class="about-content">
+            <div class="about-text">
+                <div class="header">
+                    <h3>Enterprise Solutions for Growing Businesses</h3>
+                    <h1>Technology That Drives Success</h1>
                 </div>
-                <div class="divider"></div>
-                <div class="service-item">
-                    <h3>Cloud Solutions</h3>
-                    <p>Work from anywhere, securely.</p>
+                <div class="tabs">
+                    <div class="tab" data-content="mission">
+                        <h4>Mission</h4>
+                    </div>
+                    <div class="tab" data-content="vision">
+                        <h4>Vision</h4>
+                    </div>
+                    <div class="tab" data-content="strategy">
+                        <h4>Strategy</h4>
+                    </div>
                 </div>
-                <div class="divider"></div>
-                <div class="service-item">
-                    <h3>Cybersecurity</h3>
-                    <p>Enterprise-grade protection for your data.</p>
+                <div class="content">
+                    <p id="mission" class="content-text">To empower businesses with enterprise-grade IT solutions that
+                        drive growth and innovation.</p>
+                    <p id="vision" class="content-text">To be the leading technology partner for forward-thinking
+                        businesses, enabling their digital transformation.</p>
+                    <p id="strategy" class="content-text">We deliver scalable solutions and strategic guidance to help
+                        businesses thrive in the digital age.</p>
                 </div>
-                <div class="divider"></div>
-                <div class="service-item">
-                    <h3>IT Strategy</h3>
-                    <p>Technology that drives growth.</p>
+                <div class="contact-info">
+                    <p>Business Support Hours: 24/7</p>
+                    <div class="contact-phone">
+                        <img src="Assets/Icons/contact-info.png" alt="Contact Icon" class="contact-icon">
+                        <span>+1 (778) 862 4365</span>
+                    </div>
                 </div>
             </div>
-        </section>
+            <div class="about-image">
+                <img src="Assets/Images/about-us-business.jpg" alt="Business Solutions">
+            </div>
+            <video class="video-player" autoplay loop muted>
+                <source src="Assets/Videos/video-AboutUs-business.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+    </section>
+
+    <!-- WHY CHOOSE US SECTION -->
+    <section class="why-choose-us home-content">
+        <div class="choose-us-content">
+            <div class="choose-us-text">
+                <!-- Header Section -->
+                <div class="header">
+                    <h1>The SoonTech Difference</h1>
+                </div>
+                <p class="choose-us-message">
+                    We make tech simple. From home setups to business solutions, we deliver reliable service with a
+                    personal touch.
+                    Expert support when you need it, and proactive care to prevent issues before they happen.
+                </p>
+                <div class="keywords">
+                    <div class="keyword">
+                        <h4>Reliability</h4>
+                        <img src="Assets/Icons/reliability-icon.png" alt="Reliability Icon" class="keyword-icon">
+                        <p>Always there when you need us. Fast response times and solutions that last.</p>
+                    </div>
+                    <div class="keyword">
+                        <h4>Innovation</h4>
+                        <img src="Assets/Icons/innovation-icon.png" alt="Innovation Icon" class="keyword-icon">
+                        <p>Smart solutions that grow with you. Latest tech made simple and accessible.</p>
+                    </div>
+                    <div class="keyword">
+                        <h4>Security</h4>
+                        <img src="Assets/Icons/security-icon.png" alt="Security Icon" class="keyword-icon">
+                        <p>Your safety first. Advanced protection for your family and business.</p>
+                    </div>
+                    <div class="keyword">
+                        <h4>Support</h4>
+                        <img src="Assets/Icons/support-icon.png" alt="Support Icon" class="keyword-icon">
+                        <p>24/7 expert help. Clear communication and quick solutions.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="why-choose-us business-content" style="display: none;">
+        <div class="choose-us-content">
+            <div class="choose-us-text">
+                <div class="header">
+                    <h1>Your Business Technology Partner</h1>
+                </div>
+                <p class="choose-us-message">
+                    We understand business. Our enterprise-grade solutions are tailored to your scale and budget,
+                    helping you compete and grow in today's digital marketplace.
+                </p>
+                <div class="keywords">
+                    <div class="keyword">
+                        <h4>Reliability</h4>
+                        <img src="Assets/Icons/reliability-icon.png" alt="Reliability Icon" class="keyword-icon">
+                        <p>99.9% uptime guarantee. Maximum productivity, minimum disruption.</p>
+                    </div>
+                    <div class="keyword">
+                        <h4>Innovation</h4>
+                        <img src="Assets/Icons/innovation-icon.png" alt="Innovation Icon" class="keyword-icon">
+                        <p>Future-proof solutions that scale with your business growth.</p>
+                    </div>
+                    <div class="keyword">
+                        <h4>Security</h4>
+                        <img src="Assets/Icons/security-icon.png" alt="Security Icon" class="keyword-icon">
+                        <p>Enterprise-grade protection for your business assets and data.</p>
+                    </div>
+                    <div class="keyword">
+                        <h4>Support</h4>
+                        <img src="Assets/Icons/support-icon.png" alt="Support Icon" class="keyword-icon">
+                        <p>24/7 dedicated IT support and rapid response times.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--End Why Choose US-->
+
+
+    <!-- LATEST NEWS & INSIGHTS SECTION -->
+    <section class="news-insights home-content">
+        <h2>Tech Tips & Updates</h2>
+        <p class="impact-text">
+            Quick tips and smart insights to help you get more from your tech. Stay safe, work smarter, and enjoy your
+            digital life.
+        </p>
+        <div class="news-grid">
+            <!-- News Item 1: Home Security -->
+            <div class="news-item">
+                <a href="/blog/home-network-security" class="news-image-link">
+                    <img src="Assets/Images/cybersecurity.jpg" alt="Home Security Tips" class="news-image">
+                </a>
+                <p class="category">Home Security</p>
+                <a href="/blog/home-network-security" class="news-title-link">
+                    <h3 class="news-title">3 Simple Steps to Secure Your Home Network Today</h3>
+                </a>
+                <a href="/blog/home-network-security" class="read-more">Learn How →</a>
+            </div>
+
+            <!-- News Item 2: Smart Home -->
+            <div class="news-item">
+                <a href="/blog/smart-home-guide" class="news-image-link">
+                    <img src="Assets/Images/cloud-solutions.jpg" alt="Smart Home Guide" class="news-image">
+                </a>
+                <p class="category">Smart Home</p>
+                <a href="/blog/smart-home-guide" class="news-title-link">
+                    <h3 class="news-title">Setting Up Your First Smart Home: A Beginner's Guide</h3>
+                </a>
+                <a href="/blog/smart-home-guide" class="read-more">Get Started →</a>
+            </div>
+
+            <!-- News Item 3: Digital Wellness -->
+            <div class="news-item">
+                <a href="/blog/digital-wellness" class="news-image-link">
+                    <img src="Assets/Images/network-optimization.jpg" alt="Digital Wellness" class="news-image">
+                </a>
+                <p class="category">Digital Wellness</p>
+                <a href="/blog/digital-wellness" class="news-title-link">
+                    <h3 class="news-title">Family Screen Time: Finding the Right Balance</h3>
+                </a>
+                <a href="/blog/digital-wellness" class="read-more">Read Tips →</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="news-insights business-content" style="display: none;">
+        <h2>Business Insights</h2>
+        <p class="impact-text">
+            Strategic tech insights to drive your business forward. Stay competitive with our expert analysis and
+            implementation guides.
+        </p>
+        <div class="news-grid">
+            <!-- News Item 1: Business Security -->
+            <div class="news-item">
+                <a href="/blog/business-cybersecurity" class="news-image-link">
+                    <img src="Assets/Images/cybersecurity.jpg" alt="Business Security" class="news-image">
+                </a>
+                <p class="category">Cybersecurity</p>
+                <a href="/blog/business-cybersecurity" class="news-title-link">
+                    <h3 class="news-title">Protecting Your Business: Essential Cybersecurity Measures</h3>
+                </a>
+                <a href="/blog/business-cybersecurity" class="read-more">Secure Your Business →</a>
+            </div>
+
+            <!-- News Item 2: Cloud Solutions -->
+            <div class="news-item">
+                <a href="/blog/cloud-solutions" class="news-image-link">
+                    <img src="Assets/Images/cloud-solutions.jpg" alt="Cloud Solutions" class="news-image">
+                </a>
+                <p class="category">Cloud Computing</p>
+                <a href="/blog/cloud-solutions" class="news-title-link">
+                    <h3 class="news-title">Cloud Migration: A Step-by-Step Guide for SMBs</h3>
+                </a>
+                <a href="/blog/cloud-solutions" class="read-more">Transform Your Business →</a>
+            </div>
+
+            <!-- News Item 3: IT Management -->
+            <div class="news-item">
+                <a href="/blog/it-management" class="news-image-link">
+                    <img src="Assets/Images/network-optimization.jpg" alt="IT Management" class="news-image">
+                </a>
+                <p class="category">IT Strategy</p>
+                <a href="/blog/it-management" class="news-title-link">
+                    <h3 class="news-title">Maximizing ROI: Smart IT Investments for Small Business</h3>
+                </a>
+                <a href="/blog/it-management" class="read-more">Optimize Your IT →</a>
+            </div>
+        </div>
+    </section>
+    <div id="footer-placeholder"></div>
+
+    <!-- Service Modal -->
+    <div id="service-modal" class="modal-overlay hidden">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <h3 id="modal-title"></h3>
+            <p id="modal-text"></p>
         </div>
     </div>
-
-<!-- SERVICE SECTION HOME -->
-<section class="services-section-cards home-content">
-    <div class="section-header">
-        <div class="header-left">
-            <p class="tagline">Smart Solutions for Modern Living</p>
-            <h2>Technology That Works For You, Not Against You</h2>
-        </div>
-        <div class="header-right">
-            <p class="description">Experience hassle-free technology at home and work. Our solutions keep you connected, protected, and productive in today's digital world.</p>
-        </div>
-    </div>
-
-    <div class="services-grid">
-        <div class="service-card">
-            <div class="card-content">
-                <div class="icon">
-                    <img src="Assets/Icons/home-network-icon.png" alt="Network Security">
-                </div>
-                <h3>Smart & Secure Networks</h3>
-                <p>Get lightning-fast, secure Wi-Fi throughout your home. Perfect for streaming, gaming, and remote work. We set up advanced security to protect every device on your network, from phones to smart home gadgets.</p>
-                <a href="home-network-setup.html" class="details-link">Secure Your Network →</a>
-            </div>
-            <div class="card-footer">
-                Fast, Safe, Reliable
-            </div>   
-        </div>
-        
-        <div class="service-card">
-            <div class="card-content">
-                <div class="icon">
-                    <img src="Assets/Icons/troubleshoot-icon.png" alt="Device Setup">
-                </div>
-                <h3>Effortless Device Setup</h3>
-                <p>From new laptops to smart home devices, we handle the setup so you don't have to. Get your devices working perfectly together, optimized for performance, and ready for daily use.</p>
-                <a href="home-device-setup.html" class="details-link">Setup Made Easy →</a>
-            </div>
-            <div class="card-footer">
-                Expert Configuration
-            </div>
-        </div>
-        
-        <div class="service-card">
-            <div class="card-content">
-                <div class="icon">
-                    <img src="Assets/Icons/data-recovery-icon.png" alt="Data Backup">
-                </div>
-                <h3>Smart Data Backup</h3>
-                <p>Keep your memories and work safe. Automatic cloud backup for your photos, documents, and files. Quick recovery when you need it, and easy access from any device.</p>
-                <a href="home-data-backup.html" class="details-link">Protect Your Data →</a>
-            </div>
-            <div class="card-footer">
-                Peace of Mind
-            </div>
-        </div>
-        
-        <div class="service-card">
-            <div class="card-content">
-                <div class="icon">
-                    <img src="Assets/Icons/digital-helath-icon.png" alt="Digital Health">
-                </div>
-                <h3>Digital Wellness</h3>
-                <p>Create a healthy digital environment at home. Smart parental controls, screen time management, and privacy protection for the whole family.</p>
-                <a href="home-privacy-and-digital-health.html" class="details-link">Get Started →</a>
-            </div>
-            <div class="card-footer">
-                Family-First Tech
-            </div>
-        </div>
-
-    </div>
-</section>
-
-<!--BUSINESS SERVICES SECTION-->
-<section class="services-section-cards business-content" style="display: none;">
-    <div class="section-header">
-        <div class="header-left">
-            <p class="tagline">Enterprise Solutions, Small Business Agility</p>
-            <h2>Powering Business Growth Through Technology</h2>
-        </div>
-        <div class="header-right">
-            <p class="description">Transform your business with scalable IT solutions. We deliver enterprise-grade technology that fits your budget and drives growth.</p>
-        </div>
-    </div>
-
-    <div class="services-grid">
-        <div class="service-card">
-            <div class="card-content">
-                <div class="icon">
-                    <img src="Assets/Icons/managed-it-icon.png" alt="Managed IT">
-                </div>
-                <h3>Managed IT Services</h3>
-                <p>Complete IT management that keeps your business running smoothly. 24/7 monitoring, maintenance, and support for all your technology needs.</p>
-                <a href="managed-IT.html" class="details-link">Explore IT Solutions →</a>
-            </div>
-            <div class="card-footer">
-                Proactive Support
-            </div>   
-        </div>
-        
-        <div class="service-card">
-            <div class="card-content">
-                <div class="icon">
-                    <img src="Assets/Icons/cloud-icon.png" alt="Cloud Solutions">
-                </div>
-                <h3>Cloud Solutions</h3>
-                <p>Secure cloud services that scale with your business. Access your data anywhere, collaborate efficiently, and reduce IT costs.</p>
-                <a href="business-MIT-cloud-services.html" class="details-link">Go Cloud →</a>
-            </div>
-            <div class="card-footer">
-                Future-Ready
-            </div>
-        </div>
-        
-        <div class="service-card">
-            <div class="card-content">
-                <div class="icon">
-                    <img src="Assets/Icons/security-icon.png" alt="Cybersecurity">
-                </div>
-                <h3>Business Security</h3>
-                <p>Enterprise-grade protection for your business data. Advanced threat detection, secure networks, and compliance management.</p>
-                <a href="cybersecurity.html" class="details-link">Secure Your Business →</a>
-            </div>
-            <div class="card-footer">
-                Total Protection
-            </div>
-        </div>
-        
-        <div class="service-card">
-            <div class="card-content">
-                <div class="icon">
-                    <img src="Assets/Icons/consulting-icon.png" alt="IT Consulting">
-                </div>
-                <h3>IT Strategy & Consulting</h3>
-                <p>Strategic technology planning that aligns with your business goals. Expert guidance for digital transformation and growth.</p>
-                <a href="business-MIT-network-management.html" class="details-link">Plan Your Growth →</a>
-            </div>
-            <div class="card-footer">
-                Strategic Growth
-            </div>
-        </div>
-    </div>
-</section>
-
-<!--WE VISSION MISION STRATEGY-->
-
-<section class="about-section home-content">
-    <div class="about-content">
-        <!-- Left Side: Text Content -->
-        <div class="about-text">
-            <!-- Header Section -->
-            <div class="header">
-                <h3>Your Tech Partner</h3>
-                <h1>Making Technology Work For You</h1>
-            </div>
-            <!-- Tabs Section -->
-            <div class="tabs">
-                <div class="tab" data-content="mission">
-                    <h4>Mission</h4>
-                </div>
-                <div class="tab" data-content="vision">
-                    <h4>Vision</h4>
-                </div>
-                <div class="tab" data-content="strategy">
-                    <h4>Strategy</h4>
-                </div>
-            </div>
-            <!-- Content Section -->
-            <div class="content">
-                <p id="mission" class="content-text">To make technology simple, secure, and accessible for every home and business.</p>
-                <p id="vision" class="content-text">To be your trusted tech partner, delivering solutions that enhance daily life and business success.</p>
-                <p id="strategy" class="content-text">We combine expertise with personalized service to solve your unique tech challenges.</p>
-            </div>
-            <!-- Contact Information -->
-            <div class="contact-info">
-                <p>Call us for inquiry: Monday to Friday: 9 am – 5 pm</p>
-                <div class="contact-phone">
-                    <img src="Assets/Icons/contact-info.png" alt="Contact Icon" class="contact-icon">
-                    <span>+1 (778) 862 4365</span>
-                </div>
-            </div>
-        </div>
-        <!-- Right Side: Image -->
-        <div class="about-image">
-            <img src="Assets/Images/about-us.jpg" alt="About Us Image">
-        </div>
-        <!-- Insert video -->
-        <video class="video-player" autoplay loop muted>
-            <source src="Assets/Videos/video-AboutUs.mp4" type="video/mp4">
-            Your browser does not support the video tag.
-        </video>
-    </div>
-</section>
-
-<section class="about-section business-content" style="display: none;">
-    <div class="about-content">
-        <div class="about-text">
-            <div class="header">
-                <h3>Enterprise Solutions for Growing Businesses</h3>
-                <h1>Technology That Drives Success</h1>
-            </div>
-            <div class="tabs">
-                <div class="tab" data-content="mission">
-                    <h4>Mission</h4>
-                </div>
-                <div class="tab" data-content="vision">
-                    <h4>Vision</h4>
-                </div>
-                <div class="tab" data-content="strategy">
-                    <h4>Strategy</h4>
-                </div>
-            </div>
-            <div class="content">
-                <p id="mission" class="content-text">To empower businesses with enterprise-grade IT solutions that drive growth and innovation.</p>
-                <p id="vision" class="content-text">To be the leading technology partner for forward-thinking businesses, enabling their digital transformation.</p>
-                <p id="strategy" class="content-text">We deliver scalable solutions and strategic guidance to help businesses thrive in the digital age.</p>
-            </div>
-            <div class="contact-info">
-                <p>Business Support Hours: 24/7</p>
-                <div class="contact-phone">
-                    <img src="Assets/Icons/contact-info.png" alt="Contact Icon" class="contact-icon">
-                    <span>+1 (778) 862 4365</span>
-                </div>
-            </div>
-        </div>
-        <div class="about-image">
-            <img src="Assets/Images/about-us-business.jpg" alt="Business Solutions">
-        </div>
-        <video class="video-player" autoplay loop muted>
-            <source src="Assets/Videos/video-AboutUs-business.mp4" type="video/mp4">
-            Your browser does not support the video tag.
-        </video>
-    </div>
-</section>
-
-<!-- WHY CHOOSE US SECTION -->
-<section class="why-choose-us home-content">
-    <div class="choose-us-content">
-        <div class="choose-us-text">
-            <!-- Header Section -->
-            <div class="header">
-                <h1>The SoonTech Difference</h1>
-            </div>
-            <p class="choose-us-message">
-                We make tech simple. From home setups to business solutions, we deliver reliable service with a personal touch. 
-                Expert support when you need it, and proactive care to prevent issues before they happen.
-            </p>
-            <div class="keywords">
-                <div class="keyword">
-                    <h4>Reliability</h4>
-                    <img src="Assets/Icons/reliability-icon.png" alt="Reliability Icon" class="keyword-icon">
-                    <p>Always there when you need us. Fast response times and solutions that last.</p>
-                </div>
-                <div class="keyword">
-                    <h4>Innovation</h4>
-                    <img src="Assets/Icons/innovation-icon.png" alt="Innovation Icon" class="keyword-icon">
-                    <p>Smart solutions that grow with you. Latest tech made simple and accessible.</p>
-                </div>
-                <div class="keyword">
-                    <h4>Security</h4>
-                    <img src="Assets/Icons/security-icon.png" alt="Security Icon" class="keyword-icon">
-                    <p>Your safety first. Advanced protection for your family and business.</p>
-                </div>
-                <div class="keyword">
-                    <h4>Support</h4>
-                    <img src="Assets/Icons/support-icon.png" alt="Support Icon" class="keyword-icon">
-                    <p>24/7 expert help. Clear communication and quick solutions.</p>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-
-<section class="why-choose-us business-content" style="display: none;">
-    <div class="choose-us-content">
-        <div class="choose-us-text">
-            <div class="header">
-                <h1>Your Business Technology Partner</h1>
-            </div>
-            <p class="choose-us-message">
-                We understand business. Our enterprise-grade solutions are tailored to your scale and budget, 
-                helping you compete and grow in today's digital marketplace.
-            </p>
-            <div class="keywords">
-                <div class="keyword">
-                    <h4>Reliability</h4>
-                    <img src="Assets/Icons/reliability-icon.png" alt="Reliability Icon" class="keyword-icon">
-                    <p>99.9% uptime guarantee. Maximum productivity, minimum disruption.</p>
-                </div>
-                <div class="keyword">
-                    <h4>Innovation</h4>
-                    <img src="Assets/Icons/innovation-icon.png" alt="Innovation Icon" class="keyword-icon">
-                    <p>Future-proof solutions that scale with your business growth.</p>
-                </div>
-                <div class="keyword">
-                    <h4>Security</h4>
-                    <img src="Assets/Icons/security-icon.png" alt="Security Icon" class="keyword-icon">
-                    <p>Enterprise-grade protection for your business assets and data.</p>
-                </div>
-                <div class="keyword">
-                    <h4>Support</h4>
-                    <img src="Assets/Icons/support-icon.png" alt="Support Icon" class="keyword-icon">
-                    <p>24/7 dedicated IT support and rapid response times.</p>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-<!--End Why Choose US-->
-
-
-<!-- LATEST NEWS & INSIGHTS SECTION -->
-<section class="news-insights home-content">
-    <h2>Tech Tips & Updates</h2>
-    <p class="impact-text">
-        Quick tips and smart insights to help you get more from your tech. Stay safe, work smarter, and enjoy your digital life.
-    </p>
-    <div class="news-grid">
-        <!-- News Item 1: Home Security -->
-        <div class="news-item">
-            <a href="/blog/home-network-security" class="news-image-link">
-                <img src="Assets/Images/cybersecurity.jpg" alt="Home Security Tips" class="news-image">
-            </a>
-            <p class="category">Home Security</p>
-            <a href="/blog/home-network-security" class="news-title-link">
-                <h3 class="news-title">3 Simple Steps to Secure Your Home Network Today</h3>
-            </a>
-            <a href="/blog/home-network-security" class="read-more">Learn How →</a>
-        </div>
-
-        <!-- News Item 2: Smart Home -->
-        <div class="news-item">
-            <a href="/blog/smart-home-guide" class="news-image-link">
-                <img src="Assets/Images/cloud-solutions.jpg" alt="Smart Home Guide" class="news-image">
-            </a>
-            <p class="category">Smart Home</p>
-            <a href="/blog/smart-home-guide" class="news-title-link">
-                <h3 class="news-title">Setting Up Your First Smart Home: A Beginner's Guide</h3>
-            </a>
-            <a href="/blog/smart-home-guide" class="read-more">Get Started →</a>
-        </div>
-
-        <!-- News Item 3: Digital Wellness -->
-        <div class="news-item">
-            <a href="/blog/digital-wellness" class="news-image-link">
-                <img src="Assets/Images/network-optimization.jpg" alt="Digital Wellness" class="news-image">
-            </a>
-            <p class="category">Digital Wellness</p>
-            <a href="/blog/digital-wellness" class="news-title-link">
-                <h3 class="news-title">Family Screen Time: Finding the Right Balance</h3>
-            </a>
-            <a href="/blog/digital-wellness" class="read-more">Read Tips →</a>
-        </div>
-    </div>
-</section>
-
-<section class="news-insights business-content" style="display: none;">
-    <h2>Business Insights</h2>
-    <p class="impact-text">
-        Strategic tech insights to drive your business forward. Stay competitive with our expert analysis and implementation guides.
-    </p>
-    <div class="news-grid">
-        <!-- News Item 1: Business Security -->
-        <div class="news-item">
-            <a href="/blog/business-cybersecurity" class="news-image-link">
-                <img src="Assets/Images/cybersecurity.jpg" alt="Business Security" class="news-image">
-            </a>
-            <p class="category">Cybersecurity</p>
-            <a href="/blog/business-cybersecurity" class="news-title-link">
-                <h3 class="news-title">Protecting Your Business: Essential Cybersecurity Measures</h3>
-            </a>
-            <a href="/blog/business-cybersecurity" class="read-more">Secure Your Business →</a>
-        </div>
-
-        <!-- News Item 2: Cloud Solutions -->
-        <div class="news-item">
-            <a href="/blog/cloud-solutions" class="news-image-link">
-                <img src="Assets/Images/cloud-solutions.jpg" alt="Cloud Solutions" class="news-image">
-            </a>
-            <p class="category">Cloud Computing</p>
-            <a href="/blog/cloud-solutions" class="news-title-link">
-                <h3 class="news-title">Cloud Migration: A Step-by-Step Guide for SMBs</h3>
-            </a>
-            <a href="/blog/cloud-solutions" class="read-more">Transform Your Business →</a>
-        </div>
-
-        <!-- News Item 3: IT Management -->
-        <div class="news-item">
-            <a href="/blog/it-management" class="news-image-link">
-                <img src="Assets/Images/network-optimization.jpg" alt="IT Management" class="news-image">
-            </a>
-            <p class="category">IT Strategy</p>
-            <a href="/blog/it-management" class="news-title-link">
-                <h3 class="news-title">Maximizing ROI: Smart IT Investments for Small Business</h3>
-            </a>
-            <a href="/blog/it-management" class="read-more">Optimize Your IT →</a>
-        </div>
-    </div>
-</section>
-<div id="footer-placeholder"></div>
 </body>
+
 </html>
-
-

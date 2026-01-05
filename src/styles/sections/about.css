@@ -1,0 +1,241 @@
+/* ===================================================================== */
+/* ABOUT SECTION - Mission/Vision/Strategy Tabs & Video                 */
+/* ===================================================================== */
+
+/*////////// WE - MISION VISION STRATEGY //////////////////*/
+
+.about-section {
+    background: linear-gradient(135deg, var(--primary-green), var(--secondary-green));
+    color: var(--pure-white);
+    padding: 2rem 10rem;
+    display: flex;
+    justify-content: center;
+}
+
+.about-content {
+    display: flex;
+    align-items: center;
+    /* Vertically center both text card and video/image */
+    gap: 20px;
+    max-width: auto;
+    width: 100%;
+}
+
+/* Text Container - High Contrast Card Style */
+.about-text {
+    flex: 1;
+    background: #285a3b;
+    /* Primary Green - Brand Manual */
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* Header Styling - Pure White for Maximum Contrast */
+.header h3 {
+    padding-bottom: 5%;
+    font-size: 1rem;
+    color: #ffffff;
+    /* Pure White - Brand Manual */
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.about-text .header h1 {
+    padding-bottom: 2%;
+    font-size: 2.5rem;
+    width: 600px;
+    color: #ffffff !important;
+    /* Pure White - Brand Manual */
+    font-weight: 700;
+}
+
+.about-image {
+    flex: 1;
+    display: none;
+    /*image hide to insert video*/
+    align-items: center;
+    justify-content: center;
+}
+
+.video-player {
+    flex: 1;
+    width: 640px;
+    /* Adjust the width */
+    height: 400px;
+    /* Adjust the height */
+    border: transparent;
+    /* Optional: add a border */
+    border-radius: 8px;
+    /* Optional: rounded corners */
+}
+
+.about-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+/* Tabs Container - Refined Design */
+.tabs {
+    display: flex;
+    gap: 20px;
+    justify-content: left;
+    margin-bottom: 20px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    padding-bottom: 10px;
+}
+
+.tab {
+    cursor: pointer;
+    padding: 10px 15px;
+    position: relative;
+    transition: all 0.3s ease;
+}
+
+/* Inactive Tab Style - Semi-transparent White */
+.tab h4 {
+    color: rgba(255, 255, 255, 0.6);
+    /* Semi-transparent White */
+    font-size: 1.2rem;
+    font-weight: 400;
+    transition: color 0.3s ease;
+    margin: 0;
+}
+
+/* Tab Hover Effect */
+.tab:hover h4 {
+    color: #ffffff;
+    /* Pure White on hover */
+}
+
+/* Active Tab Style - Brand Lime Green */
+.tab.active h4 {
+    color: #b2d235;
+    /* Accent Lime - Brand Manual */
+    font-weight: 700;
+}
+
+/* Active Tab Indicator */
+.tab.active::after {
+    content: '';
+    position: absolute;
+    bottom: -11px;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background-color: #b2d235;
+    /* Accent Lime - Brand Manual */
+}
+
+.tab.selected {
+    font-weight: bold;
+}
+
+.tab-indicator {
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background-color: transparent;
+    transition: background-color 0.3s ease;
+}
+
+/* Content Text - Pure White for Readability */
+.content-text {
+    display: none;
+    text-align: left;
+    padding: 10px 0;
+    color: #ffffff;
+    /* Pure White - Brand Manual */
+    font-size: 1.125rem;
+    /* 18px for better readability */
+    line-height: 1.6;
+    font-weight: 300;
+}
+
+.content-text.active {
+    display: block;
+}
+
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .about-section {
+        padding: 2rem 1rem;
+    }
+
+    .about-text {
+        padding: 20px;
+        /* Reduced padding for mobile */
+    }
+
+    .about-text .header h1 {
+        width: 100%;
+        font-size: 2rem;
+    }
+
+    .about-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .about-image img {
+        max-width: 80%;
+        margin: 0 auto;
+    }
+
+    .tabs {
+        justify-content: center;
+    }
+
+    .content-text {
+        font-size: 1rem;
+    }
+}
+
+/* Contact Info Styling - Pure White */
+.contact-info {
+    padding-top: 0%;
+    margin-top: 30px;
+    text-align: left;
+    font-size: 16px;
+    color: #ffffff;
+    /* Pure White - Brand Manual */
+}
+
+.contact-phone {
+    display: flex;
+    align-items: center;
+    font-size: 30px;
+    font-weight: bold;
+    margin-top: 8px;
+    color: #ffffff;
+    /* Pure White - Brand Manual */
+}
+
+.contact-icon {
+    width: 40px;
+    height: 40px;
+    margin-right: 8px;
+    filter: invert(100%);
+    /* Inverts icon color to white, adjust if necessary */
+}
+
+/* Responsive Contact Info */
+@media (max-width: 768px) {
+    .contact-info {
+        text-align: center;
+    }
+
+    .contact-phone {
+        justify-content: center;
+    }
+}
+
+/*////////// END Mission-Vision-Strategy //////////////////*/

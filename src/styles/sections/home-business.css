@@ -1,0 +1,44 @@
+/* ===================================================================== */
+/* HOME/BUSINESS TOGGLE - Dynamic Content & Theme Slider                */
+/* ===================================================================== */
+
+/* ===================================================================== */
+/* SECTIONS - Page-Specific Section Styles                              */
+/* ===================================================================== */
+
+/*////////////////////////////////////////////////////////////////////////*/
+
+/*////////////////////////////// DYNAMIC CONTENT ////////////////////////////////*/
+.content-wrapper {
+    padding-top: 80px;
+    position: relative;
+    z-index: 1;
+}
+
+.content {
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.content.hidden {
+    opacity: 0;
+    transform: translateY(-20px);
+    pointer-events: none;
+    display: none;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #4da53b;
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 10px;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #33a1fd;
+}
+
+/*////////////////////////////////////////////////////////////////////////*/

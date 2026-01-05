@@ -1,0 +1,111 @@
+/* ===================================================================== */
+/* WHY CHOOSE US - Feature Grid & Icons                                  */
+/* ===================================================================== */
+
+/*////////// START WHY CHOOSE US //////////////////*/
+
+/* WHY CHOOSE US SECTION */
+.why-choose-us {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: var(--pure-white);
+    /* Light green background */
+    color: white;
+    padding: 2rem 7rem;
+    margin: 3rem 15rem;
+    border-radius: 8px;
+}
+
+.choose-us-content {
+    flex-direction: row-reverse;
+    /* Image on the left, text on the right */
+    gap: 20px;
+    max-width: 1200px;
+    width: 100%;
+}
+
+/* Center Side: Text Content */
+.choose-us-text {
+    flex: 1;
+    text-align: center;
+}
+
+.header h1 {
+    padding-bottom: 2%;
+    font-size: 4rem;
+    color: #000000;
+}
+
+.choose-us-message {
+    font-size: 1.3rem;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-bottom: 40px;
+    color: #555;
+}
+
+/* Keywords Section - 4x1 Grid Layout */
+.keywords {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    /* 2 columns */
+    grid-gap: 15px;
+    justify-items: center;
+}
+
+.keyword {
+    background-color: var(--pure-white);
+    padding: 15px;
+    border-radius: 8px;
+    width: 100%;
+    max-width: 250px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.keyword:hover {
+    transform: translateY(-10px);
+    /* Animation on hover */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+    /* Shadow effect on hover */
+}
+
+.keyword h4 {
+    color: #2c7313;
+    font-size: 1.3rem;
+    margin-bottom: 10px;
+}
+
+.keyword-icon {
+    width: 40px;
+    height: 40px;
+    margin-bottom: 10px;
+}
+
+.keyword p {
+    font-size: 1rem;
+    color: #3d3d3d;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .choose-us-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .choose-us-text {
+        text-align: center;
+    }
+
+    .keywords {
+        grid-template-columns: 1fr;
+        /* Stack keywords in one column on small screens */
+    }
+}
+
+/*////////// End Why Choose US //////////////////*/

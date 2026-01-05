@@ -1,42 +1,170 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SoonTech - IT & Cloud Services</title>
+    <title>Contact Us - SoonTech</title>
+    <meta name="description"
+        content="Get in touch with SoonTech for IT solutions, cloud services, and tech support. We respond within 24 hours.">
     <link href="https://fonts.googleapis.com/css2?family=Overpass:wght@300;400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
     <script src="includes.js" defer></script>
-    <script src="filter.js" defer></script>
+    <script type="module" src="js/contact.js"></script>
 </head>
+
 <body>
 
+    <!-- Header Section -->
     <div id="header-placeholder"></div>
 
     <!-- Contact Section -->
-    <section class="contact-form">
-        <h1>Contact Us</h1>
-        <p>We’d love to hear from you! Reach out to us with any inquiries or feedback.</p>
+    <section class="contact-section">
+        <div class="contact-wrapper">
+            <!-- Left Column: Contact Information -->
+            <div class="contact-info-panel">
+                <h1>Let's Start a Conversation</h1>
+                <p class="info-subtitle">Have a question or need assistance? We're here to help you succeed with the
+                    right technology solutions.</p>
 
-        <form action="/submit-form" method="POST">
-            <label for="name">Name</label>
-            <input type="text" id="name" name="name" required>
+                <!-- Contact Details -->
+                <div class="contact-details">
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone-alt"></i>
+                        </div>
+                        <div class="contact-text">
+                            <h3>Phone</h3>
+                            <p><a href="tel:+17788624365">+1 (778) 862-4365</a></p>
+                        </div>
+                    </div>
 
-            <label for="email">Email</label>
-            <input type="email" id="email" name="email" required>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="contact-text">
+                            <h3>Email</h3>
+                            <p><a href="mailto:info@soon-tech.com">info@soon-tech.com</a></p>
+                        </div>
+                    </div>
 
-            <label for="email">Teléfono</label>
-            <input type="phonenumber" id="phonenumber" name="phonenumber" required>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-clock"></i>
+                        </div>
+                        <div class="contact-text">
+                            <h3>Business Hours</h3>
+                            <p>Monday - Friday: 9:00 AM - 6:00 PM</p>
+                            <p>Saturday: 10:00 AM - 4:00 PM</p>
+                            <p>Sunday: Closed</p>
+                        </div>
+                    </div>
 
-            <label for="message">Message</label>
-            <textarea id="message" name="message" rows="5" required></textarea>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="contact-text">
+                            <h3>Location</h3>
+                            <p>1234 Business Ave</p>
+                            <p>Vancouver, BC</p>
+                        </div>
+                    </div>
+                </div>
 
-            <button type="submit">Send Message</button>
-        </form>
+                <!-- Trust Signal -->
+                <div class="trust-signal">
+                    <i class="fas fa-check-circle"></i>
+                    <div class="trust-text">
+                        <h4>Quick Response Guarantee</h4>
+                        <p>We respond to all inquiries within 24 hours</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Right Column: Contact Form -->
+            <div class="contact-form-panel">
+                <h2>Send Us a Message</h2>
+                <p class="form-subtitle">Fill out the form below and we'll get back to you as soon as possible.</p>
+
+                <form id="contactForm" class="contact-form">
+                    <!-- Name Input -->
+                    <div class="form-group">
+                        <label for="name">Full Name <span class="required">*</span></label>
+                        <input type="text" id="name" name="name" placeholder="John Doe" required>
+                    </div>
+
+                    <!-- Email Input -->
+                    <div class="form-group">
+                        <label for="email">Email Address <span class="required">*</span></label>
+                        <input type="email" id="email" name="email" placeholder="john@example.com" required>
+                    </div>
+
+                    <!-- Phone Input -->
+                    <div class="form-group">
+                        <label for="phone">Phone Number <span class="required">*</span></label>
+                        <input type="tel" id="phone" name="phone" placeholder="+1 (778) 862-4365" required>
+                    </div>
+
+                    <!-- Service Type Dropdown -->
+                    <div class="form-group">
+                        <label for="service-type">Service Interest <span class="required">*</span></label>
+                        <select id="service-type" name="service-type" required>
+                            <option value="">-- Select a Service --</option>
+
+                            <optgroup label="Home Services">
+                                <option value="home-quick-setup">Quick Setup & Support</option>
+                                <option value="home-smart-security">Smart Home Security</option>
+                                <option value="home-easy-backup">Easy Backup Solutions</option>
+                                <option value="home-digital-wellness">Digital Wellness</option>
+                            </optgroup>
+
+                            <optgroup label="Business Services">
+                                <option value="business-managed-it">Managed IT Services</option>
+                                <option value="business-cloud-solutions">Cloud Solutions</option>
+                                <option value="business-cybersecurity">Cybersecurity</option>
+                                <option value="business-it-strategy">IT Strategy & Consulting</option>
+                            </optgroup>
+
+                            <optgroup label="Other">
+                                <option value="other-general">General Inquiry</option>
+                                <option value="other-support">Technical Support</option>
+                            </optgroup>
+                        </select>
+                    </div>
+
+                    <!-- Message Textarea -->
+                    <div class="form-group">
+                        <label for="message">Message <span class="required">*</span></label>
+                        <textarea id="message" name="message" rows="6" placeholder="Tell us how we can help you..."
+                            required></textarea>
+                    </div>
+
+                    <!-- Submit Button -->
+                    <button type="submit" class="btn-submit">
+                        <i class="fas fa-paper-plane"></i>
+                        Send Message
+                    </button>
+                </form>
+
+                <!-- Success Message (Hidden by default) -->
+                <div id="success-message" class="success-message hidden">
+                    <div class="success-icon">
+                        <i class="fas fa-check-circle"></i>
+                    </div>
+                    <h3>Thank You!</h3>
+                    <p>Your message has been sent successfully. We'll get back to you within 24 hours.</p>
+                    <button id="send-another" class="btn-secondary">Send Another Message</button>
+                </div>
+            </div>
+        </div>
     </section>
 
+    <!-- Footer Section -->
     <div id="footer-placeholder"></div>
 
 </body>
+
 </html>

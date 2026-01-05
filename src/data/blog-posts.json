@@ -1,0 +1,156 @@
+[
+  {
+    "id": 15,
+    "title": "Manage your growth",
+    "category": "Business Growth",
+    "date": "2026-01-05",
+    "image": "Assets/Images/money.jpg",
+    "excerpt": "Discover how to successfully grow your business",
+    "content": "<p>Most entrepreneurs aim for growth, but often fail to put the necessary elements in place to handle a surge in business. See how you can plan and manage growth based on the market, the economy and your internal resources.<p>",
+    "readTime": "1 min",
+    "author": "Cristo"
+  },
+  {
+    "id": 14,
+    "title": "What’s next in AI: 7 trends to watch in 2026",
+    "category": "AI & Innovation",
+    "date": "2026-01-05",
+    "image": "Assets/Images/AI_Trends_2026.jpg",
+    "excerpt": "AI is entering a new phase, one defined by real-world impact.",
+    "content": "<p>Think about it: a year ago, we were discussing how ChatGPT wasn’t able to count the number of “r”s in “strawberry.” Reasoning models from Chinese frontier labs (like DeepSeek-R1) hadn’t taken the world by storm, and neither had open-source reasoning agents.</p><p>Claude’s dedicated coding agent didn’t exist yet. IBM’s Granite 3.0 had only just arrived. And the agent conversation was only beginning: MCP had just gained traction in the spring, with a notable endorsement from Sam Altman.</p> END",
+    "readTime": "2 min",
+    "author": "SoonTech Team"
+  },
+  {
+    "id": 1,
+    "title": "3 Simple Steps to Secure Your Home Network Today",
+    "category": "Cybersecurity",
+    "date": "2024-01-15",
+    "image": "Assets/Images/cybersecurity.jpg",
+    "excerpt": "Protect your family from digital threats with these essential security measures. Learn how to set up a secure home network in minutes.",
+    "content": "In today's connected world, securing your home network is more important than ever. This guide walks you through three essential steps: changing your router's default password, enabling WPA3 encryption, and setting up a guest network for visitors. These simple measures can dramatically improve your home's digital security.",
+    "readTime": "5 min",
+    "author": "SoonTech Team"
+  },
+  {
+    "id": 2,
+    "title": "How AI is Transforming Small Business Operations",
+    "category": "AI & Innovation",
+    "date": "2024-01-10",
+    "image": "Assets/Images/cloud-solutions.jpg",
+    "excerpt": "Discover how artificial intelligence is leveling the playing field for small businesses. Real-world examples and practical implementation tips.",
+    "content": "Artificial Intelligence is no longer just for tech giants. Small businesses are leveraging AI for customer service automation, inventory management, and predictive analytics. This article explores affordable AI tools that can help your business compete with larger competitors, including chatbots, automated scheduling systems, and smart analytics platforms.",
+    "readTime": "7 min",
+    "author": "SoonTech Team"
+  },
+  {
+    "id": 3,
+    "title": "Setting Up Your First Smart Home: A Beginner's Guide",
+    "category": "Smart Home",
+    "date": "2024-01-05",
+    "image": "Assets/Images/network-optimization.jpg",
+    "excerpt": "Transform your house into a smart home without breaking the bank. Step-by-step guide for beginners with product recommendations.",
+    "content": "Starting your smart home journey doesn't have to be overwhelming or expensive. This comprehensive guide covers the essentials: choosing a smart hub, selecting compatible devices, and setting up automation routines. We recommend starting with smart lighting and a voice assistant, then gradually expanding to thermostats, security cameras, and smart locks.",
+    "readTime": "8 min",
+    "author": "SoonTech Team"
+  },
+  {
+    "id": 4,
+    "title": "Cloud Migration: A Step-by-Step Guide for SMBs",
+    "category": "Business Growth",
+    "date": "2023-12-28",
+    "image": "Assets/Images/cloud-solutions.jpg",
+    "excerpt": "Move your business to the cloud with confidence. Learn the benefits, challenges, and best practices for a smooth transition.",
+    "content": "Cloud migration can seem daunting, but with proper planning, it's a game-changer for small and medium businesses. This guide covers assessing your current infrastructure, choosing the right cloud provider (AWS, Azure, or Google Cloud), planning your migration strategy, and ensuring data security throughout the process. We also discuss cost optimization and common pitfalls to avoid.",
+    "readTime": "10 min",
+    "author": "SoonTech Team"
+  },
+  {
+    "id": 5,
+    "title": "Protecting Your Business: Essential Cybersecurity Measures",
+    "category": "Cybersecurity",
+    "date": "2023-12-20",
+    "image": "Assets/Images/cybersecurity.jpg",
+    "excerpt": "Enterprise-grade security doesn't require an enterprise budget. Implement these critical security measures to protect your business data.",
+    "content": "Cybersecurity threats are evolving, and small businesses are increasingly targeted. This article outlines essential security measures every business should implement: multi-factor authentication, regular security audits, employee training programs, encrypted backups, and incident response plans. We also cover compliance requirements (GDPR, HIPAA) and how to choose the right security tools for your budget.",
+    "readTime": "9 min",
+    "author": "SoonTech Team"
+  },
+  {
+    "id": 6,
+    "title": "Mastering Remote Work: Tech Tools for Productivity",
+    "category": "Tech Tutorials",
+    "date": "2023-12-15",
+    "image": "Assets/Images/network-optimization.jpg",
+    "excerpt": "Work from anywhere with the right tools. Our curated list of essential apps and services for remote teams.",
+    "content": "Remote work is here to stay, and having the right technology stack is crucial for productivity. This tutorial covers video conferencing best practices (Zoom, Teams, Google Meet), project management tools (Asana, Trello, Monday.com), secure file sharing (Dropbox, OneDrive, Google Drive), and communication platforms (Slack, Discord). We also discuss VPN setup for secure remote access and time management techniques.",
+    "readTime": "6 min",
+    "author": "SoonTech Team"
+  },
+  {
+    "id": 7,
+    "title": "5 Ways AI Can Boost Your Marketing ROI",
+    "category": "AI & Innovation",
+    "date": "2023-12-10",
+    "image": "Assets/Images/cloud-solutions.jpg",
+    "excerpt": "Leverage artificial intelligence to supercharge your marketing efforts. Practical strategies with measurable results.",
+    "content": "AI-powered marketing tools are revolutionizing how businesses reach and engage customers. This article explores five proven strategies: personalized email campaigns using AI segmentation, chatbots for 24/7 customer engagement, predictive analytics for campaign optimization, automated content creation, and AI-driven ad targeting. Each strategy includes real-world case studies and ROI metrics.",
+    "readTime": "8 min",
+    "author": "SoonTech Team"
+  },
+  {
+    "id": 8,
+    "title": "Family Screen Time: Finding the Right Balance",
+    "category": "Smart Home",
+    "date": "2023-12-05",
+    "image": "Assets/Images/network-optimization.jpg",
+    "excerpt": "Create a healthy digital environment for your family. Practical tips for managing screen time and online safety.",
+    "content": "Balancing technology use in the modern family is challenging but essential. This guide provides actionable strategies: setting up parental controls on devices and routers, creating tech-free zones and times, using screen time tracking apps, and having open conversations about online safety. We also cover age-appropriate content filtering and how to model healthy tech habits as parents.",
+    "readTime": "7 min",
+    "author": "SoonTech Team"
+  },
+  {
+    "id": 9,
+    "title": "Maximizing ROI: Smart IT Investments for Small Business",
+    "category": "Business Growth",
+    "date": "2023-11-28",
+    "image": "Assets/Images/cybersecurity.jpg",
+    "excerpt": "Make every IT dollar count. Strategic technology investments that drive real business growth and efficiency.",
+    "content": "Small businesses must be strategic with IT spending. This article helps you prioritize investments that deliver the highest ROI: cloud infrastructure for scalability, cybersecurity to prevent costly breaches, automation tools to reduce labor costs, and customer relationship management (CRM) systems to boost sales. We provide a framework for evaluating technology investments and measuring their impact on your bottom line.",
+    "readTime": "9 min",
+    "author": "SoonTech Team"
+  },
+  {
+    "id": 10,
+    "title": "WiFi Troubleshooting: Fix Common Connection Issues",
+    "category": "Tech Tutorials",
+    "date": "2023-11-20",
+    "image": "Assets/Images/network-optimization.jpg",
+    "excerpt": "Slow internet? Dead zones? Learn how to diagnose and fix the most common WiFi problems yourself.",
+    "content": "WiFi issues are frustrating, but most can be resolved without calling a technician. This comprehensive troubleshooting guide covers: identifying interference sources, optimal router placement, channel selection, firmware updates, and when to upgrade your equipment. We also explain the difference between 2.4GHz and 5GHz bands, how to use WiFi analyzers, and tips for extending coverage with mesh systems or range extenders.",
+    "readTime": "6 min",
+    "author": "SoonTech Team"
+  },
+  {
+    "id": 11,
+    "title": "The Future of Work: AI-Powered Collaboration Tools",
+    "category": "AI & Innovation",
+    "date": "2023-11-15",
+    "image": "Assets/Images/cloud-solutions.jpg",
+    "excerpt": "Explore next-generation collaboration platforms that use AI to enhance team productivity and creativity.",
+    "content": "The workplace is evolving, and AI-powered collaboration tools are leading the charge. This article examines emerging platforms that use machine learning for smart scheduling, automated meeting summaries, real-time translation, and intelligent task prioritization. We review tools like Microsoft 365 Copilot, Google Workspace AI features, Notion AI, and specialized platforms for design teams, developers, and content creators.",
+    "readTime": "8 min",
+    "author": "SoonTech Team"
+  },
+  {
+    "id": 12,
+    "title": "Data Backup Strategies: Never Lose Your Files Again",
+    "category": "Cybersecurity",
+    "date": "2023-11-10",
+    "image": "Assets/Images/cybersecurity.jpg",
+    "excerpt": "Implement the 3-2-1 backup rule and protect your precious data from loss, theft, or ransomware attacks.",
+    "content": "Data loss can be devastating, whether it's family photos or critical business documents. This guide explains the 3-2-1 backup strategy: 3 copies of your data, on 2 different media types, with 1 copy offsite. We compare cloud backup services (Backblaze, Carbonite, iDrive), local backup solutions (external drives, NAS devices), and hybrid approaches. The article also covers backup automation, encryption, and testing your recovery process.",
+    "readTime": "7 min",
+    "author": "SoonTech Team"
+  }
+]

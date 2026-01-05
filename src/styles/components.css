@@ -1,0 +1,339 @@
+/* ===================================================================== */
+/* COMPONENTS - Reusable UI Components                                  */
+/* ===================================================================== */
+
+/* Contact Form Components */
+.contact-section {
+    padding: 8rem 2rem 5rem 2rem;
+    background: linear-gradient(135deg, #f8f9fa 0%, #ffffff 100%);
+    min-height: 100vh;
+    margin-top: 80px;
+}
+
+.contact-container {
+    max-width: 700px;
+    margin: 0 auto;
+    background: var(--pure-white);
+    padding: 3rem;
+    border-radius: 15px;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+}
+
+.contact-header {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.contact-header h1 {
+    font-size: 2.5rem;
+    color: #285a3b;
+    margin-bottom: 1rem;
+    font-weight: 700;
+}
+
+.contact-subtitle {
+    font-size: 1.1rem;
+    color: #666;
+    line-height: 1.6;
+}
+
+.contact-form {
+    width: 100%;
+}
+
+.form-group {
+    margin-bottom: 1.5rem;
+}
+
+.form-group label {
+    display: block;
+    font-size: 1rem;
+    font-weight: 600;
+    color: #285a3b;
+    margin-bottom: 0.5rem;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 0.9rem 1.2rem;
+    font-size: 1rem;
+    font-family: 'Overpass', sans-serif;
+    border: 2px solid #e0e0e0;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+    background-color: #fafafa;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    outline: none;
+    border-color: #94b64c;
+    background-color: var(--pure-white);
+    box-shadow: 0 0 0 3px rgba(148, 182, 76, 0.1);
+}
+
+.form-group input::placeholder,
+.form-group textarea::placeholder {
+    color: #999;
+}
+
+.form-group textarea {
+    resize: vertical;
+    min-height: 120px;
+}
+
+.btn-submit {
+    width: 100%;
+    padding: 1rem 2rem;
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: var(--pure-white);
+    background: linear-gradient(135deg, #285a3b 0%, #1f4a2e 100%);
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.8rem;
+    margin-top: 2rem;
+    box-shadow: 0 4px 15px rgba(40, 90, 59, 0.3);
+}
+
+.btn-submit:hover {
+    background: linear-gradient(135deg, #94b64c 0%, #7a9a3e 100%);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(148, 182, 76, 0.4);
+}
+
+.btn-submit:active {
+    transform: translateY(0);
+    box-shadow: 0 2px 10px rgba(40, 90, 59, 0.3);
+}
+
+.btn-submit i {
+    font-size: 1.2rem;
+}
+
+/* Topic Suggestions */
+.topic-suggestions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+.topic-btn {
+    background: none;
+    border: 2px solid #285a3b;
+    color: #285a3b;
+    padding: 8px 15px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 0.9rem;
+    font-family: 'Overpass', sans-serif;
+    transition: all 0.3s ease;
+    font-weight: 500;
+    white-space: nowrap;
+}
+
+.topic-btn:hover {
+    background-color: #94b64c;
+    color: var(--pure-white);
+    border-color: #94b64c;
+    transform: translateY(-2px);
+    box-shadow: 0 2px 8px rgba(148, 182, 76, 0.3);
+}
+
+.topic-btn:active {
+    transform: translateY(0);
+    box-shadow: 0 1px 4px rgba(148, 182, 76, 0.2);
+}
+
+.topic-btn.selected {
+    background-color: #285a3b;
+    color: var(--pure-white);
+    border-color: #285a3b;
+}
+
+/* WhatsApp Float Button */
+.whatsapp-float {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 60px;
+    height: 60px;
+    background-color: #25d366;
+    color: var(--pure-white);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    box-shadow: 0 4px 15px rgba(37, 211, 102, 0.4);
+    z-index: 1000;
+    transition: all 0.3s ease;
+    text-decoration: none;
+}
+
+.whatsapp-float:hover {
+    background-color: #20ba5a;
+    transform: translateY(-5px) scale(1.1);
+    box-shadow: 0 6px 25px rgba(37, 211, 102, 0.6);
+}
+
+.whatsapp-float:active {
+    transform: translateY(-2px) scale(1.05);
+}
+
+.whatsapp-float i {
+    color: var(--pure-white);
+}
+
+@keyframes whatsapp-pulse {
+    0% {
+        box-shadow: 0 4px 15px rgba(37, 211, 102, 0.4);
+    }
+
+    50% {
+        box-shadow: 0 4px 15px rgba(37, 211, 102, 0.4), 0 0 0 10px rgba(37, 211, 102, 0.1);
+    }
+
+    100% {
+        box-shadow: 0 4px 15px rgba(37, 211, 102, 0.4);
+    }
+}
+
+.whatsapp-float {
+    animation: whatsapp-pulse 2s infinite;
+}
+
+/* ===================================================================== */
+/* MODAL SYSTEM - Service Details Modal                                 */
+/* ===================================================================== */
+
+/* Modal Overlay */
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 9999;
+    animation: fadeIn 0.3s ease;
+}
+
+/* Modal Content Container */
+.modal-content {
+    background: var(--pure-white);
+    padding: 30px;
+    border-radius: 15px;
+    max-width: 500px;
+    width: 90%;
+    position: relative;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
+    animation: slideIn 0.3s ease;
+}
+
+/* Close Button */
+.close-modal {
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    font-size: 2rem;
+    font-weight: 300;
+    color: #666;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    line-height: 1;
+}
+
+.close-modal:hover {
+    color: var(--primary-green);
+    transform: rotate(90deg);
+}
+
+/* Modal Title */
+#modal-title {
+    color: var(--primary-green);
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    margin-top: 0;
+    padding-right: 30px;
+    /* Space for close button */
+}
+
+/* Modal Text */
+#modal-text {
+    color: #555;
+    font-size: 1.1rem;
+    line-height: 1.7;
+    margin: 0;
+}
+
+/* Utility Class */
+.hidden {
+    display: none !important;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateY(-50px);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+/* Make service items clickable */
+.service-item {
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.service-item:hover {
+    transform: translateY(-3px);
+}
+
+/* Responsive Modal */
+@media (max-width: 768px) {
+    .modal-content {
+        padding: 25px;
+        max-width: 90%;
+    }
+
+    #modal-title {
+        font-size: 1.6rem;
+    }
+
+    #modal-text {
+        font-size: 1rem;
+    }
+
+    .close-modal {
+        font-size: 1.8rem;
+        top: 10px;
+        right: 15px;
+    }
+}

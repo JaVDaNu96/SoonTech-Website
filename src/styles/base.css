@@ -1,0 +1,21 @@
+/* ===================================================================== */
+/* BASE STYLES - Reset & Global Element Styling                         */
+/* ===================================================================== */
+
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Overpass', sans-serif;
+}
+
+a {
+    text-decoration: none;
+    /* Removes underline */
+    color: inherit;
+    /* Inherits color from the parent element */
+}

@@ -7,6 +7,8 @@
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview",
+    "manage-blog": "node scripts/manage-blog.js",
+    "new-post": "node scripts/create-post.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {

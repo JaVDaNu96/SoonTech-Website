@@ -1,77 +1,115 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SoonTech - IT & Cloud Services</title>
+    <title>SoonTech Insights - Tech Tips, Trends & Solutions</title>
     <link href="https://fonts.googleapis.com/css2?family=Overpass:wght@300;400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
     <script src="includes.js" defer></script>
-    <script src="filter.js" defer></script>
 </head>
+
 <body>
 
+    <!-- Header Section -->
     <div id="header-placeholder"></div>
 
-    <!-- Blog Section with Filters -->
-    <section class="blog">
-        <h1>Our Blog</h1>
-        <p>Explore our latest posts on various topics. Use the filters to find what you're looking for!</p>
-
-        <!-- Blog Filters -->
-        <div class="blog-filters">
-            <label for="filter-topic">Filter by Topic:</label>
-            <select id="filter-topic">
-                <option value="all">All</option>
-                <option value="activismo">Activismo</option>
-                <option value="formacion">Formación e Intervención</option>
-                <option value="consumo">Consumo Local y Consciente</option>
-            </select>
-
-            <label for="filter-date">Filter by Date:</label>
-            <input type="date" id="filter-date">
-
-            <label for="filter-keywords">Search by Keywords:</label>
-            <input type="text" id="filter-keywords" placeholder="Enter keywords">
-
-            <label for="filter-comments">Filter by Comments:</label>
-            <select id="filter-comments">
-                <option value="all">All</option>
-                <option value="0-10">0-10 Comments</option>
-                <option value="11-50">11-50 Comments</option>
-                <option value="50+">More than 50 Comments</option>
-            </select>
-        </div>
-
-        <!-- Blog Entries -->
-        <div id="blog-entries">
-            <!-- Blog Entry Example -->
-            <div class="blog-entry" data-topic="activismo" data-date="2023-10-01" data-comments="30">
-                <h2><a href="#">Activismo: Our Latest Efforts</a></h2>
-                <p>Explore our activism initiatives and how we contribute to social change.</p>
-                <p class="meta">Date: October 1, 2023 | Reading Time: 5 min | Comments: 30</p>
-            </div>
-
-            <div class="blog-entry" data-topic="formacion" data-date="2023-09-15" data-comments="15">
-                <h2><a href="#">Formación e Intervención: Training for Change</a></h2>
-                <p>Discover how our training programs are fostering a better future through active interventions.</p>
-                <p class="meta">Date: September 15, 2023 | Reading Time: 7 min | Comments: 15</p>
-            </div>
-
-            <div class="blog-entry" data-topic="consumo" data-date="2023-09-20" data-comments="5">
-                <h2><a href="#">Consumo Local y Consciente: Promoting Sustainability</a></h2>
-                <p>Learn how local and sustainable consumption can help drive positive change.</p>
-                <p class="meta">Date: September 20, 2023 | Reading Time: 4 min | Comments: 5</p>
-            </div>
-
-            <!-- More blog entries here -->
+    <!-- Hero Section -->
+    <section class="blog-hero">
+        <div class="hero-content">
+            <h1>SoonTech Insights</h1>
+            <p class="hero-subtitle">Trends, Tips, and Tech Solutions</p>
         </div>
     </section>
 
+    <!-- Blog List View (Toolbar + Grid) -->
+    <div id="blog-list-view">
+        <!-- Blog Toolbar: Search + Category Filters -->
+        <section class="blog-toolbar">
+            <div class="toolbar-container">
+                <!-- Search Bar (Left) -->
+                <div class="search-container">
+                    <i class="fas fa-search search-icon"></i>
+                    <input type="text" id="searchInput" placeholder="Search articles...">
+                </div>
+
+                <!-- Category Filters (Right) -->
+                <div id="categoryFilters" class="category-filters">
+                    <button class="category-btn active" data-category="all">All</button>
+                    <button class="category-btn" data-category="Cybersecurity">Cybersecurity</button>
+                    <button class="category-btn" data-category="AI & Innovation">AI & Innovation</button>
+                    <button class="category-btn" data-category="Business Growth">Business Growth</button>
+                    <button class="category-btn" data-category="Smart Home">Smart Home</button>
+                    <button class="category-btn" data-category="Tech Tutorials">Tech Tutorials</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Blog Grid -->
+        <section class="blog-section">
+            <div class="news-grid" id="blogGrid">
+                <!-- Articles will be dynamically injected here by blog.js -->
+            </div>
+
+            <!-- No Results Message (Hidden by default) -->
+            <div id="noResults" class="no-results" style="display: none;">
+                <i class="fas fa-search"></i>
+                <h3>No articles found</h3>
+                <p>Try adjusting your search or filter criteria</p>
+            </div>
+        </section>
+    </div>
+
+    <!-- Blog Article View (Reader Mode) -->
+    <div id="blog-article-view" class="hidden">
+        <section class="article-section">
+            <button id="backToInsights" class="back-btn">
+                <i class="fas fa-arrow-left"></i> Back to Insights
+            </button>
+
+            <article class="full-article-content">
+                <img id="articleImage" src="" alt="" class="article-hero-image">
+
+                <div class="article-meta">
+                    <span id="articleCategory" class="category-pill"></span>
+                    <span class="meta-separator">•</span>
+                    <span id="articleDate" class="article-date"></span>
+                    <span class="meta-separator">•</span>
+                    <span id="articleReadTime" class="article-read-time"></span>
+                </div>
+
+                <h1 id="articleTitle" class="article-title"></h1>
+
+                <div class="article-author">
+                    <i class="fas fa-user-circle"></i>
+                    <span id="articleAuthor"></span>
+                </div>
+
+                <div id="articleBody" class="article-body"></div>
+            </article>
+        </section>
+    </div>
+
+    <!-- Newsletter CTA Buffer Section -->
+    <section class="blog-cta-buffer">
+        <div class="cta-content">
+            <h2>Never Miss an Insight</h2>
+            <p>Get the latest tech tips, security alerts, and AI trends delivered to your inbox.</p>
+            <form class="newsletter-form">
+                <input type="email" placeholder="Enter your email address" required>
+                <button type="submit">Subscribe</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
     <div id="footer-placeholder"></div>
 
-    <script src="filter.js"></script>
+    <!-- Blog Engine Script -->
+    <script type="module" src="js/blog.js"></script>
 
 </body>
+
 </html>

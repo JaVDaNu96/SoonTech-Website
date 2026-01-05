@@ -1,0 +1,107 @@
+/* ===================================================================== */
+/* NEWS & INSIGHTS - Blog Preview Section                                */
+/* ===================================================================== */
+
+/* LATEST NEWS & INSIGHTS SECTION */
+.news-insights {
+    text-align: center;
+    padding: 60px 20px;
+    background: #597b51;
+}
+
+.news-insights h2 {
+    font-size: 3.5rem;
+    color: #ffffff;
+    margin-bottom: 10px;
+}
+
+.impact-text {
+    font-size: 1.2rem;
+    color: #d8d8e3;
+    margin-bottom: 40px;
+    max-width: 800px;
+    /* Limits the width of the text */
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    /* Centers the text content */
+}
+
+.news-grid {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.news-item {
+    max-width: 300px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    text-align: left;
+    transition: transform 0.3s ease;
+}
+
+.news-item:hover {
+    transform: scale(1.05);
+    /* Slightly zooms on hover */
+}
+
+.news-image-link {
+    display: block;
+    overflow: hidden;
+}
+
+.news-image {
+    width: 100%;
+    height: auto;
+    transition: transform 0.3s ease;
+    border-radius: 8px 8px 0 0;
+    /* Round top corners only */
+}
+
+.news-image-link:hover .news-image {
+    transform: scale(1.1);
+    /* Slight zoom on hover */
+}
+
+.category {
+    color: black;
+    font-size: 1rem;
+    padding: 10px;
+    font-weight: bold;
+}
+
+.news-title-link {
+    text-decoration: none;
+}
+
+.news-title {
+    color: #595b5d;
+    font-size: 1.2rem;
+    padding: 0 10px;
+    margin: 10px 0;
+    transition: color 0.3s ease;
+}
+
+.news-title-link:hover .news-title {
+    color: #2c7313;
+    text-decoration: underline #5da74c;
+}
+
+.read-more {
+    display: block;
+    text-align: left;
+    color: #195c14;
+    font-weight: normal;
+    padding: 10px;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.read-more:hover {
+    color: #33ef26;
+}
+

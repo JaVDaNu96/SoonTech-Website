@@ -1,0 +1,183 @@
+/* ===================================================================== */
+/* SERVICE CARDS - Service Grid, Card Hover Effects & Typography        */
+/* ===================================================================== */
+
+/*///////////////////////////////// SERVICE CARDS ///////////////////////////////////////*/
+
+/* Sección de Servicios */
+.services-section-cards {
+    padding: 4rem 5rem;
+    background-color: var(--pure-white);
+}
+
+/* Encabezado de la Sección */
+.services-section-cards .section-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 50px;
+    padding: 0 5rem;
+}
+
+.services-section-cards .header-left {
+    flex: 1;
+    text-align: left;
+    min-width: 300px;
+    padding-left: 4.5%;
+    padding-right: 6%;
+}
+
+.services-section-cards .header-right {
+    flex: 1;
+    text-align: left;
+    min-width: 250px;
+    padding-left: 4.5%;
+    padding-right: 6%;
+}
+
+.services-section-cards .section-header .tagline {
+    color: #959193;
+    /* Color green para el tagline */
+    font-weight: normal;
+    font-size: 18px;
+    margin-bottom: 30px;
+    display: inline-block;
+    /* Ensures the border matches the text width */
+    border-bottom: 2px solid #b2d235;
+    /* Line under the text */
+    padding-bottom: 2px;
+    /* Adjust spacing between the text and the line */
+
+}
+
+.services-section-cards .section-header h2 {
+    font-size: 40px;
+    color: #222;
+    margin: -4px 0;
+}
+
+.services-section-cards .section-header .description {
+    font-size: 24px;
+    color: #555;
+    margin-top: 0;
+    text-align: justify;
+    /* Justificar el texto */
+}
+
+/* Contenedor de la cuadrícula de servicios */
+.services-section-cards .services-grid {
+    display: flex;
+    gap: 5px;
+    justify-content: center;
+    flex-wrap: nowrap;
+    /* Prevent wrapping */
+    padding: 0 20px;
+    margin: 0 auto;
+    max-width: 1400px;
+    /* Increased to fit all cards */
+}
+
+/* Service Card - Both Home and Business */
+.services-section-cards .service-card,
+.services-section-cards .business-content .service-card {
+    position: relative;
+    background-color: var(--pure-white);
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+
+.services-section-cards .card-content,
+.services-section-cards .business-content .card-content {
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    transition: transform 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    border: 1px solid var(--secondary-green);
+}
+
+.services-section-cards .card-content .icon {
+    margin-bottom: 10px;
+}
+
+.services-section-cards .card-content .icon img {
+    width: 50px;
+    height: 50px;
+}
+
+.services-section-cards .card-content h3 {
+    font-size: 18px;
+    color: var(--primary-green);
+    margin-bottom: 10px;
+}
+
+.services-section-cards .card-content p {
+    font-size: 14px;
+    color: #555;
+    line-height: 1.4;
+    margin-bottom: 15px;
+    flex-grow: 1;
+}
+
+.services-section-cards .details-link,
+.services-section-cards .business-content .details-link {
+    display: inline-block;
+    padding: 8px 16px;
+    background-color: var(--pure-white);
+    color: var(--primary-green);
+    border-radius: 20px;
+    font-weight: bold;
+    font-size: 14px;
+    text-decoration: none;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    margin-top: auto;
+}
+
+.services-section-cards .card-footer,
+.services-section-cards .business-content .card-footer {
+    position: absolute;
+    bottom: 0;
+    left: 5%;
+    width: 90%;
+    background-color: var(--primary-green);
+    color: var(--pure-white);
+    text-align: center;
+    font-size: 14px;
+    padding: 10px 0;
+    transform: translateY(100%);
+    transition: transform 0.3s ease;
+    border-radius: 10px;
+}
+
+/* Hover effects for both views */
+.services-section-cards .service-card:hover .card-content {
+    transform: translateY(-40px);
+}
+
+.services-section-cards .service-card:hover .card-footer {
+    transform: translateY(-10px);
+}
+
+.services-section-cards .details-link:hover,
+.services-section-cards .business-content .details-link:hover {
+    background-color: var(--secondary-green);
+    color: var(--pure-white);
+}
+
+/* Add horizontal scroll for smaller screens */
+@media (max-width: 1200px) {
+    .services-section-cards .services-grid {
+        overflow-x: auto;
+        padding: 0 20px 20px 20px;
+        /* Added bottom padding for scrollbar */
+        -webkit-overflow-scrolling: touch;
+        /* Smooth scrolling on iOS */
+        scrollbar-width: thin;
+    }
+}
+

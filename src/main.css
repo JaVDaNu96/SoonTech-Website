@@ -1,0 +1,32 @@
+/* ===================================================================== */
+/* MAIN STYLESHEET - Modular CSS Architecture Entry Point               */
+/* ===================================================================== */
+/* 
+ * This file imports all modular CSS files in the correct cascade order.
+ * Vite will bundle these imports during build.
+ * 
+ * Import Order:
+ * 1. Variables - CSS custom properties
+ * 2. Base - Reset and global element styles
+ * 3. Layout - Header, footer, page structure
+ * 4. Components - Reusable UI components
+ * 5. Sections - Page-specific sections (granular modules)
+ * 6. Utilities - Responsive queries and helpers
+ */
+
+@import './styles/variables.css';
+@import './styles/base.css';
+@import './styles/layout.css';
+@import './styles/components.css';
+
+/* Section Modules - Imported in cascade order (generic to specific) */
+@import './styles/sections/home-business.css';
+@import './styles/sections/hero.css';
+@import './styles/sections/service-cards.css';
+@import './styles/sections/about.css';
+@import './styles/sections/why-choose-us.css';
+@import './styles/sections/news.css';
+@import './styles/sections/general.css';
+@import './styles/sections/ai-solutions.css';
+
+@import './styles/utilities.css';

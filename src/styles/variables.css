@@ -1,0 +1,10 @@
+/* ===================================================================== */
+/* CSS VARIABLES - Color Palette & Design Tokens                        */
+/* ===================================================================== */
+
+:root {
+    --primary-green: #2A5A3C;
+    --secondary-green: #7BB18A;
+    --pure-white: #FFFFFF;
+    --pure-black: #000000;
+}

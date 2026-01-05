@@ -1,0 +1,212 @@
+/* ===================================================================== */
+/* LAYOUT STYLES - Header, Footer & Page Structure                      */
+/* ===================================================================== */
+
+/* Header Styles */
+.site-header {
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+    top: 0;
+    background-color: var(--pure-white);
+    border-bottom: 1px solid var(--pure-black);
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 1rem 4rem;
+    transition: transform 0.3s ease-in-out;
+    /* Smooth slide animation */
+}
+
+/* Hidden state for scroll behavior */
+.site-header.header-hidden {
+    transform: translateY(-100%);
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.site-header .header-left {
+    max-width: 200px;
+    margin: 0 15rem 0 0;
+}
+
+.site-header .header-left .logo {
+    max-width: 150px;
+    height: auto;
+}
+
+.site-header .header-right {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+.header-nav {
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.header-nav li {
+    position: relative;
+    padding: 0.8rem 0.5rem;
+}
+
+/* Add triangle (Zaeta) next to nav items */
+.nav-item>a::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: -5px;
+    transform: translateY(-50%);
+    border-style: solid;
+    border-width: 6px 0 6px 8px;
+    border-color: transparent transparent transparent var(--primary-green);
+    transition: transform 0.3s ease, border-width 0.3s ease;
+}
+
+.nav-item:hover>a::after {
+    border-width: 8px 6px 0 6px;
+    border-color: var(--secondary-green) transparent transparent transparent;
+    transform: translateY(-50%);
+}
+
+/* Dropdown container */
+.dropdown {
+    position: relative;
+}
+
+/* Dropdown menu */
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: var(--pure-white);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    list-style: none;
+    padding: 0;
+    min-width: 200px;
+    z-index: 1000;
+}
+
+.dropdown-menu li {
+    margin: 0;
+    padding: 0;
+}
+
+.dropdown-menu li a {
+    display: block;
+    padding: 10px 20px;
+    color: var(--primary-green);
+    text-decoration: none;
+}
+
+.dropdown-menu .dropdown-menu {
+    top: 0;
+    left: 100%;
+}
+
+.dropdown:hover>.dropdown-menu {
+    display: block;
+}
+
+.dropdown-menu li a:hover {
+    background-color: var(--secondary-green);
+    color: var(--pure-white);
+}
+
+.menu-right {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.language-selector {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.3rem 0.8rem;
+    border: 1px solid var(--primary-green);
+    border-radius: 5px;
+    background-color: var(--pure-white);
+    cursor: pointer;
+}
+
+.language-selector i {
+    font-size: 1.1rem;
+    color: var(--primary-green);
+}
+
+.language-selector select {
+    border: none;
+    outline: none;
+    background: none;
+    color: var(--primary-green);
+    font-size: 0.9rem;
+    cursor: pointer;
+    padding-right: 1rem;
+}
+
+.search-bar {
+    display: flex;
+    align-items: center;
+    border: 1px solid var(--primary-green);
+    border-radius: 5px;
+    padding: 0.2rem;
+    min-width: 200px;
+    height: 32px;
+}
+
+.search-bar input {
+    border: none;
+    padding: 0.2rem 0.5rem;
+    outline: none;
+    width: 100%;
+    font-size: 0.9rem;
+}
+
+.search-bar button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0.2rem 0.5rem;
+    color: var(--primary-green);
+}
+
+.search-bar button i {
+    font-size: 1rem;
+    color: var(--primary-green);
+}
+
+/* Mobile Responsive Design - Slim Header Profile */
+@media (max-width: 768px) {
+    .site-header {
+        padding: 10px 15px;
+        /* Reduced padding for slim profile */
+    }
+
+    /* Limit logo height to prevent tall header */
+    .site-header .header-left .logo {
+        max-height: 40px;
+        width: auto;
+    }
+
+    .header-content {
+        flex-direction: column;
+    }
+
+    .header-nav {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .menu-right {
+        margin-top: 1rem;
+    }
+}

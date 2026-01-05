@@ -1,0 +1,732 @@
+/* ===================================================================== */
+/* AI SOLUTIONS PAGE - High-Tech, Modern Design                         */
+/* ===================================================================== */
+
+/* Define additional color variables for AI page */
+:root {
+    --text-dark: #12222e;
+    --accent-color: #b2d235;
+    --light-gray: #f0f0f0;
+    --card-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    --card-shadow-hover: 0 15px 40px rgba(0, 0, 0, 0.15);
+}
+
+/* ===================================================================== */
+/* HERO SECTION - Gradient Background with Border Accent                */
+/* ===================================================================== */
+
+.ai-hero {
+    background: linear-gradient(135deg, var(--text-dark) 0%, var(--primary-green) 100%);
+    border-bottom: 4px solid var(--accent-color);
+    padding: 8rem 4rem 6rem 4rem;
+    margin-top: 80px;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Animated background pattern */
+.ai-hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image:
+        radial-gradient(circle at 20% 50%, rgba(178, 210, 53, 0.1) 0%, transparent 50%),
+        radial-gradient(circle at 80% 80%, rgba(42, 90, 60, 0.15) 0%, transparent 50%);
+    pointer-events: none;
+}
+
+.ai-hero-content {
+    max-width: 1400px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+    gap: 4rem;
+    align-items: center;
+    position: relative;
+    z-index: 1;
+}
+
+.ai-hero-text h1 {
+    font-size: 3.5rem;
+    font-weight: 700;
+    color: var(--pure-white);
+    margin-bottom: 1.5rem;
+    line-height: 1.2;
+    text-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+}
+
+.ai-hero-subtitle {
+    font-size: 1.3rem;
+    color: var(--light-gray);
+    line-height: 1.8;
+    margin-bottom: 2.5rem;
+    max-width: 600px;
+}
+
+.ai-hero-features {
+    display: flex;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+}
+
+.ai-feature-badge {
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    padding: 0.8rem 1.5rem;
+    border-radius: 50px;
+    border: 1px solid rgba(178, 210, 53, 0.3);
+    transition: all 0.3s ease;
+}
+
+.ai-feature-badge:hover {
+    background: rgba(178, 210, 53, 0.2);
+    border-color: var(--accent-color);
+    transform: translateY(-3px);
+}
+
+.ai-feature-badge i {
+    font-size: 1.3rem;
+    color: var(--accent-color);
+}
+
+.ai-feature-badge span {
+    color: var(--pure-white);
+    font-weight: 500;
+    font-size: 0.95rem;
+}
+
+.ai-hero-visual {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ai-visual-card {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(20px);
+    border: 2px solid rgba(178, 210, 53, 0.3);
+    border-radius: 20px;
+    padding: 4rem 3rem;
+    text-align: center;
+    transition: all 0.4s ease;
+    animation: float 6s ease-in-out infinite;
+}
+
+.ai-visual-card:hover {
+    transform: scale(1.05);
+    border-color: var(--accent-color);
+    box-shadow: 0 20px 60px rgba(178, 210, 53, 0.3);
+}
+
+.ai-visual-card i {
+    font-size: 5rem;
+    color: var(--accent-color);
+    margin-bottom: 1.5rem;
+    display: block;
+}
+
+.ai-visual-card p {
+    color: var(--pure-white);
+    font-size: 1.3rem;
+    font-weight: 600;
+}
+
+@keyframes float {
+
+    0%,
+    100% {
+        transform: translateY(0px);
+    }
+
+    50% {
+        transform: translateY(-20px);
+    }
+}
+
+/* ===================================================================== */
+/* DUAL-MARKET SPLIT SECTION - CSS Grid Layout                          */
+/* ===================================================================== */
+
+.ai-dual-market-section {
+    padding: 6rem 4rem;
+    background: linear-gradient(180deg, #f8f9fa 0%, var(--pure-white) 100%);
+}
+
+.ai-section-header {
+    text-align: center;
+    margin-bottom: 4rem;
+}
+
+.ai-section-header h2 {
+    font-size: 3rem;
+    color: var(--text-dark);
+    margin-bottom: 1rem;
+    font-weight: 700;
+}
+
+.ai-section-tagline {
+    font-size: 1.2rem;
+    color: #666;
+    font-style: italic;
+}
+
+.ai-split-container {
+    max-width: 1400px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 3rem;
+}
+
+.ai-card {
+    background: var(--pure-white);
+    padding: 3rem;
+    border-radius: 20px;
+    box-shadow: var(--card-shadow);
+    border: 2px solid transparent;
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    position: relative;
+    overflow: hidden;
+}
+
+/* Gradient accent on top */
+.ai-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 5px;
+    background: linear-gradient(90deg, var(--primary-green), var(--accent-color));
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.ai-card:hover::before {
+    opacity: 1;
+}
+
+.ai-card:hover {
+    transform: translateY(-5px);
+    border-color: var(--accent-color);
+    box-shadow: var(--card-shadow-hover);
+}
+
+.ai-card.home {
+    border-left: 4px solid var(--primary-green);
+}
+
+.ai-card.business {
+    border-left: 4px solid var(--accent-color);
+}
+
+.ai-column-icon {
+    width: 80px;
+    height: 80px;
+    background: linear-gradient(135deg, var(--primary-green), var(--secondary-green));
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 2rem;
+    box-shadow: 0 10px 25px rgba(42, 90, 60, 0.3);
+}
+
+.ai-column-icon i {
+    font-size: 2.5rem;
+    color: var(--pure-white);
+}
+
+.ai-card h2 {
+    font-size: 2rem;
+    color: var(--text-dark);
+    margin-bottom: 1.5rem;
+    font-weight: 700;
+}
+
+.ai-column-description {
+    font-size: 1.1rem;
+    color: #555;
+    line-height: 1.8;
+    margin-bottom: 2.5rem;
+}
+
+.ai-use-cases {
+    margin-bottom: 2.5rem;
+}
+
+.ai-use-cases h3 {
+    font-size: 1.3rem;
+    color: var(--primary-green);
+    margin-bottom: 1.5rem;
+    font-weight: 600;
+}
+
+.ai-use-case-list {
+    list-style: none;
+    padding: 0;
+}
+
+.ai-use-case-list li {
+    display: flex;
+    align-items: flex-start;
+    gap: 1rem;
+    margin-bottom: 1.2rem;
+    padding-left: 0.5rem;
+}
+
+.ai-use-case-list i {
+    color: var(--accent-color);
+    font-size: 1.2rem;
+    margin-top: 0.2rem;
+    flex-shrink: 0;
+}
+
+.ai-use-case-list span {
+    color: #444;
+    line-height: 1.6;
+    font-size: 1rem;
+}
+
+.ai-use-case-list strong {
+    color: var(--primary-green);
+}
+
+.ai-column-cta {
+    margin-top: 2rem;
+}
+
+.ai-btn {
+    display: inline-block;
+    padding: 1rem 2.5rem;
+    border-radius: 50px;
+    font-weight: 600;
+    font-size: 1.1rem;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    border: 2px solid transparent;
+}
+
+.ai-btn-home {
+    background: linear-gradient(135deg, var(--primary-green), var(--secondary-green));
+    color: var(--pure-white);
+    box-shadow: 0 5px 15px rgba(42, 90, 60, 0.3);
+}
+
+.ai-btn-home:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 25px rgba(42, 90, 60, 0.4);
+}
+
+.ai-btn-business {
+    background: linear-gradient(135deg, var(--accent-color), #a0c030);
+    color: var(--text-dark);
+    box-shadow: 0 5px 15px rgba(178, 210, 53, 0.3);
+}
+
+.ai-btn-business:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 25px rgba(178, 210, 53, 0.4);
+}
+
+/* ===================================================================== */
+/* PROCESS TIMELINE - Vertical Line with Step Circles                   */
+/* ===================================================================== */
+
+.ai-process-section {
+    padding: 6rem 4rem;
+    background: var(--pure-white);
+}
+
+.ai-process-header {
+    text-align: center;
+    margin-bottom: 5rem;
+}
+
+.ai-process-header h2 {
+    font-size: 3rem;
+    color: var(--text-dark);
+    margin-bottom: 1rem;
+    font-weight: 700;
+}
+
+.ai-process-header p {
+    font-size: 1.2rem;
+    color: #666;
+}
+
+.ai-process-timeline {
+    max-width: 1200px;
+    margin: 0 auto;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 2rem;
+}
+
+/* Horizontal connecting track line (behind the circles) */
+.ai-process-timeline::before {
+    content: '';
+    position: absolute;
+    top: 35px;
+    /* Align with center of 70px circles (35px = half of 70px) */
+    left: 0;
+    width: 100%;
+    height: 4px;
+    background: linear-gradient(90deg, var(--primary-green), var(--accent-color));
+    border-radius: 2px;
+    z-index: 1;
+}
+
+.timeline-item {
+    flex: 1;
+    text-align: center;
+    position: relative;
+    padding: 0 1rem;
+    display: flex !important;
+    /* Override any conflicting styles */
+    flex-direction: column !important;
+    align-items: center !important;
+    /* Enforces vertical center axis */
+    justify-content: flex-start;
+    z-index: 2;
+    /* Above the connecting line */
+}
+
+/* Remove connector line after last item */
+.timeline-item:last-child::after {
+    display: none;
+}
+
+/* Override general.css positioning - enforce flex centering */
+.ai-process-timeline .timeline-item .ai-step-number {
+    position: relative !important;
+    /* Override absolute positioning from general.css */
+    left: auto !important;
+    /* Remove left positioning */
+    top: auto !important;
+    /* Remove top positioning */
+    transform: none !important;
+    /* Remove transform */
+    width: 70px;
+    height: 70px;
+    background: var(--primary-green) !important;
+    /* Solid primary green for contrast */
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    font-weight: 700;
+    color: #ffffff !important;
+    /* Pure white for maximum contrast */
+    box-shadow: 0 5px 20px rgba(42, 90, 60, 0.4);
+    z-index: 3;
+    /* Above everything */
+    border: 4px solid #ffffff;
+    /* White border masks the connector line */
+    margin-bottom: 1.5rem;
+    flex-shrink: 0;
+    /* Prevent circle from shrinking */
+}
+
+
+.ai-step-icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 60px;
+    height: 60px;
+    background: rgba(178, 210, 53, 0.1);
+    border-radius: 50%;
+    margin-bottom: 1.5rem;
+    flex-shrink: 0;
+    /* Prevent icon from shrinking */
+}
+
+.ai-step-icon i {
+    font-size: 2rem;
+    color: var(--primary-green);
+}
+
+.timeline-item h3 {
+    font-size: 1.5rem;
+    color: var(--text-dark);
+    margin-bottom: 1rem;
+    font-weight: 600;
+    text-align: center;
+    width: 100%;
+}
+
+.timeline-item p {
+    font-size: 1rem;
+    color: #666;
+    line-height: 1.7;
+    text-align: center;
+    width: 100%;
+}
+
+
+
+/* ===================================================================== */
+/* CTA BANNER                                                            */
+/* ===================================================================== */
+
+.ai-cta-banner {
+    background: linear-gradient(135deg, var(--primary-green) 0%, var(--text-dark) 100%);
+    padding: 5rem 4rem;
+    position: relative;
+    overflow: hidden;
+}
+
+.ai-cta-banner::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    right: -10%;
+    width: 500px;
+    height: 500px;
+    background: radial-gradient(circle, rgba(178, 210, 53, 0.2) 0%, transparent 70%);
+    border-radius: 50%;
+}
+
+.ai-cta-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 3rem;
+    position: relative;
+    z-index: 1;
+}
+
+.ai-cta-text h3 {
+    font-size: 2.5rem;
+    color: var(--pure-white);
+    margin-bottom: 1rem;
+    font-weight: 700;
+}
+
+.ai-cta-text p {
+    font-size: 1.2rem;
+    color: var(--light-gray);
+}
+
+.ai-cta-button {
+    display: inline-flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 1.2rem 3rem;
+    background: var(--accent-color);
+    color: var(--text-dark);
+    border-radius: 50px;
+    font-size: 1.2rem;
+    font-weight: 600;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    box-shadow: 0 10px 30px rgba(178, 210, 53, 0.3);
+    white-space: nowrap;
+}
+
+.ai-cta-button:hover {
+    background: #c8e040;
+    transform: translateY(-3px);
+    box-shadow: 0 15px 40px rgba(178, 210, 53, 0.4);
+}
+
+.ai-cta-button i {
+    font-size: 1.4rem;
+}
+
+/* ===================================================================== */
+/* RESPONSIVE DESIGN - Mobile First                                     */
+/* ===================================================================== */
+
+@media (max-width: 768px) {
+    .ai-hero {
+        padding: 5rem 2rem 4rem 2rem;
+    }
+
+    .ai-hero-content {
+        grid-template-columns: 1fr;
+        gap: 3rem;
+    }
+
+    .ai-hero-text h1 {
+        font-size: 2.5rem;
+    }
+
+    .ai-hero-subtitle {
+        font-size: 1.1rem;
+    }
+
+    .ai-hero-features {
+        flex-direction: column;
+    }
+
+    .ai-feature-badge {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .ai-visual-card {
+        padding: 3rem 2rem;
+    }
+
+    .ai-visual-card i {
+        font-size: 4rem;
+    }
+
+    /* Split Container - Stack Vertically */
+    .ai-split-container {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+
+    .ai-dual-market-section {
+        padding: 4rem 2rem;
+    }
+
+    .ai-section-header h2 {
+        font-size: 2.2rem;
+    }
+
+    .ai-card {
+        padding: 2rem;
+    }
+
+    .ai-card h2 {
+        font-size: 1.6rem;
+    }
+
+    .ai-column-icon {
+        width: 60px;
+        height: 60px;
+    }
+
+    .ai-column-icon i {
+        font-size: 2rem;
+    }
+
+    /* Process Timeline - Revert to Vertical on Mobile */
+    .ai-process-section {
+        padding: 4rem 2rem;
+    }
+
+    .ai-process-header h2 {
+        font-size: 2.2rem;
+    }
+
+    .ai-process-timeline {
+        flex-direction: column;
+        align-items: stretch;
+        padding-left: 60px;
+        gap: 3rem;
+    }
+
+    /* Vertical connecting line for mobile */
+    .ai-process-timeline::before {
+        top: 40px;
+        bottom: 40px;
+        left: 25px;
+        right: auto;
+        width: 4px;
+        height: auto;
+        background: linear-gradient(180deg, var(--primary-green), var(--accent-color));
+    }
+
+    .timeline-item {
+        text-align: left;
+        padding-left: 2rem;
+        align-items: flex-start;
+        margin-bottom: 3rem;
+        /* Vertical spacing between steps */
+    }
+
+    .timeline-item:last-child {
+        margin-bottom: 0;
+        /* Remove margin from last item */
+    }
+
+    .ai-step-number {
+        position: absolute;
+        left: -60px;
+        top: 0;
+        width: 50px;
+        height: 50px;
+        font-size: 1.5rem;
+        border-width: 3px;
+        margin-bottom: 0;
+    }
+
+    .ai-step-icon {
+        width: 50px;
+        height: 50px;
+        margin-bottom: 1rem;
+    }
+
+    .ai-step-icon i {
+        font-size: 1.5rem;
+    }
+
+    .timeline-item h3 {
+        font-size: 1.4rem;
+        text-align: left;
+    }
+
+    .timeline-item p {
+        font-size: 1rem;
+        text-align: left;
+    }
+
+
+
+    /* CTA Banner */
+    .ai-cta-banner {
+        padding: 3rem 2rem;
+    }
+
+    .ai-cta-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .ai-cta-text h3 {
+        font-size: 2rem;
+    }
+
+    .ai-cta-text p {
+        font-size: 1.1rem;
+    }
+
+    .ai-cta-button {
+        width: 100%;
+        justify-content: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .ai-hero-text h1 {
+        font-size: 2rem;
+    }
+
+    .ai-section-header h2 {
+        font-size: 1.8rem;
+    }
+
+    .ai-process-header h2 {
+        font-size: 1.8rem;
+    }
+
+    .ai-cta-text h3 {
+        font-size: 1.6rem;
+    }
+}
