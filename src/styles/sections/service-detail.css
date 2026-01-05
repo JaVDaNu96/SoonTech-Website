@@ -1,0 +1,419 @@
+/* ===================================================================== */
+/* SERVICE DETAIL PAGE STYLES                                            */
+/* ===================================================================== */
+
+/* Hero Section */
+.service-hero {
+    position: relative;
+    min-height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-top: 80px;
+    /* Account for fixed header */
+}
+
+.hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(135deg, rgba(40, 90, 59, 0.9) 0%, rgba(31, 74, 46, 0.85) 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero-content-wrapper {
+    position: relative;
+    z-index: 2;
+    text-align: center;
+    max-width: 900px;
+    padding: 40px 20px;
+}
+
+.service-hero-title {
+    font-size: 3.5rem;
+    font-weight: 700;
+    color: var(--pure-white);
+    margin-bottom: 20px;
+    line-height: 1.2;
+    text-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+}
+
+.service-hero-subtitle {
+    font-size: 1.5rem;
+    color: var(--accent-lime);
+    font-weight: 400;
+    line-height: 1.6;
+    text-shadow: 0 1px 5px rgba(0, 0, 0, 0.2);
+}
+
+/* Main Content Section */
+.service-content-section {
+    padding: 80px 20px;
+    background: #f8f9fa;
+}
+
+.service-content-wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+    gap: 60px;
+    align-items: start;
+}
+
+/* Left Column - Overview */
+.service-overview-column {
+    background: var(--pure-white);
+    padding: 50px;
+    border-radius: 12px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+}
+
+.section-heading {
+    font-size: 2.2rem;
+    font-weight: 700;
+    color: var(--primary-green);
+    margin-bottom: 25px;
+    border-bottom: 3px solid var(--accent-lime);
+    padding-bottom: 15px;
+}
+
+.service-overview-text {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: #333;
+    margin-bottom: 40px;
+}
+
+.service-overview-text p {
+    margin-bottom: 20px;
+}
+
+/* Benefits Section */
+.service-benefits {
+    margin-top: 40px;
+    padding-top: 40px;
+    border-top: 2px solid #e9ecef;
+}
+
+.benefits-heading {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: var(--primary-green);
+    margin-bottom: 20px;
+}
+
+.benefits-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.benefits-list li {
+    font-size: 1.05rem;
+    line-height: 1.6;
+    color: #555;
+    margin-bottom: 15px;
+    padding-left: 35px;
+    position: relative;
+}
+
+.benefits-list li i {
+    position: absolute;
+    left: 0;
+    top: 3px;
+    color: var(--accent-lime);
+    font-size: 1.2rem;
+}
+
+/* Right Column - Features Box */
+.service-features-column {
+    position: sticky;
+    top: 100px;
+    /* Stick below header */
+}
+
+.features-box {
+    background: linear-gradient(135deg, var(--primary-green) 0%, #1f4a2e 100%);
+    color: var(--pure-white);
+    padding: 40px 35px;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(40, 90, 59, 0.3);
+}
+
+.features-icon {
+    width: 70px;
+    height: 70px;
+    background: rgba(178, 210, 53, 0.2);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 25px auto;
+}
+
+.features-icon i {
+    font-size: 2.5rem;
+    color: var(--accent-lime);
+}
+
+.features-heading {
+    font-size: 1.8rem;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 30px;
+    color: var(--pure-white);
+}
+
+.features-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.features-list li {
+    font-size: 1.05rem;
+    line-height: 1.6;
+    margin-bottom: 18px;
+    padding-left: 35px;
+    position: relative;
+    color: rgba(255, 255, 255, 0.95);
+}
+
+.features-list li i {
+    position: absolute;
+    left: 0;
+    top: 3px;
+    color: var(--accent-lime);
+    font-size: 1.2rem;
+}
+
+.features-list li:last-child {
+    margin-bottom: 0;
+}
+
+/* CTA Section */
+.service-cta-section {
+    background: linear-gradient(135deg, var(--primary-green) 0%, #1f4a2e 100%);
+    padding: 80px 20px;
+    text-align: center;
+}
+
+.cta-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.cta-heading {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: var(--pure-white);
+    margin-bottom: 15px;
+}
+
+.cta-text {
+    font-size: 1.2rem;
+    color: rgba(255, 255, 255, 0.9);
+    margin-bottom: 35px;
+    line-height: 1.6;
+}
+
+.cta-button {
+    display: inline-flex;
+    align-items: center;
+    gap: 12px;
+    background: var(--accent-lime);
+    color: var(--primary-green);
+    padding: 18px 40px;
+    font-size: 1.2rem;
+    font-weight: 700;
+    border-radius: 8px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    box-shadow: 0 5px 20px rgba(178, 210, 53, 0.3);
+}
+
+.cta-button:hover {
+    background: #9fc02d;
+    transform: translateY(-3px);
+    box-shadow: 0 8px 25px rgba(178, 210, 53, 0.4);
+}
+
+.cta-button i {
+    font-size: 1.1rem;
+}
+
+/* Service Not Found Section */
+.service-not-found {
+    min-height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 80px 20px;
+    margin-top: 80px;
+}
+
+.service-not-found.hidden {
+    display: none;
+}
+
+.not-found-content {
+    text-align: center;
+    max-width: 600px;
+}
+
+.not-found-content i {
+    font-size: 5rem;
+    color: #d9534f;
+    margin-bottom: 25px;
+}
+
+.not-found-content h2 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: var(--primary-green);
+    margin-bottom: 15px;
+}
+
+.not-found-content p {
+    font-size: 1.1rem;
+    color: #666;
+    line-height: 1.6;
+    margin-bottom: 35px;
+}
+
+.btn-back-home {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    background: var(--primary-green);
+    color: var(--pure-white);
+    padding: 14px 32px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    border-radius: 6px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.btn-back-home:hover {
+    background: #1f4a2e;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(40, 90, 59, 0.3);
+}
+
+/* ===================================================================== */
+/* RESPONSIVE DESIGN                                                     */
+/* ===================================================================== */
+
+@media (max-width: 968px) {
+    .service-content-wrapper {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+
+    .service-features-column {
+        position: static;
+        /* Remove sticky on mobile */
+    }
+
+    .service-hero-title {
+        font-size: 2.5rem;
+    }
+
+    .service-hero-subtitle {
+        font-size: 1.2rem;
+    }
+
+    .service-overview-column {
+        padding: 35px 25px;
+    }
+
+    .section-heading {
+        font-size: 1.8rem;
+    }
+
+    .features-box {
+        padding: 35px 25px;
+    }
+}
+
+@media (max-width: 640px) {
+    .service-hero {
+        min-height: 400px;
+        margin-top: 60px;
+    }
+
+    .service-hero-title {
+        font-size: 2rem;
+    }
+
+    .service-hero-subtitle {
+        font-size: 1.1rem;
+    }
+
+    .service-content-section {
+        padding: 60px 15px;
+    }
+
+    .service-overview-column {
+        padding: 30px 20px;
+    }
+
+    .section-heading {
+        font-size: 1.6rem;
+    }
+
+    .service-overview-text {
+        font-size: 1rem;
+    }
+
+    .features-box {
+        padding: 30px 20px;
+    }
+
+    .features-heading {
+        font-size: 1.5rem;
+    }
+
+    .features-list li,
+    .benefits-list li {
+        font-size: 1rem;
+    }
+
+    .service-cta-section {
+        padding: 60px 15px;
+    }
+
+    .cta-heading {
+        font-size: 2rem;
+    }
+
+    .cta-text {
+        font-size: 1.05rem;
+    }
+
+    .cta-button {
+        padding: 16px 32px;
+        font-size: 1.1rem;
+    }
+
+    .not-found-content i {
+        font-size: 4rem;
+    }
+
+    .not-found-content h2 {
+        font-size: 2rem;
+    }
+
+    .not-found-content p {
+        font-size: 1rem;
+    }
+}

@@ -232,6 +232,7 @@ All pages follow this structure:
 │       ├── Data Encryption and Data Loss Prevention
 │       └── Security Awareness Training
 ├── AI Solutions (NEW - targets both markets)
+├── Insights
 ├── About Us
 ├── Contact Us
 └── Support

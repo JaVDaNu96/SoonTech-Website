@@ -1,0 +1,204 @@
+[
+    {
+        "id": "home-network",
+        "category": "home",
+        "title": "Smart & Secure Home Networks",
+        "subtitle": "Lightning-Fast Wi-Fi, Everywhere in Your Home",
+        "heroImage": "Assets/Images/home-network-hero.jpg",
+        "icon": "Assets/Icons/home-network-icon.png",
+        "overview": "Transform your home into a connected haven with our professional network setup services. We eliminate dead zones, optimize your Wi-Fi coverage, and implement enterprise-grade security to protect every device in your home. Whether you're streaming 4K movies, gaming online, or working remotely, our network solutions ensure fast, reliable connectivity throughout your entire property. We handle everything from router configuration to mesh network installation, creating a seamless digital experience for your whole family.",
+        "features": [
+            "Complete Dead Zone Elimination",
+            "Mesh Network Installation & Configuration",
+            "Advanced Parental Controls & Content Filtering",
+            "Secure Guest Network Setup",
+            "IoT Device Protection & Segmentation",
+            "Network Security Shield (Firewall Configuration)",
+            "Speed Optimization & Quality of Service (QoS)",
+            "24/7 Network Monitoring & Support"
+        ],
+        "benefits": [
+            "Stream 4K content in every room without buffering",
+            "Protect your family from online threats automatically",
+            "Control screen time and content access easily",
+            "Keep smart home devices secure and isolated"
+        ],
+        "ctaText": "Get Your Free Network Audit",
+        "ctaLink": "contact-us.html?service=home-network"
+    },
+    {
+        "id": "home-device-setup",
+        "category": "home",
+        "title": "Effortless Device Setup & Configuration",
+        "subtitle": "From Unboxing to Fully Optimized in Minutes",
+        "heroImage": "Assets/Images/device-setup-hero.jpg",
+        "icon": "Assets/Icons/troubleshoot-icon.png",
+        "overview": "Say goodbye to frustrating setup processes and confusing manuals. Our expert technicians handle the complete setup and configuration of all your devices, from laptops and tablets to smart home gadgets and printers. We ensure everything works together seamlessly, optimize performance settings, install essential software, and configure security features. Whether it's a brand new device or a replacement, we make the transition smooth and stress-free, so you can start using your technology immediately without the hassle.",
+        "features": [
+            "Complete Device Unboxing & Setup",
+            "Operating System Configuration & Updates",
+            "Essential Software Installation & Licensing",
+            "Email & Cloud Account Integration",
+            "Security Software Setup & Configuration",
+            "Data Transfer from Old Devices",
+            "Smart Home Device Integration",
+            "Printer & Peripheral Configuration"
+        ],
+        "benefits": [
+            "Start using your new devices immediately",
+            "Avoid setup mistakes that cause problems later",
+            "Get optimal performance from day one",
+            "Save hours of frustration and confusion"
+        ],
+        "ctaText": "Schedule Your Device Setup",
+        "ctaLink": "contact-us.html?service=home-device-setup"
+    },
+    {
+        "id": "home-data-backup",
+        "category": "home",
+        "title": "Smart Data Backup & Recovery",
+        "subtitle": "Never Lose a Precious Memory or Important File Again",
+        "heroImage": "Assets/Images/data-backup-hero.jpg",
+        "icon": "Assets/Icons/data-recovery-icon.png",
+        "overview": "Protect what matters most with our comprehensive backup solutions. We implement automated cloud and local backup systems that safeguard your photos, documents, videos, and important files without you having to think about it. Our multi-layered approach ensures your data is protected against hardware failure, ransomware, accidental deletion, and natural disasters. With easy recovery options and secure encryption, you'll have peace of mind knowing your digital life is always protected and accessible from any device, anywhere.",
+        "features": [
+            "Automated Cloud Backup (Google Drive, OneDrive, iCloud)",
+            "Local Backup Solutions (NAS, External Drives)",
+            "Ransomware Protection & Versioning",
+            "Photo & Video Organization & Backup",
+            "Document Synchronization Across Devices",
+            "Encrypted Backup for Sensitive Data",
+            "Quick Recovery & Restore Services",
+            "Backup Monitoring & Health Checks"
+        ],
+        "benefits": [
+            "Automatic protection without manual effort",
+            "Recover deleted files from any point in time",
+            "Access your files from anywhere securely",
+            "Protection against ransomware and viruses"
+        ],
+        "ctaText": "Protect Your Data Today",
+        "ctaLink": "contact-us.html?service=home-data-backup"
+    },
+    {
+        "id": "home-digital-wellness",
+        "category": "home",
+        "title": "Digital Wellness & Family Safety",
+        "subtitle": "Create a Healthy Digital Environment for Your Family",
+        "heroImage": "Assets/Images/digital-wellness-hero.jpg",
+        "icon": "Assets/Icons/digital-helath-icon.png",
+        "overview": "Build a balanced and safe digital environment for your entire family. Our digital wellness services help you manage screen time, filter inappropriate content, protect privacy, and promote healthy technology habits. We configure comprehensive parental controls, set up age-appropriate content filters, and implement monitoring tools that give you visibility without invading privacy. From protecting young children to helping teenagers develop responsible digital citizenship, we create customized solutions that fit your family's values and needs.",
+        "features": [
+            "Comprehensive Parental Control Setup",
+            "Age-Appropriate Content Filtering",
+            "Screen Time Management & Scheduling",
+            "App & Website Blocking Controls",
+            "Location Tracking & Geofencing",
+            "Social Media Monitoring & Alerts",
+            "Privacy Protection & Identity Safety",
+            "Digital Literacy Training for Parents"
+        ],
+        "benefits": [
+            "Protect children from inappropriate content",
+            "Manage screen time across all devices",
+            "Monitor online activity without being intrusive",
+            "Teach healthy digital habits early"
+        ],
+        "ctaText": "Start Your Digital Wellness Journey",
+        "ctaLink": "contact-us.html?service=home-digital-wellness"
+    },
+    {
+        "id": "business-managed-it",
+        "category": "business",
+        "title": "Managed IT Services",
+        "subtitle": "Proactive Infrastructure & Network Management",
+        "heroImage": "Assets/Images/managed-it-hero.jpg",
+        "icon": "Assets/Icons/managed-it-icon.png",
+        "overview": "We function as your strategic IT partner. From stabilizing your servers to managing every endpoint, our comprehensive support ensures your infrastructure is optimized, secure, and always available. Our managed IT services provide 24/7 monitoring, proactive maintenance, and rapid support for all your technology needs. We act as your dedicated IT department, preventing problems before they occur and resolving issues quickly when they arise. With predictable monthly costs and enterprise-grade tools, you get the IT excellence your business deserves without the enterprise price tag.",
+        "features": [
+            "Network Management",
+            "Server and Infrastructure Management",
+            "Cloud Services and Virtualization",
+            "Help Desk and Technical Support",
+            "Endpoint Management"
+        ],
+        "benefits": [
+            "Minimize downtime and lost productivity",
+            "Predictable monthly IT costs",
+            "Access to enterprise-level expertise",
+            "Focus on business growth, not IT problems"
+        ],
+        "ctaText": "Optimize Your Infrastructure",
+        "ctaLink": "contact-us.html?service=business-managed-it"
+    },
+    {
+        "id": "business-cloud-solutions",
+        "category": "business",
+        "title": "Cloud Solutions & Virtualization",
+        "subtitle": "Scalable Power for the Modern Workforce",
+        "heroImage": "Assets/Images/cloud-solutions-hero.jpg",
+        "icon": "Assets/Icons/cloud-icon.png",
+        "overview": "Break free from physical hardware limits. We help you migrate to secure cloud environments, enabling remote collaboration, reduced hardware costs, and enterprise-level redundancy. Transform your business with modern cloud solutions that enable flexibility, collaboration, and growth. We help you migrate to and manage cloud platforms like Microsoft 365, Google Workspace, and AWS, ensuring a smooth transition with minimal disruption. Our cloud experts design and implement solutions tailored to your business needs, from email and file sharing to full infrastructure hosting and server virtualization.",
+        "features": [
+            "Microsoft 365 / Google Workspace",
+            "Server Virtualization",
+            "Secure File Sharing",
+            "Cloud Migration Strategy"
+        ],
+        "benefits": [
+            "Access your data from anywhere, any device",
+            "Reduce hardware costs and maintenance",
+            "Scale resources up or down as needed",
+            "Improve team collaboration and productivity"
+        ],
+        "ctaText": "Go Cloud Today",
+        "ctaLink": "contact-us.html?service=business-cloud-solutions"
+    },
+    {
+        "id": "business-cybersecurity",
+        "category": "business",
+        "title": "Cybersecurity Services",
+        "subtitle": "Advanced Threat Detection & Defense",
+        "heroImage": "Assets/Images/cybersecurity-hero.jpg",
+        "icon": "Assets/Icons/security-icon.png",
+        "overview": "Security is not a product; it's a process. We provide end-to-end protection for your business, combining advanced threat detection with rigorous testing and employee training to create a human firewall. Protect your business from cyber threats with comprehensive security solutions designed for today's threat landscape. We implement multi-layered security strategies that safeguard your data, networks, and systems from ransomware, phishing, malware, and unauthorized access. With regular security assessments and continuous monitoring, we help you stay ahead of evolving threats and maintain the trust of your customers and partners.",
+        "features": [
+            "Threat Detection and Response",
+            "Vulnerability Assessment and Penetration Testing",
+            "Firewall and Network Security",
+            "Data Encryption and Data Loss Prevention",
+            "Security Awareness Training"
+        ],
+        "benefits": [
+            "Protect against ransomware and data breaches",
+            "Meet industry compliance requirements",
+            "Reduce risk of costly security incidents",
+            "Build customer trust with strong security"
+        ],
+        "ctaText": "Secure Your Business",
+        "ctaLink": "contact-us.html?service=business-cybersecurity"
+    },
+    {
+        "id": "business-it-strategy",
+        "category": "business",
+        "title": "IT Strategy & Consulting",
+        "subtitle": "Aligning Technology with Business Goals",
+        "heroImage": "Assets/Images/it-strategy-hero.jpg",
+        "icon": "Assets/Icons/consulting-icon.png",
+        "overview": "Don't just fix problems—plan for growth. Our vCIO services provide you with a roadmap for digital transformation, budget optimization, and long-term technological success. Align your technology with your business goals through strategic IT planning and consulting. Our experienced consultants work with you to understand your business objectives and design technology roadmaps that support growth, improve efficiency, and provide competitive advantages. We help you make informed decisions about technology investments, digital transformation initiatives, and IT infrastructure modernization.",
+        "features": [
+            "Digital Transformation Roadmaps",
+            "IT Budget Planning",
+            "Disaster Recovery Planning",
+            "Vendor Management"
+        ],
+        "benefits": [
+            "Make smart technology investments",
+            "Align IT with business objectives",
+            "Gain competitive advantages through technology",
+            "Plan for future growth and scalability"
+        ],
+        "ctaText": "Plan Your Growth",
+        "ctaLink": "contact-us.html?service=business-it-strategy"
+    }
+]

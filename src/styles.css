@@ -2,6 +2,7 @@
 @import url('styles/sections/blog.css');
 @import url('styles/sections/about.css');
 @import url('styles/sections/contact.css');
+@import url('styles/sections/service-detail.css');
 
 /* Color Variables */
 :root {
