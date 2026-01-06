@@ -2,18 +2,16 @@
 /* SERVICE DETAIL PAGE STYLES                                            */
 /* ===================================================================== */
 
-/* Hero Section */
+/* Hero Section - Compact with Icon Visual */
 .service-hero {
     position: relative;
-    min-height: 500px;
+    min-height: 400px;
     display: flex;
     align-items: center;
     justify-content: center;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+    background: linear-gradient(135deg, #285a3b 0%, #1a3c27 100%);
     margin-top: 80px;
-    /* Account for fixed header */
+    padding: 60px 0;
 }
 
 .hero-overlay {
@@ -31,26 +29,62 @@
 .hero-content-wrapper {
     position: relative;
     z-index: 2;
-    text-align: center;
-    max-width: 900px;
-    padding: 40px 20px;
+    max-width: 1200px;
+    padding: 0 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+    width: 100%;
 }
 
+.hero-text {
+    flex: 1;
+    text-align: left;
+}
+
+.hero-icon-visual {
+    flex: 0 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero-icon-visual i {
+    font-size: 8rem;
+    color: rgba(178, 210, 53, 0.3);
+    animation: float 4s ease-in-out infinite;
+}
+
+@keyframes float {
+
+    0%,
+    100% {
+        transform: translateY(0px);
+    }
+
+    50% {
+        transform: translateY(-20px);
+    }
+}
+
+.hero-text h1,
 .service-hero-title {
-    font-size: 3.5rem;
+    font-size: 2.5rem;
     font-weight: 700;
     color: var(--pure-white);
-    margin-bottom: 20px;
+    margin-bottom: 15px;
     line-height: 1.2;
-    text-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+    text-shadow: 0 2px 10px rgba(0, 0, 0, 0.4);
 }
 
+.hero-text p,
 .service-hero-subtitle {
-    font-size: 1.5rem;
-    color: var(--accent-lime);
+    font-size: 1.25rem;
+    color: #ffffff;
     font-weight: 400;
     line-height: 1.6;
-    text-shadow: 0 1px 5px rgba(0, 0, 0, 0.2);
+    text-shadow: 0 1px 5px rgba(0, 0, 0, 0.3);
 }
 
 /* Main Content Section */
@@ -416,4 +450,462 @@
     .not-found-content p {
         font-size: 1rem;
     }
+}
+
+/* ===================================================================== */
+/* TRUST MODULE (Home Services Only)                                    */
+/* ===================================================================== */
+
+.trust-module {
+    background: #f4f6f5;
+    padding: 80px 20px;
+}
+
+.trust-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.trust-heading {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: var(--primary-green);
+    margin-bottom: 10px;
+}
+
+.trust-subheading {
+    font-size: 1.2rem;
+    color: #666;
+    margin-bottom: 50px;
+}
+
+.trust-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+}
+
+.trust-item {
+    background: var(--pure-white);
+    padding: 40px 30px;
+    border-radius: 12px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+    transition: all 0.3s ease;
+}
+
+.trust-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.12);
+}
+
+.trust-icon {
+    width: 80px;
+    height: 80px;
+    background: linear-gradient(135deg, var(--primary-green), #1f4a2e);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 25px auto;
+}
+
+.trust-icon i {
+    font-size: 2.5rem;
+    color: var(--pure-white);
+}
+
+.trust-item h3 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--primary-green);
+    margin-bottom: 15px;
+}
+
+.trust-item p {
+    font-size: 1.05rem;
+    color: #555;
+    line-height: 1.6;
+}
+
+/* ===================================================================== */
+/* SERVICE INCLUSIONS SECTION                                           */
+/* ===================================================================== */
+
+.service-inclusions-section {
+    background: var(--pure-white);
+    padding: 80px 20px;
+}
+
+.service-inclusions-section.hidden {
+    display: none;
+}
+
+.inclusions-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.section-description {
+    font-size: 1.1rem;
+    color: #666;
+    margin-bottom: 50px;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.inclusions-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.inclusion-card {
+    flex: 0 1 250px;
+    background: #f8f9fa;
+    padding: 35px 25px;
+    border-radius: 12px;
+    border: 2px solid transparent;
+    transition: all 0.3s ease;
+    text-align: center;
+}
+
+.inclusion-card:hover {
+    background: var(--pure-white);
+    border-color: var(--accent-lime);
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+.inclusion-icon {
+    width: 60px;
+    height: 60px;
+    background: linear-gradient(135deg, rgba(40, 90, 59, 0.1), rgba(178, 210, 53, 0.1));
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 20px auto;
+}
+
+.inclusion-icon i {
+    font-size: 2rem;
+    color: var(--primary-green);
+}
+
+.inclusion-card h4 {
+    font-size: 1.15rem;
+    font-weight: 600;
+    color: var(--primary-green);
+    line-height: 1.5;
+}
+
+/* ===================================================================== */
+/* RELATED SERVICES SECTION                                             */
+/* ===================================================================== */
+
+.related-services-section {
+    background: #f8f9fa;
+    padding: 80px 20px;
+}
+
+.related-services-section.hidden {
+    display: none;
+}
+
+.related-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.related-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.related-card {
+    background: var(--pure-white);
+    padding: 40px 30px;
+    border-radius: 12px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+    transition: all 0.3s ease;
+    text-align: center;
+    border: 2px solid transparent;
+}
+
+.related-card:hover {
+    transform: translateY(-5px);
+    border-color: var(--accent-lime);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.12);
+}
+
+/* FontAwesome Icon Circle (matching hub page style) */
+.related-icon-circle {
+    width: 70px;
+    height: 70px;
+    background: rgba(178, 210, 53, 0.15);
+    color: #285a3b;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 25px auto;
+    transition: all 0.3s ease;
+}
+
+.related-icon-circle i {
+    font-size: 2rem;
+}
+
+.related-card:hover .related-icon-circle {
+    background: #b2d235;
+    color: white;
+    transform: scale(1.1) rotate(5deg);
+}
+
+/* Legacy image icon support */
+.related-icon {
+    width: 70px;
+    height: 70px;
+    margin: 0 auto 25px auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.related-icon img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+}
+
+.related-card h3 {
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: var(--primary-green);
+    margin-bottom: 12px;
+}
+
+.related-card p {
+    font-size: 1rem;
+    color: #666;
+    line-height: 1.6;
+    margin-bottom: 25px;
+}
+
+.related-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    color: var(--primary-green);
+    font-weight: 600;
+    font-size: 1.05rem;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.related-link:hover {
+    color: var(--accent-lime);
+    gap: 12px;
+}
+
+.related-link i {
+    font-size: 0.9rem;
+    transition: transform 0.3s ease;
+}
+
+.related-link:hover i {
+    transform: translateX(3px);
+}
+
+/* ===================================================================== */
+/* RESPONSIVE DESIGN FOR NEW SECTIONS                                   */
+/* ===================================================================== */
+
+@media (max-width: 968px) {
+    .trust-grid {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+
+    .trust-heading {
+        font-size: 2rem;
+    }
+
+    .inclusions-grid {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: 20px;
+    }
+
+    .related-grid {
+        grid-template-columns: 1fr;
+        gap: 25px;
+    }
+
+    .trust-module,
+    .service-inclusions-section,
+    .related-services-section {
+        padding: 60px 15px;
+    }
+}
+
+@media (max-width: 640px) {
+    .trust-heading {
+        font-size: 1.8rem;
+    }
+
+    .trust-subheading {
+        font-size: 1.05rem;
+    }
+
+    .trust-item {
+        padding: 30px 20px;
+    }
+
+    .trust-icon {
+        width: 60px;
+        height: 60px;
+    }
+
+    .trust-icon i {
+        font-size: 2rem;
+    }
+
+    .trust-item h3 {
+        font-size: 1.3rem;
+    }
+
+    .inclusions-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .inclusion-card {
+        padding: 30px 20px;
+    }
+
+    .related-card {
+        padding: 35px 25px;
+    }
+}
+
+/* ===================================================================== */
+/* BUSINESS THEME OVERRIDES                                              */
+/* ===================================================================== */
+
+/* Apply navy blue theme for business services */
+body.business-theme .section-heading,
+body.business-theme .service-content-wrapper h2,
+body.business-theme .trust-heading,
+body.business-theme .inclusions-container h2,
+body.business-theme .related-container h2 {
+    color: #1a2c4e;
+}
+
+/* Force section headings to white in business theme for contrast on dark backgrounds */
+body.business-theme .service-section h2,
+body.business-theme .section-heading-center,
+body.business-theme .features-section h2,
+body.business-theme .benefits-section h2 {
+    color: #ffffff !important;
+}
+
+/* Force Key Features Heading to White in Business Theme */
+body.business-theme .features-box .features-heading,
+body.business-theme .features-box h2,
+body.business-theme .features-section .section-heading,
+body.business-theme .service-features h2,
+body.business-theme .service-benefits h2 {
+    color: #ffffff !important;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+/* Make feature icons pop with lighter blue for contrast */
+body.business-theme .features-box .features-icon i,
+body.business-theme .features-section .feature-icon i,
+body.business-theme .service-features .feature-icon i {
+    color: #60a5fa !important;
+}
+
+body.business-theme .service-content-wrapper h3,
+body.business-theme .trust-item h3,
+body.business-theme .inclusion-card h4,
+body.business-theme .related-card h3 {
+    color: #1a2c4e;
+}
+
+/* Icons & Accents - Bright Blue instead of Lime Green */
+body.business-theme .feature-list li i,
+body.business-theme .benefits-list li i,
+body.business-theme .inclusion-icon i,
+body.business-theme .related-icon-circle {
+    color: #3b82f6;
+}
+
+body.business-theme .inclusion-icon {
+    background: linear-gradient(135deg, rgba(26, 44, 78, 0.1), rgba(59, 130, 246, 0.1));
+}
+
+body.business-theme .related-icon-circle {
+    background: rgba(59, 130, 246, 0.15);
+    color: #1a2c4e;
+}
+
+body.business-theme .related-card:hover .related-icon-circle {
+    background: #3b82f6;
+    color: white;
+}
+
+/* Buttons - Navy Blue Background */
+body.business-theme .cta-button,
+body.business-theme .related-link {
+    background: #1a2c4e;
+    color: #ffffff;
+}
+
+body.business-theme .cta-button:hover {
+    background: #0f1a2e;
+}
+
+body.business-theme .related-link {
+    background: transparent;
+    color: #3b82f6;
+}
+
+body.business-theme .related-link:hover {
+    color: #2563eb;
+}
+
+/* Hover Effects */
+body.business-theme .inclusion-card:hover,
+body.business-theme .related-card:hover {
+    border-color: #3b82f6;
+}
+
+/* Trust Module Icons */
+body.business-theme .trust-icon {
+    background: linear-gradient(135deg, #1a2c4e, #2d4a7c);
+}
+
+/* Force CTA text to White in Business Theme */
+body.business-theme .service-cta-section .cta-heading,
+body.business-theme .service-cta-section h2,
+body.business-theme .service-cta-section .cta-text,
+body.business-theme .service-cta-section p {
+    color: #ffffff !important;
+}
+
+/* Ensure the button stands out too */
+body.business-theme .service-cta-section .cta-button {
+    background: #3b82f6 !important;
+    border: 2px solid white !important;
+}
+
+body.business-theme .service-cta-section .cta-button:hover {
+    background: #2563eb !important;
+    transform: translateY(-2px);
 }

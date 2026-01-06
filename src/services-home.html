@@ -1,102 +1,140 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home IT Services - SoonTech</title>
-    <meta name="description" content="Expert home IT services: network setup, device support, data backup, and digital wellness solutions for your family.">
+    <meta name="description"
+        content="Expert home IT services: network setup, device support, data backup, and digital wellness solutions for your family.">
     <link href="https://fonts.googleapis.com/css2?family=Overpass:wght@300;400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="styles.css">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
     <script src="includes.js" defer></script>
-    <script src="filter.js" defer></script>
 </head>
+
 <body>
 
     <!-- Header -->
     <div id="header-placeholder"></div>
-    <section class="services-hero">
-        <h1>Home Tech Made Simple</h1>
-        <p>From smart home setups to data protection, we handle the tech so you can enjoy life. Expert support when you need it, in language you understand.</p>
+
+    <!-- Hero Section -->
+    <section class="page-hero home-hero-bg">
+        <div class="hero-overlay">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1>Home Tech Made Simple</h1>
+                    <p>Expert support for your connected life</p>
+                </div>
+                <div class="hero-visual">
+                    <i class="fas fa-laptop-house"></i>
+                </div>
+            </div>
+        </div>
     </section>
 
     <!-- Services Overview Section -->
-    <div class="services-overview">
-        <div class="service-card">
-        <a href="home-network-setup.html">
-                <div class="service-image">
-                    <img src="Assets/Icons/network-security.svg" alt="Network Security">
+    <section class="home-services-section">
+        <div class="services-container">
+            <div class="section-intro">
+                <h2 class="section-title">Our Home Services</h2>
+                <p class="section-description">From smart home setups to data protection, we handle the tech so you can
+                    enjoy life. Expert support when you need it, in language you understand.</p>
+            </div>
+
+            <div class="services-stack">
+                <!-- Service Row 1: Network -->
+                <div class="service-row">
+                    <div class="row-icon">
+                        <i class="fas fa-wifi"></i>
+                    </div>
+                    <div class="row-content">
+                        <h3>Fast, Secure Home Network</h3>
+                        <p>Reliable Wi-Fi that reaches every corner of your home.</p>
+                        <ul class="row-features">
+                            <li><i class="fas fa-check"></i> Blanket coverage, no dead zones</li>
+                            <li><i class="fas fa-check"></i> Advanced security built-in</li>
+                            <li><i class="fas fa-check"></i> Perfect for streaming & gaming</li>
+                        </ul>
+                    </div>
+                    <div class="row-action">
+                        <a href="service-detail.html?id=home-network" class="action-btn">
+                            View Details <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
                 </div>
-                <div class="service-text">
-                    <h3>Fast, Secure Home Network</h3>
-                    <p>Reliable Wi-Fi that reaches every corner of your home.</p>
-                    <ul>
-                        <li>Blanket coverage, no dead zones</li>
-                        <li>Advanced security built-in</li>
-                        <li>Perfect for streaming & gaming</li>
-                    </ul>
-                    <a href="home-network-setup.html" class="read-more">Get Connected →</a>
+
+                <!-- Service Row 2: Device Setup -->
+                <div class="service-row">
+                    <div class="row-icon">
+                        <i class="fas fa-laptop-medical"></i>
+                    </div>
+                    <div class="row-content">
+                        <h3>Hassle-Free Device Setup</h3>
+                        <p>Your devices working together, exactly how you want them.</p>
+                        <ul class="row-features">
+                            <li><i class="fas fa-check"></i> Expert setup & optimization</li>
+                            <li><i class="fas fa-check"></i> Smart home integration</li>
+                            <li><i class="fas fa-check"></i> One-on-one training included</li>
+                        </ul>
+                    </div>
+                    <div class="row-action">
+                        <a href="service-detail.html?id=home-device-setup" class="action-btn">
+                            View Details <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
                 </div>
-            </a>
+
+                <!-- Service Row 3: Data Backup -->
+                <div class="service-row">
+                    <div class="row-icon">
+                        <i class="fas fa-cloud-upload-alt"></i>
+                    </div>
+                    <div class="row-content">
+                        <h3>Automatic Data Protection</h3>
+                        <p>Never worry about losing precious memories or important files.</p>
+                        <ul class="row-features">
+                            <li><i class="fas fa-check"></i> Set-and-forget backup</li>
+                            <li><i class="fas fa-check"></i> Quick file recovery</li>
+                            <li><i class="fas fa-check"></i> Access from any device</li>
+                        </ul>
+                    </div>
+                    <div class="row-action">
+                        <a href="service-detail.html?id=home-data-backup" class="action-btn">
+                            View Details <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Service Row 4: Digital Wellness -->
+                <div class="service-row">
+                    <div class="row-icon">
+                        <i class="fas fa-user-shield"></i>
+                    </div>
+                    <div class="row-content">
+                        <h3>Family Digital Wellness</h3>
+                        <p>Create a healthy online environment for your family.</p>
+                        <ul class="row-features">
+                            <li><i class="fas fa-check"></i> Smart parental controls</li>
+                            <li><i class="fas fa-check"></i> Screen time balance</li>
+                            <li><i class="fas fa-check"></i> Online safety guidance</li>
+                        </ul>
+                    </div>
+                    <div class="row-action">
+                        <a href="service-detail.html?id=home-digital-wellness" class="action-btn">
+                            View Details <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
         </div>
-        <a href="home-device-setup.html">
-            <div class="service-card">
-                <div class="service-image">
-                    <img src="Assets/Icons/device-setup.svg" alt="Device Setup">
-                </div>
-                <div class="service-text">
-                    <h3>Hassle-Free Device Setup</h3>
-                    <p>Your devices working together, exactly how you want them.</p>
-                    <ul>
-                        <li>Expert setup & optimization</li>
-                        <li>Smart home integration</li>
-                        <li>One-on-one training included</li>
-                    </ul>
-                    <a href="home-device-setup.html" class="read-more">Make Life Easier →</a>
-                </div>
-            </div>
-        </a>
-        <a href="home-data-backup.html">
-            <div class="service-card">
-                <div class="service-image">
-                    <img src="Assets/Icons/data-backup.svg" alt="Data Backup">
-                </div>
-                <div class="service-text">
-                    <h3>Automatic Data Protection</h3>
-                    <p>Never worry about losing precious memories or important files.</p>
-                    <ul>
-                        <li>Set-and-forget backup</li>
-                        <li>Quick file recovery</li>
-                        <li>Access from any device</li>
-                    </ul>
-                    <a href="home-data-backup.html" class="read-more">Protect Your Memories →</a>
-                </div>
-            </div>
-        </a>
-        <a href="home-privacy-and-digital-health.html">
-            <div class="service-card">
-                <div class="service-image">
-                    <img src="Assets/Icons/digital-wellness.svg" alt="Digital Wellness">
-                </div>
-                <div class="service-text">
-                    <h3>Family Digital Wellness</h3>
-                    <p>Create a healthy online environment for your family.</p>
-                    <ul>
-                        <li>Smart parental controls</li>
-                        <li>Screen time balance</li>
-                        <li>Online safety guidance</li>
-                    </ul>
-                    <a href="home-privacy-and-digital-health.html" class="read-more">Protect Your Family →</a>
-                </div>
-            </div>
-        </a>
-    </div>
+    </section>
 
     <!-- Why Choose Us Section -->
     <section class="why-choose-home">
         <div class="section-header">
             <h2>Why Families Trust Us</h2>
-            <p class="section-subtitle">Tech support that understands your family's needs.</p>
+            <p class="section-subtitle">Tech support that understands your family's needs</p>
         </div>
         <div class="benefits-grid">
             <div class="benefit-item">
@@ -129,7 +167,10 @@
             </div>
         </div>
         <div class="cta-container">
-            <a href="contact.html" class="cta-button">Schedule a Free Consultation</a>
+            <a href="contact-us.html" class="cta-button">
+                <i class="fas fa-calendar-check"></i>
+                Schedule a Free Consultation
+            </a>
         </div>
     </section>
 
@@ -137,5 +178,5 @@
     <div id="footer-placeholder"></div>
 
 </body>
-</html>
 
+</html>

@@ -1,0 +1,493 @@
+/* ===================================================================== */
+/* BUSINESS SERVICES PAGE - ZIG-ZAG LAYOUT                               */
+/* ===================================================================== */
+
+/* Hero Section - Professional Navy Blue */
+.business-hero {
+    position: relative;
+    min-height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, #1a2c4e 0%, #0f1a2e 100%);
+    margin-top: 80px;
+    padding: 80px 20px;
+}
+
+.business-hero .hero-overlay {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.business-hero .hero-content h1 {
+    font-size: 3.5rem;
+    font-weight: 800;
+    color: #ffffff;
+    margin-bottom: 20px;
+    line-height: 1.2;
+    text-shadow: 0 2px 10px rgba(0, 0, 0, 0.4);
+}
+
+.business-hero .hero-content p {
+    font-size: 1.5rem;
+    color: #e0e7ff;
+    font-weight: 400;
+    line-height: 1.6;
+    margin-bottom: 35px;
+    text-shadow: 0 1px 5px rgba(0, 0, 0, 0.3);
+}
+
+.hero-cta-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 12px;
+    background: #3b82f6;
+    color: #ffffff;
+    padding: 18px 40px;
+    font-size: 1.2rem;
+    font-weight: 700;
+    border-radius: 8px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    box-shadow: 0 5px 20px rgba(59, 130, 246, 0.4);
+}
+
+.hero-cta-btn:hover {
+    background: #2563eb;
+    transform: translateY(-3px);
+    box-shadow: 0 8px 25px rgba(59, 130, 246, 0.5);
+}
+
+.hero-cta-btn i {
+    font-size: 1.1rem;
+    transition: transform 0.3s ease;
+}
+
+.hero-cta-btn:hover i {
+    transform: translateX(5px);
+}
+
+/* Business Services Section */
+.business-services-section {
+    background: #f8f9fa;
+    padding: 0;
+}
+
+.business-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Zig-Zag Business Row */
+.business-row {
+    display: flex;
+    align-items: center;
+    gap: 60px;
+    padding: 80px 20px;
+    background: var(--pure-white);
+}
+
+.business-row:nth-child(even) {
+    background: #f8f9fa;
+}
+
+/* Reverse Row (Text Left, Image Right) */
+.business-row.reverse {
+    flex-direction: row-reverse;
+}
+
+/* Business Image - Bold Navy Style */
+.business-image {
+    flex: 0 0 45%;
+}
+
+.image-placeholder {
+    /* ROLLBACK: Deep Navy Gradient */
+    background: linear-gradient(135deg, #1a2c4e 0%, #2d4a7c 100%);
+
+    /* Keep definition */
+    border-radius: 8px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+
+    /* Reset borders/glass effects */
+    border: none;
+    backdrop-filter: none;
+
+    /* Layout */
+    width: 100%;
+    aspect-ratio: 4/3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+}
+
+/* EXPAND: Larger Icon */
+.image-placeholder i {
+    font-size: 8rem;
+    color: rgba(255, 255, 255, 0.15);
+    transition: all 0.3s ease;
+}
+
+/* Hover Effect: Icon lights up */
+.business-row:hover .image-placeholder {
+    transform: scale(1.02);
+    box-shadow: 0 25px 50px rgba(0, 0, 0, 0.25);
+}
+
+.business-row:hover .image-placeholder i {
+    color: rgba(255, 255, 255, 0.9);
+    transform: scale(1.1);
+}
+
+/* Business Content */
+.business-content {
+    flex: 1;
+}
+
+.service-badge {
+    display: inline-block;
+    background: rgba(59, 130, 246, 0.1);
+    color: #3b82f6;
+    padding: 8px 20px;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.business-content h2 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #1a2c4e;
+    margin-bottom: 20px;
+    line-height: 1.2;
+}
+
+.business-content p {
+    font-size: 1.15rem;
+    color: #555;
+    line-height: 1.7;
+    margin-bottom: 25px;
+}
+
+/* Business Features List */
+.business-features {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 30px 0;
+}
+
+.business-features li {
+    font-size: 1.05rem;
+    color: #333;
+    line-height: 1.8;
+    margin-bottom: 12px;
+    padding-left: 35px;
+    position: relative;
+}
+
+.business-features li i {
+    position: absolute;
+    left: 0;
+    top: 4px;
+    color: #3b82f6;
+    font-size: 1.2rem;
+}
+
+/* Business Link */
+.business-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    color: #3b82f6;
+    font-weight: 600;
+    font-size: 1.1rem;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.business-link:hover {
+    color: #2563eb;
+    gap: 12px;
+}
+
+.business-link i {
+    font-size: 1rem;
+    transition: transform 0.3s ease;
+}
+
+.business-link:hover i {
+    transform: translateX(3px);
+}
+
+/* CTA Section */
+.business-cta-section {
+    background: linear-gradient(135deg, #1a2c4e 0%, #0f1a2e 100%);
+    padding: 100px 20px;
+    text-align: center;
+}
+
+.cta-container {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.business-cta-section h2 {
+    font-size: 3rem;
+    font-weight: 700;
+    color: #ffffff;
+    margin-bottom: 20px;
+    line-height: 1.2;
+}
+
+.business-cta-section p {
+    font-size: 1.3rem;
+    color: #e0e7ff;
+    margin-bottom: 40px;
+    line-height: 1.6;
+}
+
+.cta-button {
+    display: inline-flex;
+    align-items: center;
+    gap: 12px;
+    background: #3b82f6;
+    color: #ffffff;
+    padding: 20px 50px;
+    font-size: 1.3rem;
+    font-weight: 700;
+    border-radius: 8px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    box-shadow: 0 5px 20px rgba(59, 130, 246, 0.4);
+}
+
+.cta-button:hover {
+    background: #2563eb;
+    transform: translateY(-3px);
+    box-shadow: 0 8px 25px rgba(59, 130, 246, 0.5);
+}
+
+.cta-button i {
+    font-size: 1.2rem;
+    transition: transform 0.3s ease;
+}
+
+.cta-button:hover i {
+    transform: translateX(5px);
+}
+
+/* ===================================================================== */
+/* RESPONSIVE DESIGN                                                     */
+/* ===================================================================== */
+
+/* Tablet */
+@media (max-width: 968px) {
+    .business-hero .hero-content h1 {
+        font-size: 2.5rem;
+    }
+
+    .business-hero .hero-content p {
+        font-size: 1.25rem;
+    }
+
+    .business-row {
+        gap: 40px;
+        padding: 60px 20px;
+    }
+
+    .business-content h2 {
+        font-size: 2rem;
+    }
+
+    .business-content p {
+        font-size: 1.05rem;
+    }
+
+    .business-features li {
+        font-size: 1rem;
+    }
+
+    .business-cta-section h2 {
+        font-size: 2.2rem;
+    }
+
+    .business-cta-section p {
+        font-size: 1.15rem;
+    }
+}
+
+/* Mobile: Stack ALL Rows (Image Top, Text Bottom) */
+@media (max-width: 768px) {
+    .business-hero {
+        min-height: 400px;
+        padding: 60px 20px;
+    }
+
+    .business-hero .hero-content h1 {
+        font-size: 2rem;
+    }
+
+    .business-hero .hero-content p {
+        font-size: 1.1rem;
+    }
+
+    .hero-cta-btn {
+        width: 100%;
+        justify-content: center;
+        padding: 16px 32px;
+        font-size: 1.1rem;
+    }
+
+    .business-row,
+    .business-row.reverse {
+        flex-direction: column;
+        gap: 30px;
+        padding: 50px 20px;
+    }
+
+    .business-image {
+        flex: 0 0 auto;
+        width: 100%;
+    }
+
+    .image-placeholder {
+        aspect-ratio: 16/9;
+    }
+
+    .image-placeholder i {
+        font-size: 4rem;
+    }
+
+    .business-content {
+        text-align: center;
+    }
+
+    .service-badge {
+        font-size: 0.85rem;
+    }
+
+    .business-content h2 {
+        font-size: 1.75rem;
+    }
+
+    .business-content p {
+        font-size: 1rem;
+    }
+
+    .business-features {
+        text-align: left;
+    }
+
+    .business-features li {
+        font-size: 0.95rem;
+        padding-left: 30px;
+    }
+
+    .business-link {
+        font-size: 1rem;
+    }
+
+    .business-cta-section {
+        padding: 70px 20px;
+    }
+
+    .business-cta-section h2 {
+        font-size: 1.8rem;
+    }
+
+    .business-cta-section p {
+        font-size: 1.05rem;
+    }
+
+    .cta-button {
+        width: 100%;
+        justify-content: center;
+        padding: 16px 32px;
+        font-size: 1.1rem;
+    }
+}
+
+/* ===================================================================== */
+/* BUSINESS THEME GLOBAL OVERRIDES                                       */
+/* ===================================================================== */
+
+/* Apply navy blue theme globally for business services */
+body.business-theme {
+    --primary-green: #1a2c4e;
+    --accent-lime: #3b82f6;
+}
+
+/* Hero Section - Navy Blue */
+body.business-theme .service-hero {
+    background: linear-gradient(135deg, #1a2c4e 0%, #0f1a2e 100%) !important;
+}
+
+body.business-theme .hero-text h1,
+body.business-theme .service-hero-title {
+    color: #ffffff !important;
+}
+
+body.business-theme .hero-text p,
+body.business-theme .service-hero-subtitle {
+    color: #e0e7ff !important;
+}
+
+/* Icons & Features - Bright Blue */
+body.business-theme .features-icon,
+body.business-theme .feature-list li i,
+body.business-theme .business-features li i {
+    color: #3b82f6 !important;
+    background: rgba(59, 130, 246, 0.1);
+}
+
+/* Buttons - Blue Background */
+body.business-theme .cta-button,
+body.business-theme .action-btn,
+body.business-theme .hero-cta-btn {
+    background-color: #3b82f6 !important;
+    border-color: #3b82f6 !important;
+}
+
+body.business-theme .cta-button:hover,
+body.business-theme .action-btn:hover,
+body.business-theme .hero-cta-btn:hover {
+    background-color: #2563eb !important;
+    border-color: #2563eb !important;
+}
+
+/* Headings - Navy Blue */
+body.business-theme h1,
+body.business-theme h2,
+body.business-theme h3,
+body.business-theme .section-heading {
+    color: #1a2c4e !important;
+}
+
+/* Service Badges - Blue */
+body.business-theme .service-badge {
+    background: rgba(59, 130, 246, 0.1) !important;
+    color: #3b82f6 !important;
+}
+
+/* Links - Blue */
+body.business-theme .business-link,
+body.business-theme .related-link {
+    color: #3b82f6 !important;
+}
+
+body.business-theme .business-link:hover,
+body.business-theme .related-link:hover {
+    color: #2563eb !important;
+}
+
+/* Checkmarks - Blue */
+body.business-theme .fa-check-circle,
+body.business-theme .fa-check {
+    color: #3b82f6 !important;
+}

@@ -1,0 +1,556 @@
+/* ===================================================================== */
+/* AI SOLUTIONS PAGE - Enhanced Hero & Markets Design                   */
+/* ===================================================================== */
+
+/* Hero Section - Centered Layout with Brain Icon */
+.ai-hero-overlay {
+    background: linear-gradient(135deg, #285a3b 0%, #1f4a2e 100%);
+    padding: 8rem 4rem 6rem 4rem;
+    margin-top: 80px;
+    position: relative;
+    overflow: hidden;
+}
+
+.ai-hero-overlay::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image:
+        radial-gradient(circle at 20% 50%, rgba(178, 210, 53, 0.1) 0%, transparent 50%),
+        radial-gradient(circle at 80% 80%, rgba(42, 90, 60, 0.15) 0%, transparent 50%);
+    pointer-events: none;
+}
+
+.ai-hero-content {
+    max-width: 900px;
+    margin: 0 auto;
+    text-align: center;
+    position: relative;
+    z-index: 1;
+}
+
+.ai-hero-icon {
+    width: 120px;
+    height: 120px;
+    background: linear-gradient(135deg, rgba(178, 210, 53, 0.2), rgba(178, 210, 53, 0.1));
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 2rem auto;
+    border: 3px solid rgba(178, 210, 53, 0.4);
+    animation: pulse 3s ease-in-out infinite;
+}
+
+.ai-hero-icon i {
+    font-size: 4rem;
+    color: var(--accent-lime);
+}
+
+@keyframes pulse {
+    0%, 100% {
+        transform: scale(1);
+        box-shadow: 0 0 0 0 rgba(178, 210, 53, 0.4);
+    }
+    50% {
+        transform: scale(1.05);
+        box-shadow: 0 0 0 20px rgba(178, 210, 53, 0);
+    }
+}
+
+.ai-hero-title {
+    font-size: 3.5rem;
+    font-weight: 700;
+    color: var(--pure-white);
+    margin-bottom: 1.5rem;
+    line-height: 1.2;
+    text-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+}
+
+.ai-hero-subtitle {
+    font-size: 1.4rem;
+    color: #e8f0e3;
+    line-height: 1.8;
+    margin-bottom: 3rem;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.ai-hero-features {
+    display: flex;
+    gap: 1.5rem;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.ai-hero-feature {
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    padding: 1rem 1.8rem;
+    border-radius: 50px;
+    border: 1px solid rgba(178, 210, 53, 0.3);
+    transition: all 0.3s ease;
+}
+
+.ai-hero-feature:hover {
+    background: rgba(178, 210, 53, 0.2);
+    border-color: var(--accent-lime);
+    transform: translateY(-3px);
+}
+
+.ai-hero-feature i {
+    font-size: 1.4rem;
+    color: var(--accent-lime);
+}
+
+.ai-hero-feature span {
+    color: var(--pure-white);
+    font-weight: 500;
+    font-size: 1rem;
+}
+
+/* ===================================================================== */
+/* AI MARKETS SECTION - Split Cards                                     */
+/* ===================================================================== */
+
+.ai-markets-section {
+    padding: 6rem 4rem;
+    background: linear-gradient(180deg, #f4f6f5 0%, var(--pure-white) 100%);
+}
+
+.ai-markets-container {
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.section-intro {
+    text-align: center;
+    margin-bottom: 4rem;
+}
+
+.section-title {
+    font-size: 3rem;
+    color: var(--primary-green);
+    margin-bottom: 1rem;
+    font-weight: 700;
+}
+
+.section-description {
+    font-size: 1.2rem;
+    color: #666;
+    max-width: 800px;
+    margin: 0 auto;
+    line-height: 1.8;
+}
+
+.ai-markets {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 3rem;
+}
+
+.ai-market-card {
+    background: var(--pure-white);
+    padding: 3rem;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    border: 2px solid transparent;
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    position: relative;
+}
+
+.ai-market-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 5px;
+    background: linear-gradient(90deg, var(--primary-green), var(--accent-lime));
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    border-radius: 20px 20px 0 0;
+}
+
+.ai-market-card:hover::before {
+    opacity: 1;
+}
+
+.ai-market-card:hover {
+    transform: translateY(-5px);
+    border-color: var(--accent-lime);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+}
+
+.market-icon {
+    width: 80px;
+    height: 80px;
+    background: linear-gradient(135deg, var(--primary-green), #1f4a2e);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 2rem;
+    box-shadow: 0 10px 25px rgba(40, 90, 59, 0.3);
+}
+
+.market-icon i {
+    font-size: 2.5rem;
+    color: var(--pure-white);
+}
+
+.market-title {
+    font-size: 2rem;
+    color: var(--primary-green);
+    margin-bottom: 1rem;
+    font-weight: 700;
+}
+
+.market-description {
+    font-size: 1.1rem;
+    color: #555;
+    line-height: 1.8;
+    margin-bottom: 2.5rem;
+}
+
+.market-features {
+    margin-bottom: 2.5rem;
+}
+
+.feature-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+    padding: 1rem;
+    border-radius: 10px;
+    transition: background 0.3s ease;
+}
+
+.feature-item:hover {
+    background: #f8f9fa;
+}
+
+.feature-item i {
+    color: var(--accent-lime);
+    font-size: 1.3rem;
+    margin-top: 0.3rem;
+    flex-shrink: 0;
+}
+
+.feature-content h4 {
+    font-size: 1.1rem;
+    color: var(--primary-green);
+    margin-bottom: 0.3rem;
+    font-weight: 600;
+}
+
+.feature-content p {
+    font-size: 0.95rem;
+    color: #666;
+    line-height: 1.6;
+}
+
+.market-cta {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.8rem;
+    padding: 1.2rem 2.5rem;
+    background: linear-gradient(135deg, var(--primary-green), #1f4a2e);
+    color: var(--pure-white);
+    border-radius: 50px;
+    font-weight: 600;
+    font-size: 1.1rem;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    box-shadow: 0 5px 15px rgba(40, 90, 59, 0.3);
+}
+
+.market-cta:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 25px rgba(40, 90, 59, 0.4);
+    background: linear-gradient(135deg, #1f4a2e, var(--primary-green));
+}
+
+.market-cta i {
+    font-size: 1.2rem;
+}
+
+/* ===================================================================== */
+/* CONSULTATION SECTION - Bottom CTA                                    */
+/* ===================================================================== */
+
+.ai-consultation-section {
+    padding: 5rem 4rem;
+    background: linear-gradient(135deg, var(--primary-green) 0%, #1f4a2e 100%);
+    position: relative;
+    overflow: hidden;
+}
+
+.ai-consultation-section::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    right: -10%;
+    width: 500px;
+    height: 500px;
+    background: radial-gradient(circle, rgba(178, 210, 53, 0.2) 0%, transparent 70%);
+    border-radius: 50%;
+}
+
+.consultation-content {
+    max-width: 900px;
+    margin: 0 auto;
+    text-align: center;
+    position: relative;
+    z-index: 1;
+}
+
+.consultation-icon {
+    width: 100px;
+    height: 100px;
+    background: rgba(178, 210, 53, 0.2);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 2rem auto;
+    border: 3px solid rgba(178, 210, 53, 0.4);
+}
+
+.consultation-icon i {
+    font-size: 3rem;
+    color: var(--accent-lime);
+}
+
+.consultation-title {
+    font-size: 2.8rem;
+    color: var(--pure-white);
+    margin-bottom: 1.5rem;
+    font-weight: 700;
+}
+
+.consultation-text {
+    font-size: 1.2rem;
+    color: #e8f0e3;
+    line-height: 1.8;
+    margin-bottom: 2.5rem;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.consultation-cta {
+    display: inline-flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 1.3rem 3rem;
+    background: var(--accent-lime);
+    color: var(--primary-green);
+    border-radius: 50px;
+    font-size: 1.2rem;
+    font-weight: 700;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    box-shadow: 0 10px 30px rgba(178, 210, 53, 0.3);
+}
+
+.consultation-cta:hover {
+    background: #c8e040;
+    transform: translateY(-3px);
+    box-shadow: 0 15px 40px rgba(178, 210, 53, 0.4);
+}
+
+.consultation-cta i {
+    font-size: 1.4rem;
+}
+
+.consultation-note {
+    font-size: 0.95rem;
+    color: #b8d9c4;
+    margin-top: 1.5rem;
+    font-style: italic;
+}
+
+/* ===================================================================== */
+/* USE CASES SECTION - Grid Layout                                      */
+/* ===================================================================== */
+
+.ai-use-cases {
+    padding: 6rem 4rem;
+    background: var(--pure-white);
+}
+
+.use-cases-container {
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.use-cases-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2.5rem;
+    margin-top: 3rem;
+}
+
+.use-case-card {
+    background: #f8f9fa;
+    padding: 2.5rem 2rem;
+    border-radius: 15px;
+    text-align: center;
+    transition: all 0.3s ease;
+    border: 2px solid transparent;
+}
+
+.use-case-card:hover {
+    background: var(--pure-white);
+    border-color: var(--accent-lime);
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+.use-case-icon {
+    width: 70px;
+    height: 70px;
+    background: linear-gradient(135deg, rgba(40, 90, 59, 0.1), rgba(178, 210, 53, 0.1));
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 1.5rem auto;
+}
+
+.use-case-icon i {
+    font-size: 2rem;
+    color: var(--primary-green);
+}
+
+.use-case-card h3 {
+    font-size: 1.3rem;
+    color: var(--primary-green);
+    margin-bottom: 1rem;
+    font-weight: 600;
+}
+
+.use-case-card p {
+    font-size: 0.95rem;
+    color: #666;
+    line-height: 1.7;
+}
+
+/* ===================================================================== */
+/* RESPONSIVE DESIGN - Mobile First                                     */
+/* ===================================================================== */
+
+@media (max-width: 968px) {
+    .ai-hero-overlay {
+        padding: 5rem 2rem 4rem 2rem;
+    }
+
+    .ai-hero-title {
+        font-size: 2.5rem;
+    }
+
+    .ai-hero-subtitle {
+        font-size: 1.1rem;
+    }
+
+    .ai-hero-icon {
+        width: 90px;
+        height: 90px;
+    }
+
+    .ai-hero-icon i {
+        font-size: 3rem;
+    }
+
+    .ai-hero-features {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .ai-hero-feature {
+        justify-content: center;
+    }
+
+    .ai-markets-section {
+        padding: 4rem 2rem;
+    }
+
+    .section-title {
+        font-size: 2.2rem;
+    }
+
+    .ai-markets {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+
+    .ai-market-card {
+        padding: 2rem;
+    }
+
+    .market-icon {
+        width: 60px;
+        height: 60px;
+    }
+
+    .market-icon i {
+        font-size: 2rem;
+    }
+
+    .market-title {
+        font-size: 1.6rem;
+    }
+
+    .ai-consultation-section {
+        padding: 3rem 2rem;
+    }
+
+    .consultation-title {
+        font-size: 2rem;
+    }
+
+    .consultation-text {
+        font-size: 1.1rem;
+    }
+
+    .consultation-cta {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .ai-use-cases {
+        padding: 4rem 2rem;
+    }
+
+    .use-cases-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1.5rem;
+    }
+}
+
+@media (max-width: 640px) {
+    .ai-hero-title {
+        font-size: 2rem;
+    }
+
+    .section-title {
+        font-size: 1.8rem;
+    }
+
+    .consultation-title {
+        font-size: 1.6rem;
+    }
+
+    .use-cases-grid {
+        grid-template-columns: 1fr;
+    }
+}

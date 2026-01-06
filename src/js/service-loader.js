@@ -2,6 +2,18 @@
 // SERVICE LOADER - Dynamic Service Detail Page
 // ===================================================================
 
+// Icon Mapping for Services
+const ICON_MAP = {
+    'home-network': 'fa-wifi',
+    'home-device-setup': 'fa-laptop-medical',
+    'home-data-backup': 'fa-cloud-upload-alt',
+    'home-digital-wellness': 'fa-user-shield',
+    'business-it-support': 'fa-headset',
+    'business-cloud-migration': 'fa-cloud',
+    'business-cybersecurity': 'fa-shield-alt',
+    'default': 'fa-cogs'
+};
+
 document.addEventListener('DOMContentLoaded', async () => {
     console.log('Service Loader: Initializing...');
 
@@ -41,8 +53,8 @@ document.addEventListener('DOMContentLoaded', async () => {
 
         console.log('Service Loader: Found service:', service.title);
 
-        // Render the service
-        renderService(service);
+        // Render the service (pass all services for related services)
+        renderService(service, services);
 
     } catch (error) {
         console.error('Service Loader: Error loading service data:', error);
@@ -52,22 +64,18 @@ document.addEventListener('DOMContentLoaded', async () => {
 
 /**
  * Render service details to the page
+ * @param {Object} service - The current service object
+ * @param {Array} allServices - All services for related services section
  */
-function renderService(service) {
+function renderService(service, allServices) {
     console.log('Service Loader: Rendering service...');
 
     // Update page title and meta description
     document.getElementById('pageTitle').textContent = `${service.title} - SoonTech`;
     document.getElementById('pageDescription').content = service.subtitle;
 
-    // Update hero section
-    const heroSection = document.getElementById('serviceHero');
-    heroSection.style.backgroundImage = `linear-gradient(rgba(40, 90, 59, 0.85), rgba(40, 90, 59, 0.85)), url('${service.heroImage}')`;
-    heroSection.style.backgroundSize = 'cover';
-    heroSection.style.backgroundPosition = 'center';
-
-    document.getElementById('serviceTitle').textContent = service.title;
-    document.getElementById('serviceSubtitle').textContent = service.subtitle;
+    // Update hero section with icon visual
+    renderHeroSection(service);
 
     // Update overview
     document.getElementById('serviceOverview').innerHTML = `<p>${service.overview}</p>`;
@@ -106,7 +114,170 @@ function renderService(service) {
         document.getElementById('ctaButton').href = service.ctaLink;
     }
 
+    // === NEW: Trust Module (Home Services Only) ===
+    if (service.category === 'home') {
+        renderTrustModule();
+    }
+
+    // === NEW: Service Inclusions ===
+    if (service.inclusions && service.inclusions.length > 0) {
+        renderInclusions(service.inclusions);
+    }
+
+    // === NEW: Related Services ===
+    if (allServices && allServices.length > 0) {
+        renderRelatedServices(service, allServices);
+    }
+
     console.log('Service Loader: Rendering complete ✓');
+}
+
+/**
+ * Render Hero Section with Icon Visual
+ * @param {Object} service - The current service object
+ */
+function renderHeroSection(service) {
+    const heroSection = document.getElementById('serviceHero');
+    const heroContentWrapper = heroSection.querySelector('.hero-content-wrapper');
+
+    // Get icon class for this service
+    const iconClass = ICON_MAP[service.id] || ICON_MAP['default'];
+
+    // Theme Switcher: Apply business theme for business services
+    if (service.category === 'business') {
+        document.body.classList.add('business-theme');
+        // Change Hero Gradient to Navy
+        heroSection.style.background = 'linear-gradient(135deg, rgba(26, 44, 78, 0.9) 0%, rgba(15, 26, 46, 0.9) 100%)';
+    } else {
+        document.body.classList.remove('business-theme');
+        // Keep Home Green Gradient
+        heroSection.style.background = 'linear-gradient(135deg, #285a3b 0%, #1a3c27 100%)';
+    }
+
+    // Create hero content with icon visual
+    heroContentWrapper.innerHTML = `
+        <div class="hero-text">
+            <h1 id="serviceTitle">${service.title}</h1>
+            <p id="serviceSubtitle">${service.subtitle}</p>
+        </div>
+        <div class="hero-icon-visual">
+            <i class="fas ${iconClass}"></i>
+        </div>
+    `;
+}
+
+/**
+ * Render Trust Module for Home Services
+ */
+function renderTrustModule() {
+    const trustContainer = document.getElementById('trustModuleContainer');
+
+    const trustHTML = `
+        <section class="trust-module">
+            <div class="trust-container">
+                <h2 class="trust-heading">Trust & Safety</h2>
+                <p class="trust-subheading">Your home, your privacy, our commitment</p>
+                <div class="trust-grid">
+                    <div class="trust-item">
+                        <div class="trust-icon">
+                            <i class="fas fa-user-shield"></i>
+                        </div>
+                        <h3>Verified Experts</h3>
+                        <p>Background-checked technicians with years of experience</p>
+                    </div>
+                    <div class="trust-item">
+                        <div class="trust-icon">
+                            <i class="fas fa-lock"></i>
+                        </div>
+                        <h3>Data Privacy</h3>
+                        <p>Your information stays private and secure</p>
+                    </div>
+                    <div class="trust-item">
+                        <div class="trust-icon">
+                            <i class="fas fa-certificate"></i>
+                        </div>
+                        <h3>Satisfaction Guarantee</h3>
+                        <p>100% satisfaction or your money back</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    `;
+
+    trustContainer.innerHTML = trustHTML;
+    console.log('Service Loader: Trust Module rendered ✓');
+}
+
+/**
+ * Render Service Inclusions
+ * @param {Array} inclusions - List of inclusion items
+ */
+function renderInclusions(inclusions) {
+    const inclusionsSection = document.getElementById('inclusionsSection');
+    const inclusionsGrid = document.getElementById('inclusionsGrid');
+
+    inclusionsGrid.innerHTML = ''; // Clear any existing content
+
+    inclusions.forEach(inclusion => {
+        const card = document.createElement('div');
+        card.className = 'inclusion-card';
+        card.innerHTML = `
+            <div class="inclusion-icon">
+                <i class="fas fa-check-circle"></i>
+            </div>
+            <h4>${inclusion}</h4>
+        `;
+        inclusionsGrid.appendChild(card);
+    });
+
+    // Show the section
+    inclusionsSection.classList.remove('hidden');
+    console.log('Service Loader: Inclusions rendered ✓', inclusions.length, 'items');
+}
+
+/**
+ * Render Related Services with FontAwesome Icons
+ * @param {Object} currentService - The current service object
+ * @param {Array} allServices - All available services
+ */
+function renderRelatedServices(currentService, allServices) {
+    // Filter services: same category, exclude current service
+    const relatedServices = allServices.filter(s =>
+        s.category === currentService.category && s.id !== currentService.id
+    ).slice(0, 3); // Get top 3
+
+    if (relatedServices.length === 0) {
+        console.log('Service Loader: No related services found');
+        return;
+    }
+
+    const relatedSection = document.getElementById('relatedServicesSection');
+    const relatedGrid = document.getElementById('relatedGrid');
+
+    relatedGrid.innerHTML = ''; // Clear any existing content
+
+    relatedServices.forEach(service => {
+        // Get icon class for this service
+        const iconClass = ICON_MAP[service.id] || ICON_MAP['default'];
+
+        const card = document.createElement('div');
+        card.className = 'related-card';
+        card.innerHTML = `
+            <div class="related-icon-circle">
+                <i class="fas ${iconClass}"></i>
+            </div>
+            <h3>${service.title}</h3>
+            <p>${service.subtitle}</p>
+            <a href="service-detail.html?id=${service.id}" class="related-link">
+                Learn More <i class="fas fa-arrow-right"></i>
+            </a>
+        `;
+        relatedGrid.appendChild(card);
+    });
+
+    // Show the section
+    relatedSection.classList.remove('hidden');
+    console.log('Service Loader: Related Services rendered ✓', relatedServices.length, 'services');
 }
 
 /**

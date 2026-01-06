@@ -3,6 +3,9 @@
 @import url('styles/sections/about.css');
 @import url('styles/sections/contact.css');
 @import url('styles/sections/service-detail.css');
+@import url('styles/sections/ai.css');
+@import url('styles/sections/services-home.css');
+@import url('styles/sections/business.css');
 
 /* Color Variables */
 :root {

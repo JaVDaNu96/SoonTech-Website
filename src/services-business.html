@@ -1,105 +1,157 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Business IT Solutions - SoonTech</title>
-    <meta name="description" content="Enterprise-grade IT solutions scaled for growing businesses. Managed services, cybersecurity, and cloud solutions that drive growth.">
-    <link href="https://fonts.googleapis.com/css2?family=Overpass:wght@300;400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="main.css">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+    <meta name="description"
+        content="Enterprise-grade IT solutions for small businesses. Managed support, cloud migration, network infrastructure, and cybersecurity.">
+    <title>Business IT Services - SoonTech</title>
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Overpass:wght@400;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- Main Stylesheet -->
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- Shared Components Loader -->
     <script src="includes.js" defer></script>
-    <script src="filter.js" defer></script>
 </head>
+
 <body>
-
-    <!-- Header -->
+    <!-- Navigation (Shared Component) -->
     <div id="header-placeholder"></div>
-    <section class="services-hero">
-        <h1>Enterprise IT Within Reach</h1>
-        <p>Stop worrying about technology and focus on growth. Get enterprise-grade solutions that fit your budget.</p>
+
+    <!-- Hero Section - Professional Office Tech Vibe -->
+    <section class="business-hero">
+        <div class="hero-overlay">
+            <div class="hero-content">
+                <h1>Enterprise-Grade IT for Small Businesses</h1>
+                <p>Reliable Support. Secure Cloud. Fast Networks.</p>
+                <a href="contact-us.html?service=business" class="hero-cta-btn">
+                    Get Your Free Assessment <i class="fas fa-arrow-right"></i>
+                </a>
+            </div>
+        </div>
     </section>
 
-    <!-- Services Overview Section -->
-    <div class="services-overview">
-        <div class="service-card">
-            <a href="managed-IT.html">
-                <div class="service-image">
-                    <img src="Assets/Icons/managed-it.svg" alt="Managed IT Services">
+    <!-- Zig-Zag Service Rows -->
+    <section class="business-services-section">
+        <div class="business-container">
+            <!-- Row 1: Managed IT Support (Image Left, Text Right) -->
+            <div class="business-row">
+                <div class="business-image">
+                    <div class="image-placeholder">
+                        <i class="fas fa-headset"></i>
+                    </div>
                 </div>
-                <div class="service-text">
-                    <h3>Complete IT Management</h3>
-                    <p>Your entire IT infrastructure handled by experts. Focus on your business while we handle the tech.</p>
-                    <ul>
-                        <li>24/7 proactive monitoring</li>
-                        <li>Rapid issue resolution</li>
-                        <li>Strategic IT planning</li>
+                <div class="business-content">
+                    <div class="service-badge">Managed IT Support</div>
+                    <h2>24/7 Help Desk & Proactive Monitoring</h2>
+                    <p>Your dedicated IT team, without the overhead. We handle troubleshooting, maintenance, and
+                        monitoring so you can focus on growing your business.</p>
+                    <ul class="business-features">
+                        <li><i class="fas fa-check-circle"></i> Remote & on-site technical support</li>
+                        <li><i class="fas fa-check-circle"></i> Proactive system monitoring 24/7</li>
+                        <li><i class="fas fa-check-circle"></i> Regular maintenance & updates</li>
+                        <li><i class="fas fa-check-circle"></i> Fast response times guaranteed</li>
                     </ul>
-                    <a href="managed-IT.html" class="read-more">Boost Efficiency →</a>
+                    <a href="service-detail.html?id=business-it-support" class="business-link">
+                        Learn More <i class="fas fa-arrow-right"></i>
+                    </a>
                 </div>
-            </a>
-        </div>
-        <div class="service-card">
-            <a href="cybersecurity.html">
-                <div class="service-image">
-                    <img src="Assets/Icons/security-shield.svg" alt="Cybersecurity">
-                </div>
-                <div class="service-text">
-                    <h3>Advanced Security</h3>
-                    <p>Enterprise-grade protection scaled for your business. Keep your data and operations safe from threats.</p>
-                    <ul>
-                        <li>Real-time threat detection</li>
-                        <li>Data encryption & backup</li>
-                        <li>Compliance management</li>
-                    </ul>
-                    <a href="cybersecurity.html" class="read-more">Stay Protected →</a>
-                </div>
-            </a>
-        </div>
-    </div>
+            </div>
 
-    <!-- Why Choose Us Section -->
-    <section class="why-choose-home">
-        <div class="section-header">
-            <h2>Why Businesses Trust Us</h2>
-            <p class="section-subtitle">Technology that drives growth, not expenses.</p>
+            <!-- Row 2: Cloud & Microsoft 365 (Text Left, Image Right) -->
+            <div class="business-row reverse">
+                <div class="business-image">
+                    <div class="image-placeholder">
+                        <i class="fas fa-cloud"></i>
+                    </div>
+                </div>
+                <div class="business-content">
+                    <div class="service-badge">Cloud & Microsoft 365</div>
+                    <h2>Seamless Cloud Migration & Management</h2>
+                    <p>Move to the cloud with confidence. We handle Microsoft 365 setup, OneDrive migration, Teams
+                        deployment, and ongoing management.</p>
+                    <ul class="business-features">
+                        <li><i class="fas fa-check-circle"></i> Microsoft 365 migration & setup</li>
+                        <li><i class="fas fa-check-circle"></i> OneDrive & SharePoint configuration</li>
+                        <li><i class="fas fa-check-circle"></i> Teams deployment & training</li>
+                        <li><i class="fas fa-check-circle"></i> Email migration from any platform</li>
+                    </ul>
+                    <a href="service-detail.html?id=business-cloud-migration" class="business-link">
+                        Learn More <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Row 3: Network Infrastructure (Image Left, Text Right) -->
+            <div class="business-row">
+                <div class="business-image">
+                    <div class="image-placeholder">
+                        <i class="fas fa-network-wired"></i>
+                    </div>
+                </div>
+                <div class="business-content">
+                    <div class="service-badge">Network Infrastructure</div>
+                    <h2>Fast, Secure, Reliable Networks</h2>
+                    <p>Professional network design and implementation. From Wi-Fi to cabling to firewalls, we build
+                        networks that grow with your business.</p>
+                    <ul class="business-features">
+                        <li><i class="fas fa-check-circle"></i> Enterprise Wi-Fi installation</li>
+                        <li><i class="fas fa-check-circle"></i> Structured cabling & wiring</li>
+                        <li><i class="fas fa-check-circle"></i> Firewall & security configuration</li>
+                        <li><i class="fas fa-check-circle"></i> VPN & remote access setup</li>
+                    </ul>
+                    <a href="service-detail.html?id=business-network" class="business-link">
+                        Learn More <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Row 4: Cybersecurity (Text Left, Image Right) -->
+            <div class="business-row reverse">
+                <div class="business-image">
+                    <div class="image-placeholder">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                </div>
+                <div class="business-content">
+                    <div class="service-badge">Cybersecurity</div>
+                    <h2>Protect Your Business from Threats</h2>
+                    <p>Comprehensive security solutions to safeguard your data, systems, and reputation. From backups to
+                        antivirus to compliance, we've got you covered.</p>
+                    <ul class="business-features">
+                        <li><i class="fas fa-check-circle"></i> Automated backup & disaster recovery</li>
+                        <li><i class="fas fa-check-circle"></i> Enterprise antivirus & threat protection</li>
+                        <li><i class="fas fa-check-circle"></i> Security audits & compliance</li>
+                        <li><i class="fas fa-check-circle"></i> Employee security training</li>
+                    </ul>
+                    <a href="service-detail.html?id=business-cybersecurity" class="business-link">
+                        Learn More <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
         </div>
-        <div class="benefits-grid">
-            <div class="benefit-item">
-                <div class="benefit-icon">
-                    <i class="fas fa-rocket"></i>
-                </div>
-                <h3>Growth Ready</h3>
-                <p>Solutions that scale with your business. Enterprise capabilities at SMB prices.</p>
-            </div>
-            <div class="benefit-item">
-                <div class="benefit-icon">
-                    <i class="fas fa-shield-alt"></i>
-                </div>
-                <h3>Always Secure</h3>
-                <p>Enterprise-grade protection keeping your business safe 24/7.</p>
-            </div>
-            <div class="benefit-item">
-                <div class="benefit-icon">
-                    <i class="fas fa-chart-line"></i>
-                </div>
-                <h3>Cost Effective</h3>
-                <p>Predictable monthly costs. No surprise fees or hidden charges.</p>
-            </div>
-            <div class="benefit-item">
-                <div class="benefit-icon">
-                    <i class="fas fa-headset"></i>
-                </div>
-                <h3>Expert Support</h3>
-                <p>Dedicated team that knows your business and responds in minutes.</p>
-            </div>
-        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="business-cta-section">
         <div class="cta-container">
-            <a href="contact.html" class="cta-button">Get Your Custom Solution</a>
+            <h2>Ready to Upgrade Your Business IT?</h2>
+            <p>Get a free technology assessment and discover how we can help your business thrive.</p>
+            <a href="contact-us.html?service=business" class="cta-button">
+                Get Your Free Assessment <i class="fas fa-arrow-right"></i>
+            </a>
         </div>
     </section>
 
+    <!-- Footer (Shared Component) -->
     <div id="footer-placeholder"></div>
 </body>
-</html>
 
+</html>
