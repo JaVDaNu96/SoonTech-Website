@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="SoonTech Mission Control - Get instant support, submit tickets, or access self-service resources.">
+    <title>Support - SoonTech Mission Control</title>
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Overpass:wght@400;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- Main Stylesheet -->
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- Shared Components Loader -->
+    <script src="includes.js" defer></script>
+</head>
+
+<body>
+    <!-- Header (Shared Component) -->
+    <div id="header-placeholder"></div>
+
+    <!-- MISSION CONTROL WRAPPER - Single Container for Hero + Cards -->
+    <div class="mission-control-wrapper">
+        <!-- Hero Section -->
+        <div class="hero-content">
+            <h1 class="mission-title">Mission Control</h1>
+            <p class="mission-subtitle">How can SoonTech help you today?</p>
+
+            <!-- User Type Selector -->
+            <div class="user-selector">
+                <button class="selector-btn home active" onclick="setUser('home')">
+                    <i class="fas fa-home"></i> Home User
+                </button>
+                <button class="selector-btn business" onclick="setUser('business')">
+                    <i class="fas fa-building"></i> Business Client
+                </button>
+            </div>
+
+            <!-- Search Bar -->
+            <div class="search-container">
+                <i class="fas fa-search search-icon"></i>
+                <input type="text" id="support-search" class="search-input"
+                    placeholder="Search for help... (e.g., 'wifi not working')">
+            </div>
+        </div>
+
+        <!-- Action Grid - 3 Cards -->
+        <div class="action-grid">
+            <!-- Remote Support Card -->
+            <div class="action-card">
+                <div class="card-icon green-icon">
+                    <i class="fas fa-desktop"></i>
+                </div>
+                <h3>Remote Support</h3>
+                <p>Technician waiting? Enter your 6-digit code and connect instantly.</p>
+                <input type="text" class="code-input" placeholder="000000" maxlength="6">
+                <button class="action-btn green-btn">
+                    <span>Connect Now</span>
+                    <i class="fas fa-arrow-right"></i>
+                </button>
+                <p class="card-note">Avg. wait: <strong>2 min</strong></p>
+            </div>
+
+            <!-- Submit Ticket Card -->
+            <div class="action-card">
+                <div class="card-icon blue-icon">
+                    <i class="fas fa-ticket-alt"></i>
+                </div>
+                <h3>Submit a Ticket</h3>
+                <p>Describe your issue. Get a detailed response within 4 hours.</p>
+                <a href="contact-us.html?type=ticket" class="action-btn blue-btn">
+                    <span>Create Ticket</span>
+                    <i class="fas fa-edit"></i>
+                </a>
+                <p class="card-note">Response: <strong>4 hrs</strong></p>
+            </div>
+
+            <!-- Emergency Call Card -->
+            <div class="action-card">
+                <div class="card-icon red-icon">
+                    <i class="fas fa-phone-alt"></i>
+                </div>
+                <h3>Emergency Call</h3>
+                <p>System down? Critical issue? Call our emergency line now.</p>
+                <a href="tel:+12369751596" class="action-btn red-btn">
+                    <span>Call 236-975-1596</span>
+                    <i class="fas fa-phone"></i>
+                </a>
+                <p class="card-note emergency-note">24/7 Available</p>
+            </div>
+        </div>
+    </div>
+    <!-- END MISSION CONTROL WRAPPER -->
+
+    <!-- Self-Service Section - Light Theme -->
+    <section class="self-service-section">
+        <div class="service-container">
+            <h2 class="section-heading">Self-Service Resources</h2>
+            <p class="section-subtitle">Quick fixes for common issues</p>
+
+            <div class="service-grid">
+                <!-- Internet Issues -->
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-wifi"></i>
+                    </div>
+                    <h3>Internet Issues</h3>
+                    <p>Troubleshoot connectivity</p>
+                    <a href="#internet-faq" class="service-link">View Guide <i class="fas fa-chevron-right"></i></a>
+                </div>
+
+                <!-- Email Problems -->
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-envelope"></i>
+                    </div>
+                    <h3>Email Problems</h3>
+                    <p>Fix sync and access issues</p>
+                    <a href="#email-faq" class="service-link">View Guide <i class="fas fa-chevron-right"></i></a>
+                </div>
+
+                <!-- Printer Setup -->
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-print"></i>
+                    </div>
+                    <h3>Printer Setup</h3>
+                    <p>Configure printers</p>
+                    <a href="#printer-faq" class="service-link">View Guide <i class="fas fa-chevron-right"></i></a>
+                </div>
+
+                <!-- Security Alerts -->
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3>Security Alerts</h3>
+                    <p>Respond to warnings</p>
+                    <a href="#security-faq" class="service-link">View Guide <i class="fas fa-chevron-right"></i></a>
+                </div>
+
+                <!-- Billing Questions -->
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-file-invoice-dollar"></i>
+                    </div>
+                    <h3>Billing Questions</h3>
+                    <p>Invoice and payments</p>
+                    <a href="#billing-faq" class="service-link">View Guide <i class="fas fa-chevron-right"></i></a>
+                </div>
+
+                <!-- Account Access -->
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-user-lock"></i>
+                    </div>
+                    <h3>Account Access</h3>
+                    <p>Reset passwords</p>
+                    <a href="#account-faq" class="service-link">View Guide <i class="fas fa-chevron-right"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq-section">
+        <div class="faq-container">
+            <h2 class="section-heading">Frequently Asked Questions</h2>
+
+            <div class="faq-list">
+                <details class="faq-item">
+                    <summary class="faq-question">
+                        <span>How do I reset my password?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </summary>
+                    <div class="faq-answer">
+                        <p>Click "Forgot Password" on the login page. Enter your email and we'll send a reset link
+                            within minutes.</p>
+                    </div>
+                </details>
+
+                <details class="faq-item">
+                    <summary class="faq-question">
+                        <span>What are your support hours?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </summary>
+                    <div class="faq-answer">
+                        <p>Monday-Friday, 8 AM - 6 PM PST. Emergency support available 24/7.</p>
+                    </div>
+                </details>
+
+                <details class="faq-item">
+                    <summary class="faq-question">
+                        <span>How do I schedule remote support?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </summary>
+                    <div class="faq-answer">
+                        <p>Contact us to schedule a session. We'll provide a 6-digit code to enter above.</p>
+                    </div>
+                </details>
+
+                <details class="faq-item">
+                    <summary class="faq-question">
+                        <span>What should I include in a ticket?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </summary>
+                    <div class="faq-answer">
+                        <p>Describe the issue, when it started, what you tried, and include screenshots if possible.</p>
+                    </div>
+                </details>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="support-cta-section">
+        <div class="cta-container">
+            <h2>Still Need Help?</h2>
+            <p>Our team is standing by</p>
+            <div class="cta-buttons">
+                <a href="contact-us.html" class="cta-button primary">
+                    Contact Us <i class="fas fa-arrow-right"></i>
+                </a>
+                <a href="about-us.html" class="cta-button secondary">
+                    Meet Our Team <i class="fas fa-users"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer (Shared Component) -->
+    <div id="footer-placeholder"></div>
+
+    <!-- User Type Selector Script -->
+    <script>
+        function setUser(type) {
+            // Remove active from all buttons
+            document.querySelectorAll('.selector-btn').forEach(btn => {
+                btn.classList.remove('active');
+            });
+
+            // Add active to selected
+            const searchInput = document.getElementById('support-search');
+            if (type === 'home') {
+                document.querySelector('.selector-btn.home').classList.add('active');
+                searchInput.placeholder = "Search for help... (e.g., 'wifi not working')";
+            } else {
+                document.querySelector('.selector-btn.business').classList.add('active');
+                searchInput.placeholder = "Search for help... (e.g., 'server down')";
+            }
+        }
+    </script>
+</body>
+
+</html>

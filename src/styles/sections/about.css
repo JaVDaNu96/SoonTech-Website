@@ -1,241 +1,720 @@
 /* ===================================================================== */
-/* ABOUT SECTION - Mission/Vision/Strategy Tabs & Video                 */
+/* ABOUT US PAGE - HIGH-TECH HUMAN THEME                                 */
 /* ===================================================================== */
 
-/*////////// WE - MISION VISION STRATEGY //////////////////*/
-
-.about-section {
-    background: linear-gradient(135deg, var(--primary-green), var(--secondary-green));
-    color: var(--pure-white);
-    padding: 2rem 10rem;
-    display: flex;
-    justify-content: center;
-}
-
-.about-content {
-    display: flex;
-    align-items: center;
-    /* Vertically center both text card and video/image */
-    gap: 20px;
-    max-width: auto;
-    width: 100%;
-}
-
-/* Text Container - High Contrast Card Style */
-.about-text {
-    flex: 1;
-    background: #285a3b;
-    /* Primary Green - Brand Manual */
-    padding: 40px;
-    border-radius: 8px;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-
-/* Header Styling - Pure White for Maximum Contrast */
-.header h3 {
-    padding-bottom: 5%;
-    font-size: 1rem;
-    color: #ffffff;
-    /* Pure White - Brand Manual */
-    font-weight: 400;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-}
-
-.about-text .header h1 {
-    padding-bottom: 2%;
-    font-size: 2.5rem;
-    width: 600px;
-    color: #ffffff !important;
-    /* Pure White - Brand Manual */
-    font-weight: 700;
-}
-
-.about-image {
-    flex: 1;
-    display: none;
-    /*image hide to insert video*/
-    align-items: center;
-    justify-content: center;
-}
-
-.video-player {
-    flex: 1;
-    width: 640px;
-    /* Adjust the width */
-    height: 400px;
-    /* Adjust the height */
-    border: transparent;
-    /* Optional: add a border */
-    border-radius: 8px;
-    /* Optional: rounded corners */
-}
-
-.about-image img {
-    width: 100%;
-    height: auto;
-    border-radius: 8px;
-}
-
-/* Tabs Container - Refined Design */
-.tabs {
-    display: flex;
-    gap: 20px;
-    justify-content: left;
-    margin-bottom: 20px;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
-    padding-bottom: 10px;
-}
-
-.tab {
-    cursor: pointer;
-    padding: 10px 15px;
+/* Hero Section - Navy to Green Gradient */
+.about-hero {
     position: relative;
+    min-height: 600px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, #1a2c4e 0%, #285a3b 100%);
+    margin-top: 80px;
+    padding: 100px 20px;
+    overflow: hidden;
+}
+
+.about-hero .hero-overlay {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+    z-index: 2;
+    position: relative;
+}
+
+.about-hero .hero-content h1 {
+    font-size: 4rem;
+    font-weight: 800;
+    color: #ffffff;
+    margin-bottom: 25px;
+    line-height: 1.2;
+    text-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+.about-hero .hero-content p {
+    font-size: 1.5rem;
+    color: #e0e7ff;
+    font-weight: 400;
+    line-height: 1.6;
+    max-width: 800px;
+    margin: 0 auto;
+    text-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Fade In Up Animation */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.fade-in-up {
+    animation: fadeInUp 0.8s ease-out forwards;
+}
+
+.fade-in-up.delay-1 {
+    animation-delay: 0.2s;
+    opacity: 0;
+}
+
+/* Animated Statistics Section */
+.stats-section {
+    background: #1a2c4e;
+    padding: 40px 20px;
+    border-bottom: 1px solid #0f1a2e;
+}
+
+.stats-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 40px;
+}
+
+.stat-item {
+    text-align: center;
+    padding: 30px 20px;
     transition: all 0.3s ease;
 }
 
-/* Inactive Tab Style - Semi-transparent White */
-.tab h4 {
-    color: rgba(255, 255, 255, 0.6);
-    /* Semi-transparent White */
-    font-size: 1.2rem;
-    font-weight: 400;
-    transition: color 0.3s ease;
-    margin: 0;
+.stat-item:hover {
+    transform: translateY(-5px);
 }
 
-/* Tab Hover Effect */
-.tab:hover h4 {
-    color: #ffffff;
-    /* Pure White on hover */
-}
-
-/* Active Tab Style - Brand Lime Green */
-.tab.active h4 {
+.stat-number {
+    font-size: 4rem;
+    font-weight: 800;
     color: #b2d235;
-    /* Accent Lime - Brand Manual */
+    margin-bottom: 15px;
+    line-height: 1;
+}
+
+.stat-label {
+    font-size: 1.1rem;
+    color: #e0e7ff;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+/* Certifications Trust Strip */
+.certifications-section {
+    background: #ffffff;
+    padding: 30px 20px;
+    border-top: 1px solid #e0e0e0;
+}
+
+.certifications-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.cert-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 60px;
+    max-width: 900px;
+    margin: 60px auto 0;
+    align-items: center;
+}
+
+.cert-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    transition: all 0.3s ease;
+}
+
+.cert-item img {
+    height: 85px;
+    width: auto;
+    max-width: 100%;
+    filter: grayscale(100%);
+    opacity: 0.6;
+    transition: all 0.3s ease;
+}
+
+.cert-item:hover img {
+    filter: grayscale(0%);
+    opacity: 1;
+    transform: scale(1.1);
+}
+
+/* Vision Section */
+.vision-section {
+    background: #f4f6f5;
+    padding: 100px 20px;
+}
+
+.vision-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+    gap: 80px;
+    align-items: center;
+}
+
+.vision-content h2 {
+    font-size: 3rem;
     font-weight: 700;
+    color: #1a2c4e;
+    margin-bottom: 25px;
+    line-height: 1.2;
 }
 
-/* Active Tab Indicator */
-.tab.active::after {
-    content: '';
-    position: absolute;
-    bottom: -11px;
-    left: 0;
-    width: 100%;
-    height: 3px;
-    background-color: #b2d235;
-    /* Accent Lime - Brand Manual */
-}
-
-.tab.selected {
-    font-weight: bold;
-}
-
-.tab-indicator {
-    position: absolute;
-    bottom: -5px;
-    left: 0;
-    width: 100%;
-    height: 3px;
-    background-color: transparent;
-    transition: background-color 0.3s ease;
-}
-
-/* Content Text - Pure White for Readability */
-.content-text {
-    display: none;
-    text-align: left;
-    padding: 10px 0;
-    color: #ffffff;
-    /* Pure White - Brand Manual */
-    font-size: 1.125rem;
-    /* 18px for better readability */
+.vision-lead {
+    font-size: 1.4rem;
+    color: #285a3b;
+    font-weight: 600;
+    margin-bottom: 25px;
     line-height: 1.6;
-    font-weight: 300;
 }
 
-.content-text.active {
-    display: block;
+.vision-content p {
+    font-size: 1.15rem;
+    color: #555;
+    line-height: 1.8;
+    margin-bottom: 20px;
 }
 
+.vision-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 
-/* Responsive adjustments */
+.vision-icon i {
+    font-size: 10rem;
+    color: #b2d235;
+    filter: drop-shadow(0 0 15px rgba(178, 210, 53, 0.4));
+    transition: all 0.3s ease;
+}
+
+.vision-container:hover .vision-icon i {
+    color: #b2d235;
+    filter: drop-shadow(0 0 25px rgba(178, 210, 53, 0.6));
+    transform: scale(1.05);
+}
+
+/* Leadership Section - 3D Flip Cards */
+.leadership-section {
+    background: #ffffff;
+    padding: 100px 20px;
+}
+
+.leadership-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.section-heading {
+    font-size: 3rem;
+    font-weight: 700;
+    color: #1a2c4e;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.section-subtitle {
+    font-size: 1.3rem;
+    color: #666;
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.leaders-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 60px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+/* 3D Flip Card Container */
+.flip-card {
+    perspective: 1000px;
+    height: 600px;
+    cursor: pointer;
+}
+
+.flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+}
+
+.flip-card:hover .flip-card-inner,
+.flip-card.flipped .flip-card-inner {
+    transform: rotateY(180deg);
+}
+
+.flip-card-front,
+.flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border-radius: 12px;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.15);
+}
+
+/* Front of Card */
+.flip-card-front {
+    background: linear-gradient(135deg, #ffffff 0%, #f8f9fa 100%);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 40px 30px;
+}
+
+.leader-image {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.leader-image img {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    border-radius: 12px;
+    border: 5px solid #285a3b;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+}
+
+.flip-card:hover .leader-image img {
+    transform: scale(1.05);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.25);
+}
+
+.leader-info h3 {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #1a2c4e;
+    margin-bottom: 10px;
+}
+
+.leader-title {
+    font-size: 1.2rem;
+    color: #285a3b;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.flip-hint {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    color: #3b82f6;
+    font-size: 0.95rem;
+    font-weight: 600;
+}
+
+.flip-hint i {
+    font-size: 1.1rem;
+    animation: rotate 2s linear infinite;
+}
+
+@keyframes rotate {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+/* Back of Card */
+.flip-card-back {
+    background: linear-gradient(135deg, #1a2c4e 0%, #0f1a2e 100%);
+    color: #ffffff;
+    transform: rotateY(180deg);
+    padding: 40px 35px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.back-header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.back-header h3 {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 8px;
+}
+
+.back-title {
+    font-size: 1.1rem;
+    color: #60a5fa;
+    font-weight: 600;
+    font-style: italic;
+}
+
+.back-content {
+    flex: 1;
+    text-align: left;
+    overflow-y: auto;
+}
+
+.back-content p {
+    font-size: 1.05rem;
+    line-height: 1.7;
+    color: #e0e7ff;
+    margin-bottom: 0;
+}
+
+.separator {
+    height: 1px;
+    background: linear-gradient(90deg, transparent, rgba(96, 165, 250, 0.3), transparent);
+    margin: 20px 0;
+}
+
+.flip-card-back .flip-hint {
+    color: #60a5fa;
+    margin-top: 20px;
+}
+
+/* Values Section */
+.values-section {
+    background: #f8f9fa;
+    padding: 100px 20px;
+}
+
+.values-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.values-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+    margin-top: 60px;
+}
+
+/* Glass-morphism Value Cards - Dark Theme */
+.value-card {
+    background: #1a2c4e;
+    backdrop-filter: blur(10px);
+    border: 1px solid #2d4a7c;
+    border-radius: 16px;
+    padding: 40px 35px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    transition: all 0.3s ease;
+}
+
+.value-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.4);
+    border-color: #3b82f6;
+}
+
+.value-icon {
+    width: 80px;
+    height: 80px;
+    background: #0f1a2e;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 25px;
+}
+
+.value-icon i {
+    font-size: 2.5rem;
+    color: #ffffff;
+}
+
+.value-card h3 {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: #b2d235;
+    margin-bottom: 15px;
+}
+
+.value-card p {
+    font-size: 1.1rem;
+    color: #e0e7ff;
+    line-height: 1.7;
+}
+
+/* CTA Section */
+.about-cta-section {
+    background: linear-gradient(135deg, #1a2c4e 0%, #285a3b 100%);
+    padding: 100px 20px;
+    text-align: center;
+}
+
+.about-cta-section h2 {
+    font-size: 3rem;
+    font-weight: 700;
+    color: #ffffff;
+    margin-bottom: 20px;
+}
+
+.about-cta-section p {
+    font-size: 1.3rem;
+    color: #e0e7ff;
+    margin-bottom: 40px;
+}
+
+.cta-button {
+    display: inline-flex;
+    align-items: center;
+    gap: 12px;
+    background: #3b82f6;
+    color: #ffffff;
+    padding: 20px 50px;
+    font-size: 1.3rem;
+    font-weight: 700;
+    border-radius: 8px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    box-shadow: 0 5px 20px rgba(59, 130, 246, 0.4);
+}
+
+.cta-button:hover {
+    background: #2563eb;
+    transform: translateY(-3px);
+    box-shadow: 0 8px 25px rgba(59, 130, 246, 0.5);
+}
+
+.cta-button i {
+    font-size: 1.2rem;
+    transition: transform 0.3s ease;
+}
+
+.cta-button:hover i {
+    transform: translateX(5px);
+}
+
+/* ===================================================================== */
+/* RESPONSIVE DESIGN                                                     */
+/* ===================================================================== */
+
+/* Tablet */
+@media (max-width: 968px) {
+    .about-hero .hero-content h1 {
+        font-size: 3rem;
+    }
+
+    .about-hero .hero-content p {
+        font-size: 1.3rem;
+    }
+
+    .vision-container {
+        grid-template-columns: 1fr;
+        gap: 50px;
+    }
+
+    .vision-icon i {
+        font-size: 8rem;
+    }
+
+    .leaders-grid {
+        grid-template-columns: 1fr;
+        gap: 50px;
+    }
+
+    .values-grid {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+
+    .stats-container {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 30px;
+    }
+
+    .cert-grid {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 40px;
+    }
+}
+
+/* Mobile */
 @media (max-width: 768px) {
-    .about-section {
-        padding: 2rem 1rem;
+    .about-hero {
+        min-height: 500px;
+        padding: 80px 20px;
     }
 
-    .about-text {
-        padding: 20px;
-        /* Reduced padding for mobile */
+    .about-hero .hero-content h1 {
+        font-size: 2.2rem;
     }
 
-    .about-text .header h1 {
-        width: 100%;
+    .about-hero .hero-content p {
+        font-size: 1.1rem;
+    }
+
+    .vision-section {
+        padding: 60px 20px;
+    }
+
+    .vision-content h2 {
+        font-size: 2.2rem;
+    }
+
+    .vision-lead {
+        font-size: 1.2rem;
+    }
+
+    .vision-content p {
+        font-size: 1.05rem;
+    }
+
+    .vision-icon i {
+        font-size: 6rem;
+    }
+
+    .leadership-section {
+        padding: 60px 20px;
+    }
+
+    .section-heading {
+        font-size: 2.2rem;
+    }
+
+    .section-subtitle {
+        font-size: 1.1rem;
+        margin-bottom: 40px;
+    }
+
+    .flip-card {
+        height: 550px;
+    }
+
+    .leader-image img {
+        max-width: 250px;
+    }
+
+    .leader-info h3 {
+        font-size: 1.7rem;
+    }
+
+    .leader-title {
+        font-size: 1.1rem;
+    }
+
+    .back-header h3 {
+        font-size: 1.7rem;
+    }
+
+    .back-content p {
+        font-size: 1rem;
+    }
+
+    .values-section {
+        padding: 60px 20px;
+    }
+
+    .value-card {
+        padding: 35px 25px;
+    }
+
+    .value-icon {
+        width: 70px;
+        height: 70px;
+    }
+
+    .value-icon i {
         font-size: 2rem;
     }
 
-    .about-content {
-        flex-direction: column;
-        text-align: center;
+    .value-card h3 {
+        font-size: 1.5rem;
     }
 
-    .about-image img {
-        max-width: 80%;
-        margin: 0 auto;
-    }
-
-    .tabs {
-        justify-content: center;
-    }
-
-    .content-text {
+    .value-card p {
         font-size: 1rem;
     }
-}
 
-/* Contact Info Styling - Pure White */
-.contact-info {
-    padding-top: 0%;
-    margin-top: 30px;
-    text-align: left;
-    font-size: 16px;
-    color: #ffffff;
-    /* Pure White - Brand Manual */
-}
-
-.contact-phone {
-    display: flex;
-    align-items: center;
-    font-size: 30px;
-    font-weight: bold;
-    margin-top: 8px;
-    color: #ffffff;
-    /* Pure White - Brand Manual */
-}
-
-.contact-icon {
-    width: 40px;
-    height: 40px;
-    margin-right: 8px;
-    filter: invert(100%);
-    /* Inverts icon color to white, adjust if necessary */
-}
-
-/* Responsive Contact Info */
-@media (max-width: 768px) {
-    .contact-info {
-        text-align: center;
+    .stats-container {
+        grid-template-columns: 1fr;
+        gap: 40px;
     }
 
-    .contact-phone {
+    .stat-number {
+        font-size: 3rem;
+    }
+
+    .stat-label {
+        font-size: 1rem;
+    }
+
+    .certifications-section {
+        padding: 60px 20px;
+    }
+
+    .cert-grid {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+
+    .cert-item img {
+        height: 70px;
+    }
+
+    .about-cta-section {
+        padding: 70px 20px;
+    }
+
+    .about-cta-section h2 {
+        font-size: 2.2rem;
+    }
+
+    .about-cta-section p {
+        font-size: 1.15rem;
+    }
+
+    .cta-button {
+        width: 100%;
         justify-content: center;
+        padding: 18px 40px;
+        font-size: 1.2rem;
     }
 }
 
-/*////////// END Mission-Vision-Strategy //////////////////*/
+/* Small Mobile */
+@media (max-width: 480px) {
+    .about-hero .hero-content h1 {
+        font-size: 1.8rem;
+    }
+
+    .flip-card {
+        height: 500px;
+    }
+
+    .flip-card-front,
+    .flip-card-back {
+        padding: 30px 25px;
+    }
+
+    .back-content p {
+        font-size: 0.95rem;
+    }
+}

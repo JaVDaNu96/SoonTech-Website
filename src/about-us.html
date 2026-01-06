@@ -1,103 +1,268 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About SoonTech - Your Trusted IT Partner</title>
-    <meta name="description" content="Learn about SoonTech's mission to deliver exceptional IT solutions and meet our dedicated team of experts.">
-    <link href="https://fonts.googleapis.com/css2?family=Overpass:wght@300;400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="main.css">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+    <meta name="description"
+        content="Meet the minds behind SoonTech. Expert IT professionals dedicated to bringing enterprise-grade technology to small businesses and homes.">
+    <title>About Us - SoonTech</title>
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Overpass:wght@400;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- Main Stylesheet -->
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- Shared Components Loader -->
     <script src="includes.js" defer></script>
 </head>
+
 <body>
+    <!-- Header (Shared Component) -->
     <div id="header-placeholder"></div>
 
     <!-- Hero Section -->
     <section class="about-hero">
-        <div class="hero-content">
-            <h1>Technology with a Human Touch</h1>
-            <p>We're not just IT experts – we're your partners in success. Our team combines technical excellence with genuine care to deliver solutions that make a difference.</p>
+        <div class="hero-overlay">
+            <div class="hero-content">
+                <h1 class="fade-in-up">The Minds Behind Your Peace of Mind</h1>
+                <p class="fade-in-up delay-1">Expert IT professionals bringing enterprise-grade solutions to small
+                    businesses and homes</p>
+            </div>
         </div>
     </section>
 
-    <!-- Mission and Vision -->
-    <section class="mission-vision">
-        <div class="content">
-            <div class="icon">
-                <i class="fas fa-rocket"></i>
+    <!-- Animated Statistics Section -->
+    <section class="stats-section">
+        <div class="stats-container">
+            <div class="stat-item">
+                <div class="stat-number" data-target="10000">0</div>
+                <div class="stat-label">Tickets Resolved</div>
             </div>
-            <h2>Our Mission</h2>
-            <p>To make technology work for people, not the other way around. We deliver solutions that simplify lives and empower growth.</p>
+            <div class="stat-item">
+                <div class="stat-number" data-target="20">0</div>
+                <div class="stat-label">Years Combined Experience</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-number" data-target="85">0</div>
+                <div class="stat-label">First-Call Resolution Rate</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-number" data-target="99.9">0</div>
+                <div class="stat-label">System Uptime</div>
+            </div>
         </div>
+    </section>
 
-        <div class="content">
-            <div class="icon">
-                <i class="fas fa-star"></i>
+    <!-- Vision Section -->
+    <section class="vision-section">
+        <div class="vision-container">
+            <div class="vision-content">
+                <h2>Enterprise Tech for Everyone</h2>
+                <p class="vision-lead">We believe that world-class IT support shouldn't be reserved for Fortune 500
+                    companies.</p>
+                <p>At SoonTech, we bring the same level of expertise, security, and reliability that powers major
+                    corporations to small businesses and homes. Our mission is simple: make technology work for you, not
+                    against you.</p>
+                <p>Whether you're a growing business needing robust infrastructure or a family wanting a secure home
+                    network, we deliver solutions that are professional, personal, and built to last.</p>
             </div>
-            <h2>Our Vision</h2>
-            <p>To be the most trusted name in IT, known for our expertise, integrity, and commitment to client success.</p>
+            <div class="vision-icon">
+                <i class="fas fa-lightbulb"></i>
+            </div>
+        </div>
+    </section>
+
+    <!-- Leadership Section - 3D Flip Cards -->
+    <section class="leadership-section">
+        <div class="leadership-container">
+            <h2 class="section-heading">Meet Our Leaders</h2>
+            <p class="section-subtitle">The architects of your digital peace of mind</p>
+
+            <div class="leaders-grid">
+                <!-- Javier Nuñez - The Architect -->
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <!-- Front -->
+                        <div class="flip-card-front">
+                            <div class="leader-image">
+                                <img src="assets/images/Javier.png" alt="Javier Nuñez"
+                                    onerror="this.src='https://via.placeholder.com/400x400/1a2c4e/ffffff?text=JN'">
+                            </div>
+                            <div class="leader-info">
+                                <h3>Javier Nuñez</h3>
+                                <p class="leader-title">Co-Founder & Lead Architect</p>
+                                <div class="flip-hint">
+                                    <i class="fas fa-sync-alt"></i>
+                                    <span>Click to learn more</span>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Back -->
+                        <div class="flip-card-back">
+                            <div class="back-header">
+                                <h3>Javier Nuñez</h3>
+                                <p class="back-title">The Architect</p>
+                            </div>
+                            <div class="back-content">
+                                <p>As the technical lead of SoonTech, Javier directs the strategy for securing small
+                                    business infrastructures. He specializes in transforming chaotic IT environments
+                                    into streamlined, secure systems that allow companies to grow without technical
+                                    friction.</p>
+                                <div class="separator"></div>
+                                <p>With a deep background in network topology and cloud migration, Javier designs
+                                    redundant systems using Fortinet firewalls and Azure cloud solutions. He builds the
+                                    "invisible architecture" that keeps your data safe and your uptime high.</p>
+                                <div class="separator"></div>
+                                <p>Beyond the code, he implements rigorous risk assessments and incident response
+                                    playbooks aligned with ITIL principles. He ensures that your business isn't just
+                                    running today, but is resilient against the threats of tomorrow.</p>
+                            </div>
+                            <div class="flip-hint">
+                                <i class="fas fa-sync-alt"></i>
+                                <span>Click to flip back</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Cristobal Haro - The Operator -->
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <!-- Front -->
+                        <div class="flip-card-front">
+                            <div class="leader-image">
+                                <img src="assets/images/Cristobal.png" alt="Cristobal Haro">
+                            </div>
+                            <div class="leader-info">
+                                <h3>Cristobal Haro</h3>
+                                <p class="leader-title">Co-Founder & Operations Lead</p>
+                                <div class="flip-hint">
+                                    <i class="fas fa-sync-alt"></i>
+                                    <span>Click to learn more</span>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Back -->
+                        <div class="flip-card-back">
+                            <div class="back-header">
+                                <h3>Cristobal Haro</h3>
+                                <p class="back-title">The Operator</p>
+                            </div>
+                            <div class="back-content">
+                                <p>With over 15 years of hands-on experience, Cristobal is the backbone of SoonTech's
+                                    operations. He has spent his career helping small businesses and home users navigate
+                                    complex hardware issues, boasting a first-call resolution rate of over 85%.</p>
+                                <div class="separator"></div>
+                                <p>He is a master of the physical layer, from running structured Cat 6 cabling to
+                                    configuring physical VLANs and wireless access points. Whether it is a server
+                                    refresh or a complex home office setup, he ensures the hardware matches the
+                                    ambition.</p>
+                                <div class="separator"></div>
+                                <p>Cristobal is known for his patient, clear communication. He doesn't just fix the
+                                    problem; he trains the user, translating technical jargon into plain English to
+                                    empower clients and prevent future issues.</p>
+                            </div>
+                            <div class="flip-hint">
+                                <i class="fas fa-sync-alt"></i>
+                                <span>Click to flip back</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Certifications Trust Strip -->
+    <section class="certifications-section">
+        <div class="certifications-container">
+            <h2 class="section-heading">Certified Excellence</h2>
+            <p class="section-subtitle">Industry-recognized expertise you can trust</p>
+            <div class="cert-grid">
+                <div class="cert-item">
+                    <img src="assets/images/A+-png.png" alt="CompTIA A+">
+                </div>
+                <div class="cert-item">
+                    <img src="assets/images/fortigate.png" alt="Fortinet">
+                </div>
+                <div class="cert-item">
+                    <img src="assets/images/cisco.png" alt="Cisco">
+                </div>
+            </div>
         </div>
     </section>
 
     <!-- Values Section -->
-    <section class="values">
-        <h2>What Drives Us</h2>
-        <div class="values-grid">
-            <div class="value-card">
-                <i class="fas fa-shield-alt"></i>
-                <h3>Trust</h3>
-                <p>Building lasting relationships through transparency and reliability.</p>
-            </div>
-            <div class="value-card">
-                <i class="fas fa-lightbulb"></i>
-                <h3>Innovation</h3>
-                <p>Staying ahead of technology trends to deliver cutting-edge solutions.</p>
-            </div>
-            <div class="value-card">
-                <i class="fas fa-heart"></i>
-                <h3>Care</h3>
-                <p>Treating every client's technology needs as if they were our own.</p>
-            </div>
-            <div class="value-card">
-                <i class="fas fa-chart-line"></i>
-                <h3>Growth</h3>
-                <p>Helping our clients achieve their goals through technology.</p>
-            </div>
-        </div>
-    </section>
+    <section class="values-section">
+        <div class="values-container">
+            <h2 class="section-heading">Our Core Values</h2>
+            <p class="section-subtitle">The principles that guide everything we do</p>
 
-    <!-- Team Section -->
-    <section class="team">
-        <h2>Meet Our Leaders</h2>
-        <div class="team-grid">
-            <div class="team-member">
-                <div class="member-image">
-                    <img src="Assets/Images/team-cristobal.jpg" alt="Cristobal P. Haro">
+            <div class="values-grid">
+                <!-- Value 1: Security First -->
+                <div class="value-card">
+                    <div class="value-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3>Security First</h3>
+                    <p>We treat your data like our own. Every solution is built with multiple layers of protection,
+                        from encryption to access controls to continuous monitoring.</p>
                 </div>
-                <h3>Cristobal P. Haro</h3>
-                <p class="role">Co-Founder & CTO</p>
-                <p class="bio">Leading our technical innovation and ensuring excellence in every solution we deliver.</p>
-            </div>
-            <div class="team-member">
-                <div class="member-image">
-                    <img src="Assets/Images/team-javier.jpg" alt="Javier D. N. Jaimes">
+
+                <!-- Value 2: Speed & Clarity -->
+                <div class="value-card">
+                    <div class="value-icon">
+                        <i class="fas fa-bolt"></i>
+                    </div>
+                    <h3>Speed & Clarity</h3>
+                    <p>Fast response times and clear communication. We explain complex issues in plain English and
+                        resolve problems quickly, so you can get back to what matters.</p>
                 </div>
-                <h3>Javier D. N. Jaimes</h3>
-                <p class="role">Co-Founder & CEO</p>
-                <p class="bio">Driving our vision to make technology accessible and beneficial for all.</p>
+
+                <!-- Value 3: Human Connection -->
+                <div class="value-card">
+                    <div class="value-icon">
+                        <i class="fas fa-handshake"></i>
+                    </div>
+                    <h3>Human Connection</h3>
+                    <p>Technology should bring people together, not create barriers. We build relationships, not just
+                        networks, treating every client like family.</p>
+                </div>
+
+                <!-- Value 4: Continuous Growth -->
+                <div class="value-card">
+                    <div class="value-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h3>Continuous Growth</h3>
+                    <p>The tech landscape evolves daily. We stay ahead through constant learning, certifications, and
+                        hands-on experience with the latest tools and threats.</p>
+                </div>
             </div>
         </div>
     </section>
 
     <!-- CTA Section -->
-    <section class="about-cta">
-        <h2>Ready to Transform Your Tech Experience?</h2>
-        <p>Let's discuss how we can help you achieve your goals.</p>
-        <a href="contact.html" class="cta-button">Start the Conversation</a>
+    <section class="about-cta-section">
+        <div class="cta-container">
+            <h2>Ready to Experience the SoonTech Difference?</h2>
+            <p>Let's build something great together</p>
+            <a href="contact-us.html" class="cta-button">
+                Get Started Today <i class="fas fa-arrow-right"></i>
+            </a>
+        </div>
     </section>
 
+    <!-- Footer (Shared Component) -->
     <div id="footer-placeholder"></div>
-</body>
-</html>
 
+    <!-- About Page Animations -->
+    <script src="js/about.js"></script>
+</body>
+
+</html>
