@@ -25,24 +25,24 @@
     <!-- Header (Shared Component) -->
     <div id="header-placeholder"></div>
 
-    <!-- MISSION CONTROL WRAPPER - Single Container for Hero + Cards -->
+    <!-- MISSION CONTROL WRAPPER - Contains Hero + Action Cards -->
     <div class="mission-control-wrapper">
         <!-- Hero Section -->
-        <div class="hero-content">
+        <div class="hero-section">
             <h1 class="mission-title">Mission Control</h1>
             <p class="mission-subtitle">How can SoonTech help you today?</p>
 
-            <!-- User Type Selector -->
-            <div class="user-selector">
-                <button class="selector-btn home active" onclick="setUser('home')">
+            <!-- User Type Toggle -->
+            <div class="user-toggle">
+                <button class="toggle-btn home active" onclick="toggleUser('home')">
                     <i class="fas fa-home"></i> Home User
                 </button>
-                <button class="selector-btn business" onclick="setUser('business')">
+                <button class="toggle-btn business" onclick="toggleUser('business')">
                     <i class="fas fa-building"></i> Business Client
                 </button>
             </div>
 
-            <!-- Search Bar -->
+            <!-- Glowing Search Bar -->
             <div class="search-container">
                 <i class="fas fa-search search-icon"></i>
                 <input type="text" id="support-search" class="search-input"
@@ -50,10 +50,10 @@
             </div>
         </div>
 
-        <!-- Action Grid - 3 Cards -->
+        <!-- Action Grid - 3 Glass Cards -->
         <div class="action-grid">
             <!-- Remote Support Card -->
-            <div class="action-card">
+            <div class="action-card remote-card">
                 <div class="card-icon green-icon">
                     <i class="fas fa-desktop"></i>
                 </div>
@@ -68,7 +68,7 @@
             </div>
 
             <!-- Submit Ticket Card -->
-            <div class="action-card">
+            <div class="action-card ticket-card">
                 <div class="card-icon blue-icon">
                     <i class="fas fa-ticket-alt"></i>
                 </div>
@@ -82,7 +82,7 @@
             </div>
 
             <!-- Emergency Call Card -->
-            <div class="action-card">
+            <div class="action-card emergency-card">
                 <div class="card-icon red-icon">
                     <i class="fas fa-phone-alt"></i>
                 </div>
@@ -98,71 +98,71 @@
     </div>
     <!-- END MISSION CONTROL WRAPPER -->
 
-    <!-- Self-Service Section - Light Theme -->
-    <section class="self-service-section">
-        <div class="service-container">
+    <!-- Self-Service Resources - Light Section -->
+    <section class="resources-section">
+        <div class="resources-container">
             <h2 class="section-heading">Self-Service Resources</h2>
             <p class="section-subtitle">Quick fixes for common issues</p>
 
-            <div class="service-grid">
-                <!-- Internet Issues -->
-                <div class="service-card">
-                    <div class="service-icon">
+            <div class="resources-grid">
+                <!-- Wi-Fi -->
+                <div class="resource-card">
+                    <div class="resource-icon">
                         <i class="fas fa-wifi"></i>
                     </div>
-                    <h3>Internet Issues</h3>
+                    <h3>Wi-Fi Issues</h3>
                     <p>Troubleshoot connectivity</p>
-                    <a href="#internet-faq" class="service-link">View Guide <i class="fas fa-chevron-right"></i></a>
+                    <a href="#wifi" class="resource-link">View Guide <i class="fas fa-chevron-right"></i></a>
                 </div>
 
-                <!-- Email Problems -->
-                <div class="service-card">
-                    <div class="service-icon">
+                <!-- Email -->
+                <div class="resource-card">
+                    <div class="resource-icon">
                         <i class="fas fa-envelope"></i>
                     </div>
                     <h3>Email Problems</h3>
-                    <p>Fix sync and access issues</p>
-                    <a href="#email-faq" class="service-link">View Guide <i class="fas fa-chevron-right"></i></a>
+                    <p>Fix sync and access</p>
+                    <a href="#email" class="resource-link">View Guide <i class="fas fa-chevron-right"></i></a>
                 </div>
 
-                <!-- Printer Setup -->
-                <div class="service-card">
-                    <div class="service-icon">
+                <!-- Printer -->
+                <div class="resource-card">
+                    <div class="resource-icon">
                         <i class="fas fa-print"></i>
                     </div>
                     <h3>Printer Setup</h3>
                     <p>Configure printers</p>
-                    <a href="#printer-faq" class="service-link">View Guide <i class="fas fa-chevron-right"></i></a>
+                    <a href="#printer" class="resource-link">View Guide <i class="fas fa-chevron-right"></i></a>
                 </div>
 
-                <!-- Security Alerts -->
-                <div class="service-card">
-                    <div class="service-icon">
+                <!-- Security -->
+                <div class="resource-card">
+                    <div class="resource-icon">
                         <i class="fas fa-shield-alt"></i>
                     </div>
                     <h3>Security Alerts</h3>
                     <p>Respond to warnings</p>
-                    <a href="#security-faq" class="service-link">View Guide <i class="fas fa-chevron-right"></i></a>
+                    <a href="#security" class="resource-link">View Guide <i class="fas fa-chevron-right"></i></a>
                 </div>
 
-                <!-- Billing Questions -->
-                <div class="service-card">
-                    <div class="service-icon">
+                <!-- Billing -->
+                <div class="resource-card">
+                    <div class="resource-icon">
                         <i class="fas fa-file-invoice-dollar"></i>
                     </div>
                     <h3>Billing Questions</h3>
                     <p>Invoice and payments</p>
-                    <a href="#billing-faq" class="service-link">View Guide <i class="fas fa-chevron-right"></i></a>
+                    <a href="#billing" class="resource-link">View Guide <i class="fas fa-chevron-right"></i></a>
                 </div>
 
-                <!-- Account Access -->
-                <div class="service-card">
-                    <div class="service-icon">
+                <!-- Account -->
+                <div class="resource-card">
+                    <div class="resource-icon">
                         <i class="fas fa-user-lock"></i>
                     </div>
                     <h3>Account Access</h3>
                     <p>Reset passwords</p>
-                    <a href="#account-faq" class="service-link">View Guide <i class="fas fa-chevron-right"></i></a>
+                    <a href="#account" class="resource-link">View Guide <i class="fas fa-chevron-right"></i></a>
                 </div>
             </div>
         </div>
@@ -219,15 +219,15 @@
     </section>
 
     <!-- CTA Section -->
-    <section class="support-cta-section">
+    <section class="support-cta">
         <div class="cta-container">
             <h2>Still Need Help?</h2>
             <p>Our team is standing by</p>
             <div class="cta-buttons">
-                <a href="contact-us.html" class="cta-button primary">
+                <a href="contact-us.html" class="cta-btn primary">
                     Contact Us <i class="fas fa-arrow-right"></i>
                 </a>
-                <a href="about-us.html" class="cta-button secondary">
+                <a href="about-us.html" class="cta-btn secondary">
                     Meet Our Team <i class="fas fa-users"></i>
                 </a>
             </div>
@@ -237,21 +237,21 @@
     <!-- Footer (Shared Component) -->
     <div id="footer-placeholder"></div>
 
-    <!-- User Type Selector Script -->
+    <!-- User Toggle Script -->
     <script>
-        function setUser(type) {
+        function toggleUser(type) {
             // Remove active from all buttons
-            document.querySelectorAll('.selector-btn').forEach(btn => {
+            document.querySelectorAll('.toggle-btn').forEach(btn => {
                 btn.classList.remove('active');
             });
 
             // Add active to selected
             const searchInput = document.getElementById('support-search');
             if (type === 'home') {
-                document.querySelector('.selector-btn.home').classList.add('active');
+                document.querySelector('.toggle-btn.home').classList.add('active');
                 searchInput.placeholder = "Search for help... (e.g., 'wifi not working')";
             } else {
-                document.querySelector('.selector-btn.business').classList.add('active');
+                document.querySelector('.toggle-btn.business').classList.add('active');
                 searchInput.placeholder = "Search for help... (e.g., 'server down')";
             }
         }

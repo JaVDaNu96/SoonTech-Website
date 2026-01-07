@@ -446,8 +446,10 @@
 
 .value-icon i {
     font-size: 2.5rem;
-    color: #ffffff;
+    color: #b2d235;
+    /* Bright lime green for high contrast */
 }
+
 
 .value-card h3 {
     font-size: 1.8rem;

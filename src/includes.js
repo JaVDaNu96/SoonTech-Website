@@ -3,6 +3,7 @@ fetch('header.html')
     .then(response => response.text())
     .then(data => document.getElementById('header-placeholder').innerHTML = data);
 
+
 // Load Footer
 fetch('footer.html')
     .then(response => response.text())
@@ -49,7 +50,7 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 // ABOUT US TABS //
-document.addEventListener("DOMContentLoaded", function() {
+document.addEventListener("DOMContentLoaded", function () {
     const tabs = document.querySelectorAll(".tab");
     const contentTexts = document.querySelectorAll(".content-text");
 

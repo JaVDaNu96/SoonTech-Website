@@ -6,6 +6,9 @@
 @import url('styles/sections/ai.css');
 @import url('styles/sections/services-home.css');
 @import url('styles/sections/business.css');
+@import url('styles/sections/support.css');
+@import url('styles/sections/home.css');
+
 
 /* Color Variables */
 :root {
@@ -3012,5 +3015,239 @@ a {
         padding: 6px 10px;
         width: 100%;
         text-align: center;
+    }
+}
+
+/* ===================================================================== */
+/* FOOTER - PROFESSIONAL MINIMALIST DESIGN                              */
+/* ===================================================================== */
+
+.site-footer {
+    background: linear-gradient(135deg, #1a2c4e 0%, #285a3b 100%);
+    color: #ffffff;
+    padding: 60px 0 0;
+    margin-top: 80px;
+}
+
+.footer-container {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 4rem;
+}
+
+/* Footer Top - Main Content */
+.footer-top {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1fr;
+    gap: 60px;
+    padding-bottom: 40px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* Footer Logo */
+.footer-logo {
+    max-width: 150px;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+.footer-description {
+    font-size: 0.95rem;
+    line-height: 1.7;
+    color: #94a3b8;
+    margin: 0;
+}
+
+/* Footer Headings */
+.footer-heading {
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: #ffffff;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+/* Footer Links */
+.footer-links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-links li {
+    margin-bottom: 12px;
+}
+
+.footer-links a {
+    color: #94a3b8;
+    text-decoration: none;
+    font-size: 0.95rem;
+    transition: all 0.3s ease;
+    display: inline-block;
+}
+
+.footer-links a:hover {
+    color: #b2d235;
+    transform: translateX(5px);
+}
+
+/* Footer Contact */
+.footer-contact {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-contact li {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    margin-bottom: 15px;
+    color: #94a3b8;
+    font-size: 0.95rem;
+}
+
+.footer-contact i {
+    color: #b2d235;
+    font-size: 1rem;
+    margin-top: 3px;
+    min-width: 16px;
+}
+
+.footer-contact a {
+    color: #94a3b8;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-contact a:hover {
+    color: #b2d235;
+}
+
+/* Footer Social Media */
+.footer-social {
+    display: flex;
+    gap: 15px;
+}
+
+.footer-social a {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #ffffff;
+    font-size: 1.1rem;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.footer-social a:hover {
+    background: #b2d235;
+    color: #1a2c4e;
+    transform: translateY(-3px);
+}
+
+/* Footer Bottom - Copyright */
+.footer-bottom {
+    padding: 25px 0;
+    text-align: center;
+}
+
+.footer-bottom p {
+    margin: 0;
+    font-size: 0.9rem;
+    color: #64748b;
+}
+
+/* WhatsApp Float Button */
+.whatsapp-float {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    width: 60px;
+    height: 60px;
+    background: #25D366;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #ffffff;
+    font-size: 2rem;
+    text-decoration: none;
+    box-shadow: 0 4px 12px rgba(37, 211, 102, 0.4);
+    z-index: 999;
+    transition: all 0.3s ease;
+}
+
+.whatsapp-float:hover {
+    transform: scale(1.1);
+    box-shadow: 0 6px 20px rgba(37, 211, 102, 0.6);
+}
+
+/* Responsive Footer */
+@media (max-width: 968px) {
+    .footer-container {
+        padding: 0 2rem;
+    }
+
+    .footer-top {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 40px;
+    }
+
+    .footer-about {
+        grid-column: 1 / -1;
+    }
+}
+
+@media (max-width: 768px) {
+    .site-footer {
+        padding: 40px 0 0;
+        margin-top: 60px;
+    }
+
+    .footer-container {
+        padding: 0 1.5rem;
+    }
+
+    .footer-top {
+        grid-template-columns: 1fr;
+        gap: 30px;
+        padding-bottom: 30px;
+    }
+
+    .footer-about {
+        grid-column: 1;
+    }
+
+    .footer-logo {
+        max-width: 120px;
+    }
+
+    .footer-heading {
+        font-size: 1rem;
+        margin-bottom: 15px;
+    }
+
+    .footer-social {
+        gap: 12px;
+    }
+
+    .footer-social a {
+        width: 36px;
+        height: 36px;
+        font-size: 1rem;
+    }
+
+    .whatsapp-float {
+        width: 50px;
+        height: 50px;
+        bottom: 20px;
+        right: 20px;
+        font-size: 1.7rem;
     }
 }

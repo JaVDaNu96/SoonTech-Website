@@ -1,0 +1,733 @@
+/* ===================================================================== */
+/* HOME PAGE (INDEX.HTML) - LANDING PAGE DESIGN                         */
+/* ===================================================================== */
+
+/* Page Content Container */
+.page-content {
+    padding-top: 0;
+    opacity: 1;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.page-content.fade-out {
+    opacity: 0;
+}
+
+/* ===================================================================== */
+/* SLIDER - POSITIONED ABOVE HERO TITLE                                 */
+/* ===================================================================== */
+
+.slider-container-wrapper {
+    position: absolute;
+    top: 1px;
+    left: 2.5rem;
+    z-index: 10;
+}
+
+.theme-slider {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    background: rgba(255, 255, 255, 0.95);
+    padding: 12px 20px;
+    border-radius: 50px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+}
+
+.slider-label {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #64748b;
+    cursor: pointer;
+    transition: all 0.5s ease;
+    user-select: none;
+}
+
+.slider-label.active {
+    color: #285a3b;
+    font-size: 1.2rem;
+}
+
+/* White text when Business is active */
+.slider-label.business.active {
+    color: #ffffff;
+    background: #3b82f6;
+    padding: 8px 16px;
+    border-radius: 25px;
+}
+
+.slider-toggle {
+    width: 60px;
+    height: 30px;
+    background: #e0e0e0;
+    border-radius: 15px;
+    position: relative;
+    cursor: pointer;
+}
+
+.slider-indicator {
+    width: 26px;
+    height: 26px;
+    background: #285a3b;
+    border-radius: 50%;
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+/* Blue indicator when on business side */
+.slider-indicator.business-active {
+    background: #3b82f6;
+}
+
+/* ===================================================================== */
+/* HOME HERO SECTION                                                     */
+/* ===================================================================== */
+
+.home-hero {
+    background: linear-gradient(135deg, #285a3b 0%, #b2d235 100%);
+    padding: 80px 0;
+    position: relative;
+}
+
+.hero-container {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 4rem;
+    position: relative;
+}
+
+/* Hero Content Grid */
+.hero-content-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 80px;
+    align-items: center;
+    padding-top: 120px;
+}
+
+.hero-text h1 {
+    font-size: 4rem;
+    font-weight: 800;
+    color: #285a3b;
+    line-height: 1.1;
+    margin-bottom: 20px;
+}
+
+.hero-subtitle {
+    font-size: 1.8rem;
+    color: #1a2c4e;
+    font-weight: 700;
+    margin-bottom: 25px;
+}
+
+.hero-description {
+    font-size: 1.3rem;
+    color: #333333;
+    line-height: 1.8;
+    margin-bottom: 35px;
+}
+
+.hero-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 12px;
+    padding: 20px 45px;
+    background: #285a3b;
+    color: #ffffff;
+    font-size: 1.3rem;
+    font-weight: 700;
+    border-radius: 10px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(40, 90, 59, 0.3);
+}
+
+.hero-btn:hover {
+    background: #1a4426;
+    transform: translateY(-3px);
+    box-shadow: 0 8px 25px rgba(40, 90, 59, 0.4);
+}
+
+.hero-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 20px;
+    box-shadow: 0 15px 50px rgba(0, 0, 0, 0.15);
+}
+
+/* ===================================================================== */
+/* WHY CHOOSE US - HOME                                                  */
+/* ===================================================================== */
+
+.why-choose-home {
+    background: #ffffff;
+    padding: 80px 20px;
+}
+
+.why-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.why-container h2 {
+    font-size: 3rem;
+    font-weight: 700;
+    color: #1a2c4e;
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.benefits-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+}
+
+.benefit-card {
+    text-align: center;
+    padding: 30px 20px;
+}
+
+.benefit-card i {
+    font-size: 3.5rem;
+    color: #285a3b;
+    margin-bottom: 20px;
+}
+
+.benefit-card h3 {
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: #1a2c4e;
+    margin-bottom: 15px;
+}
+
+.benefit-card p {
+    font-size: 1.05rem;
+    color: #666;
+    line-height: 1.7;
+}
+
+/* ===================================================================== */
+/* HOME SERVICES GRID                                                    */
+/* ===================================================================== */
+
+.home-services {
+    background: #f8f9fa;
+    padding: 80px 20px;
+}
+
+.services-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.services-container h2 {
+    font-size: 3rem;
+    font-weight: 700;
+    color: #1a2c4e;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.section-subtitle {
+    font-size: 1.3rem;
+    color: #666;
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.home-services-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    margin-bottom: 60px;
+}
+
+.home-service-card {
+    background: #ffffff;
+    border: 2px solid #e0e0e0;
+    border-radius: 16px;
+    padding: 40px 30px;
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+.home-service-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.1);
+    border-color: #b2d235;
+}
+
+.service-icon {
+    width: 80px;
+    height: 80px;
+    background: linear-gradient(135deg, #285a3b, #1a4426);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 25px;
+}
+
+.service-icon i {
+    font-size: 2.5rem;
+    color: #ffffff;
+}
+
+.home-service-card h3 {
+    font-size: 1.6rem;
+    font-weight: 700;
+    color: #1a2c4e;
+    margin-bottom: 15px;
+}
+
+.home-service-card p {
+    font-size: 1.05rem;
+    color: #666;
+    line-height: 1.7;
+    margin-bottom: 20px;
+}
+
+.service-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    color: #285a3b;
+    font-weight: 600;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.service-link:hover {
+    color: #1a4426;
+    gap: 12px;
+}
+
+/* ===================================================================== */
+/* HOME CTA SECTION                                                      */
+/* ===================================================================== */
+
+.home-cta {
+    background: linear-gradient(135deg, #285a3b 0%, #1a4426 100%);
+    padding: 100px 20px;
+    text-align: center;
+}
+
+.cta-container h2 {
+    font-size: 3.5rem;
+    font-weight: 700;
+    color: #ffffff;
+    margin-bottom: 20px;
+}
+
+.cta-container p {
+    font-size: 1.5rem;
+    color: #e8f5e9;
+    margin-bottom: 40px;
+}
+
+.cta-btn-large {
+    display: inline-flex;
+    align-items: center;
+    gap: 15px;
+    padding: 25px 60px;
+    background: #b2d235;
+    color: #1a2c4e;
+    font-size: 1.4rem;
+    font-weight: 700;
+    border-radius: 10px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    box-shadow: 0 5px 20px rgba(178, 210, 53, 0.4);
+}
+
+.cta-btn-large:hover {
+    background: #94b64c;
+    transform: translateY(-3px);
+    box-shadow: 0 8px 30px rgba(178, 210, 53, 0.5);
+}
+
+/* ===================================================================== */
+/* BUSINESS HERO SECTION                                                 */
+/* ===================================================================== */
+
+.business-hero {
+    background: linear-gradient(135deg, #1a2c4e 0%, #0f1a2e 100%);
+    padding: 80px 0;
+    color: #ffffff;
+    position: relative;
+}
+
+.business-hero .hero-container {
+    padding: 0 4rem;
+}
+
+.business-hero .slider-label.active {
+    color: #60a5fa;
+}
+
+.business-hero .slider-indicator {
+    background: #3b82f6;
+}
+
+.business-hero .hero-text h1 {
+    color: #ffffff;
+}
+
+.business-hero .hero-subtitle {
+    color: #60a5fa;
+}
+
+.business-hero .hero-description {
+    color: #94a3b8;
+}
+
+.business-hero .hero-btn {
+    background: #3b82f6;
+    box-shadow: 0 4px 15px rgba(59, 130, 246, 0.3);
+}
+
+.business-hero .hero-btn:hover {
+    background: #2563eb;
+    box-shadow: 0 8px 25px rgba(59, 130, 246, 0.4);
+}
+
+/* ===================================================================== */
+/* WHY CHOOSE US - BUSINESS                                              */
+/* ===================================================================== */
+
+.why-choose-business {
+    background: #0f1a2e;
+    padding: 80px 20px;
+    color: #ffffff;
+}
+
+.why-choose-business .why-container h2 {
+    color: #ffffff;
+}
+
+.why-choose-business .benefit-card i {
+    color: #60a5fa;
+}
+
+.why-choose-business .benefit-card h3 {
+    color: #ffffff;
+}
+
+.why-choose-business .benefit-card p {
+    color: #94a3b8;
+}
+
+/* ===================================================================== */
+/* BUSINESS SERVICES GRID                                                */
+/* ===================================================================== */
+
+.business-services {
+    background: #f8f9fa;
+    padding: 80px 20px;
+}
+
+.business-services-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    margin-bottom: 60px;
+}
+
+.business-service-card {
+    background: #ffffff;
+    border: 2px solid #e0e0e0;
+    border-radius: 16px;
+    padding: 40px 30px;
+    position: relative;
+    transition: all 0.3s ease;
+}
+
+.business-service-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+    border-color: #3b82f6;
+}
+
+.service-number {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 3rem;
+    font-weight: 800;
+    color: #e0e0e0;
+    line-height: 1;
+}
+
+.service-icon-business {
+    width: 70px;
+    height: 70px;
+    background: linear-gradient(135deg, #3b82f6, #2563eb);
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 25px;
+}
+
+.service-icon-business i {
+    font-size: 2rem;
+    color: #ffffff;
+}
+
+.business-service-card h3 {
+    font-size: 1.6rem;
+    font-weight: 700;
+    color: #1a2c4e;
+    margin-bottom: 15px;
+}
+
+.business-service-card>p {
+    font-size: 1.05rem;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.service-features {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 25px 0;
+}
+
+.service-features li {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 0.95rem;
+    color: #555;
+    margin-bottom: 10px;
+}
+
+.service-features i {
+    color: #3b82f6;
+    font-size: 0.9rem;
+}
+
+.service-link-business {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    color: #3b82f6;
+    font-weight: 600;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.service-link-business:hover {
+    color: #2563eb;
+    gap: 12px;
+}
+
+/* ===================================================================== */
+/* BUSINESS CTA SECTION                                                  */
+/* ===================================================================== */
+
+.business-cta {
+    background: linear-gradient(135deg, #1a2c4e 0%, #0f1a2e 100%);
+    padding: 100px 20px;
+    text-align: center;
+}
+
+.business-cta .cta-container h2 {
+    color: #ffffff;
+}
+
+.business-cta .cta-container p {
+    color: #94a3b8;
+}
+
+.business-cta .cta-btn-large {
+    background: #3b82f6;
+    color: #ffffff;
+    box-shadow: 0 5px 20px rgba(59, 130, 246, 0.4);
+}
+
+.business-cta .cta-btn-large:hover {
+    background: #2563eb;
+    box-shadow: 0 8px 30px rgba(59, 130, 246, 0.5);
+}
+
+/* ===================================================================== */
+/* VIEW ALL BUTTON                                                       */
+/* ===================================================================== */
+
+.view-all-container {
+    text-align: center;
+}
+
+.view-all-btn {
+    display: inline-block;
+    padding: 18px 50px;
+    background: transparent;
+    color: #1a2c4e;
+    font-size: 1.2rem;
+    font-weight: 700;
+    border: 2px solid #1a2c4e;
+    border-radius: 8px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.view-all-btn:hover {
+    background: #1a2c4e;
+    color: #ffffff;
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(26, 44, 78, 0.3);
+}
+
+/* ===================================================================== */
+/* RESPONSIVE DESIGN                                                     */
+/* ===================================================================== */
+
+/* Tablet */
+@media (max-width: 968px) {
+    .hero-container {
+        padding: 30px 2rem 60px;
+    }
+
+    .hero-content-grid {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+
+    .hero-text h1 {
+        font-size: 3rem;
+    }
+
+    .benefits-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .home-services-grid,
+    .business-services-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+    .page-content {
+        padding-top: 0;
+    }
+
+    .hero-container {
+        padding: 20px 1.5rem 40px;
+    }
+
+    .hero-content-grid {
+        padding-top: 50px;
+    }
+
+    .slider-container-wrapper {
+        top: 20px;
+        left: 1.5rem;
+    }
+
+    .theme-slider {
+        padding: 10px 15px;
+        gap: 15px;
+    }
+
+    .slider-label {
+        font-size: 0.95rem;
+    }
+
+    .slider-label.active {
+        font-size: 1rem;
+    }
+
+    .slider-label.business.active {
+        padding: 6px 12px;
+    }
+
+    .home-hero,
+    .business-hero {
+        padding: 0;
+    }
+
+    .hero-text h1 {
+        font-size: 2.2rem;
+    }
+
+    .hero-subtitle {
+        font-size: 1.3rem;
+    }
+
+    .hero-description {
+        font-size: 1.1rem;
+    }
+
+    .hero-btn {
+        width: 100%;
+        justify-content: center;
+        padding: 18px 30px;
+        font-size: 1.2rem;
+    }
+
+    .why-choose-home,
+    .why-choose-business {
+        padding: 60px 20px;
+    }
+
+    .why-container h2 {
+        font-size: 2.2rem;
+    }
+
+    .benefits-grid {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+
+    .home-services,
+    .business-services {
+        padding: 60px 20px;
+    }
+
+    .services-container h2 {
+        font-size: 2.2rem;
+    }
+
+    .section-subtitle {
+        font-size: 1.1rem;
+    }
+
+    .home-services-grid,
+    .business-services-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .home-cta,
+    .business-cta {
+        padding: 70px 20px;
+    }
+
+    .cta-container h2 {
+        font-size: 2.5rem;
+    }
+
+    .cta-container p {
+        font-size: 1.2rem;
+    }
+
+    .cta-btn-large {
+        width: 100%;
+        justify-content: center;
+        padding: 20px 40px;
+        font-size: 1.2rem;
+    }
+
+    .view-all-btn {
+        width: 100%;
+        padding: 16px 30px;
+        font-size: 1.1rem;
+    }
+}

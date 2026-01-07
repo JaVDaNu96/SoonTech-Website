@@ -1,20 +1,20 @@
 /* ===================================================================== */
-/* SUPPORT PAGE - MISSION CONTROL (SINGLE WRAPPER METHOD)               */
+/* SUPPORT PAGE - MISSION CONTROL DESIGN                                */
 /* ===================================================================== */
 
-/* MISSION CONTROL WRAPPER - Deep Navy Container */
+/* MISSION CONTROL WRAPPER - Dark Navy Container */
 .mission-control-wrapper {
-    background-color: #0f1a2e;
+    background: #0f1a2e;
     background-image: radial-gradient(circle at 50% 0%, #1a2c4e 0%, #0f1a2e 70%);
-    padding-top: 100px;
+    color: #ffffff;
+    padding-top: 120px;
     padding-bottom: 80px;
-    color: white;
 }
 
-/* Hero Content */
-.hero-content {
+/* Hero Section */
+.hero-section {
     max-width: 900px;
-    margin: 0 auto;
+    margin: 0 auto 60px;
     padding: 0 20px;
     text-align: center;
 }
@@ -36,15 +36,15 @@
     font-weight: 400;
 }
 
-/* User Type Selector */
-.user-selector {
+/* User Type Toggle */
+.user-toggle {
     display: flex;
     gap: 20px;
     justify-content: center;
     margin-bottom: 40px;
 }
 
-.selector-btn {
+.toggle-btn {
     display: inline-flex;
     align-items: center;
     gap: 10px;
@@ -52,43 +52,42 @@
     font-size: 1.15rem;
     font-weight: 600;
     border-radius: 12px;
-    border: 2px solid rgba(255, 255, 255, 0.15);
-    background: rgba(255, 255, 255, 0.03);
-    color: #64748b;
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    background: transparent;
+    color: #ffffff;
     cursor: pointer;
     transition: all 0.3s ease;
     font-family: 'Overpass', sans-serif;
 }
 
-.selector-btn i {
+.toggle-btn i {
     font-size: 1.3rem;
 }
 
-.selector-btn:hover {
-    border-color: rgba(255, 255, 255, 0.3);
-    background: rgba(255, 255, 255, 0.08);
+.toggle-btn:hover {
+    background: rgba(255, 255, 255, 0.1);
     transform: translateY(-2px);
 }
 
-.selector-btn.home.active {
+/* Home Active - Green */
+.toggle-btn.home.active {
+    background: #285a3b;
     border-color: #285a3b;
-    background: rgba(40, 90, 59, 0.25);
-    color: #4ade80;
-    box-shadow: 0 0 25px rgba(40, 90, 59, 0.4);
+    box-shadow: 0 0 25px rgba(40, 90, 59, 0.5);
 }
 
-.selector-btn.business.active {
+/* Business Active - Blue */
+.toggle-btn.business.active {
+    background: #1e40af;
     border-color: #1e40af;
-    background: rgba(30, 64, 175, 0.25);
-    color: #60a5fa;
-    box-shadow: 0 0 25px rgba(30, 64, 175, 0.4);
+    box-shadow: 0 0 25px rgba(30, 64, 175, 0.5);
 }
 
-/* Search Container */
+/* Glowing Search Bar */
 .search-container {
     position: relative;
     max-width: 700px;
-    margin: 0 auto 50px;
+    margin: 0 auto;
 }
 
 .search-icon {
@@ -105,7 +104,7 @@
     width: 100%;
     padding: 25px 25px 25px 70px;
     font-size: 1.25rem;
-    border: 2px solid rgba(96, 165, 250, 0.25);
+    border: 2px solid rgba(96, 165, 250, 0.3);
     border-radius: 50px;
     background: rgba(255, 255, 255, 0.05);
     backdrop-filter: blur(10px);
@@ -127,13 +126,13 @@
     color: #475569;
 }
 
-/* ACTION GRID - Force 3 Columns */
+/* ACTION GRID - 3 Columns */
 .action-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 30px;
     max-width: 1200px;
-    margin: 50px auto 0;
+    margin: 0 auto;
     padding: 0 20px;
 }
 
@@ -142,7 +141,7 @@
     background: rgba(255, 255, 255, 0.05);
     border: 1px solid rgba(255, 255, 255, 0.1);
     backdrop-filter: blur(10px);
-    border-radius: 16px;
+    border-radius: 20px;
     padding: 40px 30px;
     text-align: center;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
@@ -152,7 +151,24 @@
 .action-card:hover {
     transform: translateY(-8px);
     background: rgba(255, 255, 255, 0.08);
-    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.4);
+}
+
+/* Remote Card - Green Glow */
+.remote-card:hover {
+    border-color: rgba(40, 90, 59, 0.6);
+    box-shadow: 0 20px 50px rgba(40, 90, 59, 0.4);
+}
+
+/* Ticket Card - Blue Glow */
+.ticket-card:hover {
+    border-color: rgba(59, 130, 246, 0.6);
+    box-shadow: 0 20px 50px rgba(59, 130, 246, 0.4);
+}
+
+/* Emergency Card - Red Glow */
+.emergency-card:hover {
+    border-color: rgba(239, 68, 68, 0.6);
+    box-shadow: 0 20px 50px rgba(239, 68, 68, 0.4);
 }
 
 /* Card Icons */
@@ -216,13 +232,13 @@
     padding: 16px 20px;
     font-size: 1.6rem;
     text-align: center;
-    border: 2px solid rgba(255, 255, 255, 0.15);
+    border: 2px solid rgba(255, 255, 255, 0.2);
     border-radius: 12px;
     margin-bottom: 20px;
     font-family: 'Courier New', monospace;
     letter-spacing: 8px;
     transition: all 0.3s ease;
-    background: rgba(255, 255, 255, 0.03);
+    background: rgba(255, 255, 255, 0.05);
     color: #ffffff;
 }
 
@@ -297,15 +313,15 @@
 }
 
 /* ===================================================================== */
-/* SELF-SERVICE SECTION - LIGHT THEME                                   */
+/* RESOURCES SECTION - LIGHT THEME                                      */
 /* ===================================================================== */
 
-.self-service-section {
+.resources-section {
     background: #ffffff;
     padding: 80px 20px;
 }
 
-.service-container {
+.resources-container {
     max-width: 1200px;
     margin: 0 auto;
 }
@@ -325,13 +341,13 @@
     margin-bottom: 60px;
 }
 
-.service-grid {
+.resources-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 30px;
 }
 
-.service-card {
+.resource-card {
     background: #f8f9fa;
     border: 1px solid #e0e0e0;
     border-radius: 16px;
@@ -340,13 +356,13 @@
     transition: all 0.3s ease;
 }
 
-.service-card:hover {
+.resource-card:hover {
     transform: translateY(-5px);
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
     border-color: #3b82f6;
 }
 
-.service-icon {
+.resource-icon {
     width: 70px;
     height: 70px;
     margin: 0 auto 20px;
@@ -357,25 +373,25 @@
     justify-content: center;
 }
 
-.service-icon i {
+.resource-icon i {
     font-size: 2rem;
     color: #ffffff;
 }
 
-.service-card h3 {
+.resource-card h3 {
     font-size: 1.4rem;
     font-weight: 700;
     color: #1a2c4e;
     margin-bottom: 10px;
 }
 
-.service-card p {
+.resource-card p {
     font-size: 1rem;
     color: #666;
     margin-bottom: 20px;
 }
 
-.service-link {
+.resource-link {
     display: inline-flex;
     align-items: center;
     gap: 8px;
@@ -385,7 +401,7 @@
     transition: all 0.3s ease;
 }
 
-.service-link:hover {
+.resource-link:hover {
     color: #2563eb;
     gap: 12px;
 }
@@ -458,20 +474,20 @@
 }
 
 /* CTA Section */
-.support-cta-section {
+.support-cta {
     background: linear-gradient(135deg, #1a2c4e 0%, #285a3b 100%);
     padding: 100px 20px;
     text-align: center;
 }
 
-.support-cta-section h2 {
+.support-cta h2 {
     font-size: 3rem;
     font-weight: 700;
     color: #ffffff;
     margin-bottom: 20px;
 }
 
-.support-cta-section p {
+.support-cta p {
     font-size: 1.3rem;
     color: #e0e7ff;
     margin-bottom: 40px;
@@ -484,7 +500,7 @@
     flex-wrap: wrap;
 }
 
-.cta-button {
+.cta-btn {
     display: inline-flex;
     align-items: center;
     gap: 12px;
@@ -496,25 +512,25 @@
     transition: all 0.3s ease;
 }
 
-.cta-button.primary {
+.cta-btn.primary {
     background: #3b82f6;
     color: #ffffff;
     box-shadow: 0 5px 20px rgba(59, 130, 246, 0.4);
 }
 
-.cta-button.primary:hover {
+.cta-btn.primary:hover {
     background: #2563eb;
     transform: translateY(-3px);
     box-shadow: 0 8px 25px rgba(59, 130, 246, 0.5);
 }
 
-.cta-button.secondary {
+.cta-btn.secondary {
     background: transparent;
     color: #ffffff;
     border: 2px solid #ffffff;
 }
 
-.cta-button.secondary:hover {
+.cta-btn.secondary:hover {
     background: rgba(255, 255, 255, 0.1);
     transform: translateY(-3px);
 }
@@ -534,7 +550,7 @@
         gap: 25px;
     }
 
-    .service-grid {
+    .resources-grid {
         grid-template-columns: repeat(2, 1fr);
     }
 }
@@ -542,8 +558,12 @@
 /* Mobile */
 @media (max-width: 768px) {
     .mission-control-wrapper {
-        padding-top: 80px;
+        padding-top: 100px;
         padding-bottom: 60px;
+    }
+
+    .hero-section {
+        margin-bottom: 40px;
     }
 
     .mission-title {
@@ -555,20 +575,16 @@
         margin-bottom: 30px;
     }
 
-    .user-selector {
+    .user-toggle {
         flex-direction: column;
         gap: 15px;
         margin-bottom: 30px;
     }
 
-    .selector-btn {
+    .toggle-btn {
         width: 100%;
         justify-content: center;
         padding: 14px 30px;
-    }
-
-    .search-container {
-        margin-bottom: 40px;
     }
 
     .search-input {
@@ -579,10 +595,6 @@
     .search-icon {
         left: 20px;
         font-size: 1.2rem;
-    }
-
-    .action-grid {
-        margin-top: 30px;
     }
 
     .action-card {
@@ -612,7 +624,7 @@
         font-size: 1rem;
     }
 
-    .self-service-section {
+    .resources-section {
         padding: 60px 20px;
     }
 
@@ -624,12 +636,12 @@
         font-size: 1.1rem;
     }
 
-    .service-grid {
+    .resources-grid {
         grid-template-columns: 1fr;
         gap: 20px;
     }
 
-    .service-card {
+    .resource-card {
         padding: 30px 20px;
     }
 
@@ -647,15 +659,15 @@
         font-size: 1rem;
     }
 
-    .support-cta-section {
+    .support-cta {
         padding: 70px 20px;
     }
 
-    .support-cta-section h2 {
+    .support-cta h2 {
         font-size: 2.2rem;
     }
 
-    .support-cta-section p {
+    .support-cta p {
         font-size: 1.15rem;
     }
 
@@ -664,7 +676,7 @@
         align-items: stretch;
     }
 
-    .cta-button {
+    .cta-btn {
         width: 100%;
         justify-content: center;
         padding: 18px 40px;
