@@ -8,6 +8,7 @@ document.addEventListener('DOMContentLoaded', () => {
     // Counter animation function
     function animateCounter(element) {
         const target = parseFloat(element.getAttribute('data-target'));
+        const suffix = element.getAttribute('data-suffix') || '%'; // Default to % if not specified
         const duration = 2000; // 2 seconds
         const increment = target / (duration / 16); // 60fps
         let current = 0;
@@ -22,7 +23,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 } else if (target >= 1000) {
                     element.textContent = Math.floor(current).toLocaleString() + '+';
                 } else {
-                    element.textContent = Math.floor(current) + '%';
+                    element.textContent = Math.floor(current) + suffix;
                 }
                 requestAnimationFrame(updateCounter);
             } else {
@@ -32,7 +33,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 } else if (target >= 1000) {
                     element.textContent = target.toLocaleString() + '+';
                 } else {
-                    element.textContent = target + '%';
+                    element.textContent = target + suffix;
                 }
             }
         };
