@@ -10,6 +10,17 @@
     <link href="https://fonts.googleapis.com/css2?family=Overpass:wght@300;400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+
+    <!-- Immediate Theme Detection (Prevents Green Flash) -->
+    <script>
+        // CRITICAL: Execute BEFORE CSS loads to prevent green flash on business pages
+        const urlParams = new URLSearchParams(window.location.search);
+        const serviceId = urlParams.get('id');
+        if (serviceId && serviceId.startsWith('business-')) {
+            document.documentElement.classList.add('business-theme');
+        }
+    </script>
+
     <script src="includes.js" defer></script>
     <script type="module" src="js/service-loader.js"></script>
 </head>
@@ -23,8 +34,8 @@
     <section class="service-hero" id="serviceHero">
         <div class="hero-overlay">
             <div class="hero-content-wrapper">
-                <h1 id="serviceTitle" class="service-hero-title">Loading Service...</h1>
-                <p id="serviceSubtitle" class="service-hero-subtitle">Please wait...</p>
+                <h1 id="serviceTitle" class="service-hero-title"></h1>
+                <p id="serviceSubtitle" class="service-hero-subtitle"></p>
             </div>
         </div>
     </section>

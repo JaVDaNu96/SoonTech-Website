@@ -402,15 +402,16 @@ a {
 }
 
 .hero-text p {
-    font-size: 1.2rem;
+    font-size: 1.05rem;
     /* Ajusta el tamaño de fuente de los párrafos */
     font-weight: 500;
     color: #b2d235;
     /* Cambia el color del texto de los párrafos */
     max-width: 600px;
-    /* Cambia el ancho máximo de los párrafos */
-    line-height: 1.6;
-    margin-bottom: 15px;
+    /* Limita el ancho del párrafo */
+    margin-bottom: 30px;
+    /* Espacio debajo del párrafo */
+    line-height: 1.7;
 }
 
 .hero-text p1 {
@@ -1376,7 +1377,7 @@ a {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    width: 240px;
+    width: 235px;
     height: 50px;
     background-color: var(--pure-white);
     border-radius: 25px;
@@ -1415,14 +1416,15 @@ a {
 
 .slider-indicator {
     position: absolute;
-    width: 120px;
+    width: 125px;
     height: 100%;
     background-color: var(--primary-green);
     border-radius: 25px;
     transition: left 0.3s ease;
     left: 0;
+    top: 0;
     z-index: 1;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 1);
 }
 
 .theme-slider.active .slider-indicator {
@@ -3026,7 +3028,7 @@ a {
     background: linear-gradient(135deg, #1a2c4e 0%, #285a3b 100%);
     color: #ffffff;
     padding: 60px 0 0;
-    margin-top: 80px;
+    margin-top: 0;
 }
 
 .footer-container {

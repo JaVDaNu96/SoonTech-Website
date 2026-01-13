@@ -119,9 +119,9 @@
 }
 
 .hero-description {
-    font-size: 1.3rem;
+    font-size: 1.05rem;
     color: #333333;
-    line-height: 1.8;
+    line-height: 1.7;
     margin-bottom: 35px;
 }
 
@@ -307,11 +307,11 @@
 
 .home-cta {
     background: linear-gradient(135deg, #285a3b 0%, #1a4426 100%);
-    padding: 100px 20px;
+    padding: 60px 20px;
     text-align: center;
 }
 
-.cta-container h2 {
+.home-cta .cta-container h2 {
     font-size: 3.5rem;
     font-weight: 700;
     color: #ffffff;
@@ -351,7 +351,7 @@
 
 .business-hero {
     background: linear-gradient(135deg, #1a2c4e 0%, #0f1a2e 100%);
-    padding: 80px 0;
+    padding: 50px 0;
     color: #ffffff;
     position: relative;
 }
@@ -377,6 +377,8 @@
 }
 
 .business-hero .hero-description {
+    font-size: 1.05rem;
+    line-height: 1.7;
     color: #94a3b8;
 }
 
@@ -527,7 +529,7 @@
 
 .business-cta {
     background: linear-gradient(135deg, #1a2c4e 0%, #0f1a2e 100%);
-    padding: 100px 20px;
+    padding: 60px 20px;
     text-align: center;
 }
 

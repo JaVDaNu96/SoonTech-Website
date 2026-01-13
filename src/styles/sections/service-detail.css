@@ -54,6 +54,10 @@
     font-size: 8rem;
     color: rgba(178, 210, 53, 0.3);
     animation: float 4s ease-in-out infinite;
+    text-shadow: 0 0 30px rgba(255, 255, 255, 0.2),
+        0 0 60px rgba(178, 210, 53, 0.25),
+        0 0 90px rgba(40, 90, 59, 0.15);
+    filter: drop-shadow(0 0 20px rgba(178, 210, 53, 0.3));
 }
 
 @keyframes float {
@@ -85,6 +89,45 @@
     font-weight: 400;
     line-height: 1.6;
     text-shadow: 0 1px 5px rgba(0, 0, 0, 0.3);
+}
+
+/* Loading Skeleton for Empty Hero Content */
+.service-hero-title:empty::before {
+    content: '';
+    display: block;
+    width: 60%;
+    height: 2.5rem;
+    background: linear-gradient(90deg,
+            rgba(255, 255, 255, 0.1) 25%,
+            rgba(255, 255, 255, 0.2) 50%,
+            rgba(255, 255, 255, 0.1) 75%);
+    background-size: 200% 100%;
+    border-radius: 8px;
+    animation: shimmer 1.5s infinite;
+}
+
+.service-hero-subtitle:empty::before {
+    content: '';
+    display: block;
+    width: 40%;
+    height: 1.25rem;
+    background: linear-gradient(90deg,
+            rgba(255, 255, 255, 0.08) 25%,
+            rgba(255, 255, 255, 0.15) 50%,
+            rgba(255, 255, 255, 0.08) 75%);
+    background-size: 200% 100%;
+    border-radius: 6px;
+    animation: shimmer 1.5s infinite;
+}
+
+@keyframes shimmer {
+    0% {
+        background-position: -200% 0;
+    }
+
+    100% {
+        background-position: 200% 0;
+    }
 }
 
 /* Main Content Section */
@@ -175,11 +218,11 @@
 }
 
 .features-box {
-    background: linear-gradient(135deg, var(--primary-green) 0%, #1f4a2e 100%);
+    background: linear-gradient(135deg, #285a3b 0%, #1a3c27 100%);
     color: var(--pure-white);
     padding: 40px 35px;
     border-radius: 12px;
-    box-shadow: 0 10px 30px rgba(40, 90, 59, 0.3);
+    box-shadow: 0 10px 30px rgba(40, 90, 59, 0.4);
 }
 
 .features-icon {
@@ -235,7 +278,7 @@
 
 /* CTA Section */
 .service-cta-section {
-    background: linear-gradient(135deg, var(--primary-green) 0%, #1f4a2e 100%);
+    background: linear-gradient(135deg, #285a3b 0%, #1a4426 100%);
     padding: 80px 20px;
     text-align: center;
 }
@@ -824,11 +867,22 @@ body.business-theme .service-benefits h2 {
     text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
 
+/* Business Theme: Blue Gradient for Features Box */
+body.business-theme .features-box {
+    background: linear-gradient(135deg, #1e3a8a 0%, #1e40af 50%, #3b82f6 100%) !important;
+    box-shadow: 0 10px 30px rgba(30, 58, 138, 0.4) !important;
+}
+
 /* Make feature icons pop with lighter blue for contrast */
 body.business-theme .features-box .features-icon i,
 body.business-theme .features-section .feature-icon i,
 body.business-theme .service-features .feature-icon i {
     color: #60a5fa !important;
+}
+
+/* Business Theme: Blue Gradient for CTA Section */
+body.business-theme .service-cta-section {
+    background: linear-gradient(135deg, #1a2c4e 0%, #0f1a2e 100%) !important;
 }
 
 body.business-theme .service-content-wrapper h3,

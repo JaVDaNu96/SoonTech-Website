@@ -2,7 +2,7 @@
     {
         "id": "home-network",
         "category": "home",
-        "title": "Smart & Secure Home Networks",
+        "title": "Home Network Setup and Security",
         "subtitle": "Lightning-Fast Wi-Fi, Everywhere in Your Home",
         "heroImage": "Assets/Images/home-network-hero.jpg",
         "icon": "Assets/Icons/home-network-icon.png",
@@ -36,7 +36,7 @@
     {
         "id": "home-device-setup",
         "category": "home",
-        "title": "Effortless Device Setup & Configuration",
+        "title": "Device Setup and Troubleshooting",
         "subtitle": "From Unboxing to Fully Optimized in Minutes",
         "heroImage": "Assets/Images/device-setup-hero.jpg",
         "icon": "Assets/Icons/troubleshoot-icon.png",
@@ -70,7 +70,7 @@
     {
         "id": "home-data-backup",
         "category": "home",
-        "title": "Smart Data Backup & Recovery",
+        "title": "Data Backup and Recovery",
         "subtitle": "Never Lose a Precious Memory or Important File Again",
         "heroImage": "Assets/Images/data-backup-hero.jpg",
         "icon": "Assets/Icons/data-recovery-icon.png",
@@ -104,7 +104,7 @@
     {
         "id": "home-digital-wellness",
         "category": "home",
-        "title": "Digital Wellness & Family Safety",
+        "title": "Privacy and Digital Health Consultation",
         "subtitle": "Create a Healthy Digital Environment for Your Family",
         "heroImage": "Assets/Images/digital-wellness-hero.jpg",
         "icon": "Assets/Icons/digital-helath-icon.png",

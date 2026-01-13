@@ -143,15 +143,13 @@ function renderHeroSection(service) {
     // Get icon class for this service
     const iconClass = ICON_MAP[service.id] || ICON_MAP['default'];
 
-    // Theme Switcher: Apply business theme for business services
+    // Theme Switcher: Apply business theme class for CSS styling
     if (service.category === 'business') {
         document.body.classList.add('business-theme');
-        // Change Hero Gradient to Navy
-        heroSection.style.background = 'linear-gradient(135deg, rgba(26, 44, 78, 0.9) 0%, rgba(15, 26, 46, 0.9) 100%)';
+        // CSS will handle the blue gradient and geometric pattern
     } else {
         document.body.classList.remove('business-theme');
-        // Keep Home Green Gradient
-        heroSection.style.background = 'linear-gradient(135deg, #285a3b 0%, #1a3c27 100%)';
+        // CSS will handle the green gradient for home services
     }
 
     // Create hero content with icon visual

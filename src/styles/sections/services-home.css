@@ -46,7 +46,7 @@
 }
 
 .hero-text p {
-    font-size: 1.6rem !important;
+    font-size: 1.05rem !important;
     color: #e8f5e9 !important;
     font-weight: 400 !important;
     line-height: 1.7 !important;
@@ -122,6 +122,7 @@
 
 /* Service Row */
 .service-row {
+    position: relative;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -131,12 +132,25 @@
     box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
     border-left: 5px solid transparent;
     transition: all 0.3s ease;
+    cursor: pointer;
 }
 
 .service-row:hover {
     border-left-color: #b2d235;
     transform: translateX(10px);
     box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+    background: #f9fdf9;
+}
+
+/* Stretched Link Technique */
+.stretched-link::after {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 1;
+    content: "";
 }
 
 /* Row Icon (Left) */
@@ -342,9 +356,17 @@
 }
 
 .cta-button:hover {
-    background: #1f4a2e;
+    background: #1f4a2e !important;
+    color: #ffffff !important;
     transform: translateY(-3px);
-    box-shadow: 0 8px 25px rgba(40, 90, 59, 0.4);
+    box-shadow: 0 8px 25px rgba(40, 90, 59, 0.5) !important;
+}
+
+/* Ensure hover text stays white and readable */
+.why-choose-home .cta-button:hover {
+    background-color: #1a3c27 !important;
+    color: #ffffff !important;
+    text-decoration: none !important;
 }
 
 .cta-button i {
