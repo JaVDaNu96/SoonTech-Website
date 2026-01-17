@@ -31,12 +31,21 @@ document.addEventListener('DOMContentLoaded', async () => {
     }
 
     try {
-        // Fetch services data
-        console.log('Service Loader: Fetching services.json...');
-        const response = await fetch('data/services.json');
+        // Fetch services data based on language
+        const lang = localStorage.getItem('soontech_language') || 'en';
+        console.log(`Service Loader: Fetching services-${lang}.json...`);
+        const response = await fetch(`data/services-${lang}.json`);
 
         if (!response.ok) {
-            throw new Error(`HTTP error! status: ${response.status}`);
+            // Fallback to default if localized version fails
+            console.warn(`Service Loader: ${lang} version not found, falling back to services.json`);
+            const fallbackResponse = await fetch('data/services.json');
+            if (!fallbackResponse.ok) throw new Error('Could not load services data');
+            const fallbackServices = await fallbackResponse.json();
+            const service = fallbackServices.find(s => s.id === serviceId);
+            if (!service) { showNotFound(); return; }
+            renderService(service, fallbackServices);
+            return;
         }
 
         const services = await response.json();
@@ -173,29 +182,29 @@ function renderTrustModule() {
     const trustHTML = `
         <section class="trust-module">
             <div class="trust-container">
-                <h2 class="trust-heading">Trust & Safety</h2>
-                <p class="trust-subheading">Your home, your privacy, our commitment</p>
+                <h2 class="trust-heading" data-i18n="serviceDetailPage.trust.title">Trust & Safety</h2>
+                <p class="trust-subheading" data-i18n="serviceDetailPage.trust.subtitle">Your home, your privacy, our commitment</p>
                 <div class="trust-grid">
                     <div class="trust-item">
                         <div class="trust-icon">
                             <i class="fas fa-user-shield"></i>
                         </div>
-                        <h3>Verified Experts</h3>
-                        <p>Background-checked technicians with years of experience</p>
+                        <h3 data-i18n="serviceDetailPage.trust.experts.title">Verified Experts</h3>
+                        <p data-i18n="serviceDetailPage.trust.experts.description">Background-checked technicians with years of experience</p>
                     </div>
                     <div class="trust-item">
                         <div class="trust-icon">
                             <i class="fas fa-lock"></i>
                         </div>
-                        <h3>Data Privacy</h3>
-                        <p>Your information stays private and secure</p>
+                        <h3 data-i18n="serviceDetailPage.trust.privacy.title">Data Privacy</h3>
+                        <p data-i18n="serviceDetailPage.trust.privacy.description">Your information stays private and secure</p>
                     </div>
                     <div class="trust-item">
                         <div class="trust-icon">
                             <i class="fas fa-certificate"></i>
                         </div>
-                        <h3>Satisfaction Guarantee</h3>
-                        <p>100% satisfaction or your money back</p>
+                        <h3 data-i18n="serviceDetailPage.trust.satisfaction.title">Satisfaction Guarantee</h3>
+                        <p data-i18n="serviceDetailPage.trust.satisfaction.description">100% satisfaction or your money back</p>
                     </div>
                 </div>
             </div>
@@ -267,7 +276,7 @@ function renderRelatedServices(currentService, allServices) {
             <h3>${service.title}</h3>
             <p>${service.subtitle}</p>
             <a href="service-detail.html?id=${service.id}" class="related-link">
-                Learn More <i class="fas fa-arrow-right"></i>
+                <span data-i18n="common.learnMore">Learn More</span> <i class="fas fa-arrow-right"></i>
             </a>
         `;
         relatedGrid.appendChild(card);

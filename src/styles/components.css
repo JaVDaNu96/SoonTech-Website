@@ -16,7 +16,6 @@
     background: var(--pure-white);
     padding: 3rem;
     border-radius: 15px;
-    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
 }
 
 .contact-header {
@@ -70,7 +69,6 @@
     outline: none;
     border-color: #94b64c;
     background-color: var(--pure-white);
-    box-shadow: 0 0 0 3px rgba(148, 182, 76, 0.1);
 }
 
 .form-group input::placeholder,
@@ -99,18 +97,15 @@
     justify-content: center;
     gap: 0.8rem;
     margin-top: 2rem;
-    box-shadow: 0 4px 15px rgba(40, 90, 59, 0.3);
 }
 
 .btn-submit:hover {
     background: linear-gradient(135deg, #94b64c 0%, #7a9a3e 100%);
     transform: translateY(-2px);
-    box-shadow: 0 6px 20px rgba(148, 182, 76, 0.4);
 }
 
 .btn-submit:active {
     transform: translateY(0);
-    box-shadow: 0 2px 10px rgba(40, 90, 59, 0.3);
 }
 
 .btn-submit i {
@@ -144,12 +139,10 @@
     color: var(--pure-white);
     border-color: #94b64c;
     transform: translateY(-2px);
-    box-shadow: 0 2px 8px rgba(148, 182, 76, 0.3);
 }
 
 .topic-btn:active {
     transform: translateY(0);
-    box-shadow: 0 1px 4px rgba(148, 182, 76, 0.2);
 }
 
 .topic-btn.selected {
@@ -218,7 +211,6 @@
     max-width: 700px;
     width: 90%;
     position: relative;
-    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
     animation: slideIn 0.3s ease;
     text-align: center;
 }

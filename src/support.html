@@ -19,6 +19,7 @@
 
     <!-- Shared Components Loader -->
     <script src="includes.js" defer></script>
+    <script type="module" src="i18n.js"></script>
 </head>
 
 <body>
@@ -29,16 +30,17 @@
     <div class="mission-control-wrapper">
         <!-- Hero Section -->
         <div class="hero-section">
-            <h1 class="mission-title">Mission Control</h1>
-            <p class="mission-subtitle">How can SoonTech help you today?</p>
+            <h1 class="mission-title" data-i18n="supportPage.hero.title">Mission Control</h1>
+            <p class="mission-subtitle" data-i18n="supportPage.hero.subtitle">How can SoonTech help you today?</p>
 
             <!-- User Type Toggle -->
             <div class="user-toggle">
                 <button class="toggle-btn home active" onclick="toggleUser('home')">
-                    <i class="fas fa-home"></i> Home User
+                    <i class="fas fa-home"></i> <span data-i18n="supportPage.hero.userType.home">Home User</span>
                 </button>
                 <button class="toggle-btn business" onclick="toggleUser('business')">
-                    <i class="fas fa-building"></i> Business Client
+                    <i class="fas fa-building"></i> <span data-i18n="supportPage.hero.userType.business">Business
+                        Client</span>
                 </button>
             </div>
 
@@ -46,7 +48,8 @@
             <div class="search-container">
                 <i class="fas fa-search search-icon"></i>
                 <input type="text" id="support-search" class="search-input"
-                    placeholder="Search for help... (e.g., 'wifi not working')">
+                    placeholder="Search for help... (e.g., 'wifi not working')" data-i18n-attr="placeholder"
+                    data-i18n="supportPage.hero.searchPlaceholder.home">
             </div>
         </div>
 
@@ -57,14 +60,16 @@
                 <div class="card-icon green-icon">
                     <i class="fas fa-desktop"></i>
                 </div>
-                <h3>Remote Support</h3>
-                <p>Technician waiting? Enter your 6-digit code and connect instantly.</p>
-                <input type="text" class="code-input" placeholder="000000" maxlength="6">
+                <h3 data-i18n="supportPage.actions.remote.title">Remote Support</h3>
+                <p data-i18n="supportPage.actions.remote.description">Technician waiting? Enter your 6-digit code and
+                    connect instantly.</p>
+                <input type="text" class="code-input" placeholder="000000" maxlength="6" data-i18n-attr="placeholder"
+                    data-i18n="supportPage.actions.remote.placeholder">
                 <button class="action-btn green-btn">
-                    <span>Connect Now</span>
+                    <span data-i18n="supportPage.actions.remote.button">Connect Now</span>
                     <i class="fas fa-arrow-right"></i>
                 </button>
-                <p class="card-note">Avg. wait: <strong>2 min</strong></p>
+                <p class="card-note" data-i18n="supportPage.actions.remote.note">Avg. wait: <strong>2 min</strong></p>
             </div>
 
             <!-- Submit Ticket Card -->
@@ -72,13 +77,14 @@
                 <div class="card-icon blue-icon">
                     <i class="fas fa-ticket-alt"></i>
                 </div>
-                <h3>Submit a Ticket</h3>
-                <p>Describe your issue. Get a detailed response within 4 hours.</p>
+                <h3 data-i18n="supportPage.actions.ticket.title">Submit a Ticket</h3>
+                <p data-i18n="supportPage.actions.ticket.description">Describe your issue. Get a detailed response
+                    within 4 hours.</p>
                 <a href="contact-us.html?type=ticket" class="action-btn blue-btn">
-                    <span>Create Ticket</span>
+                    <span data-i18n="supportPage.actions.ticket.button">Create Ticket</span>
                     <i class="fas fa-edit"></i>
                 </a>
-                <p class="card-note">Response: <strong>4 hrs</strong></p>
+                <p class="card-note" data-i18n="supportPage.actions.ticket.note">Response: <strong>4 hrs</strong></p>
             </div>
 
             <!-- Emergency Call Card -->
@@ -86,13 +92,14 @@
                 <div class="card-icon red-icon">
                     <i class="fas fa-phone-alt"></i>
                 </div>
-                <h3>Emergency Call</h3>
-                <p>System down? Critical issue? Call our emergency line now.</p>
+                <h3 data-i18n="supportPage.actions.emergency.title">Emergency Call</h3>
+                <p data-i18n="supportPage.actions.emergency.description">System down? Critical issue? Call our emergency
+                    line now.</p>
                 <a href="tel:+12369751596" class="action-btn red-btn">
-                    <span>Call 778-862-4365</span>
+                    <span data-i18n="supportPage.actions.emergency.button">Call 778-862-4365</span>
                     <i class="fas fa-phone"></i>
                 </a>
-                <p class="card-note emergency-note">24/7 Available</p>
+                <p class="card-note emergency-note" data-i18n="supportPage.actions.emergency.note">24/7 Available</p>
             </div>
         </div>
     </div>
@@ -101,8 +108,8 @@
     <!-- Self-Service Resources - Light Section -->
     <section class="resources-section">
         <div class="resources-container">
-            <h2 class="section-heading">Self-Service Resources</h2>
-            <p class="section-subtitle">Quick fixes for common issues</p>
+            <h2 class="section-heading" data-i18n="supportPage.resources.title">Self-Service Resources</h2>
+            <p class="section-subtitle" data-i18n="supportPage.resources.subtitle">Quick fixes for common issues</p>
 
             <div class="resources-grid">
                 <!-- Wi-Fi -->
@@ -110,9 +117,10 @@
                     <div class="resource-icon">
                         <i class="fas fa-wifi"></i>
                     </div>
-                    <h3>Wi-Fi Issues</h3>
-                    <p>Troubleshoot connectivity</p>
-                    <a href="#wifi" class="resource-link">View Guide <i class="fas fa-chevron-right"></i></a>
+                    <h3 data-i18n="supportPage.resources.items.wifi.title">Wi-Fi Issues</h3>
+                    <p data-i18n="supportPage.resources.items.wifi.description">Troubleshoot connectivity</p>
+                    <a href="#wifi" class="resource-link"><span data-i18n="supportPage.resources.viewGuide">View
+                            Guide</span> <i class="fas fa-chevron-right"></i></a>
                 </div>
 
                 <!-- Email -->
@@ -120,9 +128,10 @@
                     <div class="resource-icon">
                         <i class="fas fa-envelope"></i>
                     </div>
-                    <h3>Email Problems</h3>
-                    <p>Fix sync and access</p>
-                    <a href="#email" class="resource-link">View Guide <i class="fas fa-chevron-right"></i></a>
+                    <h3 data-i18n="supportPage.resources.items.email.title">Email Problems</h3>
+                    <p data-i18n="supportPage.resources.items.email.description">Fix sync and access</p>
+                    <a href="#email" class="resource-link"><span data-i18n="supportPage.resources.viewGuide">View
+                            Guide</span> <i class="fas fa-chevron-right"></i></a>
                 </div>
 
                 <!-- Printer -->
@@ -130,9 +139,10 @@
                     <div class="resource-icon">
                         <i class="fas fa-print"></i>
                     </div>
-                    <h3>Printer Setup</h3>
-                    <p>Configure printers</p>
-                    <a href="#printer" class="resource-link">View Guide <i class="fas fa-chevron-right"></i></a>
+                    <h3 data-i18n="supportPage.resources.items.printer.title">Printer Setup</h3>
+                    <p data-i18n="supportPage.resources.items.printer.description">Configure printers</p>
+                    <a href="#printer" class="resource-link"><span data-i18n="supportPage.resources.viewGuide">View
+                            Guide</span> <i class="fas fa-chevron-right"></i></a>
                 </div>
 
                 <!-- Security -->
@@ -140,9 +150,10 @@
                     <div class="resource-icon">
                         <i class="fas fa-shield-alt"></i>
                     </div>
-                    <h3>Security Alerts</h3>
-                    <p>Respond to warnings</p>
-                    <a href="#security" class="resource-link">View Guide <i class="fas fa-chevron-right"></i></a>
+                    <h3 data-i18n="supportPage.resources.items.security.title">Security Alerts</h3>
+                    <p data-i18n="supportPage.resources.items.security.description">Respond to warnings</p>
+                    <a href="#security" class="resource-link"><span data-i18n="supportPage.resources.viewGuide">View
+                            Guide</span> <i class="fas fa-chevron-right"></i></a>
                 </div>
 
                 <!-- Billing -->
@@ -150,9 +161,10 @@
                     <div class="resource-icon">
                         <i class="fas fa-file-invoice-dollar"></i>
                     </div>
-                    <h3>Billing Questions</h3>
-                    <p>Invoice and payments</p>
-                    <a href="#billing" class="resource-link">View Guide <i class="fas fa-chevron-right"></i></a>
+                    <h3 data-i18n="supportPage.resources.items.billing.title">Billing Questions</h3>
+                    <p data-i18n="supportPage.resources.items.billing.description">Invoice and payments</p>
+                    <a href="#billing" class="resource-link"><span data-i18n="supportPage.resources.viewGuide">View
+                            Guide</span> <i class="fas fa-chevron-right"></i></a>
                 </div>
 
                 <!-- Account -->
@@ -160,9 +172,10 @@
                     <div class="resource-icon">
                         <i class="fas fa-user-lock"></i>
                     </div>
-                    <h3>Account Access</h3>
-                    <p>Reset passwords</p>
-                    <a href="#account" class="resource-link">View Guide <i class="fas fa-chevron-right"></i></a>
+                    <h3 data-i18n="supportPage.resources.items.account.title">Account Access</h3>
+                    <p data-i18n="supportPage.resources.items.account.description">Reset passwords</p>
+                    <a href="#account" class="resource-link"><span data-i18n="supportPage.resources.viewGuide">View
+                            Guide</span> <i class="fas fa-chevron-right"></i></a>
                 </div>
             </div>
         </div>
@@ -171,47 +184,51 @@
     <!-- FAQ Section -->
     <section class="faq-section">
         <div class="faq-container">
-            <h2 class="section-heading">Frequently Asked Questions</h2>
+            <h2 class="section-heading" data-i18n="supportPage.faq.title">Frequently Asked Questions</h2>
 
             <div class="faq-list">
                 <details class="faq-item">
                     <summary class="faq-question">
-                        <span>How do I reset my password?</span>
+                        <span data-i18n="supportPage.faq.items.q1.q">How do I reset my password?</span>
                         <i class="fas fa-chevron-down"></i>
                     </summary>
                     <div class="faq-answer">
-                        <p>Click "Forgot Password" on the login page. Enter your email and we'll send a reset link
+                        <p data-i18n="supportPage.faq.items.q1.a">Click "Forgot Password" on the login page. Enter your
+                            email and we'll send a reset link
                             within minutes.</p>
                     </div>
                 </details>
 
                 <details class="faq-item">
                     <summary class="faq-question">
-                        <span>What are your support hours?</span>
+                        <span data-i18n="supportPage.faq.items.q2.q">What are your support hours?</span>
                         <i class="fas fa-chevron-down"></i>
                     </summary>
                     <div class="faq-answer">
-                        <p>Monday-Friday, 8 AM - 6 PM PST. Emergency support available 24/7.</p>
+                        <p data-i18n="supportPage.faq.items.q2.a">Monday-Friday, 8 AM - 6 PM PST. Emergency support
+                            available 24/7.</p>
                     </div>
                 </details>
 
                 <details class="faq-item">
                     <summary class="faq-question">
-                        <span>How do I schedule remote support?</span>
+                        <span data-i18n="supportPage.faq.items.q3.q">How do I schedule remote support?</span>
                         <i class="fas fa-chevron-down"></i>
                     </summary>
                     <div class="faq-answer">
-                        <p>Contact us to schedule a session. We'll provide a 6-digit code to enter above.</p>
+                        <p data-i18n="supportPage.faq.items.q3.a">Contact us to schedule a session. We'll provide a
+                            6-digit code to enter above.</p>
                     </div>
                 </details>
 
                 <details class="faq-item">
                     <summary class="faq-question">
-                        <span>What should I include in a ticket?</span>
+                        <span data-i18n="supportPage.faq.items.q4.q">What should I include in a ticket?</span>
                         <i class="fas fa-chevron-down"></i>
                     </summary>
                     <div class="faq-answer">
-                        <p>Describe the issue, when it started, what you tried, and include screenshots if possible.</p>
+                        <p data-i18n="supportPage.faq.items.q4.a">Describe the issue, when it started, what you tried,
+                            and include screenshots if possible.</p>
                     </div>
                 </details>
             </div>
@@ -221,14 +238,14 @@
     <!-- CTA Section -->
     <section class="support-cta">
         <div class="cta-container">
-            <h2>Still Need Help?</h2>
-            <p>Our team is standing by</p>
+            <h2 data-i18n="supportPage.cta.title">Still Need Help?</h2>
+            <p data-i18n="supportPage.cta.subtitle">Our team is standing by</p>
             <div class="cta-buttons">
                 <a href="contact-us.html" class="cta-btn primary">
-                    Contact Us <i class="fas fa-arrow-right"></i>
+                    <span data-i18n="supportPage.cta.contact">Contact Us</span> <i class="fas fa-arrow-right"></i>
                 </a>
                 <a href="about-us.html" class="cta-btn secondary">
-                    Meet Our Team <i class="fas fa-users"></i>
+                    <span data-i18n="supportPage.cta.team">Meet Our Team</span> <i class="fas fa-users"></i>
                 </a>
             </div>
         </div>
@@ -249,10 +266,10 @@
             const searchInput = document.getElementById('support-search');
             if (type === 'home') {
                 document.querySelector('.toggle-btn.home').classList.add('active');
-                searchInput.placeholder = "Search for help... (e.g., 'wifi not working')";
+                searchInput.setAttribute('data-i18n', 'supportPage.hero.searchPlaceholder.home');
             } else {
                 document.querySelector('.toggle-btn.business').classList.add('active');
-                searchInput.placeholder = "Search for help... (e.g., 'server down')";
+                searchInput.setAttribute('data-i18n', 'supportPage.hero.searchPlaceholder.business');
             }
         }
     </script>

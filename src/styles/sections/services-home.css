@@ -129,7 +129,6 @@
     background: var(--pure-white);
     padding: 40px;
     border-radius: 12px;
-    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
     border-left: 5px solid transparent;
     transition: all 0.3s ease;
     cursor: pointer;
@@ -138,7 +137,6 @@
 .service-row:hover {
     border-left-color: #b2d235;
     transform: translateX(10px);
-    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
     background: #f9fdf9;
 }
 
@@ -241,7 +239,6 @@
 .action-btn:hover {
     background: #1f4a2e;
     transform: translateY(-2px);
-    box-shadow: 0 5px 15px rgba(40, 90, 59, 0.3);
 }
 
 .action-btn i {
@@ -299,7 +296,6 @@
     background: var(--pure-white);
     border-color: var(--accent-lime);
     transform: translateY(-5px);
-    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
 }
 
 .benefit-icon {
@@ -352,14 +348,12 @@
     border-radius: 8px;
     text-decoration: none;
     transition: all 0.3s ease;
-    box-shadow: 0 5px 20px rgba(40, 90, 59, 0.3);
 }
 
 .cta-button:hover {
     background: #1f4a2e !important;
     color: #ffffff !important;
     transform: translateY(-3px);
-    box-shadow: 0 8px 25px rgba(40, 90, 59, 0.5) !important;
 }
 
 /* Ensure hover text stays white and readable */

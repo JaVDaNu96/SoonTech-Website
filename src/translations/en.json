@@ -1,0 +1,730 @@
+{
+    "nav": {
+        "home": "Home",
+        "business": "Business",
+        "aiSolutions": "AI Solutions",
+        "insights": "Insights",
+        "aboutUs": "About Us",
+        "contactUs": "Contact Us",
+        "support": "Support",
+        "homeServices": {
+            "networkSetup": "Home Network Setup and Security",
+            "deviceSetup": "Device Setup and Troubleshooting",
+            "dataBackup": "Data Backup and Recovery",
+            "digitalWellness": "Privacy and Digital Health Consultations"
+        },
+        "businessServices": {
+            "managedIT": "Managed IT Support",
+            "cloud": "Cloud & M365",
+            "network": "Network Infrastructure",
+            "cybersecurity": "Cybersecurity"
+        }
+    },
+    "hero": {
+        "home": {
+            "title": "Tech Support That Feels Like Family",
+            "subtitle": "Your Personal IT Team",
+            "description": "No more tech stress. Get expert help setting up, securing, and maintaining your home technology. Clear answers, fast solutions, and peace of mind.",
+            "cta": "Get Started Today"
+        },
+        "business": {
+            "title": "Enterprise IT, Small Business Budget",
+            "subtitle": "Your Competitive Edge",
+            "description": "Stop worrying about technology and focus on growth. Get reliable IT support, robust security, and strategic guidance tailored to your business.",
+            "cta": "Boost Your Business"
+        }
+    },
+    "home": {
+        "whyChoose": {
+            "title": "Why Families Choose SoonTech",
+            "personal": {
+                "title": "Personal Touch",
+                "description": "We treat your home like our own. Friendly, patient support that speaks your language."
+            },
+            "fast": {
+                "title": "Fast Response",
+                "description": "Same-day service available. We know tech issues can't wait."
+            },
+            "secure": {
+                "title": "Safe & Secure",
+                "description": "Protect your family with enterprise-grade security, simplified for home use."
+            },
+            "pricing": {
+                "title": "Transparent Pricing",
+                "description": "No hidden fees. Clear, upfront pricing you can trust."
+            }
+        },
+        "services": {
+            "title": "How We Help Your Home",
+            "subtitle": "Simple solutions for everyday tech",
+            "wifi": {
+                "title": "Wi-Fi Setup & Optimization",
+                "description": "Fast, reliable internet throughout your entire home. No more dead zones."
+            },
+            "smartHome": {
+                "title": "Smart Home Integration",
+                "description": "Connect and control your devices effortlessly. Alexa, Google, and more."
+            },
+            "security": {
+                "title": "Home Network Security",
+                "description": "Protect your family from online threats with smart security solutions."
+            },
+            "backup": {
+                "title": "Photo & File Backup",
+                "description": "Never lose precious memories. Automatic cloud and local backups."
+            },
+            "deviceSetup": {
+                "title": "New Device Setup",
+                "description": "Get your new computer, tablet, or phone working perfectly from day one."
+            },
+            "support": {
+                "title": "24/7 Tech Support",
+                "description": "Help whenever you need it. Phone, email, or remote assistance."
+            },
+            "viewAll": "View All Home Services"
+        },
+        "cta": {
+            "title": "Ready to Simplify Your Tech Life?",
+            "subtitle": "Get started with a free consultation",
+            "button": "Schedule Free Consultation"
+        }
+    },
+    "business": {
+        "whyChoose": {
+            "title": "Why Businesses Choose SoonTech",
+            "reliable": {
+                "title": "Always Reliable",
+                "description": "99.9% uptime guaranteed. Your business never stops, and neither do we."
+            },
+            "expert": {
+                "title": "Expert Team",
+                "description": "Certified professionals with decades of combined experience in enterprise IT."
+            },
+            "scalable": {
+                "title": "Grows With You",
+                "description": "Solutions that scale from startup to enterprise. Flexible and future-proof."
+            },
+            "cost": {
+                "title": "Cost-Effective",
+                "description": "Enterprise-grade IT at small business prices. No hidden fees or surprises."
+            }
+        },
+        "services": {
+            "title": "How We Power Your Business",
+            "subtitle": "Professional IT solutions that drive growth",
+            "managedIT": {
+                "title": "Managed IT Services",
+                "description": "Complete IT management, monitoring, and support. Focus on your business, we'll handle the tech."
+            },
+            "cloud": {
+                "title": "Cloud & Microsoft 365",
+                "description": "Seamless migration and management. Work from anywhere with confidence."
+            },
+            "network": {
+                "title": "Network Infrastructure",
+                "description": "Fast, secure, reliable networks. Built for performance and scalability."
+            },
+            "cybersecurity": {
+                "title": "Cybersecurity Solutions",
+                "description": "Protect your business from threats. Comprehensive security that works 24/7."
+            },
+            "consulting": {
+                "title": "IT Strategy & Consulting",
+                "description": "Technology roadmaps aligned with your business goals. Strategic guidance from experts."
+            },
+            "backup": {
+                "title": "Backup & Disaster Recovery",
+                "description": "Never lose critical data. Automated backups and rapid recovery solutions."
+            },
+            "viewAll": "View All Business Services"
+        },
+        "cta": {
+            "title": "Ready to Upgrade Your Business IT?",
+            "subtitle": "Get a free technology assessment",
+            "button": "Get Free Assessment"
+        }
+    },
+    "ai": {
+        "meta": {
+            "title": "AI Solutions - Unlock the Power of Artificial Intelligence | SoonTech",
+            "description": "Practical AI solutions for business growth and personal productivity. Custom chatbots, workflow automation, data analysis, and intelligent assistants."
+        },
+        "hero": {
+            "title": "Unlock the Power of Artificial Intelligence",
+            "subtitle": "Practical AI solutions for your business growth and personal productivity",
+            "features": {
+                "automation": "Intelligent Automation",
+                "insights": "Data-Driven Insights",
+                "solutions": "Smart Solutions"
+            }
+        },
+        "intro": {
+            "title": "AI Solutions Tailored for You",
+            "description": "Whether you're running a business or managing your personal life, our AI solutions are designed to make you more efficient, productive, and successful."
+        },
+        "markets": {
+            "business": {
+                "title": "For Business",
+                "description": "Transform your operations with enterprise-grade AI solutions that drive growth and efficiency.",
+                "features": {
+                    "chatbots": {
+                        "title": "Custom Chatbots",
+                        "description": "24/7 customer support powered by intelligent conversational AI"
+                    },
+                    "automation": {
+                        "title": "Workflow Automation",
+                        "description": "Streamline repetitive tasks and boost team productivity"
+                    },
+                    "analysis": {
+                        "title": "Data Analysis",
+                        "description": "Turn raw data into actionable business insights"
+                    },
+                    "predictive": {
+                        "title": "Predictive Analytics",
+                        "description": "Forecast trends and make data-driven decisions"
+                    }
+                },
+                "cta": "Automate Your Work"
+            },
+            "personal": {
+                "title": "For Home",
+                "description": "Enhance your daily life with AI-powered tools that save time and boost productivity.",
+                "features": {
+                    "assistants": {
+                        "title": "Personal Assistants",
+                        "description": "Smart home integration and voice-controlled automation"
+                    },
+                    "learning": {
+                        "title": "Learning & Research",
+                        "description": "AI-powered study tools and information synthesis"
+                    },
+                    "organization": {
+                        "title": "Digital Organization",
+                        "description": "Intelligent file management and task prioritization"
+                    },
+                    "content": {
+                        "title": "Content Creation",
+                        "description": "AI-assisted writing, editing, and creative projects"
+                    }
+                },
+                "cta": "Upgrade Your Daily Life"
+            }
+        },
+        "consulting": {
+            "title": "Not Sure Where to Start?",
+            "text": "Let's build a proof-of-concept together. We'll help you identify the perfect AI solution for your unique needs and demonstrate its value before full implementation.",
+            "cta": "Book AI Consultation",
+            "note": "Free 30-minute discovery call • No commitment required"
+        },
+        "useCases": {
+            "title": "Real-World AI Applications",
+            "description": "See how businesses and individuals are leveraging AI to solve real problems",
+            "items": {
+                "customerService": {
+                    "title": "Customer Service Automation",
+                    "description": "Reduce response times by 80% with AI-powered chatbots that handle common inquiries 24/7"
+                },
+                "documentProcessing": {
+                    "title": "Document Processing",
+                    "description": "Extract and organize data from invoices, receipts, and contracts automatically"
+                },
+                "emailManagement": {
+                    "title": "Email Management",
+                    "description": "Smart inbox organization, priority detection, and automated responses"
+                },
+                "smartScheduling": {
+                    "title": "Smart Scheduling",
+                    "description": "AI-optimized calendar management and meeting coordination"
+                },
+                "contentTranslation": {
+                    "title": "Content Translation",
+                    "description": "Real-time translation and localization for global communication"
+                },
+                "securityMonitoring": {
+                    "title": "Security Monitoring",
+                    "description": "AI-powered threat detection and anomaly identification"
+                }
+            }
+        },
+        "modals": {
+            "customer-service": {
+                "title": "Customer Service Automation",
+                "text": "Transform your customer support with AI-powered chatbots that provide instant, accurate responses 24/7. Our intelligent systems learn from every interaction to continuously improve service quality.\n\nFeatures include: multi-language support, sentiment analysis to detect frustrated customers, seamless handoff to human agents when needed, and integration with your existing CRM systems.\n\nReduce response times by up to 80% while maintaining high customer satisfaction scores. Perfect for businesses handling high volumes of repetitive inquiries, allowing your human team to focus on complex issues that require personal attention."
+            },
+            "document-processing": {
+                "title": "Document Processing",
+                "text": "Eliminate manual data entry with our advanced AI document processing solution. Automatically extract, classify, and organize information from invoices, receipts, contracts, forms, and any business documents.\n\nOur system uses optical character recognition (OCR) combined with machine learning to understand document structure and context. Features include: automatic field extraction, data validation, duplicate detection, multi-format support (PDF, images, scanned documents), and direct integration with your accounting or ERP systems.\n\nSave countless hours of manual work, reduce errors by up to 95%, and accelerate your document workflows from days to minutes."
+            },
+            "email-management": {
+                "title": "Email Management",
+                "text": "Take control of your inbox with AI-powered email management that works like a personal assistant. Our system intelligently categorizes emails, identifies priority messages, suggests responses, and can even draft replies based on your communication style.\n\nFeatures include: smart filtering and labeling, automatic response suggestions, meeting scheduling detection, follow-up reminders, spam and phishing detection, and VIP sender prioritization.\n\nThe AI learns your preferences over time, becoming more accurate at understanding what matters most to you. Reduce email processing time by 60% and never miss an important message again."
+            },
+            "smart-scheduling": {
+                "title": "Smart Scheduling",
+                "text": "Optimize your calendar with AI that understands your priorities, preferences, and productivity patterns. Our smart scheduling system automatically finds the best meeting times, manages conflicts, and ensures you have adequate focus time for deep work.\n\nFeatures include: intelligent meeting time suggestions based on attendee availability, automatic buffer time between meetings, travel time calculation, priority-based scheduling, timezone management for global teams, and integration with video conferencing platforms.\n\nThe system learns your work patterns and can suggest optimal times for different types of activities. Reclaim up to 5 hours per week previously lost to scheduling coordination."
+            },
+            "content-translation": {
+                "title": "Content Translation",
+                "text": "Break down language barriers with AI-powered translation that goes beyond word-for-word conversion. Our system understands context, cultural nuances, and industry-specific terminology to deliver accurate, natural-sounding translations in real-time.\n\nFeatures include: support for 100+ languages, industry-specific glossaries, brand voice consistency, real-time translation for live conversations, document translation with formatting preservation, and continuous learning from corrections.\n\nPerfect for businesses expanding globally, multilingual customer support, or international team collaboration. Maintain your brand voice across all languages while ensuring clear, culturally appropriate communication."
+            },
+            "security-monitoring": {
+                "title": "Security Monitoring",
+                "text": "Protect your business with AI-powered security monitoring that detects threats before they become breaches. Our system continuously analyzes network traffic, user behavior, and system logs to identify anomalies and potential security risks.\n\nFeatures include: real-time threat detection, behavioral analysis to spot insider threats, automated incident response, compliance monitoring, vulnerability assessment, and predictive threat intelligence.\n\nThe AI learns your normal business patterns and immediately flags suspicious activities like unusual login locations, abnormal data access, or potential malware behavior. Reduce security incident response time from hours to minutes and prevent breaches before they occur."
+            }
+        }
+    },
+    "homeServicesPage": {
+        "hero": {
+            "title": "Home Tech Made Simple",
+            "subtitle": "Expert support for your connected life"
+        },
+        "intro": {
+            "title": "Our Home Services",
+            "description": "From smart home setups to data protection, we handle the tech so you can enjoy life. Expert support when you need it, in language you understand."
+        },
+        "services": {
+            "network": {
+                "title": "Home Network Setup and Security",
+                "description": "Reliable Wi-Fi that reaches every corner of your home.",
+                "features": [
+                    "Blanket coverage, no dead zones",
+                    "Advanced security built-in",
+                    "Perfect for streaming & gaming"
+                ]
+            },
+            "device": {
+                "title": "Device Setup and Troubleshooting",
+                "description": "Your devices working together, exactly how you want them.",
+                "features": [
+                    "Expert setup & optimization",
+                    "Smart home integration",
+                    "One-on-one training included"
+                ]
+            },
+            "data": {
+                "title": "Data Backup and Recovery",
+                "description": "Never worry about losing precious memories or important files.",
+                "features": [
+                    "Set-and-forget backup",
+                    "Quick file recovery",
+                    "Access from any device"
+                ]
+            },
+            "wellness": {
+                "title": "Privacy and Digital Health Consultation",
+                "description": "Create a healthy online environment for your family.",
+                "features": [
+                    "Smart parental controls",
+                    "Screen time balance",
+                    "Online safety guidance"
+                ]
+            },
+            "viewDetails": "View Details"
+        },
+        "whyChoose": {
+            "title": "Why Families Trust Us",
+            "subtitle": "Tech support that understands your family's needs",
+            "items": {
+                "protected": {
+                    "title": "Always Protected",
+                    "description": "Advanced security that works quietly in the background, keeping your family safe online."
+                },
+                "time": {
+                    "title": "Time Back",
+                    "description": "No more wrestling with tech problems. We handle it all so you can focus on what matters."
+                },
+                "support": {
+                    "title": "Real Support",
+                    "description": "Talk to real experts who explain things clearly. No tech jargon, just simple solutions."
+                },
+                "family": {
+                    "title": "Family First",
+                    "description": "Solutions designed for home life, with safety and simplicity built into everything we do."
+                }
+            },
+            "cta": "Schedule a Free Consultation"
+        }
+    },
+    "businessServicesPage": {
+        "hero": {
+            "title": "Enterprise-Grade IT for Small Businesses",
+            "subtitle": "Reliable Support. Secure Cloud. Fast Networks.",
+            "cta": "Get Your Free Assessment"
+        },
+        "services": {
+            "managed": {
+                "badge": "Managed IT Support",
+                "title": "24/7 Help Desk & Proactive Monitoring",
+                "description": "Your dedicated IT team, without the overhead. We handle troubleshooting, maintenance, and monitoring so you can focus on growing your business.",
+                "features": [
+                    "Remote & on-site technical support",
+                    "Proactive system monitoring 24/7",
+                    "Regular maintenance & updates",
+                    "Fast response times guaranteed"
+                ]
+            },
+            "cloud": {
+                "badge": "Cloud & Microsoft 365",
+                "title": "Seamless Cloud Migration & Management",
+                "description": "Move to the cloud with confidence. We handle Microsoft 365 setup, OneDrive migration, Teams deployment, and ongoing management.",
+                "features": [
+                    "Microsoft 365 migration & setup",
+                    "OneDrive & SharePoint configuration",
+                    "Teams deployment & training",
+                    "Email migration from any platform"
+                ]
+            },
+            "network": {
+                "badge": "Network Infrastructure",
+                "title": "Fast, Secure, Reliable Networks",
+                "description": "Professional network design and implementation. From Wi-Fi to cabling to firewalls, we build networks that grow with your business.",
+                "features": [
+                    "Enterprise Wi-Fi installation",
+                    "Structured cabling & wiring",
+                    "Firewall & security configuration",
+                    "VPN & remote access setup"
+                ]
+            },
+            "cybersecurity": {
+                "badge": "Cybersecurity",
+                "title": "Protect Your Business from Threats",
+                "description": "Comprehensive security solutions to safeguard your data, systems, and reputation. From backups to antivirus to compliance, we've got you covered.",
+                "features": [
+                    "Automated backup & disaster recovery",
+                    "Enterprise antivirus & threat protection",
+                    "Security audits & compliance",
+                    "Employee security training"
+                ]
+            }
+        },
+        "cta": {
+            "title": "Ready to Upgrade Your Business IT?",
+            "description": "Get a free technology assessment and discover how we can help your business thrive.",
+            "button": "Get Your Free Assessment"
+        }
+    },
+    "aboutUsPage": {
+        "hero": {
+            "title": "The Minds Behind Your Peace of Mind",
+            "subtitle": "Expert IT professionals bringing enterprise-grade solutions to small businesses and homes"
+        },
+        "stats": {
+            "resolved": "Tickets Resolved",
+            "experience": "Years Combined Experience",
+            "resolution": "First-Call Resolution Rate",
+            "uptime": "System Uptime"
+        },
+        "vision": {
+            "title": "Enterprise Tech for Everyone",
+            "lead": "We believe that world-class IT support shouldn't be reserved for Fortune 500 companies.",
+            "p1": "At SoonTech, we bring the same level of expertise, security, and reliability that powers major corporations to small businesses and homes. Our mission is simple: make technology work for you, not against you.",
+            "p2": "Whether you're a growing business needing robust infrastructure or a family wanting a secure home network, we deliver solutions that are professional, personal, and built to last."
+        },
+        "leadership": {
+            "title": "Meet Our Leaders",
+            "subtitle": "The architects of your digital peace of mind",
+            "javier": {
+                "name": "Javier Nuñez",
+                "title": "Co-Founder & Lead Architect",
+                "backTitle": "CEO-Lead Developer",
+                "bio1": "As the technical lead of SoonTech, Javier directs the strategy for securing small business infrastructures. He specializes in transforming chaotic IT environments into streamlined, secure systems that allow companies to grow without technical friction.",
+                "bio2": "With a deep background in network topology and cloud migration, Javier designs redundant systems using Fortinet firewalls and Azure cloud solutions. He builds the 'invisible architecture' that keeps your data safe and your uptime high.",
+                "bio3": "Beyond the code, he implements rigorous risk assessments and incident response playbooks aligned with ITIL principles. He ensures that your business isn't just running today, but is resilient against the threats of tomorrow."
+            },
+            "cristobal": {
+                "name": "Cristobal Haro",
+                "title": "Co-Founder & Operations Lead",
+                "backTitle": "Chief Operations Officer",
+                "bio1": "With over 15 years of hands-on experience, Cristobal is the backbone of SoonTech's operations. He has spent his career helping small businesses and home users navigate complex hardware issues, boasting a first-call resolution rate of over 85%.",
+                "bio2": "He is a master of the physical layer, from running structured Cat 6 cabling to configuring physical VLANs and wireless access points. Whether it is a server refresh or a complex home office setup, he ensures the hardware matches the ambition.",
+                "bio3": "Cristobal is known for his patient, clear communication. He doesn't just fix the problem; he trains the user, translating technical jargon into plain English to empower clients and prevent future issues."
+            }
+        },
+        "certifications": {
+            "title": "Certified Excellence",
+            "subtitle": "Industry-recognized expertise you can trust"
+        },
+        "values": {
+            "title": "Our Core Values",
+            "subtitle": "The principles that guide everything we do",
+            "items": {
+                "security": {
+                    "title": "Security First",
+                    "description": "We treat your data like our own. Every solution is built with multiple layers of protection, from encryption to access controls to continuous monitoring."
+                },
+                "speed": {
+                    "title": "Speed & Clarity",
+                    "description": "Fast response times and clear communication. We explain complex issues in plain English and resolve problems quickly, so you can get back to what matters."
+                },
+                "human": {
+                    "title": "Human Connection",
+                    "description": "Technology should bring people together, not create barriers. We build relationships, not just networks, treating every client like family."
+                },
+                "growth": {
+                    "title": "Continuous Growth",
+                    "description": "The tech landscape evolves daily. We stay ahead through constant learning, certifications, and hands-on experience with the latest tools and threats."
+                }
+            }
+        },
+        "cta": {
+            "title": "Ready to Experience the SoonTech Difference?",
+            "subtitle": "Let's build something great together",
+            "button": "Get Started Today"
+        }
+    },
+    "contactUsPage": {
+        "info": {
+            "title": "Let's Start a Conversation",
+            "subtitle": "Have a question or need assistance? We're here to help you succeed with the right technology solutions.",
+            "phone": "Phone",
+            "email": "Email",
+            "hours": {
+                "title": "Business Hours",
+                "weekday": "Monday - Friday: 9:00 AM - 6:00 PM",
+                "saturday": "Saturday: 10:00 AM - 4:00 PM",
+                "sunday": "Sunday: Closed"
+            },
+            "location": "Location"
+        },
+        "trust": {
+            "title": "Quick Response Guarantee",
+            "subtitle": "We respond to all inquiries within 24 hours"
+        },
+        "form": {
+            "title": "Send Us a Message",
+            "subtitle": "Fill out the form below and we'll get back to you as soon as possible.",
+            "name": {
+                "label": "Full Name",
+                "placeholder": "John Doe"
+            },
+            "email": {
+                "label": "Email Address",
+                "placeholder": "john@example.com"
+            },
+            "phone": {
+                "label": "Phone Number",
+                "placeholder": "+1 (778) 862-4365"
+            },
+            "service": {
+                "label": "Service Interest",
+                "placeholder": "-- Select a Service --",
+                "groups": {
+                    "home": "Home Services",
+                    "business": "Business Services",
+                    "other": "Other"
+                },
+                "options": {
+                    "homeQuick": "Quick Setup & Support",
+                    "homeSmart": "Smart Home Security",
+                    "homeBackup": "Easy Backup Solutions",
+                    "homeWellness": "Digital Wellness",
+                    "businessManaged": "Managed IT Services",
+                    "businessCloud": "Cloud Solutions",
+                    "businessCyber": "Cybersecurity",
+                    "businessStrategy": "IT Strategy & Consulting",
+                    "otherGeneral": "General Inquiry",
+                    "otherSupport": "Technical Support"
+                }
+            },
+            "message": {
+                "label": "Message",
+                "placeholder": "Tell us how we can help you..."
+            },
+            "submit": "Send Message"
+        },
+        "success": {
+            "title": "Thank You!",
+            "message": "Your message has been sent successfully. We'll get back to you within 24 hours.",
+            "another": "Send Another Message"
+        }
+    },
+    "supportPage": {
+        "hero": {
+            "title": "Mission Control",
+            "subtitle": "How can SoonTech help you today?",
+            "userType": {
+                "home": "Home User",
+                "business": "Business Client"
+            },
+            "searchPlaceholder": {
+                "home": "Search for help... (e.g., 'wifi not working')",
+                "business": "Search for help... (e.g., 'server down')"
+            }
+        },
+        "actions": {
+            "remote": {
+                "title": "Remote Support",
+                "description": "Technician waiting? Enter your 6-digit code and connect instantly.",
+                "placeholder": "000000",
+                "button": "Connect Now",
+                "note": "Avg. wait: 2 min"
+            },
+            "ticket": {
+                "title": "Submit a Ticket",
+                "description": "Describe your issue. Get a detailed response within 4 hours.",
+                "button": "Create Ticket",
+                "note": "Response: 4 hrs"
+            },
+            "emergency": {
+                "title": "Emergency Call",
+                "description": "System down? Critical issue? Call our emergency line now.",
+                "button": "Call 778-862-4365",
+                "note": "24/7 Available"
+            }
+        },
+        "resources": {
+            "title": "Self-Service Resources",
+            "subtitle": "Quick fixes for common issues",
+            "items": {
+                "wifi": {
+                    "title": "Wi-Fi Issues",
+                    "description": "Troubleshoot connectivity"
+                },
+                "email": {
+                    "title": "Email Problems",
+                    "description": "Fix sync and access"
+                },
+                "printer": {
+                    "title": "Printer Setup",
+                    "description": "Configure printers"
+                },
+                "security": {
+                    "title": "Security Alerts",
+                    "description": "Respond to warnings"
+                },
+                "billing": {
+                    "title": "Billing Questions",
+                    "description": "Invoice and payments"
+                },
+                "account": {
+                    "title": "Account Access",
+                    "description": "Reset passwords"
+                }
+            },
+            "viewGuide": "View Guide"
+        },
+        "faq": {
+            "title": "Frequently Asked Questions",
+            "items": {
+                "q1": {
+                    "q": "How do I reset my password?",
+                    "a": "Click \"Forgot Password\" on the login page. Enter your email and we'll send a reset link within minutes."
+                },
+                "q2": {
+                    "q": "What are your support hours?",
+                    "a": "Monday-Friday, 8 AM - 6 PM PST. Emergency support available 24/7."
+                },
+                "q3": {
+                    "q": "How do I schedule remote support?",
+                    "a": "Contact us to schedule a session. We'll provide a 6-digit code to enter above."
+                },
+                "q4": {
+                    "q": "What should I include in a ticket?",
+                    "a": "Describe the issue, when it started, what you tried, and include screenshots if possible."
+                }
+            }
+        },
+        "cta": {
+            "title": "Still Need Help?",
+            "subtitle": "Our team is standing by",
+            "contact": "Contact Us",
+            "team": "Meet Our Team"
+        }
+    },
+    "serviceDetailPage": {
+        "whatWeOffer": "What We Offer",
+        "loading": "Loading service details...",
+        "whyChoose": "Why Choose This Service?",
+        "keyFeatures": "Key Features",
+        "loadingFeatures": "Loading features...",
+        "whatsIncluded": "What's Included",
+        "includedDeliverables": "Every service comes with these concrete deliverables",
+        "relatedTitle": "You Might Also Need",
+        "relatedSubtitle": "Complete your connected ecosystem",
+        "ready": "Ready to Get Started?",
+        "discuss": "Let's discuss how we can help you achieve your technology goals.",
+        "contactToday": "Contact Us Today",
+        "notFound": {
+            "title": "Service Not Found",
+            "message": "We couldn't find the service you're looking for. Please check the URL or browse our available services.",
+            "backHome": "Back to Home"
+        },
+        "trust": {
+            "title": "Trust & Safety",
+            "subtitle": "Your home, your privacy, our commitment",
+            "experts": {
+                "title": "Verified Experts",
+                "description": "Background-checked technicians with years of experience"
+            },
+            "privacy": {
+                "title": "Data Privacy",
+                "description": "Your information stays private and secure"
+            },
+            "satisfaction": {
+                "title": "Satisfaction Guarantee",
+                "description": "100% satisfaction or your money back"
+            }
+        }
+    },
+    "blogPage": {
+        "hero": {
+            "title": "SoonTech Insights",
+            "subtitle": "Trends, Tips, and Tech Solutions"
+        },
+        "toolbar": {
+            "searchPlaceholder": "Search articles...",
+            "categories": {
+                "all": "All",
+                "cybersecurity": "Cybersecurity",
+                "ai": "AI & Innovation",
+                "growth": "Business Growth",
+                "smartHome": "Smart Home",
+                "tutorials": "Tech Tutorials"
+            }
+        },
+        "noResults": {
+            "title": "No articles found",
+            "message": "Try adjusting your search or filter criteria"
+        },
+        "article": {
+            "back": "Back to Insights",
+            "readMore": "Read Article →",
+            "readTime": "read"
+        },
+        "newsletter": {
+            "title": "Never Miss an Insight",
+            "subtitle": "Get the latest tech tips, security alerts, and AI trends delivered to your inbox.",
+            "placeholder": "Enter your email address",
+            "button": "Subscribe"
+        },
+        "error": {
+            "title": "Unable to Load Articles",
+            "message": "Please check your connection and try again."
+        }
+    },
+    "footer": {
+        "description": "We are dedicated to providing top-notch IT solutions and support to help businesses grow and stay secure in the digital age.",
+        "quickLinks": {
+            "title": "Quick Links",
+            "about": "About Us",
+            "services": "Our Services",
+            "blog": "Latest News",
+            "contact": "Contact Us",
+            "privacy": "Privacy Policy"
+        },
+        "contact": {
+            "title": "Contact Us"
+        },
+        "follow": {
+            "title": "Follow Us"
+        },
+        "copyright": "© 2024 SoonTech, Inc. All Rights Reserved."
+    },
+    "common": {
+        "learnMore": "Learn More",
+        "viewAll": "View All",
+        "clickToLearnMore": "Click to learn more",
+        "clickToFlipBack": "Click to flip back",
+        "close": "Close"
+    }
+}

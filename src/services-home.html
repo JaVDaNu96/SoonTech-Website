@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="styles.css">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
     <script src="includes.js" defer></script>
+    <script type="module" src="i18n.js"></script>
 </head>
 
 <body>
@@ -23,8 +24,8 @@
         <div class="hero-overlay">
             <div class="hero-content">
                 <div class="hero-text">
-                    <h1>Home Tech Made Simple</h1>
-                    <p>Expert support for your connected life</p>
+                    <h1 data-i18n="homeServicesPage.hero.title">Home Tech Made Simple</h1>
+                    <p data-i18n="homeServicesPage.hero.subtitle">Expert support for your connected life</p>
                 </div>
                 <div class="hero-visual">
                     <i class="fas fa-laptop-house"></i>
@@ -37,8 +38,9 @@
     <section class="home-services-section">
         <div class="services-container">
             <div class="section-intro">
-                <h2 class="section-title">Our Home Services</h2>
-                <p class="section-description">From smart home setups to data protection, we handle the tech so you can
+                <h2 class="section-title" data-i18n="homeServicesPage.intro.title">Our Home Services</h2>
+                <p class="section-description" data-i18n="homeServicesPage.intro.description">From smart home setups to
+                    data protection, we handle the tech so you can
                     enjoy life. Expert support when you need it, in language you understand.</p>
             </div>
 
@@ -49,17 +51,25 @@
                         <i class="fas fa-wifi"></i>
                     </div>
                     <div class="row-content">
-                        <h3>Home Network Setup and Security</h3>
-                        <p>Reliable Wi-Fi that reaches every corner of your home.</p>
+                        <h3 data-i18n="homeServicesPage.services.network.title">Home Network Setup and Security</h3>
+                        <p data-i18n="homeServicesPage.services.network.description">Reliable Wi-Fi that reaches every
+                            corner of your home.</p>
                         <ul class="row-features">
-                            <li><i class="fas fa-check"></i> Blanket coverage, no dead zones</li>
-                            <li><i class="fas fa-check"></i> Advanced security built-in</li>
-                            <li><i class="fas fa-check"></i> Perfect for streaming & gaming</li>
+                            <li><i class="fas fa-check"></i> <span
+                                    data-i18n="homeServicesPage.services.network.features.0">Blanket coverage, no dead
+                                    zones</span></li>
+                            <li><i class="fas fa-check"></i> <span
+                                    data-i18n="homeServicesPage.services.network.features.1">Advanced security
+                                    built-in</span></li>
+                            <li><i class="fas fa-check"></i> <span
+                                    data-i18n="homeServicesPage.services.network.features.2">Perfect for streaming &
+                                    gaming</span></li>
                         </ul>
                     </div>
                     <div class="row-action">
                         <a href="service-detail.html?id=home-network" class="action-btn stretched-link">
-                            View Details <i class="fas fa-arrow-right"></i>
+                            <span data-i18n="homeServicesPage.services.viewDetails">View Details</span> <i
+                                class="fas fa-arrow-right"></i>
                         </a>
                     </div>
                 </div>
@@ -70,17 +80,25 @@
                         <i class="fas fa-laptop-medical"></i>
                     </div>
                     <div class="row-content">
-                        <h3>Device Setup and Troubleshooting</h3>
-                        <p>Your devices working together, exactly how you want them.</p>
+                        <h3 data-i18n="homeServicesPage.services.device.title">Device Setup and Troubleshooting</h3>
+                        <p data-i18n="homeServicesPage.services.device.description">Your devices working together,
+                            exactly how you want them.</p>
                         <ul class="row-features">
-                            <li><i class="fas fa-check"></i> Expert setup & optimization</li>
-                            <li><i class="fas fa-check"></i> Smart home integration</li>
-                            <li><i class="fas fa-check"></i> One-on-one training included</li>
+                            <li><i class="fas fa-check"></i> <span
+                                    data-i18n="homeServicesPage.services.device.features.0">Expert setup &
+                                    optimization</span></li>
+                            <li><i class="fas fa-check"></i> <span
+                                    data-i18n="homeServicesPage.services.device.features.1">Smart home
+                                    integration</span></li>
+                            <li><i class="fas fa-check"></i> <span
+                                    data-i18n="homeServicesPage.services.device.features.2">One-on-one training
+                                    included</span></li>
                         </ul>
                     </div>
                     <div class="row-action">
                         <a href="service-detail.html?id=home-device-setup" class="action-btn stretched-link">
-                            View Details <i class="fas fa-arrow-right"></i>
+                            <span data-i18n="homeServicesPage.services.viewDetails">View Details</span> <i
+                                class="fas fa-arrow-right"></i>
                         </a>
                     </div>
                 </div>
@@ -91,17 +109,25 @@
                         <i class="fas fa-cloud-upload-alt"></i>
                     </div>
                     <div class="row-content">
-                        <h3>Data Backup and Recovery</h3>
-                        <p>Never worry about losing precious memories or important files.</p>
+                        <h3 data-i18n="homeServicesPage.services.data.title">Data Backup and Recovery</h3>
+                        <p data-i18n="homeServicesPage.services.data.description">Never worry about losing precious
+                            memories or important files.</p>
                         <ul class="row-features">
-                            <li><i class="fas fa-check"></i> Set-and-forget backup</li>
-                            <li><i class="fas fa-check"></i> Quick file recovery</li>
-                            <li><i class="fas fa-check"></i> Access from any device</li>
+                            <li><i class="fas fa-check"></i> <span
+                                    data-i18n="homeServicesPage.services.data.features.0">Set-and-forget backup</span>
+                            </li>
+                            <li><i class="fas fa-check"></i> <span
+                                    data-i18n="homeServicesPage.services.data.features.1">Quick file recovery</span>
+                            </li>
+                            <li><i class="fas fa-check"></i> <span
+                                    data-i18n="homeServicesPage.services.data.features.2">Access from any device</span>
+                            </li>
                         </ul>
                     </div>
                     <div class="row-action">
                         <a href="service-detail.html?id=home-data-backup" class="action-btn stretched-link">
-                            View Details <i class="fas fa-arrow-right"></i>
+                            <span data-i18n="homeServicesPage.services.viewDetails">View Details</span> <i
+                                class="fas fa-arrow-right"></i>
                         </a>
                     </div>
                 </div>
@@ -112,17 +138,26 @@
                         <i class="fas fa-user-shield"></i>
                     </div>
                     <div class="row-content">
-                        <h3>Privacy and Digital Health Consultation</h3>
-                        <p>Create a healthy online environment for your family.</p>
+                        <h3 data-i18n="homeServicesPage.services.wellness.title">Privacy and Digital Health Consultation
+                        </h3>
+                        <p data-i18n="homeServicesPage.services.wellness.description">Create a healthy online
+                            environment for your family.</p>
                         <ul class="row-features">
-                            <li><i class="fas fa-check"></i> Smart parental controls</li>
-                            <li><i class="fas fa-check"></i> Screen time balance</li>
-                            <li><i class="fas fa-check"></i> Online safety guidance</li>
+                            <li><i class="fas fa-check"></i> <span
+                                    data-i18n="homeServicesPage.services.wellness.features.0">Smart parental
+                                    controls</span></li>
+                            <li><i class="fas fa-check"></i> <span
+                                    data-i18n="homeServicesPage.services.wellness.features.1">Screen time balance</span>
+                            </li>
+                            <li><i class="fas fa-check"></i> <span
+                                    data-i18n="homeServicesPage.services.wellness.features.2">Online safety
+                                    guidance</span></li>
                         </ul>
                     </div>
                     <div class="row-action">
                         <a href="service-detail.html?id=home-digital-wellness" class="action-btn stretched-link">
-                            View Details <i class="fas fa-arrow-right"></i>
+                            <span data-i18n="homeServicesPage.services.viewDetails">View Details</span> <i
+                                class="fas fa-arrow-right"></i>
                         </a>
                     </div>
                 </div>
@@ -133,43 +168,48 @@
     <!-- Why Choose Us Section -->
     <section class="why-choose-home">
         <div class="section-header">
-            <h2>Why Families Trust Us</h2>
-            <p class="section-subtitle">Tech support that understands your family's needs</p>
+            <h2 data-i18n="homeServicesPage.whyChoose.title">Why Families Trust Us</h2>
+            <p class="section-subtitle" data-i18n="homeServicesPage.whyChoose.subtitle">Tech support that understands
+                your family's needs</p>
         </div>
         <div class="benefits-grid">
             <div class="benefit-item">
                 <div class="benefit-icon">
                     <i class="fas fa-shield-alt"></i>
                 </div>
-                <h3>Always Protected</h3>
-                <p>Advanced security that works quietly in the background, keeping your family safe online.</p>
+                <h3 data-i18n="homeServicesPage.whyChoose.items.protected.title">Always Protected</h3>
+                <p data-i18n="homeServicesPage.whyChoose.items.protected.description">Advanced security that works
+                    quietly in the background, keeping your family safe online.</p>
             </div>
             <div class="benefit-item">
                 <div class="benefit-icon">
                     <i class="fas fa-clock"></i>
                 </div>
-                <h3>Time Back</h3>
-                <p>No more wrestling with tech problems. We handle it all so you can focus on what matters.</p>
+                <h3 data-i18n="homeServicesPage.whyChoose.items.time.title">Time Back</h3>
+                <p data-i18n="homeServicesPage.whyChoose.items.time.description">No more wrestling with tech problems.
+                    We handle it all so you can focus on what matters.</p>
             </div>
             <div class="benefit-item">
                 <div class="benefit-icon">
                     <i class="fas fa-headset"></i>
                 </div>
-                <h3>Real Support</h3>
-                <p>Talk to real experts who explain things clearly. No tech jargon, just simple solutions.</p>
+                <h3 data-i18n="homeServicesPage.whyChoose.items.support.title">Real Support</h3>
+                <p data-i18n="homeServicesPage.whyChoose.items.support.description">Talk to real experts who explain
+                    things clearly. No tech jargon, just simple solutions.</p>
             </div>
             <div class="benefit-item">
                 <div class="benefit-icon">
                     <i class="fas fa-home"></i>
                 </div>
-                <h3>Family First</h3>
-                <p>Solutions designed for home life, with safety and simplicity built into everything we do.</p>
+                <h3 data-i18n="homeServicesPage.whyChoose.items.family.title">Family First</h3>
+                <p data-i18n="homeServicesPage.whyChoose.items.family.description">Solutions designed for home life,
+                    with safety and simplicity built into everything we do.</p>
             </div>
         </div>
         <div class="cta-container">
             <a href="contact-us.html" class="cta-button">
                 <i class="fas fa-calendar-check"></i>
-                Schedule a Free Consultation
+                <span data-i18n="homeServicesPage.whyChoose.cta">Schedule a Free Consultation</span>
             </a>
         </div>
     </section>

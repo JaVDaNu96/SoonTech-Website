@@ -1,0 +1,274 @@
+[
+    {
+        "id": "home-network",
+        "category": "home",
+        "title": "Home Network Setup and Security",
+        "subtitle": "Lightning-Fast Wi-Fi, Everywhere in Your Home",
+        "heroImage": "Assets/Images/home-network-hero.jpg",
+        "icon": "Assets/Icons/home-network-icon.png",
+        "overview": "Transform your home into a connected haven with our professional network setup services. We eliminate dead zones, optimize your Wi-Fi coverage, and implement enterprise-grade security to protect every device in your home. Whether you're streaming 4K movies, gaming online, or working remotely, our network solutions ensure fast, reliable connectivity throughout your entire property. We handle everything from router configuration to mesh network installation, creating a seamless digital experience for your whole family.",
+        "features": [
+            "Complete Dead Zone Elimination",
+            "Mesh Network Installation & Configuration",
+            "Advanced Parental Controls & Content Filtering",
+            "Secure Guest Network Setup",
+            "IoT Device Protection & Segmentation",
+            "Network Security Shield (Firewall Configuration)",
+            "Speed Optimization & Quality of Service (QoS)",
+            "24/7 Network Monitoring & Support"
+        ],
+        "benefits": [
+            "Stream 4K content in every room without buffering",
+            "Protect your family from online threats automatically",
+            "Control screen time and content access easily",
+            "Keep smart home devices secure and isolated"
+        ],
+        "inclusions": [
+            "Complete Wi-Fi Signal Heatmap",
+            "Network Security Audit Report",
+            "30-Day Performance Guarantee",
+            "Lifetime Phone Support",
+            "Free Follow-Up Visit (within 90 days)"
+        ],
+        "ctaText": "Get Your Free Network Audit",
+        "ctaLink": "contact-us.html?service=home-network"
+    },
+    {
+        "id": "home-device-setup",
+        "category": "home",
+        "title": "Device Setup and Troubleshooting",
+        "subtitle": "From Unboxing to Fully Optimized in Minutes",
+        "heroImage": "Assets/Images/device-setup-hero.jpg",
+        "icon": "Assets/Icons/troubleshoot-icon.png",
+        "overview": "Say goodbye to frustrating setup processes and confusing manuals. Our expert technicians handle the complete setup and configuration of all your devices, from laptops and tablets to smart home gadgets and printers. We ensure everything works together seamlessly, optimize performance settings, install essential software, and configure security features. Whether it's a brand new device or a replacement, we make the transition smooth and stress-free, so you can start using your technology immediately without the hassle.",
+        "features": [
+            "Complete Device Unboxing & Setup",
+            "Operating System Configuration & Updates",
+            "Essential Software Installation & Licensing",
+            "Email & Cloud Account Integration",
+            "Security Software Setup & Configuration",
+            "Data Transfer from Old Devices",
+            "Smart Home Device Integration",
+            "Printer & Peripheral Configuration"
+        ],
+        "benefits": [
+            "Start using your new devices immediately",
+            "Avoid setup mistakes that cause problems later",
+            "Get optimal performance from day one",
+            "Save hours of frustration and confusion"
+        ],
+        "inclusions": [
+            "Complete Hardware Audit",
+            "Device Optimization Checklist",
+            "Personalized Quick-Start Guide",
+            "90-Day Setup Support",
+            "Free Software Updates (first year)"
+        ],
+        "ctaText": "Schedule Your Device Setup",
+        "ctaLink": "contact-us.html?service=home-device-setup"
+    },
+    {
+        "id": "home-data-backup",
+        "category": "home",
+        "title": "Data Backup and Recovery",
+        "subtitle": "Never Lose a Precious Memory or Important File Again",
+        "heroImage": "Assets/Images/data-backup-hero.jpg",
+        "icon": "Assets/Icons/data-recovery-icon.png",
+        "overview": "Protect what matters most with our comprehensive backup solutions. We implement automated cloud and local backup systems that safeguard your photos, documents, videos, and important files without you having to think about it. Our multi-layered approach ensures your data is protected against hardware failure, ransomware, accidental deletion, and natural disasters. With easy recovery options and secure encryption, you'll have peace of mind knowing your digital life is always protected and accessible from any device, anywhere.",
+        "features": [
+            "Automated Cloud Backup (Google Drive, OneDrive, iCloud)",
+            "Local Backup Solutions (NAS, External Drives)",
+            "Ransomware Protection & Versioning",
+            "Photo & Video Organization & Backup",
+            "Document Synchronization Across Devices",
+            "Encrypted Backup for Sensitive Data",
+            "Quick Recovery & Restore Services",
+            "Backup Monitoring & Health Checks"
+        ],
+        "benefits": [
+            "Automatic protection without manual effort",
+            "Recover deleted files from any point in time",
+            "Access your files from anywhere securely",
+            "Protection against ransomware and viruses"
+        ],
+        "inclusions": [
+            "Backup Strategy Document",
+            "Recovery Test & Verification",
+            "Cloud Storage Setup (1TB included)",
+            "Backup Monitoring Dashboard",
+            "Annual Backup Health Check"
+        ],
+        "ctaText": "Protect Your Data Today",
+        "ctaLink": "contact-us.html?service=home-data-backup"
+    },
+    {
+        "id": "home-digital-wellness",
+        "category": "home",
+        "title": "Privacy and Digital Health Consultation",
+        "subtitle": "Create a Healthy Digital Environment for Your Family",
+        "heroImage": "Assets/Images/digital-wellness-hero.jpg",
+        "icon": "Assets/Icons/digital-helath-icon.png",
+        "overview": "Build a balanced and safe digital environment for your entire family. Our digital wellness services help you manage screen time, filter inappropriate content, protect privacy, and promote healthy technology habits. We configure comprehensive parental controls, set up age-appropriate content filters, and implement monitoring tools that give you visibility without invading privacy. From protecting young children to helping teenagers develop responsible digital citizenship, we create customized solutions that fit your family's values and needs.",
+        "features": [
+            "Comprehensive Parental Control Setup",
+            "Age-Appropriate Content Filtering",
+            "Screen Time Management & Scheduling",
+            "App & Website Blocking Controls",
+            "Location Tracking & Geofencing",
+            "Social Media Monitoring & Alerts",
+            "Privacy Protection & Identity Safety",
+            "Digital Literacy Training for Parents"
+        ],
+        "benefits": [
+            "Protect children from inappropriate content",
+            "Manage screen time across all devices",
+            "Monitor online activity without being intrusive",
+            "Teach healthy digital habits early"
+        ],
+        "inclusions": [
+            "Family Digital Safety Consultation",
+            "Custom Parental Control Configuration",
+            "Age-Appropriate Content Filter Setup",
+            "Digital Wellness Guide for Parents",
+            "Quarterly Check-In & Adjustments"
+        ],
+        "ctaText": "Start Your Digital Wellness Journey",
+        "ctaLink": "contact-us.html?service=home-digital-wellness"
+    },
+    {
+        "id": "business-it-support",
+        "category": "business",
+        "title": "Managed IT Support",
+        "subtitle": "24/7 Help Desk & Proactive Monitoring",
+        "heroImage": "Assets/Images/managed-it-hero.jpg",
+        "icon": "fa-headset",
+        "overview": "Your dedicated IT team, without the overhead. We handle troubleshooting, maintenance, and monitoring so you can focus on growing your business. Our managed IT support provides unlimited remote assistance, proactive system monitoring, and fast response times guaranteed. We act as your complete IT department, preventing problems before they occur and resolving issues quickly when they arise. With predictable monthly costs and enterprise-grade tools, you get IT excellence without the enterprise price tag.",
+        "features": [
+            "Unlimited Remote Technical Support",
+            "24/7 Proactive System Monitoring",
+            "Regular Maintenance & Updates",
+            "Help Desk Ticketing System",
+            "On-Site Support When Needed",
+            "Asset Management & Tracking",
+            "Software Licensing Management",
+            "Fast Response Times Guaranteed"
+        ],
+        "benefits": [
+            "Minimize downtime and lost productivity",
+            "Predictable monthly IT costs",
+            "Access to enterprise-level expertise",
+            "Focus on business growth, not IT problems"
+        ],
+        "inclusions": [
+            "Monthly System Health Report",
+            "Unlimited Remote Support Tickets",
+            "Quarterly On-Site Visit",
+            "24/7 Monitoring Dashboard Access",
+            "Priority Response SLA"
+        ],
+        "ctaText": "Get Your Free IT Assessment",
+        "ctaLink": "contact-us.html?service=business-it-support"
+    },
+    {
+        "id": "business-cloud-migration",
+        "category": "business",
+        "title": "Cloud & Microsoft 365",
+        "subtitle": "Seamless Cloud Migration & Management",
+        "heroImage": "Assets/Images/cloud-migration-hero.jpg",
+        "icon": "fa-cloud",
+        "overview": "Move to the cloud with confidence. We handle Microsoft 365 setup, OneDrive migration, Teams deployment, and ongoing management. Our cloud experts design and implement solutions tailored to your business needs, from email and file sharing to full Azure infrastructure hosting. We ensure a smooth transition with minimal disruption, comprehensive training, and continuous optimization to maximize your cloud investment.",
+        "features": [
+            "Microsoft 365 Migration & Setup",
+            "OneDrive & SharePoint Configuration",
+            "Microsoft Teams Deployment & Training",
+            "Email Migration from Any Platform",
+            "Azure Cloud Infrastructure",
+            "Cloud Security & Compliance",
+            "Backup & Disaster Recovery",
+            "Ongoing Cloud Management & Support"
+        ],
+        "benefits": [
+            "Access your data from anywhere, any device",
+            "Reduce hardware costs and maintenance",
+            "Improve team collaboration and productivity",
+            "Enterprise-level security and compliance"
+        ],
+        "inclusions": [
+            "Complete Cloud Migration Plan",
+            "Microsoft 365 Tenant Setup",
+            "User Training Sessions (3 included)",
+            "Data Migration & Verification",
+            "90-Day Post-Migration Support"
+        ],
+        "ctaText": "Start Your Cloud Journey",
+        "ctaLink": "contact-us.html?service=business-cloud-migration"
+    },
+    {
+        "id": "business-network",
+        "category": "business",
+        "title": "Network Infrastructure",
+        "subtitle": "Fast, Secure, Reliable Networks",
+        "heroImage": "Assets/Images/network-infrastructure-hero.jpg",
+        "icon": "fa-network-wired",
+        "overview": "Professional network design and implementation. From Wi-Fi to cabling to firewalls, we build networks that grow with your business. Our network specialists have expertise in Cisco, Fortinet, and enterprise-grade solutions. We design structured cabling systems, deploy high-performance wireless networks, configure advanced firewalls, and implement VPN solutions for secure remote access. Every network is built for reliability, security, and scalability.",
+        "features": [
+            "Enterprise Wi-Fi Installation & Configuration",
+            "Structured Cabling & Wiring (Cat6/Cat6a)",
+            "Firewall Configuration (Fortinet, Cisco, SonicWall)",
+            "VPN & Secure Remote Access Setup",
+            "Network Security & Segmentation",
+            "Switch & Router Configuration",
+            "Network Performance Optimization",
+            "Ongoing Network Monitoring & Support"
+        ],
+        "benefits": [
+            "Fast, reliable connectivity for all users",
+            "Secure network architecture",
+            "Scalable infrastructure that grows with you",
+            "Expert support from certified technicians"
+        ],
+        "inclusions": [
+            "Complete Network Assessment",
+            "Network Design Documentation",
+            "Cabling & Infrastructure Warranty",
+            "Network Performance Baseline",
+            "6-Month Post-Installation Support"
+        ],
+        "ctaText": "Upgrade Your Network",
+        "ctaLink": "contact-us.html?service=business-network"
+    },
+    {
+        "id": "business-cybersecurity",
+        "category": "business",
+        "title": "Cybersecurity Services",
+        "subtitle": "Protect Your Business from Threats",
+        "heroImage": "Assets/Images/cybersecurity-hero.jpg",
+        "icon": "fa-shield-alt",
+        "overview": "Comprehensive security solutions to safeguard your data, systems, and reputation. From backups to antivirus to compliance, we've got you covered. We implement multi-layered security strategies including ransomware protection, automated backups, enterprise antivirus, security audits, and employee training. Our approach combines technology, processes, and people to create a robust security posture that protects against evolving threats while meeting industry compliance requirements.",
+        "features": [
+            "Automated Backup & Disaster Recovery",
+            "Enterprise Antivirus & Endpoint Protection",
+            "Ransomware Protection & Detection",
+            "Security Audits & Vulnerability Assessments",
+            "Compliance Management (HIPAA, PCI, SOC 2)",
+            "Email Security & Phishing Protection",
+            "Security Awareness Training for Employees",
+            "Incident Response & Recovery Planning"
+        ],
+        "benefits": [
+            "Protect against ransomware and data breaches",
+            "Meet industry compliance requirements",
+            "Reduce risk of costly security incidents",
+            "Build customer trust with strong security"
+        ],
+        "inclusions": [
+            "Security Risk Assessment",
+            "Backup Solution Implementation",
+            "Employee Security Training (Annual)",
+            "Quarterly Security Audits",
+            "Incident Response Plan Documentation"
+        ],
+        "ctaText": "Secure Your Business",
+        "ctaLink": "contact-us.html?service=business-cybersecurity"
+    }
+]

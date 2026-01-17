@@ -95,7 +95,6 @@
     flex-direction: column;
     height: 100%;
     transition: transform 0.3s ease;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     border-radius: 10px;
     border: 1px solid var(--secondary-green);
 }
@@ -133,7 +132,6 @@
     font-weight: bold;
     font-size: 14px;
     text-decoration: none;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     transition: all 0.3s ease;
     margin-top: auto;
 }

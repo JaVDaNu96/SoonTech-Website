@@ -105,8 +105,6 @@
 .blog-hero .hero-visual i {
     font-size: 10rem;
     color: #b2d235;
-    text-shadow: 0 0 40px rgba(178, 210, 53, 0.4),
-        0 0 80px rgba(178, 210, 53, 0.2);
     animation: float-icon 4s ease-in-out infinite;
 }
 
@@ -167,7 +165,6 @@
 #searchInput:focus {
     outline: none;
     border-color: #285a3b;
-    box-shadow: 0 0 0 3px rgba(40, 90, 59, 0.1);
 }
 
 #searchInput::placeholder {
@@ -206,13 +203,11 @@
     background: #285a3b;
     color: white;
     transform: translateY(-2px);
-    box-shadow: 0 4px 12px rgba(40, 90, 59, 0.2);
 }
 
 .category-btn.active {
     background: #285a3b;
     color: white;
-    box-shadow: 0 4px 12px rgba(40, 90, 59, 0.3);
 }
 
 /* Blog Section */
@@ -235,13 +230,10 @@
     background: white;
     border-radius: 8px;
     overflow: hidden;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .news-item:hover {
     transform: translateY(-4px);
-    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
 }
 
 /* Blog Card Images */
@@ -558,11 +550,9 @@
     font-size: 1rem;
     font-family: 'Overpass', sans-serif;
     outline: none;
-    transition: box-shadow 0.3s ease;
 }
 
 .newsletter-form input[type="email"]:focus {
-    box-shadow: 0 0 0 3px rgba(178, 210, 53, 0.3);
 }
 
 .newsletter-form input[type="email"]::placeholder {
@@ -589,7 +579,6 @@
     background-color: #9ec02a;
     /* Slightly darker lime */
     transform: translateY(-2px);
-    box-shadow: 0 4px 12px rgba(178, 210, 53, 0.4);
 }
 
 .newsletter-form button:active {

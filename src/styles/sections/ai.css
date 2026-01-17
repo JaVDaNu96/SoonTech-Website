@@ -55,12 +55,10 @@
     0%,
     100% {
         transform: scale(1);
-        box-shadow: 0 0 0 0 rgba(178, 210, 53, 0.4);
     }
 
     50% {
         transform: scale(1.05);
-        box-shadow: 0 0 0 20px rgba(178, 210, 53, 0);
     }
 }
 
@@ -163,7 +161,6 @@
     background: var(--pure-white);
     padding: 3rem;
     border-radius: 20px;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
     border: 2px solid transparent;
     transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
     position: relative;
@@ -188,7 +185,6 @@
 .ai-market-card:hover {
     transform: translateY(-5px);
     border-color: var(--accent-lime);
-    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
 }
 
 .market-icon {
@@ -200,7 +196,6 @@
     align-items: center;
     justify-content: center;
     margin-bottom: 2rem;
-    box-shadow: 0 10px 25px rgba(40, 90, 59, 0.3);
 }
 
 .market-icon i {
@@ -272,12 +267,10 @@
     font-size: 1.1rem;
     text-decoration: none;
     transition: all 0.3s ease;
-    box-shadow: 0 5px 15px rgba(40, 90, 59, 0.3);
 }
 
 .market-cta:hover {
     transform: translateY(-3px);
-    box-shadow: 0 8px 25px rgba(40, 90, 59, 0.4);
     background: linear-gradient(135deg, #1f4a2e, var(--primary-green));
 }
 
@@ -415,7 +408,6 @@
     background: var(--pure-white);
     border-color: var(--accent-lime);
     transform: translateY(-5px);
-    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
 }
 
 .use-case-icon {

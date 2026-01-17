@@ -29,7 +29,6 @@
     color: var(--pure-white);
     padding: 50px 40px;
     border-radius: 12px;
-    box-shadow: 0 10px 30px rgba(40, 90, 59, 0.2);
     position: sticky;
     top: 100px;
     /* Stick below header */
@@ -145,7 +144,6 @@
     background: var(--pure-white);
     padding: 50px 40px;
     border-radius: 12px;
-    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
 }
 
 .contact-form-panel h2 {
@@ -207,7 +205,6 @@
     outline: none;
     border-color: var(--primary-green);
     background: var(--pure-white);
-    box-shadow: 0 0 0 3px rgba(40, 90, 59, 0.1);
 }
 
 /* Select Dropdown */
@@ -247,7 +244,6 @@
 .btn-submit:hover {
     background: #1f4a2e;
     transform: translateY(-2px);
-    box-shadow: 0 5px 15px rgba(40, 90, 59, 0.3);
 }
 
 .btn-submit:active {
@@ -268,7 +264,6 @@
     padding: 50px 40px;
     border-radius: 12px;
     text-align: center;
-    box-shadow: 0 10px 30px rgba(40, 90, 59, 0.3);
 }
 
 .success-message.hidden {
@@ -321,7 +316,6 @@
     background: var(--accent-lime);
     color: var(--primary-green);
     transform: translateY(-2px);
-    box-shadow: 0 5px 15px rgba(178, 210, 53, 0.3);
 }
 
 /* Hidden Class */

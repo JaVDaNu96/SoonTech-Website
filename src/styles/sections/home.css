@@ -27,10 +27,9 @@
 .theme-slider {
     position: relative;
     display: flex;
-    background: #e0e0e0;
-    padding: 1px;
+    background: transparent;
+    padding: 0;
     border-radius: 50px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
     width: fit-content;
 }
 
@@ -55,20 +54,16 @@
 /* Sliding background indicator */
 .slider-indicator {
     position: absolute;
-    top: 1px;
-    left: 1px;
-    width: calc(50% - 0.5px);
-    height: calc(100% - 2px);
+    /* width and left handled by JavaScript for dynamic adaptation */
+    height: 100%;
     background: #285a3b;
-    border-radius: 49.5px;
+    border-radius: 50px;
     transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
     z-index: 1;
 }
 
-/* Move indicator to right when business is active */
+/* Color change when business is active */
 .slider-indicator.business-active {
-    left: calc(50% - 0.5px);
     background: #3b82f6;
 }
 
@@ -137,20 +132,17 @@
     border-radius: 10px;
     text-decoration: none;
     transition: all 0.3s ease;
-    box-shadow: 0 4px 15px rgba(40, 90, 59, 0.3);
 }
 
 .hero-btn:hover {
     background: #1a4426;
     transform: translateY(-3px);
-    box-shadow: 0 8px 25px rgba(40, 90, 59, 0.4);
 }
 
 .hero-image img {
     width: 100%;
     height: auto;
     border-radius: 20px;
-    box-shadow: 0 15px 50px rgba(0, 0, 0, 0.15);
 }
 
 /* ===================================================================== */
@@ -252,7 +244,6 @@
 
 .home-service-card:hover {
     transform: translateY(-8px);
-    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.1);
     border-color: #b2d235;
 }
 
@@ -336,13 +327,11 @@
     border-radius: 10px;
     text-decoration: none;
     transition: all 0.3s ease;
-    box-shadow: 0 5px 20px rgba(178, 210, 53, 0.4);
 }
 
 .cta-btn-large:hover {
     background: #94b64c;
     transform: translateY(-3px);
-    box-shadow: 0 8px 30px rgba(178, 210, 53, 0.5);
 }
 
 /* ===================================================================== */
@@ -384,12 +373,10 @@
 
 .business-hero .hero-btn {
     background: #3b82f6;
-    box-shadow: 0 4px 15px rgba(59, 130, 246, 0.3);
 }
 
 .business-hero .hero-btn:hover {
     background: #2563eb;
-    box-shadow: 0 8px 25px rgba(59, 130, 246, 0.4);
 }
 
 /* ===================================================================== */
@@ -445,7 +432,6 @@
 
 .business-service-card:hover {
     transform: translateY(-8px);
-    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
     border-color: #3b82f6;
 }
 
@@ -544,12 +530,10 @@
 .business-cta .cta-btn-large {
     background: #3b82f6;
     color: #ffffff;
-    box-shadow: 0 5px 20px rgba(59, 130, 246, 0.4);
 }
 
 .business-cta .cta-btn-large:hover {
     background: #2563eb;
-    box-shadow: 0 8px 30px rgba(59, 130, 246, 0.5);
 }
 
 /* ===================================================================== */
@@ -577,7 +561,25 @@
     background: #1a2c4e;
     color: #ffffff;
     transform: translateY(-2px);
-    box-shadow: 0 8px 20px rgba(26, 44, 78, 0.3);
+}
+
+.view-all-btn-home {
+    display: inline-block;
+    padding: 18px 50px;
+    background: transparent;
+    color: rgb(40, 90, 59);
+    font-size: 1.2rem;
+    font-weight: 700;
+    border: 2px solid rgb(40, 90, 59);
+    border-radius: 8px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.view-all-btn-home:hover {
+    background: rgb(40, 90, 59);
+    color: #ffffff;
+    transform: translateY(-2px);
 }
 
 /* ===================================================================== */

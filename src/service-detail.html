@@ -45,14 +45,14 @@
         <div class="service-content-wrapper">
             <!-- Left Column: Overview -->
             <div class="service-overview-column">
-                <h2 class="section-heading">What We Offer</h2>
+                <h2 class="section-heading" data-i18n="serviceDetailPage.whatWeOffer">What We Offer</h2>
                 <div id="serviceOverview" class="service-overview-text">
-                    <p>Loading service details...</p>
+                    <p data-i18n="serviceDetailPage.loading">Loading service details...</p>
                 </div>
 
                 <!-- Benefits Section -->
                 <div class="service-benefits" id="serviceBenefits">
-                    <h3 class="benefits-heading">Why Choose This Service?</h3>
+                    <h3 class="benefits-heading" data-i18n="serviceDetailPage.whyChoose">Why Choose This Service?</h3>
                     <ul id="benefitsList" class="benefits-list">
                         <!-- Benefits will be dynamically inserted here -->
                     </ul>
@@ -65,10 +65,11 @@
                     <div class="features-icon">
                         <i class="fas fa-check-circle"></i>
                     </div>
-                    <h3 class="features-heading">Key Features</h3>
+                    <h3 class="features-heading" data-i18n="serviceDetailPage.keyFeatures">Key Features</h3>
                     <ul id="featureList" class="features-list">
                         <!-- Features will be dynamically inserted here -->
-                        <li><i class="fas fa-spinner fa-spin"></i> Loading features...</li>
+                        <li data-i18n="serviceDetailPage.loadingFeatures"><i class="fas fa-spinner fa-spin"></i> Loading
+                            features...</li>
                     </ul>
                 </div>
             </div>
@@ -81,8 +82,9 @@
     <!-- Service Inclusions Section (Hidden by default) -->
     <section class="service-inclusions-section hidden" id="inclusionsSection">
         <div class="inclusions-container">
-            <h2 class="section-heading">What's Included</h2>
-            <p class="section-description">Every service comes with these concrete deliverables</p>
+            <h2 class="section-heading" data-i18n="serviceDetailPage.whatsIncluded">What's Included</h2>
+            <p class="section-description" data-i18n="serviceDetailPage.includedDeliverables">Every service comes with
+                these concrete deliverables</p>
             <div id="inclusionsGrid" class="inclusions-grid">
                 <!-- Inclusions will be dynamically inserted here -->
             </div>
@@ -92,8 +94,9 @@
     <!-- Related Services Section (Hidden by default) -->
     <section class="related-services-section hidden" id="relatedServicesSection">
         <div class="related-container">
-            <h2 class="section-heading">You Might Also Need</h2>
-            <p class="section-description">Complete your connected home ecosystem</p>
+            <h2 class="section-heading" data-i18n="serviceDetailPage.relatedTitle">You Might Also Need</h2>
+            <p class="section-description" data-i18n="serviceDetailPage.relatedSubtitle">Complete your connected
+                ecosystem</p>
             <div id="relatedGrid" class="related-grid">
                 <!-- Related services will be dynamically inserted here -->
             </div>
@@ -103,11 +106,12 @@
     <!-- CTA Section -->
     <section class="service-cta-section" id="serviceCTA">
         <div class="cta-content">
-            <h2 class="cta-heading">Ready to Get Started?</h2>
-            <p class="cta-text">Let's discuss how we can help you achieve your technology goals.</p>
+            <h2 class="cta-heading" data-i18n="serviceDetailPage.ready">Ready to Get Started?</h2>
+            <p class="cta-text" data-i18n="serviceDetailPage.discuss">Let's discuss how we can help you achieve your
+                technology goals.</p>
             <a href="contact-us.html" id="ctaButton" class="cta-button">
                 <i class="fas fa-paper-plane"></i>
-                <span id="ctaText">Contact Us Today</span>
+                <span id="ctaText" data-i18n="serviceDetailPage.contactToday">Contact Us Today</span>
             </a>
         </div>
     </section>
@@ -116,12 +120,13 @@
     <section class="service-not-found hidden" id="serviceNotFound">
         <div class="not-found-content">
             <i class="fas fa-exclamation-triangle"></i>
-            <h2>Service Not Found</h2>
-            <p>We couldn't find the service you're looking for. Please check the URL or browse our available services.
+            <h2 data-i18n="serviceDetailPage.notFound.title">Service Not Found</h2>
+            <p data-i18n="serviceDetailPage.notFound.message">We couldn't find the service you're looking for. Please
+                check the URL or browse our available services.
             </p>
             <a href="index.html" class="btn-back-home">
                 <i class="fas fa-home"></i>
-                Back to Home
+                <span data-i18n="serviceDetailPage.notFound.backHome">Back to Home</span>
             </a>
         </div>
     </section>

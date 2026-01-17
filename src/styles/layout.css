@@ -10,7 +10,6 @@
     top: 0;
     background-color: var(--pure-white);
     border-bottom: 1px solid var(--pure-black);
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
     padding: 1rem 4rem;
     transition: transform 0.3s ease-in-out;
     /* Smooth slide animation */
@@ -88,7 +87,6 @@
     top: 100%;
     left: 0;
     background-color: var(--pure-white);
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     list-style: none;
     padding: 0;
     min-width: 200px;

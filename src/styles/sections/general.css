@@ -127,8 +127,6 @@
     background: #fff;
     padding: 1rem 3rem 2rem 3rem;
     border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
     margin: 1rem;
 }
 
@@ -142,7 +140,6 @@
 
 .mission-vision .content:hover {
     transform: translateY(-5px);
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
 }
 
 .mission-vision .content .icon i {
@@ -196,13 +193,10 @@
     background: white;
     padding: 40px 25px;
     border-radius: 15px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .value-card:hover {
     transform: translateY(-10px);
-    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
 }
 
 .value-card i {
@@ -273,16 +267,13 @@
     background: #fff;
     border: 1px solid #ddd;
     border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     max-width: 300px;
     padding: 20px;
     text-align: center;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .team-list li:hover {
     transform: translateY(-5px);
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
 }
 
 .team-list h3 {
@@ -336,10 +327,9 @@
     height: 50px;
     background-color: var(--pure-white);
     border-radius: 25px;
-    padding: 5px;
+    padding: 0;
     font-family: 'Overpass', sans-serif;
     overflow: hidden;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     z-index: 10;
 }
 
@@ -378,7 +368,6 @@
     transition: left 0.3s ease;
     left: 0;
     z-index: 1;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
 }
 
 .theme-slider.active .slider-indicator {
@@ -466,7 +455,6 @@
     max-width: 400px;
     margin-top: 20px;
     border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 /* Key Features Section */
@@ -489,14 +477,11 @@
     background-color: #f7f7f7;
     border-radius: 8px;
     padding: 20px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     text-align: center;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .specific-service-feature:hover {
     transform: translateY(-5px);
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
 .specific-service-feature img {
@@ -538,13 +523,10 @@
     padding: 20px;
     background-color: #f7f7f7;
     border-radius: 12px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .step:hover {
     transform: translateY(-5px);
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
 /* Step Icon */
@@ -613,7 +595,6 @@
     /* Light background for contrast */
     color: #12222e;
     border-radius: 12px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     transition: opacity 0.3s ease, transform 0.3s ease;
 }
 
@@ -786,7 +767,6 @@
     border: 1px solid #ddd;
     border-radius: 8px;
     overflow: hidden;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 .service-card {
@@ -944,7 +924,6 @@
     background-color: var(--pure-white);
     margin: 60px 0;
     border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 .why-choose-home .section-header {
@@ -980,13 +959,10 @@
     padding: 30px 20px;
     background: white;
     border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .benefit-item:hover {
     transform: translateY(-5px);
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
 }
 
 .benefit-icon {
@@ -1249,7 +1225,6 @@
     background: var(--pure-white);
     border-radius: 15px;
     padding: 3rem;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
     transition: all 0.3s ease;
     position: relative;
     overflow: hidden;
@@ -1275,7 +1250,6 @@
 
 .ai-market-column:hover {
     transform: translateY(-10px);
-    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
 }
 
 .ai-column-icon {
@@ -1390,7 +1364,6 @@
 .ai-btn-home:hover {
     background: linear-gradient(135deg, var(--secondary-green), #b2d235);
     transform: translateY(-2px);
-    box-shadow: 0 5px 15px rgba(178, 210, 53, 0.3);
 }
 
 .ai-btn-business {
@@ -1401,7 +1374,6 @@
 .ai-btn-business:hover {
     background: linear-gradient(135deg, #1a3d28, var(--primary-green));
     transform: translateY(-2px);
-    box-shadow: 0 5px 15px rgba(42, 90, 60, 0.3);
 }
 
 /* AI Process Section */
@@ -1445,7 +1417,6 @@
 
 .ai-process-step:hover {
     background: var(--pure-white);
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
     transform: translateY(-5px);
 }
 
@@ -1464,7 +1435,6 @@
     justify-content: center;
     font-weight: 700;
     font-size: 1.2rem;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
 
 .ai-step-icon {
@@ -1546,13 +1516,11 @@
     text-decoration: none;
     border-radius: 50px;
     transition: all 0.3s ease;
-    box-shadow: 0 5px 20px rgba(178, 210, 53, 0.3);
 }
 
 .ai-cta-button:hover {
     background: var(--pure-white);
     transform: translateY(-3px);
-    box-shadow: 0 8px 30px rgba(178, 210, 53, 0.5);
 }
 
 .ai-cta-button i {
@@ -1687,7 +1655,6 @@
     background: var(--pure-white);
     padding: 3rem;
     border-radius: 15px;
-    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
 }
 
 .contact-header {
@@ -1742,7 +1709,6 @@
     outline: none;
     border-color: #94b64c;
     background-color: var(--pure-white);
-    box-shadow: 0 0 0 3px rgba(148, 182, 76, 0.1);
 }
 
 .form-group input::placeholder,
@@ -1772,18 +1738,15 @@
     justify-content: center;
     gap: 0.8rem;
     margin-top: 2rem;
-    box-shadow: 0 4px 15px rgba(40, 90, 59, 0.3);
 }
 
 .btn-submit:hover {
     background: linear-gradient(135deg, #94b64c 0%, #7a9a3e 100%);
     transform: translateY(-2px);
-    box-shadow: 0 6px 20px rgba(148, 182, 76, 0.4);
 }
 
 .btn-submit:active {
     transform: translateY(0);
-    box-shadow: 0 2px 10px rgba(40, 90, 59, 0.3);
 }
 
 .btn-submit i {
@@ -1846,7 +1809,6 @@
     align-items: center;
     justify-content: center;
     font-size: 30px;
-    box-shadow: 0 4px 15px rgba(37, 211, 102, 0.4);
     z-index: 1000;
     transition: all 0.3s ease;
     text-decoration: none;
@@ -1855,7 +1817,6 @@
 .whatsapp-float:hover {
     background-color: #20ba5a;
     transform: translateY(-5px) scale(1.1);
-    box-shadow: 0 6px 25px rgba(37, 211, 102, 0.6);
 }
 
 .whatsapp-float:active {
@@ -1866,24 +1827,7 @@
     color: var(--pure-white);
 }
 
-/* Pulse Animation for WhatsApp Button */
-@keyframes whatsapp-pulse {
-    0% {
-        box-shadow: 0 4px 15px rgba(37, 211, 102, 0.4);
-    }
 
-    50% {
-        box-shadow: 0 4px 15px rgba(37, 211, 102, 0.4), 0 0 0 10px rgba(37, 211, 102, 0.1);
-    }
-
-    100% {
-        box-shadow: 0 4px 15px rgba(37, 211, 102, 0.4);
-    }
-}
-
-.whatsapp-float {
-    animation: whatsapp-pulse 2s infinite;
-}
 
 /* Responsive WhatsApp Button */
 @media (max-width: 768px) {
@@ -1938,12 +1882,10 @@
     color: var(--pure-white);
     border-color: #94b64c;
     transform: translateY(-2px);
-    box-shadow: 0 2px 8px rgba(148, 182, 76, 0.3);
 }
 
 .topic-btn:active {
     transform: translateY(0);
-    box-shadow: 0 1px 4px rgba(148, 182, 76, 0.2);
 }
 
 /* Selected state for topic buttons */

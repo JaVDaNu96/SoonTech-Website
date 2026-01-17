@@ -52,12 +52,8 @@
 
 .hero-icon-visual i {
     font-size: 8rem;
-    color: rgba(178, 210, 53, 0.3);
+    color: rgba(178, 210, 53, 0.7);
     animation: float 4s ease-in-out infinite;
-    text-shadow: 0 0 30px rgba(255, 255, 255, 0.2),
-        0 0 60px rgba(178, 210, 53, 0.25),
-        0 0 90px rgba(40, 90, 59, 0.15);
-    filter: drop-shadow(0 0 20px rgba(178, 210, 53, 0.3));
 }
 
 @keyframes float {
@@ -150,7 +146,6 @@
     background: var(--pure-white);
     padding: 50px;
     border-radius: 12px;
-    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
 }
 
 .section-heading {
@@ -222,7 +217,6 @@
     color: var(--pure-white);
     padding: 40px 35px;
     border-radius: 12px;
-    box-shadow: 0 10px 30px rgba(40, 90, 59, 0.4);
 }
 
 .features-icon {
@@ -314,13 +308,11 @@
     border-radius: 8px;
     text-decoration: none;
     transition: all 0.3s ease;
-    box-shadow: 0 5px 20px rgba(178, 210, 53, 0.3);
 }
 
 .cta-button:hover {
     background: #9fc02d;
     transform: translateY(-3px);
-    box-shadow: 0 8px 25px rgba(178, 210, 53, 0.4);
 }
 
 .cta-button i {
@@ -383,7 +375,6 @@
 .btn-back-home:hover {
     background: #1f4a2e;
     transform: translateY(-2px);
-    box-shadow: 0 5px 15px rgba(40, 90, 59, 0.3);
 }
 
 /* ===================================================================== */
@@ -533,13 +524,11 @@
     background: var(--pure-white);
     padding: 40px 30px;
     border-radius: 12px;
-    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
     transition: all 0.3s ease;
 }
 
 .trust-item:hover {
     transform: translateY(-5px);
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.12);
 }
 
 .trust-icon {
@@ -620,7 +609,6 @@
     background: var(--pure-white);
     border-color: var(--accent-lime);
     transform: translateY(-5px);
-    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
 }
 
 .inclusion-icon {
@@ -675,7 +663,6 @@
     background: var(--pure-white);
     padding: 40px 30px;
     border-radius: 12px;
-    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
     transition: all 0.3s ease;
     text-align: center;
     border: 2px solid transparent;
@@ -684,7 +671,6 @@
 .related-card:hover {
     transform: translateY(-5px);
     border-color: var(--accent-lime);
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.12);
 }
 
 /* FontAwesome Icon Circle (matching hub page style) */
@@ -870,7 +856,6 @@ body.business-theme .service-benefits h2 {
 /* Business Theme: Blue Gradient for Features Box */
 body.business-theme .features-box {
     background: linear-gradient(135deg, #1e3a8a 0%, #1e40af 50%, #3b82f6 100%) !important;
-    box-shadow: 0 10px 30px rgba(30, 58, 138, 0.4) !important;
 }
 
 /* Make feature icons pop with lighter blue for contrast */
@@ -956,7 +941,6 @@ body.business-theme .service-cta-section p {
 /* Ensure the button stands out too */
 body.business-theme .service-cta-section .cta-button {
     background: #3b82f6 !important;
-    border: 2px solid white !important;
 }
 
 body.business-theme .service-cta-section .cta-button:hover {

@@ -19,6 +19,7 @@
 
     <!-- Shared Components Loader -->
     <script src="includes.js" defer></script>
+    <script type="module" src="i18n.js"></script>
 </head>
 
 <body>
@@ -29,8 +30,9 @@
     <section class="about-hero">
         <div class="hero-overlay">
             <div class="hero-content">
-                <h1 class="fade-in-up">The Minds Behind Your Peace of Mind</h1>
-                <p class="fade-in-up delay-1">Expert IT professionals bringing enterprise-grade solutions to small
+                <h1 class="fade-in-up" data-i18n="aboutUsPage.hero.title">The Minds Behind Your Peace of Mind</h1>
+                <p class="fade-in-up delay-1" data-i18n="aboutUsPage.hero.subtitle">Expert IT professionals bringing
+                    enterprise-grade solutions to small
                     businesses and homes</p>
             </div>
         </div>
@@ -41,19 +43,19 @@
         <div class="stats-container">
             <div class="stat-item">
                 <div class="stat-number" data-target="10000">0</div>
-                <div class="stat-label">Tickets Resolved</div>
+                <div class="stat-label" data-i18n="aboutUsPage.stats.resolved">Tickets Resolved</div>
             </div>
             <div class="stat-item">
                 <div class="stat-number" data-target="20" data-suffix="+">0</div>
-                <div class="stat-label">Years Combined Experience</div>
+                <div class="stat-label" data-i18n="aboutUsPage.stats.experience">Years Combined Experience</div>
             </div>
             <div class="stat-item">
                 <div class="stat-number" data-target="85">0</div>
-                <div class="stat-label">First-Call Resolution Rate</div>
+                <div class="stat-label" data-i18n="aboutUsPage.stats.resolution">First-Call Resolution Rate</div>
             </div>
             <div class="stat-item">
                 <div class="stat-number" data-target="99.9">0</div>
-                <div class="stat-label">System Uptime</div>
+                <div class="stat-label" data-i18n="aboutUsPage.stats.uptime">System Uptime</div>
             </div>
         </div>
     </section>
@@ -62,13 +64,16 @@
     <section class="vision-section">
         <div class="vision-container">
             <div class="vision-content">
-                <h2>Enterprise Tech for Everyone</h2>
-                <p class="vision-lead">We believe that world-class IT support shouldn't be reserved for Fortune 500
+                <h2 data-i18n="aboutUsPage.vision.title">Enterprise Tech for Everyone</h2>
+                <p class="vision-lead" data-i18n="aboutUsPage.vision.lead">We believe that world-class IT support
+                    shouldn't be reserved for Fortune 500
                     companies.</p>
-                <p>At SoonTech, we bring the same level of expertise, security, and reliability that powers major
+                <p data-i18n="aboutUsPage.vision.p1">At SoonTech, we bring the same level of expertise, security, and
+                    reliability that powers major
                     corporations to small businesses and homes. Our mission is simple: make technology work for you, not
                     against you.</p>
-                <p>Whether you're a growing business needing robust infrastructure or a family wanting a secure home
+                <p data-i18n="aboutUsPage.vision.p2">Whether you're a growing business needing robust infrastructure or
+                    a family wanting a secure home
                     network, we deliver solutions that are professional, personal, and built to last.</p>
             </div>
             <div class="vision-icon">
@@ -80,8 +85,9 @@
     <!-- Leadership Section - 3D Flip Cards -->
     <section class="leadership-section">
         <div class="leadership-container">
-            <h2 class="section-heading">Meet Our Leaders</h2>
-            <p class="section-subtitle">The architects of your digital peace of mind</p>
+            <h2 class="section-heading" data-i18n="aboutUsPage.leadership.title">Meet Our Leaders</h2>
+            <p class="section-subtitle" data-i18n="aboutUsPage.leadership.subtitle">The architects of your digital peace
+                of mind</p>
 
             <div class="leaders-grid">
                 <!-- Javier Nuñez - The Architect -->
@@ -90,41 +96,47 @@
                         <!-- Front -->
                         <div class="flip-card-front">
                             <div class="leader-image">
-                                <img src="assets/images/Javier.png" alt="Javier Nuñez"
+                                <img src="assets/images/Javier.png" alt="Javier Nuñez" data-i18n-attr="alt"
+                                    data-i18n="aboutUsPage.leadership.javier.name"
                                     onerror="this.src='https://via.placeholder.com/400x400/1a2c4e/ffffff?text=JN'">
                             </div>
                             <div class="leader-info">
-                                <h3>Javier Nuñez</h3>
-                                <p class="leader-title">Co-Founder & Lead Architect</p>
+                                <h3 data-i18n="aboutUsPage.leadership.javier.name">Javier Nuñez</h3>
+                                <p class="leader-title" data-i18n="aboutUsPage.leadership.javier.title">Co-Founder &
+                                    Lead Architect</p>
                                 <div class="flip-hint">
                                     <i class="fas fa-sync-alt"></i>
-                                    <span>Click to learn more</span>
+                                    <span data-i18n="common.clickToLearnMore">Click to learn more</span>
                                 </div>
                             </div>
                         </div>
                         <!-- Back -->
                         <div class="flip-card-back">
                             <div class="back-header">
-                                <h3>Javier Nuñez</h3>
-                                <p class="back-title">The Architect</p>
+                                <h3 data-i18n="aboutUsPage.leadership.javier.name">Javier Nuñez</h3>
+                                <p class="back-title" data-i18n="aboutUsPage.leadership.javier.backTitle">CEO-Lead
+                                    Developer</p>
                             </div>
                             <div class="back-content">
-                                <p>As the technical lead of SoonTech, Javier directs the strategy for securing small
+                                <p data-i18n="aboutUsPage.leadership.javier.bio1">As the technical lead of SoonTech,
+                                    Javier directs the strategy for securing small
                                     business infrastructures. He specializes in transforming chaotic IT environments
                                     into streamlined, secure systems that allow companies to grow without technical
                                     friction.</p>
                                 <div class="separator"></div>
-                                <p>With a deep background in network topology and cloud migration, Javier designs
+                                <p data-i18n="aboutUsPage.leadership.javier.bio2">With a deep background in network
+                                    topology and cloud migration, Javier designs
                                     redundant systems using Fortinet firewalls and Azure cloud solutions. He builds the
                                     "invisible architecture" that keeps your data safe and your uptime high.</p>
                                 <div class="separator"></div>
-                                <p>Beyond the code, he implements rigorous risk assessments and incident response
+                                <p data-i18n="aboutUsPage.leadership.javier.bio3">Beyond the code, he implements
+                                    rigorous risk assessments and incident response
                                     playbooks aligned with ITIL principles. He ensures that your business isn't just
                                     running today, but is resilient against the threats of tomorrow.</p>
                             </div>
                             <div class="flip-hint">
                                 <i class="fas fa-sync-alt"></i>
-                                <span>Click to flip back</span>
+                                <span data-i18n="common.clickToFlipBack">Click to flip back</span>
                             </div>
                         </div>
                     </div>
@@ -136,40 +148,46 @@
                         <!-- Front -->
                         <div class="flip-card-front">
                             <div class="leader-image">
-                                <img src="assets/images/Cristobal.png" alt="Cristobal Haro">
+                                <img src="assets/images/Cristobal.png" alt="Cristobal Haro" data-i18n-attr="alt"
+                                    data-i18n="aboutUsPage.leadership.cristobal.name">
                             </div>
                             <div class="leader-info">
-                                <h3>Cristobal Haro</h3>
-                                <p class="leader-title">Co-Founder & Operations Lead</p>
+                                <h3 data-i18n="aboutUsPage.leadership.cristobal.name">Cristobal Haro</h3>
+                                <p class="leader-title" data-i18n="aboutUsPage.leadership.cristobal.title">Co-Founder &
+                                    Operations Lead</p>
                                 <div class="flip-hint">
                                     <i class="fas fa-sync-alt"></i>
-                                    <span>Click to learn more</span>
+                                    <span data-i18n="common.clickToLearnMore">Click to learn more</span>
                                 </div>
                             </div>
                         </div>
                         <!-- Back -->
                         <div class="flip-card-back">
                             <div class="back-header">
-                                <h3>Cristobal Haro</h3>
-                                <p class="back-title">The Operator</p>
+                                <h3 data-i18n="aboutUsPage.leadership.cristobal.name">Cristobal Haro</h3>
+                                <p class="back-title" data-i18n="aboutUsPage.leadership.cristobal.backTitle">Chief
+                                    Operations Officer</p>
                             </div>
                             <div class="back-content">
-                                <p>With over 15 years of hands-on experience, Cristobal is the backbone of SoonTech's
+                                <p data-i18n="aboutUsPage.leadership.cristobal.bio1">With over 15 years of hands-on
+                                    experience, Cristobal is the backbone of SoonTech's
                                     operations. He has spent his career helping small businesses and home users navigate
                                     complex hardware issues, boasting a first-call resolution rate of over 85%.</p>
                                 <div class="separator"></div>
-                                <p>He is a master of the physical layer, from running structured Cat 6 cabling to
+                                <p data-i18n="aboutUsPage.leadership.cristobal.bio2">He is a master of the physical
+                                    layer, from running structured Cat 6 cabling to
                                     configuring physical VLANs and wireless access points. Whether it is a server
                                     refresh or a complex home office setup, he ensures the hardware matches the
                                     ambition.</p>
                                 <div class="separator"></div>
-                                <p>Cristobal is known for his patient, clear communication. He doesn't just fix the
+                                <p data-i18n="aboutUsPage.leadership.cristobal.bio3">Cristobal is known for his patient,
+                                    clear communication. He doesn't just fix the
                                     problem; he trains the user, translating technical jargon into plain English to
                                     empower clients and prevent future issues.</p>
                             </div>
                             <div class="flip-hint">
                                 <i class="fas fa-sync-alt"></i>
-                                <span>Click to flip back</span>
+                                <span data-i18n="common.clickToFlipBack">Click to flip back</span>
                             </div>
                         </div>
                     </div>
@@ -181,8 +199,9 @@
     <!-- Certifications Trust Strip -->
     <section class="certifications-section">
         <div class="certifications-container">
-            <h2 class="section-heading">Certified Excellence</h2>
-            <p class="section-subtitle">Industry-recognized expertise you can trust</p>
+            <h2 class="section-heading" data-i18n="aboutUsPage.certifications.title">Certified Excellence</h2>
+            <p class="section-subtitle" data-i18n="aboutUsPage.certifications.subtitle">Industry-recognized expertise
+                you can trust</p>
             <div class="cert-grid">
                 <div class="cert-item">
                     <img src="assets/images/A+-png.png" alt="CompTIA A+">
@@ -200,8 +219,9 @@
     <!-- Values Section -->
     <section class="values-section">
         <div class="values-container">
-            <h2 class="section-heading">Our Core Values</h2>
-            <p class="section-subtitle">The principles that guide everything we do</p>
+            <h2 class="section-heading" data-i18n="aboutUsPage.values.title">Our Core Values</h2>
+            <p class="section-subtitle" data-i18n="aboutUsPage.values.subtitle">The principles that guide everything we
+                do</p>
 
             <div class="values-grid">
                 <!-- Value 1: Security First -->
@@ -209,8 +229,9 @@
                     <div class="value-icon">
                         <i class="fas fa-shield-alt"></i>
                     </div>
-                    <h3>Security First</h3>
-                    <p>We treat your data like our own. Every solution is built with multiple layers of protection,
+                    <h3 data-i18n="aboutUsPage.values.items.security.title">Security First</h3>
+                    <p data-i18n="aboutUsPage.values.items.security.description">We treat your data like our own. Every
+                        solution is built with multiple layers of protection,
                         from encryption to access controls to continuous monitoring.</p>
                 </div>
 
@@ -219,8 +240,9 @@
                     <div class="value-icon">
                         <i class="fas fa-bolt"></i>
                     </div>
-                    <h3>Speed & Clarity</h3>
-                    <p>Fast response times and clear communication. We explain complex issues in plain English and
+                    <h3 data-i18n="aboutUsPage.values.items.speed.title">Speed & Clarity</h3>
+                    <p data-i18n="aboutUsPage.values.items.speed.description">Fast response times and clear
+                        communication. We explain complex issues in plain English and
                         resolve problems quickly, so you can get back to what matters.</p>
                 </div>
 
@@ -229,8 +251,9 @@
                     <div class="value-icon">
                         <i class="fas fa-handshake"></i>
                     </div>
-                    <h3>Human Connection</h3>
-                    <p>Technology should bring people together, not create barriers. We build relationships, not just
+                    <h3 data-i18n="aboutUsPage.values.items.human.title">Human Connection</h3>
+                    <p data-i18n="aboutUsPage.values.items.human.description">Technology should bring people together,
+                        not create barriers. We build relationships, not just
                         networks, treating every client like family.</p>
                 </div>
 
@@ -239,8 +262,9 @@
                     <div class="value-icon">
                         <i class="fas fa-chart-line"></i>
                     </div>
-                    <h3>Continuous Growth</h3>
-                    <p>The tech landscape evolves daily. We stay ahead through constant learning, certifications, and
+                    <h3 data-i18n="aboutUsPage.values.items.growth.title">Continuous Growth</h3>
+                    <p data-i18n="aboutUsPage.values.items.growth.description">The tech landscape evolves daily. We stay
+                        ahead through constant learning, certifications, and
                         hands-on experience with the latest tools and threats.</p>
                 </div>
             </div>
@@ -250,10 +274,10 @@
     <!-- CTA Section -->
     <section class="about-cta-section">
         <div class="cta-container">
-            <h2>Ready to Experience the SoonTech Difference?</h2>
-            <p>Let's build something great together</p>
+            <h2 data-i18n="aboutUsPage.cta.title">Ready to Experience the SoonTech Difference?</h2>
+            <p data-i18n="aboutUsPage.cta.subtitle">Let's build something great together</p>
             <a href="contact-us.html" class="cta-button">
-                Get Started Today <i class="fas fa-arrow-right"></i>
+                <span data-i18n="aboutUsPage.cta.button">Get Started Today</span> <i class="fas fa-arrow-right"></i>
             </a>
         </div>
     </section>

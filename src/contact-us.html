@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="styles.css">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
     <script src="includes.js" defer></script>
+    <script type="module" src="i18n.js"></script>
     <script type="module" src="js/contact.js"></script>
 </head>
 
@@ -24,8 +25,9 @@
         <div class="contact-wrapper">
             <!-- Left Column: Contact Information -->
             <div class="contact-info-panel">
-                <h1>Let's Start a Conversation</h1>
-                <p class="info-subtitle">Have a question or need assistance? We're here to help you succeed with the
+                <h1 data-i18n="contactUsPage.info.title">Let's Start a Conversation</h1>
+                <p class="info-subtitle" data-i18n="contactUsPage.info.subtitle">Have a question or need assistance?
+                    We're here to help you succeed with the
                     right technology solutions.</p>
 
                 <!-- Contact Details -->
@@ -35,7 +37,7 @@
                             <i class="fas fa-phone-alt"></i>
                         </div>
                         <div class="contact-text">
-                            <h3>Phone</h3>
+                            <h3 data-i18n="contactUsPage.info.phone">Phone</h3>
                             <p><a href="tel:+17788624365">+1 (778) 862-4365</a></p>
                         </div>
                     </div>
@@ -45,7 +47,7 @@
                             <i class="fas fa-envelope"></i>
                         </div>
                         <div class="contact-text">
-                            <h3>Email</h3>
+                            <h3 data-i18n="contactUsPage.info.email">Email</h3>
                             <p><a href="mailto:info@soon-tech.com">info@soon-tech.com</a></p>
                         </div>
                     </div>
@@ -55,10 +57,10 @@
                             <i class="fas fa-clock"></i>
                         </div>
                         <div class="contact-text">
-                            <h3>Business Hours</h3>
-                            <p>Monday - Friday: 9:00 AM - 6:00 PM</p>
-                            <p>Saturday: 10:00 AM - 4:00 PM</p>
-                            <p>Sunday: Closed</p>
+                            <h3 data-i18n="contactUsPage.info.hours.title">Business Hours</h3>
+                            <p data-i18n="contactUsPage.info.hours.weekday">Monday - Friday: 9:00 AM - 6:00 PM</p>
+                            <p data-i18n="contactUsPage.info.hours.saturday">Saturday: 10:00 AM - 4:00 PM</p>
+                            <p data-i18n="contactUsPage.info.hours.sunday">Sunday: Closed</p>
                         </div>
                     </div>
 
@@ -67,7 +69,7 @@
                             <i class="fas fa-map-marker-alt"></i>
                         </div>
                         <div class="contact-text">
-                            <h3>Location</h3>
+                            <h3 data-i18n="contactUsPage.info.location">Location</h3>
                             <p>1234 Business Ave</p>
                             <p>Vancouver, BC</p>
                         </div>
@@ -78,74 +80,106 @@
                 <div class="trust-signal">
                     <i class="fas fa-check-circle"></i>
                     <div class="trust-text">
-                        <h4>Quick Response Guarantee</h4>
-                        <p>We respond to all inquiries within 24 hours</p>
+                        <h4 data-i18n="contactUsPage.trust.title">Quick Response Guarantee</h4>
+                        <p data-i18n="contactUsPage.trust.subtitle">We respond to all inquiries within 24 hours</p>
                     </div>
                 </div>
             </div>
 
             <!-- Right Column: Contact Form -->
             <div class="contact-form-panel">
-                <h2>Send Us a Message</h2>
-                <p class="form-subtitle">Fill out the form below and we'll get back to you as soon as possible.</p>
+                <h2 data-i18n="contactUsPage.form.title">Send Us a Message</h2>
+                <p class="form-subtitle" data-i18n="contactUsPage.form.subtitle">Fill out the form below and we'll get
+                    back to you as soon as possible.</p>
 
                 <form id="contactForm" class="contact-form">
                     <!-- Name Input -->
                     <div class="form-group">
-                        <label for="name">Full Name <span class="required">*</span></label>
-                        <input type="text" id="name" name="name" placeholder="John Doe" required>
+                        <label for="name"><span data-i18n="contactUsPage.form.name.label">Full Name</span> <span
+                                class="required">*</span></label>
+                        <input type="text" id="name" name="name" placeholder="John Doe" data-i18n-attr="placeholder"
+                            data-i18n="contactUsPage.form.name.placeholder" required>
                     </div>
 
                     <!-- Email Input -->
                     <div class="form-group">
-                        <label for="email">Email Address <span class="required">*</span></label>
-                        <input type="email" id="email" name="email" placeholder="john@example.com" required>
+                        <label for="email"><span data-i18n="contactUsPage.form.email.label">Email Address</span> <span
+                                class="required">*</span></label>
+                        <input type="email" id="email" name="email" placeholder="john@example.com"
+                            data-i18n-attr="placeholder" data-i18n="contactUsPage.form.email.placeholder" required>
                     </div>
 
                     <!-- Phone Input -->
                     <div class="form-group">
-                        <label for="phone">Phone Number <span class="required">*</span></label>
-                        <input type="tel" id="phone" name="phone" placeholder="+1 (778) 862-4365" required>
+                        <label for="phone"><span data-i18n="contactUsPage.form.phone.label">Phone Number</span> <span
+                                class="required">*</span></label>
+                        <input type="tel" id="phone" name="phone" placeholder="+1 (778) 862-4365"
+                            data-i18n-attr="placeholder" data-i18n="contactUsPage.form.phone.placeholder" required>
                     </div>
 
                     <!-- Service Type Dropdown -->
                     <div class="form-group">
-                        <label for="service-type">Service Interest <span class="required">*</span></label>
+                        <label for="service-type"><span data-i18n="contactUsPage.form.service.label">Service
+                                Interest</span> <span class="required">*</span></label>
                         <select id="service-type" name="service-type" required>
-                            <option value="">-- Select a Service --</option>
+                            <option value="" data-i18n="contactUsPage.form.service.placeholder">-- Select a Service --
+                            </option>
 
-                            <optgroup label="Home Services">
-                                <option value="home-quick-setup">Quick Setup & Support</option>
-                                <option value="home-smart-security">Smart Home Security</option>
-                                <option value="home-easy-backup">Easy Backup Solutions</option>
-                                <option value="home-digital-wellness">Digital Wellness</option>
+                            <optgroup label="Home Services" data-i18n-attr="label"
+                                data-i18n="contactUsPage.form.service.groups.home">
+                                <option value="home-quick-setup"
+                                    data-i18n="contactUsPage.form.service.options.homeQuick">Quick Setup & Support
+                                </option>
+                                <option value="home-smart-security"
+                                    data-i18n="contactUsPage.form.service.options.homeSmart">Smart Home Security
+                                </option>
+                                <option value="home-easy-backup"
+                                    data-i18n="contactUsPage.form.service.options.homeBackup">Easy Backup Solutions
+                                </option>
+                                <option value="home-digital-wellness"
+                                    data-i18n="contactUsPage.form.service.options.homeWellness">Digital Wellness
+                                </option>
                             </optgroup>
 
-                            <optgroup label="Business Services">
-                                <option value="business-managed-it">Managed IT Services</option>
-                                <option value="business-cloud-solutions">Cloud Solutions</option>
-                                <option value="business-cybersecurity">Cybersecurity</option>
-                                <option value="business-it-strategy">IT Strategy & Consulting</option>
+                            <optgroup label="Business Services" data-i18n-attr="label"
+                                data-i18n="contactUsPage.form.service.groups.business">
+                                <option value="business-managed-it"
+                                    data-i18n="contactUsPage.form.service.options.businessManaged">Managed IT Services
+                                </option>
+                                <option value="business-cloud-solutions"
+                                    data-i18n="contactUsPage.form.service.options.businessCloud">Cloud Solutions
+                                </option>
+                                <option value="business-cybersecurity"
+                                    data-i18n="contactUsPage.form.service.options.businessCyber">Cybersecurity</option>
+                                <option value="business-it-strategy"
+                                    data-i18n="contactUsPage.form.service.options.businessStrategy">IT Strategy &
+                                    Consulting</option>
                             </optgroup>
 
-                            <optgroup label="Other">
-                                <option value="other-general">General Inquiry</option>
-                                <option value="other-support">Technical Support</option>
+                            <optgroup label="Other" data-i18n-attr="label"
+                                data-i18n="contactUsPage.form.service.groups.other">
+                                <option value="other-general"
+                                    data-i18n="contactUsPage.form.service.options.otherGeneral">General Inquiry</option>
+                                <option value="other-support"
+                                    data-i18n="contactUsPage.form.service.options.otherSupport">Technical Support
+                                </option>
                             </optgroup>
                         </select>
                     </div>
 
                     <!-- Message Textarea -->
                     <div class="form-group">
-                        <label for="message">Message <span class="required">*</span></label>
+                        <label for="message"><span data-i18n="contactUsPage.form.message.label">Message</span> <span
+                                class="required">*</span></label>
                         <textarea id="message" name="message" rows="6" placeholder="Tell us how we can help you..."
+                            data-i18n-attr="placeholder" data-i18n="contactUsPage.form.message.placeholder"
                             required></textarea>
                     </div>
 
                     <!-- Submit Button -->
                     <button type="submit" class="btn-submit">
                         <i class="fas fa-paper-plane"></i>
-                        Send Message
+                        <span data-i18n="contactUsPage.form.submit">Send Message</span>
                     </button>
                 </form>
 
@@ -154,9 +188,11 @@
                     <div class="success-icon">
                         <i class="fas fa-check-circle"></i>
                     </div>
-                    <h3>Thank You!</h3>
-                    <p>Your message has been sent successfully. We'll get back to you within 24 hours.</p>
-                    <button id="send-another" class="btn-secondary">Send Another Message</button>
+                    <h3 data-i18n="contactUsPage.success.title">Thank You!</h3>
+                    <p data-i18n="contactUsPage.success.message">Your message has been sent successfully. We'll get back
+                        to you within 24 hours.</p>
+                    <button id="send-another" class="btn-secondary" data-i18n="contactUsPage.success.another">Send
+                        Another Message</button>
                 </div>
             </div>
         </div>

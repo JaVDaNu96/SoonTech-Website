@@ -4,14 +4,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AI Solutions - Unlock the Power of Artificial Intelligence | SoonTech</title>
+    <title data-i18n="ai.meta.title">AI Solutions - Unlock the Power of Artificial Intelligence | SoonTech</title>
     <meta name="description"
-        content="Practical AI solutions for business growth and personal productivity. Custom chatbots, workflow automation, data analysis, and intelligent assistants.">
+        content="Practical AI solutions for business growth and personal productivity. Custom chatbots, workflow automation, data analysis, and intelligent assistants."
+        data-i18n-attr="content" data-i18n="ai.meta.description">
     <link href="https://fonts.googleapis.com/css2?family=Overpass:wght@300;400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
     <script src="includes.js" defer></script>
-    <script src="ai-solutions.js" defer></script>
+    <script type="module" src="ai-solutions.js" defer></script>
+    <script type="module" src="i18n.js"></script>
 </head>
 
 <body>
@@ -26,21 +28,22 @@
                 <div class="ai-hero-icon">
                     <i class="fas fa-brain"></i>
                 </div>
-                <h1 class="ai-hero-title">Unlock the Power of Artificial Intelligence</h1>
-                <p class="ai-hero-subtitle">Practical AI solutions for your business growth and personal productivity
+                <h1 class="ai-hero-title" data-i18n="ai.hero.title">Unlock the Power of Artificial Intelligence</h1>
+                <p class="ai-hero-subtitle" data-i18n="ai.hero.subtitle">Practical AI solutions for your business growth
+                    and personal productivity
                 </p>
                 <div class="ai-hero-features">
                     <div class="ai-hero-feature">
                         <i class="fas fa-robot"></i>
-                        <span>Intelligent Automation</span>
+                        <span data-i18n="ai.hero.features.automation">Intelligent Automation</span>
                     </div>
                     <div class="ai-hero-feature">
                         <i class="fas fa-chart-line"></i>
-                        <span>Data-Driven Insights</span>
+                        <span data-i18n="ai.hero.features.insights">Data-Driven Insights</span>
                     </div>
                     <div class="ai-hero-feature">
                         <i class="fas fa-lightbulb"></i>
-                        <span>Smart Solutions</span>
+                        <span data-i18n="ai.hero.features.solutions">Smart Solutions</span>
                     </div>
                 </div>
             </div>
@@ -51,8 +54,9 @@
     <section class="ai-markets-section">
         <div class="ai-markets-container">
             <div class="section-intro">
-                <h2 class="section-title">AI Solutions Tailored for You</h2>
-                <p class="section-description">Whether you're running a business or managing your personal life, our AI
+                <h2 class="section-title" data-i18n="ai.intro.title">AI Solutions Tailored for You</h2>
+                <p class="section-description" data-i18n="ai.intro.description">Whether you're running a business or
+                    managing your personal life, our AI
                     solutions are designed to make you more efficient, productive, and successful.</p>
             </div>
 
@@ -62,44 +66,49 @@
                     <div class="market-icon">
                         <i class="fas fa-briefcase"></i>
                     </div>
-                    <h3 class="market-title">For Business</h3>
-                    <p class="market-description">Transform your operations with enterprise-grade AI solutions that
+                    <h3 class="market-title" data-i18n="ai.markets.business.title">For Business</h3>
+                    <p class="market-description" data-i18n="ai.markets.business.description">Transform your operations
+                        with enterprise-grade AI solutions that
                         drive growth and efficiency.</p>
 
                     <div class="market-features">
                         <div class="feature-item">
                             <i class="fas fa-check-circle"></i>
                             <div class="feature-content">
-                                <h4>Custom Chatbots</h4>
-                                <p>24/7 customer support powered by intelligent conversational AI</p>
+                                <h4 data-i18n="ai.markets.business.features.chatbots.title">Custom Chatbots</h4>
+                                <p data-i18n="ai.markets.business.features.chatbots.description">24/7 customer support
+                                    powered by intelligent conversational AI</p>
                             </div>
                         </div>
                         <div class="feature-item">
                             <i class="fas fa-check-circle"></i>
                             <div class="feature-content">
-                                <h4>Workflow Automation</h4>
-                                <p>Streamline repetitive tasks and boost team productivity</p>
+                                <h4 data-i18n="ai.markets.business.features.automation.title">Workflow Automation</h4>
+                                <p data-i18n="ai.markets.business.features.automation.description">Streamline repetitive
+                                    tasks and boost team productivity</p>
                             </div>
                         </div>
                         <div class="feature-item">
                             <i class="fas fa-check-circle"></i>
                             <div class="feature-content">
-                                <h4>Data Analysis</h4>
-                                <p>Turn raw data into actionable business insights</p>
+                                <h4 data-i18n="ai.markets.business.features.analysis.title">Data Analysis</h4>
+                                <p data-i18n="ai.markets.business.features.analysis.description">Turn raw data into
+                                    actionable business insights</p>
                             </div>
                         </div>
                         <div class="feature-item">
                             <i class="fas fa-check-circle"></i>
                             <div class="feature-content">
-                                <h4>Predictive Analytics</h4>
-                                <p>Forecast trends and make data-driven decisions</p>
+                                <h4 data-i18n="ai.markets.business.features.predictive.title">Predictive Analytics</h4>
+                                <p data-i18n="ai.markets.business.features.predictive.description">Forecast trends and
+                                    make data-driven decisions</p>
                             </div>
                         </div>
                     </div>
 
                     <a href="contact-us.html?service=ai-business" class="market-cta">
                         <i class="fas fa-rocket"></i>
-                        Automate Your Work
+                        <span data-i18n="ai.markets.business.cta">Automate Your Work</span>
                     </a>
                 </div>
 
@@ -108,44 +117,50 @@
                     <div class="market-icon">
                         <i class="fas fa-home"></i>
                     </div>
-                    <h3 class="market-title">For Home</h3>
-                    <p class="market-description">Enhance your daily life with AI-powered tools that save time and boost
+                    <h3 class="market-title" data-i18n="ai.markets.personal.title">For Home</h3>
+                    <p class="market-description" data-i18n="ai.markets.personal.description">Enhance your daily life
+                        with AI-powered tools that save time and boost
                         productivity.</p>
 
                     <div class="market-features">
                         <div class="feature-item">
                             <i class="fas fa-check-circle"></i>
                             <div class="feature-content">
-                                <h4>Personal Assistants</h4>
-                                <p>Smart home integration and voice-controlled automation</p>
+                                <h4 data-i18n="ai.markets.personal.features.assistants.title">Personal Assistants</h4>
+                                <p data-i18n="ai.markets.personal.features.assistants.description">Smart home
+                                    integration and voice-controlled automation</p>
                             </div>
                         </div>
                         <div class="feature-item">
                             <i class="fas fa-check-circle"></i>
                             <div class="feature-content">
-                                <h4>Learning & Research</h4>
-                                <p>AI-powered study tools and information synthesis</p>
+                                <h4 data-i18n="ai.markets.personal.features.learning.title">Learning & Research</h4>
+                                <p data-i18n="ai.markets.personal.features.learning.description">AI-powered study tools
+                                    and information synthesis</p>
                             </div>
                         </div>
                         <div class="feature-item">
                             <i class="fas fa-check-circle"></i>
                             <div class="feature-content">
-                                <h4>Digital Organization</h4>
-                                <p>Intelligent file management and task prioritization</p>
+                                <h4 data-i18n="ai.markets.personal.features.organization.title">Digital Organization
+                                </h4>
+                                <p data-i18n="ai.markets.personal.features.organization.description">Intelligent file
+                                    management and task prioritization</p>
                             </div>
                         </div>
                         <div class="feature-item">
                             <i class="fas fa-check-circle"></i>
                             <div class="feature-content">
-                                <h4>Content Creation</h4>
-                                <p>AI-assisted writing, editing, and creative projects</p>
+                                <h4 data-i18n="ai.markets.personal.features.content.title">Content Creation</h4>
+                                <p data-i18n="ai.markets.personal.features.content.description">AI-assisted writing,
+                                    editing, and creative projects</p>
                             </div>
                         </div>
                     </div>
 
                     <a href="contact-us.html?service=ai-personal" class="market-cta">
                         <i class="fas fa-star"></i>
-                        Upgrade Your Daily Life
+                        <span data-i18n="ai.markets.personal.cta">Upgrade Your Daily Life</span>
                     </a>
                 </div>
             </div>
@@ -158,33 +173,41 @@
             <div class="consultation-icon">
                 <i class="fas fa-comments"></i>
             </div>
-            <h2 class="consultation-title">Not Sure Where to Start?</h2>
-            <p class="consultation-text">Let's build a proof-of-concept together. We'll help you identify the perfect AI
+            <h2 class="consultation-title" data-i18n="ai.consulting.title">Not Sure Where to Start?</h2>
+            <p class="consultation-text" data-i18n="ai.consulting.text">Let's build a proof-of-concept together. We'll
+                help you identify the perfect AI
                 solution for your unique needs and demonstrate its value before full implementation.</p>
             <a href="contact-us.html?service=ai-consultation" class="consultation-cta">
                 <i class="fas fa-calendar-check"></i>
-                Book AI Consultation
+                <span data-i18n="ai.consulting.cta">Book AI Consultation</span>
             </a>
-            <p class="consultation-note">Free 30-minute discovery call • No commitment required</p>
+            <p class="consultation-note" data-i18n="ai.consulting.note">Free 30-minute discovery call • No commitment
+                required</p>
         </div>
     </section>
 
     <!-- Use Cases Section -->
     <section class="ai-use-cases">
         <div class="use-cases-container">
-            <h2 class="section-title">Real-World AI Applications</h2>
-            <p class="section-description">See how businesses and individuals are leveraging AI to solve real problems
-            </p>
+            <div class="section-intro">
+                <h2 class="section-title" data-i18n="ai.useCases.title">Real-World AI Applications</h2>
+                <p class="section-description" data-i18n="ai.useCases.description">See how businesses and individuals
+                    are
+                    leveraging AI to solve real problems
+                </p>
+            </div>
 
             <div class="use-cases-grid">
                 <div class="use-case-card" data-modal="customer-service">
                     <div class="use-case-icon">
                         <i class="fas fa-headset"></i>
                     </div>
-                    <h3>Customer Service Automation</h3>
-                    <p>Reduce response times by 80% with AI-powered chatbots that handle common inquiries 24/7</p>
+                    <h3 data-i18n="ai.useCases.items.customerService.title">Customer Service Automation</h3>
+                    <p data-i18n="ai.useCases.items.customerService.description">Reduce response times by 80% with
+                        AI-powered chatbots that handle common inquiries 24/7</p>
                     <div class="card-click-hint">
-                        <i class="fas fa-info-circle"></i> Click to learn more
+                        <i class="fas fa-info-circle"></i> <span data-i18n="common.clickToLearnMore">Click to learn
+                            more</span>
                     </div>
                 </div>
 
@@ -192,10 +215,12 @@
                     <div class="use-case-icon">
                         <i class="fas fa-file-invoice"></i>
                     </div>
-                    <h3>Document Processing</h3>
-                    <p>Extract and organize data from invoices, receipts, and contracts automatically</p>
+                    <h3 data-i18n="ai.useCases.items.documentProcessing.title">Document Processing</h3>
+                    <p data-i18n="ai.useCases.items.documentProcessing.description">Extract and organize data from
+                        invoices, receipts, and contracts automatically</p>
                     <div class="card-click-hint">
-                        <i class="fas fa-info-circle"></i> Click to learn more
+                        <i class="fas fa-info-circle"></i> <span data-i18n="common.clickToLearnMore">Click to learn
+                            more</span>
                     </div>
                 </div>
 
@@ -203,10 +228,12 @@
                     <div class="use-case-icon">
                         <i class="fas fa-envelope-open-text"></i>
                     </div>
-                    <h3>Email Management</h3>
-                    <p>Smart inbox organization, priority detection, and automated responses</p>
+                    <h3 data-i18n="ai.useCases.items.emailManagement.title">Email Management</h3>
+                    <p data-i18n="ai.useCases.items.emailManagement.description">Smart inbox organization, priority
+                        detection, and automated responses</p>
                     <div class="card-click-hint">
-                        <i class="fas fa-info-circle"></i> Click to learn more
+                        <i class="fas fa-info-circle"></i> <span data-i18n="common.clickToLearnMore">Click to learn
+                            more</span>
                     </div>
                 </div>
 
@@ -214,10 +241,12 @@
                     <div class="use-case-icon">
                         <i class="fas fa-calendar-alt"></i>
                     </div>
-                    <h3>Smart Scheduling</h3>
-                    <p>AI-optimized calendar management and meeting coordination</p>
+                    <h3 data-i18n="ai.useCases.items.smartScheduling.title">Smart Scheduling</h3>
+                    <p data-i18n="ai.useCases.items.smartScheduling.description">AI-optimized calendar management and
+                        meeting coordination</p>
                     <div class="card-click-hint">
-                        <i class="fas fa-info-circle"></i> Click to learn more
+                        <i class="fas fa-info-circle"></i> <span data-i18n="common.clickToLearnMore">Click to learn
+                            more</span>
                     </div>
                 </div>
 
@@ -225,10 +254,12 @@
                     <div class="use-case-icon">
                         <i class="fas fa-language"></i>
                     </div>
-                    <h3>Content Translation</h3>
-                    <p>Real-time translation and localization for global communication</p>
+                    <h3 data-i18n="ai.useCases.items.contentTranslation.title">Content Translation</h3>
+                    <p data-i18n="ai.useCases.items.contentTranslation.description">Real-time translation and
+                        localization for global communication</p>
                     <div class="card-click-hint">
-                        <i class="fas fa-info-circle"></i> Click to learn more
+                        <i class="fas fa-info-circle"></i> <span data-i18n="common.clickToLearnMore">Click to learn
+                            more</span>
                     </div>
                 </div>
 
@@ -236,10 +267,12 @@
                     <div class="use-case-icon">
                         <i class="fas fa-shield-alt"></i>
                     </div>
-                    <h3>Security Monitoring</h3>
-                    <p>AI-powered threat detection and anomaly identification</p>
+                    <h3 data-i18n="ai.useCases.items.securityMonitoring.title">Security Monitoring</h3>
+                    <p data-i18n="ai.useCases.items.securityMonitoring.description">AI-powered threat detection and
+                        anomaly identification</p>
                     <div class="card-click-hint">
-                        <i class="fas fa-info-circle"></i> Click to learn more
+                        <i class="fas fa-info-circle"></i> <span data-i18n="common.clickToLearnMore">Click to learn
+                            more</span>
                     </div>
                 </div>
             </div>

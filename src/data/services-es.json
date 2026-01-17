@@ -1,0 +1,274 @@
+[
+    {
+        "id": "home-network",
+        "category": "home",
+        "title": "Configuración y Seguridad de Red Hogareña",
+        "subtitle": "Wi-Fi Ultrarrápido, en Cada Rincón de tu Hogar",
+        "heroImage": "Assets/Images/home-network-hero.jpg",
+        "icon": "Assets/Icons/home-network-icon.png",
+        "overview": "Transforma tu hogar en un refugio conectado con nuestros servicios profesionales de configuración de red. Eliminamos zonas muertas, optimizamos tu cobertura Wi-Fi e implementamos seguridad de grado empresarial para proteger cada dispositivo en tu casa. Ya sea que estés transmitiendo películas en 4K, jugando en línea o trabajando de forma remota, nuestras soluciones de red garantizan una conectividad rápida y confiable en toda tu propiedad. Nos encargamos de todo, desde la configuración del router hasta la instalación de redes mesh, creando una experiencia digital fluida para toda tu familia.",
+        "features": [
+            "Eliminación Completa de Zonas Muertas",
+            "Instalación y Configuración de Redes Mesh",
+            "Controles Parentales Avanzados y Filtrado de Contenido",
+            "Configuración de Red de Invitados Segura",
+            "Protección y Segmentación de Dispositivos IoT",
+            "Escudo de Seguridad de Red (Configuración de Firewall)",
+            "Optimización de Velocidad y Calidad de Servicio (QoS)",
+            "Monitoreo y Soporte de Red 24/7"
+        ],
+        "benefits": [
+            "Transmite contenido 4K en cada habitación sin interrupciones",
+            "Protege a tu familia de amenazas en línea automáticamente",
+            "Controla el tiempo de pantalla y el acceso al contenido fácilmente",
+            "Mantén los dispositivos de hogar inteligente seguros y aislados"
+        ],
+        "inclusions": [
+            "Mapa de Calor de Señal Wi-Fi Completo",
+            "Reporte de Auditoría de Seguridad de Red",
+            "Garantía de Rendimiento de 30 Días",
+            "Soporte Telefónico de por Vida",
+            "Visita de Seguimiento Gratuita (dentro de los 90 días)"
+        ],
+        "ctaText": "Obtén tu Auditoría de Red Gratuita",
+        "ctaLink": "contact-us.html?service=home-network"
+    },
+    {
+        "id": "home-device-setup",
+        "category": "home",
+        "title": "Configuración de Dispositivos y Solución de Problemas",
+        "subtitle": "Desde el Desempaque hasta la Optimización Total en Minutos",
+        "heroImage": "Assets/Images/device-setup-hero.jpg",
+        "icon": "Assets/Icons/troubleshoot-icon.png",
+        "overview": "Dile adiós a los procesos de configuración frustrantes y manuales confusos. Nuestros técnicos expertos se encargan de la configuración completa de todos tus dispositivos, desde laptops y tablets hasta gadgets de hogar inteligente e impresoras. Nos aseguramos de que todo funcione en conjunto sin problemas, optimizamos los ajustes de rendimiento, instalamos el software esencial y configuramos las opciones de seguridad. Ya sea un dispositivo nuevo o un reemplazo, hacemos que la transición sea fluida y libre de estrés, para que puedas comenzar a usar tu tecnología de inmediato.",
+        "features": [
+            "Desempaque y Configuración Completa de Dispositivos",
+            "Configuración y Actualización del Sistema Operativo",
+            "Instalación y Licenciamiento de Software Esencial",
+            "Integración de Cuentas de Correo y Nube",
+            "Configuración de Software de Seguridad",
+            "Transferencia de Datos desde Dispositivos Antiguos",
+            "Integración de Dispositivos de Hogar Inteligente",
+            "Configuración de Impresoras y Periféricos"
+        ],
+        "benefits": [
+            "Comienza a usar tus nuevos dispositivos de inmediato",
+            "Evita errores de configuración que causan problemas después",
+            "Obtén un rendimiento óptimo desde el primer día",
+            "Ahorra horas de frustración y confusión"
+        ],
+        "inclusions": [
+            "Auditoría de Hardware Completa",
+            "Lista de Verificación de Optimización de Dispositivos",
+            "Guía de Inicio Rápido Personalizada",
+            "Soporte de Configuración por 90 Días",
+            "Actualizaciones de Software Gratuitas (primer año)"
+        ],
+        "ctaText": "Programa la Configuración de tu Dispositivo",
+        "ctaLink": "contact-us.html?service=home-device-setup"
+    },
+    {
+        "id": "home-data-backup",
+        "category": "home",
+        "title": "Respaldo y Recuperación de Datos",
+        "subtitle": "No Vuelvas a Perder un Recuerdo Preciado o Archivo Importante",
+        "heroImage": "Assets/Images/data-backup-hero.jpg",
+        "icon": "Assets/Icons/data-recovery-icon.png",
+        "overview": "Protege lo que más importa con nuestras soluciones de respaldo integrales. Implementamos sistemas de respaldo automatizados en la nube y locales que salvaguardan tus fotos, documentos, videos y archivos importantes sin que tengas que pensar en ello. Nuestro enfoque de múltiples capas garantiza que tus datos estén protegidos contra fallas de hardware, ransomware, eliminación accidental y desastres naturales. Con opciones de recuperación fáciles y cifrado seguro, tendrás la tranquilidad de saber que tu vida digital está siempre protegida y accesible desde cualquier dispositivo, en cualquier lugar.",
+        "features": [
+            "Respaldo Automatizado en la Nube (Google Drive, OneDrive, iCloud)",
+            "Soluciones de Respaldo Local (NAS, Discos Externos)",
+            "Protección contra Ransomware y Versionado",
+            "Organización y Respaldo de Fotos y Videos",
+            "Sincronización de Documentos entre Dispositivos",
+            "Respaldo Cifrado para Datos Sensibles",
+            "Servicios de Recuperación y Restauración Rápida",
+            "Monitoreo de Respaldo y Verificaciones de Estado"
+        ],
+        "benefits": [
+            "Protección automática sin esfuerzo manual",
+            "Recupera archivos eliminados desde cualquier punto en el tiempo",
+            "Accede a tus archivos desde cualquier lugar de forma segura",
+            "Protección contra ransomware y virus"
+        ],
+        "inclusions": [
+            "Documento de Estrategia de Respaldo",
+            "Prueba y Verificación de Recuperación",
+            "Configuración de Almacenamiento en la Nube (1TB incluido)",
+            "Tablero de Monitoreo de Respaldo",
+            "Verificación Anual del Estado del Respaldo"
+        ],
+        "ctaText": "Protege tus Datos Hoy",
+        "ctaLink": "contact-us.html?service=home-data-backup"
+    },
+    {
+        "id": "home-digital-wellness",
+        "category": "home",
+        "title": "Consulta de Privacidad y Salud Digital",
+        "subtitle": "Crea un Entorno Digital Saludable para tu Familia",
+        "heroImage": "Assets/Images/digital-wellness-hero.jpg",
+        "icon": "Assets/Icons/digital-helath-icon.png",
+        "overview": "Construye un entorno digital equilibrado y seguro para toda tu familia. Nuestros servicios de bienestar digital te ayudan a gestionar el tiempo de pantalla, filtrar contenido inapropiado, proteger la privacidad y promover hábitos tecnológicos saludables. Configuramos controles parentales exhaustivos, establecemos filtros de contenido adecuados para la edad e implementamos herramientas de monitoreo que te dan visibilidad sin invadir la privacidad. Desde proteger a niños pequeños hasta ayudar a los adolescentes a desarrollar una ciudadanía digital responsable, creamos soluciones personalizadas que se ajustan a los valores y necesidades de tu familia.",
+        "features": [
+            "Configuración Integral de Control Parental",
+            "Filtrado de Contenido Adecuado para la Edad",
+            "Gestión y Programación del Tiempo de Pantalla",
+            "Controles de Bloqueo de Aplicaciones y Sitios Web",
+            "Rastreo de Ubicación y Geofencing",
+            "Monitoreo de Redes Sociales y Alertas",
+            "Protección de Privacidad y Seguridad de Identidad",
+            "Capacitación en Alfabetización Digital para Padres"
+        ],
+        "benefits": [
+            "Protege a los niños del contenido inapropiado",
+            "Gestiona el tiempo de pantalla en todos los dispositivos",
+            "Monitorea la actividad en línea sin ser intrusivo",
+            "Enseña hábitos digitales saludables desde temprano"
+        ],
+        "inclusions": [
+            "Consulta de Seguridad Digital Familiar",
+            "Configuración Personalizada de Control Parental",
+            "Configuración de Filtro de Contenido por Edad",
+            "Guía de Bienestar Digital para Padres",
+            "Revisiones Trimestrales y Ajustes"
+        ],
+        "ctaText": "Comienza tu Camino al Bienestar Digital",
+        "ctaLink": "contact-us.html?service=home-digital-wellness"
+    },
+    {
+        "id": "business-it-support",
+        "category": "business",
+        "title": "Soporte de TI Administrado",
+        "subtitle": "Mesa de Ayuda 24/7 y Monitoreo Proactivo",
+        "heroImage": "Assets/Images/managed-it-hero.jpg",
+        "icon": "fa-headset",
+        "overview": "Tu equipo de TI dedicado, sin los costos fijos. Nos encargamos de la solución de problemas, el mantenimiento y el monitoreo para que puedas concentrarte en hacer crecer tu negocio. Nuestro soporte de TI administrado brinda asistencia remota ilimitada, monitoreo proactivo del sistema y tiempos de respuesta rápidos garantizados. Actuamos como tu departamento de TI completo, previniendo problemas antes de que ocurran y resolviendo incidentes rápidamente cuando surgen. Con costos mensuales predecibles y herramientas de grado empresarial, obtienes excelencia en TI sin el precio de una gran corporación.",
+        "features": [
+            "Soporte Técnico Remoto Ilimitado",
+            "Monitoreo Proactivo del Sistema 24/7",
+            "Mantenimiento y Actualizaciones Regulares",
+            "Sistema de Tickets para Mesa de Ayuda",
+            "Soporte en Sitio Cuando sea Necesario",
+            "Gestión y Seguimiento de Activos",
+            "Gestión de Licenciamiento de Software",
+            "Tiempos de Respuesta Rápidos Garantizados"
+        ],
+        "benefits": [
+            "Minimiza el tiempo de inactividad y la pérdida de productividad",
+            "Costos de TI mensuales predecibles",
+            "Acceso a experiencia de nivel empresarial",
+            "Concéntrate en el crecimiento del negocio, no en problemas de TI"
+        ],
+        "inclusions": [
+            "Reporte Mensual del Estado del Sistema",
+            "Tickets de Soporte Remoto Ilimitados",
+            "Visita Trimestral en Sitio",
+            "Acceso al Tablero de Monitoreo 24/7",
+            "SLA de Respuesta Prioritaria"
+        ],
+        "ctaText": "Obtén tu Evaluación de TI Gratis",
+        "ctaLink": "contact-us.html?service=business-it-support"
+    },
+    {
+        "id": "business-cloud-migration",
+        "category": "business",
+        "title": "Nube y Microsoft 365",
+        "subtitle": "Migración y Gestión de la Nube sin Interrupciones",
+        "heroImage": "Assets/Images/cloud-migration-hero.jpg",
+        "icon": "fa-cloud",
+        "overview": "Muévete a la nube con confianza. Nos encargamos de la configuración de Microsoft 365, la migración de OneDrive, el despliegue de Teams y la gestión continua. Nuestros expertos en la nube diseñan e implementan soluciones adaptadas a las necesidades de tu empresa, desde correo electrónico y uso compartido de archivos hasta el alojamiento completo de infraestructura en Azure. Garantizamos una transición fluida con interrupciones mínimas, capacitación integral y optimización continua para maximizar tu inversión en la nube.",
+        "features": [
+            "Migración y Configuración de Microsoft 365",
+            "Configuración de OneDrive y SharePoint",
+            "Despliegue y Capacitación en Microsoft Teams",
+            "Migración de Correo desde Cualquier Plataforma",
+            "Infraestructura de Nube en Azure",
+            "Seguridad y Cumplimiento en la Nube",
+            "Respaldo y Recuperación ante Desastres",
+            "Gestión y Soporte de Nube Continuo"
+        ],
+        "benefits": [
+            "Accede a tus datos desde cualquier lugar y dispositivo",
+            "Reduce costos de hardware y mantenimiento",
+            "Mejora la colaboración y productividad del equipo",
+            "Seguridad y cumplimiento de nivel empresarial"
+        ],
+        "inclusions": [
+            "Plan Completo de Migración a la Nube",
+            "Configuración del Tenant de Microsoft 365",
+            "Sesiones de Capacitación para Usuarios (3 incluidas)",
+            "Migración y Verificación de Datos",
+            "Soporte Post-Migración de 90 Días"
+        ],
+        "ctaText": "Inicia tu Viaje a la Nube",
+        "ctaLink": "contact-us.html?service=business-cloud-migration"
+    },
+    {
+        "id": "business-network",
+        "category": "business",
+        "title": "Infraestructura de Red",
+        "subtitle": "Redes Rápidas, Seguras y Confiables",
+        "heroImage": "Assets/Images/network-infrastructure-hero.jpg",
+        "icon": "fa-network-wired",
+        "overview": "Diseño e implementación de redes profesionales. Desde Wi-Fi hasta cableado y firewalls, construimos redes que crecen con tu negocio. Nuestros especialistas en redes tienen experiencia en Cisco, Fortinet y soluciones de grado empresarial. Diseñamos sistemas de cableado estructurado, desplegamos redes inalámbricas de alto rendimiento, configuramos firewalls avanzados e implementamos soluciones VPN para acceso remoto seguro. Cada red se construye para ser confiable, segura y escalable.",
+        "features": [
+            "Instalación y Configuración de Wi-Fi Empresarial",
+            "Cableado Estructurado (Cat6/Cat6a)",
+            "Configuración de Firewall (Fortinet, Cisco, SonicWall)",
+            "Configuración de VPN y Acceso Remoto Seguro",
+            "Seguridad y Segmentación de Red",
+            "Configuración de Switches y Routers",
+            "Optimización del Rendimiento de la Red",
+            "Monitoreo y Soporte de Red Continuo"
+        ],
+        "benefits": [
+            "Conectividad rápida y confiable para todos los usuarios",
+            "Arquitectura de red segura",
+            "Infraestructura escalable que crece contigo",
+            "Soporte de expertos de técnicos certificados"
+        ],
+        "inclusions": [
+            "Evaluación Completa de la Red",
+            "Documentación del Diseño de Red",
+            "Garantía de Cableado e Infraestructura",
+            "Línea Base de Rendimiento de Red",
+            "Soporte Post-Instalación de 6 Meses"
+        ],
+        "ctaText": "Actualiza tu Red",
+        "ctaLink": "contact-us.html?service=business-network"
+    },
+    {
+        "id": "business-cybersecurity",
+        "category": "business",
+        "title": "Servicios de Ciberseguridad",
+        "subtitle": "Protege tu Empresa de las Amenazas",
+        "heroImage": "Assets/Images/cybersecurity-hero.jpg",
+        "icon": "fa-shield-alt",
+        "overview": "Soluciones de seguridad integrales para salvaguardar tus datos, sistemas y reputación. Desde respaldos hasta antivirus y cumplimiento, te tenemos cubierto. Implementamos estrategias de seguridad de múltiples capas que incluyen protección contra ransomware, respaldos automatizados, antivirus empresarial, auditorías de seguridad y capacitación de empleados. Nuestro enfoque combina tecnología, procesos y personas para crear una postura de seguridad robusta que protege contra amenazas en evolución mientras cumple con los requisitos de la industria.",
+        "features": [
+            "Respaldo Automatizado y Recuperación ante Desastres",
+            "Antivirus Empresarial y Protección de Endpoints",
+            "Protección y Detección de Ransomware",
+            "Auditorías de Seguridad y Evaluación de Vulnerabilidades",
+            "Gestión de Cumplimiento (HIPAA, PCI, SOC 2)",
+            "Seguridad de Correo y Protección contra Phishing",
+            "Capacitación en Seguridad para Empleados",
+            "Planificación de Respuesta y Recuperación ante Incidentes"
+        ],
+        "benefits": [
+            "Protégete contra ransomware y brechas de datos",
+            "Cumple con los requisitos legales de la industria",
+            "Reduce el riesgo de incidentes de seguridad costosos",
+            "Genera confianza en el cliente con una seguridad sólida"
+        ],
+        "inclusions": [
+            "Evaluación de Riesgos de Seguridad",
+            "Implementación de Soluciones de Respaldo",
+            "Capacitación de Seguridad para Empleados (Anual)",
+            "Auditorías de Seguridad Trimestrales",
+            "Documentación del Plan de Respuesta ante Incidentes"
+        ],
+        "ctaText": "Asegura tu Empresa",
+        "ctaLink": "contact-us.html?service=business-cybersecurity"
+    }
+]

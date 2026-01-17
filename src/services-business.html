@@ -19,6 +19,7 @@
 
     <!-- Shared Components Loader -->
     <script src="includes.js" defer></script>
+    <script type="module" src="i18n.js"></script>
 </head>
 
 <body class="business-theme">
@@ -29,10 +30,11 @@
     <section class="business-hero">
         <div class="hero-overlay">
             <div class="hero-content">
-                <h1>Enterprise-Grade IT for Small Businesses</h1>
-                <p>Reliable Support. Secure Cloud. Fast Networks.</p>
+                <h1 data-i18n="businessServicesPage.hero.title">Enterprise-Grade IT for Small Businesses</h1>
+                <p data-i18n="businessServicesPage.hero.subtitle">Reliable Support. Secure Cloud. Fast Networks.</p>
                 <a href="contact-us.html?service=business" class="hero-cta-btn">
-                    Get Your Free Assessment <i class="fas fa-arrow-right"></i>
+                    <span data-i18n="businessServicesPage.hero.cta">Get Your Free Assessment</span> <i
+                        class="fas fa-arrow-right"></i>
                 </a>
             </div>
         </div>
@@ -49,18 +51,29 @@
                     </div>
                 </div>
                 <div class="business-content">
-                    <div class="service-badge">Managed IT Support</div>
-                    <h2>24/7 Help Desk & Proactive Monitoring</h2>
-                    <p>Your dedicated IT team, without the overhead. We handle troubleshooting, maintenance, and
+                    <div class="service-badge" data-i18n="businessServicesPage.services.managed.badge">Managed IT
+                        Support</div>
+                    <h2 data-i18n="businessServicesPage.services.managed.title">24/7 Help Desk & Proactive Monitoring
+                    </h2>
+                    <p data-i18n="businessServicesPage.services.managed.description">Your dedicated IT team, without the
+                        overhead. We handle troubleshooting, maintenance, and
                         monitoring so you can focus on growing your business.</p>
                     <ul class="business-features">
-                        <li><i class="fas fa-check-circle"></i> Remote & on-site technical support</li>
-                        <li><i class="fas fa-check-circle"></i> Proactive system monitoring 24/7</li>
-                        <li><i class="fas fa-check-circle"></i> Regular maintenance & updates</li>
-                        <li><i class="fas fa-check-circle"></i> Fast response times guaranteed</li>
+                        <li><i class="fas fa-check-circle"></i> <span
+                                data-i18n="businessServicesPage.services.managed.features.0">Remote & on-site technical
+                                support</span></li>
+                        <li><i class="fas fa-check-circle"></i> <span
+                                data-i18n="businessServicesPage.services.managed.features.1">Proactive system monitoring
+                                24/7</span></li>
+                        <li><i class="fas fa-check-circle"></i> <span
+                                data-i18n="businessServicesPage.services.managed.features.2">Regular maintenance &
+                                updates</span></li>
+                        <li><i class="fas fa-check-circle"></i> <span
+                                data-i18n="businessServicesPage.services.managed.features.3">Fast response times
+                                guaranteed</span></li>
                     </ul>
                     <a href="service-detail.html?id=business-it-support" class="business-link">
-                        Learn More <i class="fas fa-arrow-right"></i>
+                        <span data-i18n="common.learnMore">Learn More</span> <i class="fas fa-arrow-right"></i>
                     </a>
                 </div>
             </div>
@@ -73,18 +86,28 @@
                     </div>
                 </div>
                 <div class="business-content">
-                    <div class="service-badge">Cloud & Microsoft 365</div>
-                    <h2>Seamless Cloud Migration & Management</h2>
-                    <p>Move to the cloud with confidence. We handle Microsoft 365 setup, OneDrive migration, Teams
+                    <div class="service-badge" data-i18n="businessServicesPage.services.cloud.badge">Cloud & Microsoft
+                        365</div>
+                    <h2 data-i18n="businessServicesPage.services.cloud.title">Seamless Cloud Migration & Management</h2>
+                    <p data-i18n="businessServicesPage.services.cloud.description">Move to the cloud with confidence. We
+                        handle Microsoft 365 setup, OneDrive migration, Teams
                         deployment, and ongoing management.</p>
                     <ul class="business-features">
-                        <li><i class="fas fa-check-circle"></i> Microsoft 365 migration & setup</li>
-                        <li><i class="fas fa-check-circle"></i> OneDrive & SharePoint configuration</li>
-                        <li><i class="fas fa-check-circle"></i> Teams deployment & training</li>
-                        <li><i class="fas fa-check-circle"></i> Email migration from any platform</li>
+                        <li><i class="fas fa-check-circle"></i> <span
+                                data-i18n="businessServicesPage.services.cloud.features.0">Microsoft 365 migration &
+                                setup</span></li>
+                        <li><i class="fas fa-check-circle"></i> <span
+                                data-i18n="businessServicesPage.services.cloud.features.1">OneDrive & SharePoint
+                                configuration</span></li>
+                        <li><i class="fas fa-check-circle"></i> <span
+                                data-i18n="businessServicesPage.services.cloud.features.2">Teams deployment &
+                                training</span></li>
+                        <li><i class="fas fa-check-circle"></i> <span
+                                data-i18n="businessServicesPage.services.cloud.features.3">Email migration from any
+                                platform</span></li>
                     </ul>
                     <a href="service-detail.html?id=business-cloud-migration" class="business-link">
-                        Learn More <i class="fas fa-arrow-right"></i>
+                        <span data-i18n="common.learnMore">Learn More</span> <i class="fas fa-arrow-right"></i>
                     </a>
                 </div>
             </div>
@@ -97,18 +120,28 @@
                     </div>
                 </div>
                 <div class="business-content">
-                    <div class="service-badge">Network Infrastructure</div>
-                    <h2>Fast, Secure, Reliable Networks</h2>
-                    <p>Professional network design and implementation. From Wi-Fi to cabling to firewalls, we build
+                    <div class="service-badge" data-i18n="businessServicesPage.services.network.badge">Network
+                        Infrastructure</div>
+                    <h2 data-i18n="businessServicesPage.services.network.title">Fast, Secure, Reliable Networks</h2>
+                    <p data-i18n="businessServicesPage.services.network.description">Professional network design and
+                        implementation. From Wi-Fi to cabling to firewalls, we build
                         networks that grow with your business.</p>
                     <ul class="business-features">
-                        <li><i class="fas fa-check-circle"></i> Enterprise Wi-Fi installation</li>
-                        <li><i class="fas fa-check-circle"></i> Structured cabling & wiring</li>
-                        <li><i class="fas fa-check-circle"></i> Firewall & security configuration</li>
-                        <li><i class="fas fa-check-circle"></i> VPN & remote access setup</li>
+                        <li><i class="fas fa-check-circle"></i> <span
+                                data-i18n="businessServicesPage.services.network.features.0">Enterprise Wi-Fi
+                                installation</span></li>
+                        <li><i class="fas fa-check-circle"></i> <span
+                                data-i18n="businessServicesPage.services.network.features.1">Structured cabling &
+                                wiring</span></li>
+                        <li><i class="fas fa-check-circle"></i> <span
+                                data-i18n="businessServicesPage.services.network.features.2">Firewall & security
+                                configuration</span></li>
+                        <li><i class="fas fa-check-circle"></i> <span
+                                data-i18n="businessServicesPage.services.network.features.3">VPN & remote access
+                                setup</span></li>
                     </ul>
                     <a href="service-detail.html?id=business-network" class="business-link">
-                        Learn More <i class="fas fa-arrow-right"></i>
+                        <span data-i18n="common.learnMore">Learn More</span> <i class="fas fa-arrow-right"></i>
                     </a>
                 </div>
             </div>
@@ -121,18 +154,29 @@
                     </div>
                 </div>
                 <div class="business-content">
-                    <div class="service-badge">Cybersecurity</div>
-                    <h2>Protect Your Business from Threats</h2>
-                    <p>Comprehensive security solutions to safeguard your data, systems, and reputation. From backups to
+                    <div class="service-badge" data-i18n="businessServicesPage.services.cybersecurity.badge">
+                        Cybersecurity</div>
+                    <h2 data-i18n="businessServicesPage.services.cybersecurity.title">Protect Your Business from Threats
+                    </h2>
+                    <p data-i18n="businessServicesPage.services.cybersecurity.description">Comprehensive security
+                        solutions to safeguard your data, systems, and reputation. From backups to
                         antivirus to compliance, we've got you covered.</p>
                     <ul class="business-features">
-                        <li><i class="fas fa-check-circle"></i> Automated backup & disaster recovery</li>
-                        <li><i class="fas fa-check-circle"></i> Enterprise antivirus & threat protection</li>
-                        <li><i class="fas fa-check-circle"></i> Security audits & compliance</li>
-                        <li><i class="fas fa-check-circle"></i> Employee security training</li>
+                        <li><i class="fas fa-check-circle"></i> <span
+                                data-i18n="businessServicesPage.services.cybersecurity.features.0">Automated backup &
+                                disaster recovery</span></li>
+                        <li><i class="fas fa-check-circle"></i> <span
+                                data-i18n="businessServicesPage.services.cybersecurity.features.1">Enterprise antivirus
+                                & threat protection</span></li>
+                        <li><i class="fas fa-check-circle"></i> <span
+                                data-i18n="businessServicesPage.services.cybersecurity.features.2">Security audits &
+                                compliance</span></li>
+                        <li><i class="fas fa-check-circle"></i> <span
+                                data-i18n="businessServicesPage.services.cybersecurity.features.3">Employee security
+                                training</span></li>
                     </ul>
                     <a href="service-detail.html?id=business-cybersecurity" class="business-link">
-                        Learn More <i class="fas fa-arrow-right"></i>
+                        <span data-i18n="common.learnMore">Learn More</span> <i class="fas fa-arrow-right"></i>
                     </a>
                 </div>
             </div>
@@ -142,10 +186,12 @@
     <!-- CTA Section -->
     <section class="business-cta-section">
         <div class="cta-container">
-            <h2>Ready to Upgrade Your Business IT?</h2>
-            <p>Get a free technology assessment and discover how we can help your business thrive.</p>
+            <h2 data-i18n="businessServicesPage.cta.title">Ready to Upgrade Your Business IT?</h2>
+            <p data-i18n="businessServicesPage.cta.description">Get a free technology assessment and discover how we can
+                help your business thrive.</p>
             <a href="contact-us.html?service=business" class="cta-button">
-                Get Your Free Assessment <i class="fas fa-arrow-right"></i>
+                <span data-i18n="businessServicesPage.cta.button">Get Your Free Assessment</span> <i
+                    class="fas fa-arrow-right"></i>
             </a>
         </div>
     </section>

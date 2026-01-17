@@ -17,14 +17,21 @@ const noResults = document.getElementById('noResults');
 // Initialize Blog System
 async function initBlog() {
     try {
-        // Fetch blog posts from JSON database
-        const response = await fetch('./data/blog-posts.json');
+        // Fetch blog posts from JSON database based on language
+        const lang = localStorage.getItem('soontech_language') || 'en';
+        console.log(`Blog Engine: Fetching blog-posts-${lang}.json...`);
+        const response = await fetch(`./data/blog-posts-${lang}.json`);
 
         if (!response.ok) {
-            throw new Error(`HTTP error! status: ${response.status}`);
+            // Fallback to default if localized version fails
+            console.warn(`Blog Engine: ${lang} version not found, falling back to blog-posts.json`);
+            const fallbackResponse = await fetch('./data/blog-posts.json');
+            if (!fallbackResponse.ok) throw new Error('Could not load blog posts');
+            allPosts = await fallbackResponse.json();
+        } else {
+            allPosts = await response.json();
         }
 
-        allPosts = await response.json();
         filteredPosts = [...allPosts];
 
         // Initial render
@@ -81,9 +88,9 @@ function createPostCard(post) {
                 <p class="news-excerpt">${post.excerpt}</p>
                 <div class="news-meta">
                     <span class="news-date"><i class="far fa-calendar"></i> ${formatDate(post.date)}</span>
-                    <span class="news-read-time"><i class="far fa-clock"></i> ${post.readTime}</span>
+                    <span class="news-read-time"><i class="far fa-clock"></i> ${post.readTime} <span data-i18n="blogPage.article.readTime">read</span></span>
                 </div>
-                <button class="read-more" data-post-id="${post.id}">Read Article →</button>
+                <button class="read-more" data-post-id="${post.id}" data-i18n="blogPage.article.readMore">Read Article →</button>
             </div>
         </div>
     `;
@@ -91,9 +98,10 @@ function createPostCard(post) {
 
 // Format Date (e.g., "Jan 15, 2024")
 function formatDate(dateString) {
+    const lang = localStorage.getItem('soontech_language') || 'en';
     const date = new Date(dateString);
     const options = { year: 'numeric', month: 'short', day: 'numeric' };
-    return date.toLocaleDateString('en-US', options);
+    return date.toLocaleDateString(lang === 'es' ? 'es-ES' : 'en-US', options);
 }
 
 // Attach Event Listeners
@@ -150,8 +158,8 @@ function showError() {
     blogGrid.innerHTML = `
         <div class="error-state" style="grid-column: 1 / -1; text-align: center; padding: 4rem 2rem;">
             <i class="fas fa-exclamation-triangle" style="font-size: 4rem; color: #d9534f; margin-bottom: 1rem;"></i>
-            <h3 style="color: #285a3b; margin-bottom: 0.5rem;">Unable to Load Articles</h3>
-            <p style="color: rgba(40, 90, 59, 0.7);">Please check your connection and try again.</p>
+            <h3 style="color: #285a3b; margin-bottom: 0.5rem;" data-i18n="blogPage.error.title">Unable to Load Articles</h3>
+            <p style="color: rgba(40, 90, 59, 0.7);" data-i18n="blogPage.error.message">Please check your connection and try again.</p>
         </div>
     `;
 }
@@ -192,7 +200,7 @@ function displayArticle(postId) {
     document.getElementById('articleDate').textContent = formatDate(post.date);
     document.getElementById('articleTitle').textContent = post.title;
     document.getElementById('articleAuthor').textContent = post.author;
-    document.getElementById('articleReadTime').textContent = post.readTime;
+    document.getElementById('articleReadTime').innerHTML = `${post.readTime} <span data-i18n="blogPage.article.readTime">read</span>`;
     document.getElementById('articleBody').innerHTML = post.content;
 
     // Generate slug for URL

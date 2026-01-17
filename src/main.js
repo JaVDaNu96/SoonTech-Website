@@ -14,12 +14,21 @@ document.addEventListener('DOMContentLoaded', () => {
     const businessContents = document.querySelectorAll('.business-content');
 
     function toggleContent(isHome) {
+        const activeLabel = labels[isHome ? 0 : 1];
+
         // Toggle Active State on Labels
         labels.forEach(lbl => lbl.classList.remove('active'));
-        labels[isHome ? 0 : 1].classList.add('active');
+        activeLabel.classList.add('active');
 
-        // Update Indicator Position
-        indicator.style.left = isHome ? '0' : '120px';
+        // Update Indicator Position & Width dynamically
+        indicator.style.left = activeLabel.offsetLeft + 'px';
+        indicator.style.width = activeLabel.offsetWidth + 'px';
+
+        if (isHome) {
+            indicator.classList.remove('business-active');
+        } else {
+            indicator.classList.add('business-active');
+        }
 
         // Toggle Content Visibility
         homeContents.forEach(content => {
@@ -39,6 +48,17 @@ document.addEventListener('DOMContentLoaded', () => {
             const isHome = label.classList.contains('home');
             toggleContent(isHome);
         });
+    });
+
+    // Handle resize
+    window.addEventListener('resize', () => {
+        const activeLabel = document.querySelector('.slider-label.active');
+        if (activeLabel && indicator) {
+            indicator.style.transition = 'none';
+            indicator.style.left = activeLabel.offsetLeft + 'px';
+            indicator.style.width = activeLabel.offsetWidth + 'px';
+            setTimeout(() => indicator.style.transition = '', 50);
+        }
     });
 
     // Initialize with home view

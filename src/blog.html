@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="styles.css">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
     <script src="includes.js" defer></script>
+    <script type="module" src="i18n.js"></script>
 </head>
 
 <body>
@@ -20,8 +21,8 @@
     <section class="blog-hero">
         <div class="hero-content">
             <div class="hero-text">
-                <h1>SoonTech Insights</h1>
-                <p class="hero-subtitle">Trends, Tips, and Tech Solutions</p>
+                <h1 data-i18n="blogPage.hero.title">SoonTech Insights</h1>
+                <p class="hero-subtitle" data-i18n="blogPage.hero.subtitle">Trends, Tips, and Tech Solutions</p>
             </div>
             <div class="hero-visual">
                 <i class="fas fa-lightbulb"></i>
@@ -37,17 +38,24 @@
                 <!-- Search Bar (Left) -->
                 <div class="search-container">
                     <i class="fas fa-search search-icon"></i>
-                    <input type="text" id="searchInput" placeholder="Search articles...">
+                    <input type="text" id="searchInput" placeholder="Search articles..." data-i18n-attr="placeholder"
+                        data-i18n="blogPage.toolbar.searchPlaceholder">
                 </div>
 
                 <!-- Category Filters (Right) -->
                 <div id="categoryFilters" class="category-filters">
-                    <button class="category-btn active" data-category="all">All</button>
-                    <button class="category-btn" data-category="Cybersecurity">Cybersecurity</button>
-                    <button class="category-btn" data-category="AI & Innovation">AI & Innovation</button>
-                    <button class="category-btn" data-category="Business Growth">Business Growth</button>
-                    <button class="category-btn" data-category="Smart Home">Smart Home</button>
-                    <button class="category-btn" data-category="Tech Tutorials">Tech Tutorials</button>
+                    <button class="category-btn active" data-category="all"
+                        data-i18n="blogPage.toolbar.categories.all">All</button>
+                    <button class="category-btn" data-category="Cybersecurity"
+                        data-i18n="blogPage.toolbar.categories.cybersecurity">Cybersecurity</button>
+                    <button class="category-btn" data-category="AI & Innovation"
+                        data-i18n="blogPage.toolbar.categories.ai">AI & Innovation</button>
+                    <button class="category-btn" data-category="Business Growth"
+                        data-i18n="blogPage.toolbar.categories.growth">Business Growth</button>
+                    <button class="category-btn" data-category="Smart Home"
+                        data-i18n="blogPage.toolbar.categories.smartHome">Smart Home</button>
+                    <button class="category-btn" data-category="Tech Tutorials"
+                        data-i18n="blogPage.toolbar.categories.tutorials">Tech Tutorials</button>
                 </div>
             </div>
         </section>
@@ -61,8 +69,8 @@
             <!-- No Results Message (Hidden by default) -->
             <div id="noResults" class="no-results" style="display: none;">
                 <i class="fas fa-search"></i>
-                <h3>No articles found</h3>
-                <p>Try adjusting your search or filter criteria</p>
+                <h3 data-i18n="blogPage.noResults.title">No articles found</h3>
+                <p data-i18n="blogPage.noResults.message">Try adjusting your search or filter criteria</p>
             </div>
         </section>
     </div>
@@ -71,7 +79,7 @@
     <div id="blog-article-view" class="hidden">
         <section class="article-section">
             <button id="backToInsights" class="back-btn">
-                <i class="fas fa-arrow-left"></i> Back to Insights
+                <i class="fas fa-arrow-left"></i> <span data-i18n="blogPage.article.back">Back to Insights</span>
             </button>
 
             <article class="full-article-content">
@@ -100,11 +108,13 @@
     <!-- Newsletter CTA Buffer Section -->
     <section class="blog-cta-buffer">
         <div class="cta-content">
-            <h2>Never Miss an Insight</h2>
-            <p>Get the latest tech tips, security alerts, and AI trends delivered to your inbox.</p>
+            <h2 data-i18n="blogPage.newsletter.title">Never Miss an Insight</h2>
+            <p data-i18n="blogPage.newsletter.subtitle">Get the latest tech tips, security alerts, and AI trends
+                delivered to your inbox.</p>
             <form class="newsletter-form">
-                <input type="email" placeholder="Enter your email address" required>
-                <button type="submit">Subscribe</button>
+                <input type="email" placeholder="Enter your email address" data-i18n-attr="placeholder"
+                    data-i18n="blogPage.newsletter.placeholder" required>
+                <button type="submit" data-i18n="blogPage.newsletter.button">Subscribe</button>
             </form>
         </div>
     </section>

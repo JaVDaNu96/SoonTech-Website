@@ -1,0 +1,156 @@
+[
+    {
+        "id": 15,
+        "title": "Gestiona tu crecimiento",
+        "category": "Crecimiento Empresarial",
+        "date": "2026-01-05",
+        "image": "Assets/Images/money.jpg",
+        "excerpt": "Descubre cómo hacer crecer tu negocio con éxito",
+        "content": "<p>La mayoría de los emprendedores aspiran al crecimiento, pero a menudo no logran establecer los elementos necesarios para manejar un aumento en la actividad. Ve cómo puedes planificar y gestionar el crecimiento basado en el mercado, la economía y tus recursos internos.<p>",
+        "readTime": "1 min",
+        "author": "Cristo"
+    },
+    {
+        "id": 14,
+        "title": "Lo próximo en IA: 7 tendencias a seguir en 2026",
+        "category": "IA e Innovación",
+        "date": "2026-01-05",
+        "image": "Assets/Images/AI_Trends_2026.jpg",
+        "excerpt": "La IA entra en una nueva fase, definida por el impacto en el mundo real.",
+        "content": "<p>Piénsalo: hace un año, discutíamos cómo ChatGPT no era capaz de contar el número de \"r\" en \"strawberry\". Los modelos de razonamiento de los laboratorios chinos (como DeepSeek-R1) no habían conquistado el mundo, ni tampoco los agentes de razonamiento de código abierto.</p><p>El agente de codificación dedicado de Claude no existía aún. El Granite 3.0 de IBM acababa de llegar. Y la conversación sobre agentes apenas comenzaba: MCP acababa de ganar tracción en la primavera, con un notable respaldo de Sam Altman.</p>",
+        "readTime": "2 min",
+        "author": "Equipo SoonTech"
+    },
+    {
+        "id": 1,
+        "title": "3 Pasos Sencillos para Asegurar tu Red Hogareña Hoy",
+        "category": "Ciberseguridad",
+        "date": "2024-01-15",
+        "image": "Assets/Images/cybersecurity.jpg",
+        "excerpt": "Protege a tu familia de amenazas digitales con estas medidas de seguridad esenciales. Aprende a configurar una red segura en minutos.",
+        "content": "En el mundo conectado de hoy, asegurar tu red hogareña es más importante que nunca. Esta guía te lleva por tres pasos esenciales: cambiar la contraseña predeterminada de tu router, habilitar el cifrado WPA3 y configurar una red de invitados para los visitantes. Estas simples medidas pueden mejorar drásticamente la seguridad digital de tu hogar.",
+        "readTime": "5 min",
+        "author": "Equipo SoonTech"
+    },
+    {
+        "id": 2,
+        "title": "Cómo la IA está Transformando las Operaciones de las Pequeñas Empresas",
+        "category": "IA e Innovación",
+        "date": "2024-01-10",
+        "image": "Assets/Images/cloud-solutions.jpg",
+        "excerpt": "Descubre cómo la inteligencia artificial está nivelando el campo de juego para las pequeñas empresas. Ejemplos reales y consejos prácticos.",
+        "content": "La Inteligencia Artificial ya no es solo para los gigantes tecnológicos. Las pequeñas empresas están aprovechando la IA para la automatización del servicio al cliente, la gestión de inventarios y la analítica predictiva. Este artículo explora herramientas de IA asequibles que pueden ayudar a tu negocio a competir con rivales más grandes, incluyendo chatbots, sistemas de programación automatizados y plataformas de analítica inteligente.",
+        "readTime": "7 min",
+        "author": "Equipo SoonTech"
+    },
+    {
+        "id": 3,
+        "title": "Configurando tu Primer Hogar Inteligente: Guía para Principiantes",
+        "category": "Hogar Inteligente",
+        "date": "2024-01-05",
+        "image": "Assets/Images/network-optimization.jpg",
+        "excerpt": "Transforma tu casa en un hogar inteligente sin gastar una fortuna. Guía paso a paso para principiantes con recomendaciones de productos.",
+        "content": "Comenzar tu viaje hacia el hogar inteligente no tiene por qué ser abrumador ni costoso. Esta guía completa cubre lo esencial: elegir un hub inteligente, seleccionar dispositivos compatibles y configurar rutinas de automatización. Recomendamos comenzar con iluminación inteligente y un asistente de voz, para luego expandirse gradualmente a termostatos, cámaras de seguridad y cerraduras inteligentes.",
+        "readTime": "8 min",
+        "author": "Equipo SoonTech"
+    },
+    {
+        "id": 4,
+        "title": "Migración a la Nube: Una Guía Paso a Paso para PyMEs",
+        "category": "Crecimiento Empresarial",
+        "date": "2023-12-28",
+        "image": "Assets/Images/cloud-solutions.jpg",
+        "excerpt": "Mueve tu negocio a la nube con confianza. Aprende los beneficios, desafíos y mejores prácticas para una transición fluida.",
+        "content": "La migración a la nube puede parecer desalentadora, pero con una planificación adecuada, cambia las reglas del juego para las pequeñas y medianas empresas. Esta guía cubre la evaluación de tu infraestructura actual, la elección del proveedor de nube adecuado (AWS, Azure o Google Cloud), la planificación de tu estrategia de migración y la garantía de la seguridad de los datos durante todo el proceso.",
+        "readTime": "10 min",
+        "author": "Equipo SoonTech"
+    },
+    {
+        "id": 5,
+        "title": "Protegiendo tu Negocio: Medidas Esenciales de Ciberseguridad",
+        "category": "Ciberseguridad",
+        "date": "2023-12-20",
+        "image": "Assets/Images/cybersecurity.jpg",
+        "excerpt": "La seguridad de grado empresarial no requiere un presupuesto empresarial. Implementa estas medidas críticas para proteger tus datos.",
+        "content": "Las amenazas de ciberseguridad están evolucionando y las pequeñas empresas son cada vez más atacadas. Este artículo describe las medidas de seguridad esenciales que cada negocio debe implementar: autenticación de múltiples factores, auditorías de seguridad regulares, programas de capacitación para empleados, respaldos cifrados y planes de respuesta ante incidentes.",
+        "readTime": "9 min",
+        "author": "Equipo SoonTech"
+    },
+    {
+        "id": 6,
+        "title": "Dominando el Trabajo Remoto: Herramientas Tecnológicas para la Productividad",
+        "category": "Tutoriales Técnicos",
+        "date": "2023-12-15",
+        "image": "Assets/Images/network-optimization.jpg",
+        "excerpt": "Trabaja desde cualquier lugar con las herramientas adecuadas. Nuestra lista curada de apps esenciales para equipos remotos.",
+        "content": "El trabajo remoto llegó para quedarse, y tener el stack tecnológico adecuado es crucial para la productividad. Este tutorial cubre las mejores prácticas de videoconferencia (Zoom, Teams, Google Meet), herramientas de gestión de proyectos (Asana, Trello, Monday.com) y plataformas de comunicación (Slack, Discord).",
+        "readTime": "6 min",
+        "author": "Equipo SoonTech"
+    },
+    {
+        "id": 7,
+        "title": "5 Formas en que la IA puede Impulsar el ROI de tu Marketing",
+        "category": "IA e Innovación",
+        "date": "2023-12-10",
+        "image": "Assets/Images/cloud-solutions.jpg",
+        "excerpt": "Aprovecha la inteligencia artificial para potenciar tus esfuerzos de marketing. Estrategias prácticas con resultados medibles.",
+        "content": "Las herramientas de marketing impulsadas por IA están revolucionando cómo las empresas llegan y atraen a los clientes. Este artículo explora cinco estrategias probadas: campañas de correo personalizadas usando segmentación por IA, chatbots para atención 24/7, analítica predictiva para optimización de campañas, creación de contenido automatizada y segmentación de anuncios impulsada por IA.",
+        "readTime": "8 min",
+        "author": "Equipo SoonTech"
+    },
+    {
+        "id": 8,
+        "title": "Tiempo de Pantalla Familiar: Encontrando el Equilibrio Adecuado",
+        "category": "Hogar Inteligente",
+        "date": "2023-12-05",
+        "image": "Assets/Images/network-optimization.jpg",
+        "excerpt": "Crea un entorno digital saludable para tu familia. Consejos prácticos para gestionar el tiempo de pantalla y la seguridad en línea.",
+        "content": "Equilibrar el uso de la tecnología en la familia moderna es un desafío pero es esencial. Esta guía brinda estrategias accionables: configuración de controles parentales en dispositivos y routers, creación de zonas y tiempos libres de tecnología, uso de apps de seguimiento de tiempo de pantalla y conversaciones abiertas sobre seguridad en línea.",
+        "readTime": "7 min",
+        "author": "Equipo SoonTech"
+    },
+    {
+        "id": 9,
+        "title": "Maximizando el ROI: Inversiones Inteligentes en TI para Pequeñas Empresas",
+        "category": "Crecimiento Empresarial",
+        "date": "2023-11-28",
+        "image": "Assets/Images/cybersecurity.jpg",
+        "excerpt": "Haz que cada dólar invertido en TI cuente. Inversiones tecnológicas estratégicas que impulsan el crecimiento y la eficiencia real.",
+        "content": "Las pequeñas empresas deben ser estratégicas con el gasto en TI. Este artículo ayuda a priorizar inversiones que brinden el mayor ROI: infraestructura en la nube para escalabilidad, ciberseguridad para prevenir brechas costosas, herramientas de automatización para reducir costos laborales y sistemas de gestión de relaciones con clientes (CRM) para impulsar las ventas.",
+        "readTime": "9 min",
+        "author": "Equipo SoonTech"
+    },
+    {
+        "id": 10,
+        "title": "Solución de Problemas de WiFi: Corrige Problemas de Conexión Comunes",
+        "category": "Tutoriales Técnicos",
+        "date": "2023-11-20",
+        "image": "Assets/Images/network-optimization.jpg",
+        "excerpt": "¿Internet lento? ¿Zonas muertas? Aprende a diagnosticar y solucionar los problemas de WiFi más comunes tú mismo.",
+        "content": "Los problemas de WiFi son frustrantes, pero la mayoría pueden resolverse sin llamar a un técnico. Esta guía completa de solución de problemas cubre: identificación de fuentes de interferencia, ubicación óptima del router, selección de canales, actualizaciones de firmware y cuándo actualizar tu equipo.",
+        "readTime": "6 min",
+        "author": "Equipo SoonTech"
+    },
+    {
+        "id": 11,
+        "title": "El Futuro del Trabajo: Herramientas de Colaboración Impulsadas por IA",
+        "category": "IA e Innovación",
+        "date": "2023-11-15",
+        "image": "Assets/Images/cloud-solutions.jpg",
+        "excerpt": "Explora plataformas de colaboración de próxima generación que usan IA para mejorar la productividad y creatividad del equipo.",
+        "content": "El lugar de trabajo está evolucionando, y las herramientas de colaboración impulsadas por IA están liderando el camino. Este artículo examina plataformas emergentes que usan aprendizaje automático para programación inteligente, resúmenes de reuniones automatizados, traducción en tiempo real y priorización inteligente de tareas.",
+        "readTime": "8 min",
+        "author": "Equipo SoonTech"
+    },
+    {
+        "id": 12,
+        "title": "Estrategias de Respaldo de Datos: No Vuelvas a Perder tus Archivos",
+        "category": "Ciberseguridad",
+        "date": "2023-11-10",
+        "image": "Assets/Images/cybersecurity.jpg",
+        "excerpt": "Implementa la regla de respaldo 3-2-1 y protege tus datos valiosos contra pérdida, robo o ataques de ransomware.",
+        "content": "La pérdida de datos puede ser devastadora, ya sean fotos familiares o documentos críticos de negocios. Esta guía explica la estrategia de respaldo 3-2-1: 3 copias de tus datos, en 2 tipos de medios diferentes, con 1 copia fuera del sitio.",
+        "readTime": "7 min",
+        "author": "Equipo SoonTech"
+    }
+]

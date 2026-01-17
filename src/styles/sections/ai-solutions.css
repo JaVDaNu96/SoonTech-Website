@@ -121,7 +121,6 @@
 .ai-visual-card:hover {
     transform: scale(1.05);
     border-color: var(--accent-color);
-    box-shadow: 0 20px 60px rgba(178, 210, 53, 0.3);
 }
 
 .ai-visual-card i {
@@ -188,7 +187,6 @@
     background: var(--pure-white);
     padding: 3rem;
     border-radius: 20px;
-    box-shadow: var(--card-shadow);
     border: 2px solid transparent;
     transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
     position: relative;
@@ -215,7 +213,6 @@
 .ai-card:hover {
     transform: translateY(-5px);
     border-color: var(--accent-color);
-    box-shadow: var(--card-shadow-hover);
 }
 
 .ai-card.home {
@@ -235,7 +232,6 @@
     align-items: center;
     justify-content: center;
     margin-bottom: 2rem;
-    box-shadow: 0 10px 25px rgba(42, 90, 60, 0.3);
 }
 
 .ai-column-icon i {
@@ -316,23 +312,19 @@
 .ai-btn-home {
     background: linear-gradient(135deg, var(--primary-green), var(--secondary-green));
     color: var(--pure-white);
-    box-shadow: 0 5px 15px rgba(42, 90, 60, 0.3);
 }
 
 .ai-btn-home:hover {
     transform: translateY(-3px);
-    box-shadow: 0 8px 25px rgba(42, 90, 60, 0.4);
 }
 
 .ai-btn-business {
     background: linear-gradient(135deg, var(--accent-color), #a0c030);
     color: var(--text-dark);
-    box-shadow: 0 5px 15px rgba(178, 210, 53, 0.3);
 }
 
 .ai-btn-business:hover {
     transform: translateY(-3px);
-    box-shadow: 0 8px 25px rgba(178, 210, 53, 0.4);
 }
 
 /* ===================================================================== */
@@ -427,7 +419,6 @@
     font-weight: 700;
     color: #ffffff !important;
     /* Pure white for maximum contrast */
-    box-shadow: 0 5px 20px rgba(42, 90, 60, 0.4);
     z-index: 3;
     /* Above everything */
     border: 4px solid #ffffff;
@@ -532,14 +523,12 @@
     font-weight: 600;
     text-decoration: none;
     transition: all 0.3s ease;
-    box-shadow: 0 10px 30px rgba(178, 210, 53, 0.3);
     white-space: nowrap;
 }
 
 .ai-cta-button:hover {
     background: #c8e040;
     transform: translateY(-3px);
-    box-shadow: 0 15px 40px rgba(178, 210, 53, 0.4);
 }
 
 .ai-cta-button i {

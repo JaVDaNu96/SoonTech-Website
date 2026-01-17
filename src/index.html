@@ -18,6 +18,9 @@
 
     <!-- Shared Components Loader -->
     <script src="includes.js" defer></script>
+
+    <!-- Translation System -->
+    <script type="module" src="i18n.js"></script>
 </head>
 
 <body>
@@ -28,8 +31,9 @@
     <div class="slider-container-wrapper">
         <div class="theme-slider">
             <div class="slider-indicator"></div>
-            <span class="slider-label home active" onclick="switchContent('home')">Home</span>
-            <span class="slider-label business" onclick="switchContent('business')">Business</span>
+            <span class="slider-label home active" onclick="switchContent('home')" data-i18n="nav.home">Home</span>
+            <span class="slider-label business" onclick="switchContent('business')"
+                data-i18n="nav.business">Business</span>
         </div>
     </div>
 
@@ -40,12 +44,13 @@
             <div class="hero-container">
                 <div class="hero-content-grid">
                     <div class="hero-text">
-                        <h1>Tech Support That Feels Like Family</h1>
-                        <p class="hero-subtitle">Your Personal IT Team</p>
-                        <p class="hero-description">No more tech stress. Get expert help setting up, securing, and
+                        <h1 data-i18n="hero.home.title">Tech Support That Feels Like Family</h1>
+                        <p class="hero-subtitle" data-i18n="hero.home.subtitle">Your Personal IT Team</p>
+                        <p class="hero-description" data-i18n="hero.home.description">No more tech stress. Get expert
+                            help setting up, securing, and
                             maintaining your home technology. Clear answers, fast solutions, and peace of mind.</p>
-                        <a href="services-home.html" class="hero-btn">Get Started Today <i
-                                class="fas fa-arrow-right"></i></a>
+                        <a href="services-home.html" class="hero-btn"><span data-i18n="hero.home.cta">Get Started
+                                Today</span> <i class="fas fa-arrow-right"></i></a>
                     </div>
                     <div class="hero-image">
                         <img src="Assets/Images/hero-image.jpg" alt="Happy family using technology">
@@ -57,27 +62,31 @@
         <!-- Why Choose Us - Home -->
         <section class="why-choose-home">
             <div class="why-container">
-                <h2>Why Families Choose SoonTech</h2>
+                <h2 data-i18n="home.whyChoose.title">Why Families Choose SoonTech</h2>
                 <div class="benefits-grid">
                     <div class="benefit-card">
                         <i class="fas fa-user-friends"></i>
-                        <h3>Personal Touch</h3>
-                        <p>We treat your home like our own. Friendly, patient support that speaks your language.</p>
+                        <h3 data-i18n="home.whyChoose.personal.title">Personal Touch</h3>
+                        <p data-i18n="home.whyChoose.personal.description">We treat your home like our own. Friendly,
+                            patient support that speaks your language.</p>
                     </div>
                     <div class="benefit-card">
                         <i class="fas fa-clock"></i>
-                        <h3>Fast Response</h3>
-                        <p>Same-day service available. We know tech issues can't wait.</p>
+                        <h3 data-i18n="home.whyChoose.fast.title">Fast Response</h3>
+                        <p data-i18n="home.whyChoose.fast.description">Same-day service available. We know tech issues
+                            can't wait.</p>
                     </div>
                     <div class="benefit-card">
                         <i class="fas fa-shield-alt"></i>
-                        <h3>Safe & Secure</h3>
-                        <p>Protect your family with enterprise-grade security, simplified for home use.</p>
+                        <h3 data-i18n="home.whyChoose.secure.title">Safe & Secure</h3>
+                        <p data-i18n="home.whyChoose.secure.description">Protect your family with enterprise-grade
+                            security, simplified for home use.</p>
                     </div>
                     <div class="benefit-card">
                         <i class="fas fa-dollar-sign"></i>
-                        <h3>Transparent Pricing</h3>
-                        <p>No hidden fees. Clear, upfront pricing you can trust.</p>
+                        <h3 data-i18n="home.whyChoose.pricing.title">Transparent Pricing</h3>
+                        <p data-i18n="home.whyChoose.pricing.description">No hidden fees. Clear, upfront pricing you can
+                            trust.</p>
                     </div>
                 </div>
             </div>
@@ -86,8 +95,8 @@
         <!-- Home Services Grid -->
         <section class="home-services">
             <div class="services-container">
-                <h2>How We Help Your Home</h2>
-                <p class="section-subtitle">Simple solutions for everyday tech</p>
+                <h2 data-i18n="home.services.title">How We Help Your Home</h2>
+                <p class="section-subtitle" data-i18n="home.services.subtitle">Simple solutions for everyday tech</p>
 
                 <div class="home-services-grid">
                     <!-- Wi-Fi Setup -->
@@ -95,10 +104,11 @@
                         <div class="service-icon">
                             <i class="fas fa-wifi"></i>
                         </div>
-                        <h3>Wi-Fi Setup & Optimization</h3>
-                        <p>Fast, reliable internet throughout your entire home. No more dead zones.</p>
-                        <a href="services-home.html#wifi" class="service-link">Learn More <i
-                                class="fas fa-arrow-right"></i></a>
+                        <h3 data-i18n="home.services.wifi.title">Wi-Fi Setup & Optimization</h3>
+                        <p data-i18n="home.services.wifi.description">Fast, reliable internet throughout your entire
+                            home. No more dead zones.</p>
+                        <a href="services-home.html#wifi" class="service-link"><span data-i18n="common.learnMore">Learn
+                                More</span> <i class="fas fa-arrow-right"></i></a>
                     </div>
 
                     <!-- Smart Home -->
@@ -106,10 +116,11 @@
                         <div class="service-icon">
                             <i class="fas fa-home"></i>
                         </div>
-                        <h3>Smart Home Integration</h3>
-                        <p>Connect and control your devices effortlessly. Alexa, Google, and more.</p>
-                        <a href="services-home.html#smart-home" class="service-link">Learn More <i
-                                class="fas fa-arrow-right"></i></a>
+                        <h3 data-i18n="home.services.smartHome.title">Smart Home Integration</h3>
+                        <p data-i18n="home.services.smartHome.description">Connect and control your devices
+                            effortlessly. Alexa, Google, and more.</p>
+                        <a href="services-home.html#smart-home" class="service-link"><span
+                                data-i18n="common.learnMore">Learn More</span> <i class="fas fa-arrow-right"></i></a>
                     </div>
 
                     <!-- Security -->
@@ -117,10 +128,11 @@
                         <div class="service-icon">
                             <i class="fas fa-shield-alt"></i>
                         </div>
-                        <h3>Home Network Security</h3>
-                        <p>Protect your family from online threats with smart security solutions.</p>
-                        <a href="services-home.html#security" class="service-link">Learn More <i
-                                class="fas fa-arrow-right"></i></a>
+                        <h3 data-i18n="home.services.security.title">Home Network Security</h3>
+                        <p data-i18n="home.services.security.description">Protect your family from online threats with
+                            smart security solutions.</p>
+                        <a href="services-home.html#security" class="service-link"><span
+                                data-i18n="common.learnMore">Learn More</span> <i class="fas fa-arrow-right"></i></a>
                     </div>
 
                     <!-- Backup -->
@@ -128,10 +140,11 @@
                         <div class="service-icon">
                             <i class="fas fa-cloud-upload-alt"></i>
                         </div>
-                        <h3>Photo & File Backup</h3>
-                        <p>Never lose precious memories. Automatic cloud and local backups.</p>
-                        <a href="services-home.html#backup" class="service-link">Learn More <i
-                                class="fas fa-arrow-right"></i></a>
+                        <h3 data-i18n="home.services.backup.title">Photo & File Backup</h3>
+                        <p data-i18n="home.services.backup.description">Never lose precious memories. Automatic cloud
+                            and local backups.</p>
+                        <a href="services-home.html#backup" class="service-link"><span
+                                data-i18n="common.learnMore">Learn More</span> <i class="fas fa-arrow-right"></i></a>
                     </div>
 
                     <!-- Device Setup -->
@@ -139,10 +152,11 @@
                         <div class="service-icon">
                             <i class="fas fa-laptop"></i>
                         </div>
-                        <h3>New Device Setup</h3>
-                        <p>Get your new computer, tablet, or phone working perfectly from day one.</p>
-                        <a href="services-home.html#device-setup" class="service-link">Learn More <i
-                                class="fas fa-arrow-right"></i></a>
+                        <h3 data-i18n="home.services.deviceSetup.title">New Device Setup</h3>
+                        <p data-i18n="home.services.deviceSetup.description">Get your new computer, tablet, or phone
+                            working perfectly from day one.</p>
+                        <a href="services-home.html#device-setup" class="service-link"><span
+                                data-i18n="common.learnMore">Learn More</span> <i class="fas fa-arrow-right"></i></a>
                     </div>
 
                     <!-- Support -->
@@ -150,14 +164,17 @@
                         <div class="service-icon">
                             <i class="fas fa-headset"></i>
                         </div>
-                        <h3>24/7 Tech Support</h3>
-                        <p>Help whenever you need it. Phone, email, or remote assistance.</p>
-                        <a href="support.html" class="service-link">Learn More <i class="fas fa-arrow-right"></i></a>
+                        <h3 data-i18n="home.services.support.title">24/7 Tech Support</h3>
+                        <p data-i18n="home.services.support.description">Help whenever you need it. Phone, email, or
+                            remote assistance.</p>
+                        <a href="support.html" class="service-link"><span data-i18n="common.learnMore">Learn More</span>
+                            <i class="fas fa-arrow-right"></i></a>
                     </div>
                 </div>
 
                 <div class="view-all-container">
-                    <a href="services-home.html" class="view-all-btn">View All Home Services</a>
+                    <a href="services-home.html" class="view-all-btn-home" data-i18n="home.services.viewAll">View All
+                        Home Services</a>
                 </div>
             </div>
         </section>
@@ -165,30 +182,32 @@
         <!-- CTA Section - Home -->
         <section class="home-cta">
             <div class="cta-container">
-                <h2>Ready to Simplify Your Tech Life?</h2>
-                <p>Get started with a free consultation</p>
-                <a href="contact-us.html" class="cta-btn-large">Schedule Free Consultation <i
-                        class="fas fa-calendar-check"></i></a>
+                <h2 data-i18n="home.cta.title">Ready to Simplify Your Tech Life?</h2>
+                <p data-i18n="home.cta.subtitle">Get started with a free consultation</p>
+                <a href="contact-us.html" class="cta-btn-large"><span data-i18n="home.cta.button">Schedule Free
+                        Consultation</span> <i class="fas fa-calendar-check"></i></a>
             </div>
         </section>
     </div>
 
     <!-- BUSINESS CONTENT -->
     <div id="business-content" class="page-content" style="display: none;">
-        <!-- Hero Section - Business -->
+        <!-- Hero Section - Business handled in previous turn but ensuring it's correct -->
         <section class="business-hero">
             <div class="hero-container">
                 <div class="hero-content-grid">
                     <div class="hero-text">
-                        <h1>Enterprise IT, Small Business Budget</h1>
-                        <p class="hero-subtitle">Your Competitive Edge</p>
-                        <p class="hero-description">Stop worrying about technology and focus on growth. Get reliable IT
+                        <h1 data-i18n="hero.business.title">Enterprise IT, Small Business Budget</h1>
+                        <p class="hero-subtitle" data-i18n="hero.business.subtitle">Your Competitive Edge</p>
+                        <p class="hero-description" data-i18n="hero.business.description">Stop worrying about technology
+                            and focus on growth. Get reliable IT
                             support, robust security, and strategic guidance tailored to your business.</p>
-                        <a href="services-business.html" class="hero-btn">Boost Your Business <i
-                                class="fas fa-arrow-right"></i></a>
+                        <a href="services-business.html" class="hero-btn"><span data-i18n="hero.business.cta">Boost Your
+                                Business</span> <i class="fas fa-arrow-right"></i></a>
                     </div>
                     <div class="hero-image">
-                        <img src="Assets/Images/business.jpg" alt="Professional business team">
+                        <img src="Assets/Images/business.jpg" alt="Professional business team" data-i18n-attr="alt"
+                            data-i18n="business.hero.imageAlt">
                     </div>
                 </div>
             </div>
@@ -197,27 +216,31 @@
         <!-- Why Choose Us - Business -->
         <section class="why-choose-business">
             <div class="why-container">
-                <h2>Why Businesses Trust SoonTech</h2>
+                <h2 data-i18n="business.whyChoose.title">Why Businesses Choose SoonTech</h2>
                 <div class="benefits-grid">
                     <div class="benefit-card">
+                        <i class="fas fa-check-circle"></i>
+                        <h3 data-i18n="business.whyChoose.reliable.title">Always Reliable</h3>
+                        <p data-i18n="business.whyChoose.reliable.description">99.9% uptime guaranteed. Your business
+                            never stops, and neither do we.</p>
+                    </div>
+                    <div class="benefit-card">
+                        <i class="fas fa-users"></i>
+                        <h3 data-i18n="business.whyChoose.expert.title">Expert Team</h3>
+                        <p data-i18n="business.whyChoose.expert.description">Certified professionals with decades of
+                            combined experience in enterprise IT.</p>
+                    </div>
+                    <div class="benefit-card">
                         <i class="fas fa-chart-line"></i>
-                        <h3>Scalable Solutions</h3>
-                        <p>IT that grows with your business. From 5 to 500 employees.</p>
-                    </div>
-                    <div class="benefit-card">
-                        <i class="fas fa-lock"></i>
-                        <h3>Enterprise Security</h3>
-                        <p>Bank-level protection for your business data and customer information.</p>
-                    </div>
-                    <div class="benefit-card">
-                        <i class="fas fa-headset"></i>
-                        <h3>Proactive Support</h3>
-                        <p>We fix issues before they impact your business. 24/7 monitoring.</p>
+                        <h3 data-i18n="business.whyChoose.scalable.title">Grows With You</h3>
+                        <p data-i18n="business.whyChoose.scalable.description">Solutions that scale from startup to
+                            enterprise. Flexible and future-proof.</p>
                     </div>
                     <div class="benefit-card">
                         <i class="fas fa-hand-holding-usd"></i>
-                        <h3>Predictable Costs</h3>
-                        <p>Fixed monthly pricing. No surprise bills or hidden fees.</p>
+                        <h3 data-i18n="business.whyChoose.cost.title">Cost-Effective</h3>
+                        <p data-i18n="business.whyChoose.cost.description">Enterprise-grade IT at small business prices.
+                            No hidden fees or surprises.</p>
                     </div>
                 </div>
             </div>
@@ -226,115 +249,87 @@
         <!-- Business Services Grid -->
         <section class="business-services">
             <div class="services-container">
-                <h2>Enterprise Solutions for Your Business</h2>
-                <p class="section-subtitle">Professional IT that scales with you</p>
+                <h2 data-i18n="business.services.title">How We Power Your Business</h2>
+                <p class="section-subtitle" data-i18n="business.services.subtitle">Professional IT solutions that drive
+                    growth</p>
 
                 <div class="business-services-grid">
                     <!-- Managed IT -->
                     <div class="business-service-card">
-                        <div class="service-number">01</div>
-                        <div class="service-icon-business">
-                            <i class="fas fa-server"></i>
+                        <div class="service-icon">
+                            <i class="fas fa-headset"></i>
                         </div>
-                        <h3>Managed IT Services</h3>
-                        <p>Complete IT management and proactive monitoring for your entire infrastructure.</p>
-                        <ul class="service-features">
-                            <li><i class="fas fa-check"></i> 24/7 System Monitoring</li>
-                            <li><i class="fas fa-check"></i> Proactive Maintenance</li>
-                            <li><i class="fas fa-check"></i> Help Desk Support</li>
-                        </ul>
-                        <a href="services-business.html#managed-it" class="service-link-business">Explore Service <i
-                                class="fas fa-arrow-right"></i></a>
+                        <h3 data-i18n="business.services.managedIT.title">Managed IT Services</h3>
+                        <p data-i18n="business.services.managedIT.description">Complete IT management, monitoring, and
+                            support. Focus on your business, we'll handle the tech.</p>
+                        <a href="services-business.html#managed-it" class="service-link"><span
+                                data-i18n="common.learnMore">Learn More</span> <i class="fas fa-arrow-right"></i></a>
                     </div>
 
-                    <!-- Cloud Solutions -->
+                    <!-- Cloud -->
                     <div class="business-service-card">
-                        <div class="service-number">02</div>
-                        <div class="service-icon-business">
+                        <div class="service-icon">
                             <i class="fas fa-cloud"></i>
                         </div>
-                        <h3>Cloud Solutions</h3>
-                        <p>Scalable cloud infrastructure and seamless migration to Microsoft 365 and Azure.</p>
-                        <ul class="service-features">
-                            <li><i class="fas fa-check"></i> Cloud Migration</li>
-                            <li><i class="fas fa-check"></i> Microsoft 365 Setup</li>
-                            <li><i class="fas fa-check"></i> Cloud Backup</li>
-                        </ul>
-                        <a href="services-business.html#cloud" class="service-link-business">Explore Service <i
-                                class="fas fa-arrow-right"></i></a>
+                        <h3 data-i18n="business.services.cloud.title">Cloud & Microsoft 365</h3>
+                        <p data-i18n="business.services.cloud.description">Seamless migration and management. Work from
+                            anywhere with confidence.</p>
+                        <a href="services-business.html#cloud" class="service-link"><span
+                                data-i18n="common.learnMore">Learn More</span> <i class="fas fa-arrow-right"></i></a>
+                    </div>
+
+                    <!-- Network -->
+                    <div class="business-service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-network-wired"></i>
+                        </div>
+                        <h3 data-i18n="business.services.network.title">Network Infrastructure</h3>
+                        <p data-i18n="business.services.network.description">Fast, secure, reliable networks. Built for
+                            performance and scalability.</p>
+                        <a href="services-business.html#network" class="service-link"><span
+                                data-i18n="common.learnMore">Learn More</span> <i class="fas fa-arrow-right"></i></a>
                     </div>
 
                     <!-- Cybersecurity -->
                     <div class="business-service-card">
-                        <div class="service-number">03</div>
-                        <div class="service-icon-business">
-                            <i class="fas fa-lock"></i>
+                        <div class="service-icon">
+                            <i class="fas fa-user-shield"></i>
                         </div>
-                        <h3>Cybersecurity</h3>
-                        <p>Advanced protection for your business data with threat detection and compliance.</p>
-                        <ul class="service-features">
-                            <li><i class="fas fa-check"></i> Threat Detection</li>
-                            <li><i class="fas fa-check"></i> Security Audits</li>
-                            <li><i class="fas fa-check"></i> Compliance Support</li>
-                        </ul>
-                        <a href="services-business.html#cybersecurity" class="service-link-business">Explore Service <i
-                                class="fas fa-arrow-right"></i></a>
+                        <h3 data-i18n="business.services.cybersecurity.title">Cybersecurity Solutions</h3>
+                        <p data-i18n="business.services.cybersecurity.description">Protect your business from threats.
+                            Comprehensive security that works 24/7.</p>
+                        <a href="services-business.html#cybersecurity" class="service-link"><span
+                                data-i18n="common.learnMore">Learn More</span> <i class="fas fa-arrow-right"></i></a>
                     </div>
 
-                    <!-- Network Infrastructure -->
+                    <!-- Strategy -->
                     <div class="business-service-card">
-                        <div class="service-number">04</div>
-                        <div class="service-icon-business">
-                            <i class="fas fa-network-wired"></i>
+                        <div class="service-icon">
+                            <i class="fas fa-lightbulb"></i>
                         </div>
-                        <h3>Network Infrastructure</h3>
-                        <p>Reliable, high-performance business networks with enterprise-grade Wi-Fi.</p>
-                        <ul class="service-features">
-                            <li><i class="fas fa-check"></i> Network Design</li>
-                            <li><i class="fas fa-check"></i> Enterprise Wi-Fi</li>
-                            <li><i class="fas fa-check"></i> VPN Setup</li>
-                        </ul>
-                        <a href="services-business.html#network" class="service-link-business">Explore Service <i
-                                class="fas fa-arrow-right"></i></a>
+                        <h3 data-i18n="business.services.consulting.title">IT Strategy & Consulting</h3>
+                        <p data-i18n="business.services.consulting.description">Technology roadmaps aligned with your
+                            business goals. Strategic guidance from experts.</p>
+                        <a href="services-business.html#consulting" class="service-link"><span
+                                data-i18n="common.learnMore">Learn More</span> <i class="fas fa-arrow-right"></i></a>
                     </div>
 
-                    <!-- Data Backup -->
+                    <!-- Backup -->
                     <div class="business-service-card">
-                        <div class="service-number">05</div>
-                        <div class="service-icon-business">
+                        <div class="service-icon">
                             <i class="fas fa-database"></i>
                         </div>
-                        <h3>Data Backup & Recovery</h3>
-                        <p>Protect your business-critical information with automated backups and disaster recovery.</p>
-                        <ul class="service-features">
-                            <li><i class="fas fa-check"></i> Automated Backups</li>
-                            <li><i class="fas fa-check"></i> Disaster Recovery</li>
-                            <li><i class="fas fa-check"></i> Fast Restoration</li>
-                        </ul>
-                        <a href="services-business.html#backup" class="service-link-business">Explore Service <i
-                                class="fas fa-arrow-right"></i></a>
-                    </div>
-
-                    <!-- IT Consulting -->
-                    <div class="business-service-card">
-                        <div class="service-number">06</div>
-                        <div class="service-icon-business">
-                            <i class="fas fa-chart-line"></i>
-                        </div>
-                        <h3>IT Consulting</h3>
-                        <p>Strategic technology planning and guidance to optimize your IT investments.</p>
-                        <ul class="service-features">
-                            <li><i class="fas fa-check"></i> IT Strategy</li>
-                            <li><i class="fas fa-check"></i> Technology Roadmap</li>
-                            <li><i class="fas fa-check"></i> Cost Optimization</li>
-                        </ul>
-                        <a href="services-business.html#consulting" class="service-link-business">Explore Service <i
-                                class="fas fa-arrow-right"></i></a>
+                        <h3 data-i18n="business.services.backup.title">Backup & Disaster Recovery</h3>
+                        <p data-i18n="business.services.backup.description">Never lose critical data. Automated backups
+                            and rapid recovery solutions.</p>
+                        <a href="services-business.html#backup" class="service-link"><span
+                                data-i18n="common.learnMore">Learn More</span> <i class="fas fa-arrow-right"></i></a>
                     </div>
                 </div>
 
                 <div class="view-all-container">
-                    <a href="services-business.html" class="view-all-btn">View All Business Services</a>
+                    <a href="services-business.html" class="view-all-btn-business"
+                        data-i18n="business.services.viewAll">View All Business Services</a>
                 </div>
             </div>
         </section>
@@ -342,10 +337,11 @@
         <!-- CTA Section - Business -->
         <section class="business-cta">
             <div class="cta-container">
-                <h2>Ready to Transform Your Business IT?</h2>
-                <p>Get a free IT assessment and custom proposal</p>
-                <a href="contact-us.html" class="cta-btn-large">Schedule Free Assessment <i
-                        class="fas fa-calendar-check"></i></a>
+                <h2 data-i18n="business.cta.title">Ready to Upgrade Your Business IT?</h2>
+                <p data-i18n="business.cta.subtitle">Get a free technology assessment</p>
+                <a href="contact-us.html?service=business" class="cta-btn-large"><span
+                        data-i18n="business.cta.button">Get Your Free Assessment</span> <i
+                        class="fas fa-arrow-right"></i></a>
             </div>
         </section>
     </div>
@@ -359,6 +355,9 @@
             const homeContent = document.getElementById('home-content');
             const businessContent = document.getElementById('business-content');
             const indicator = document.querySelector('.slider-indicator');
+            const activeLabel = document.querySelector(`.slider-label.${type}`);
+
+            if (!indicator || !activeLabel) return;
 
             // Add fade out effect
             const currentContent = type === 'home' ? businessContent : homeContent;
@@ -369,31 +368,32 @@
 
             // Wait for fade out, then switch
             setTimeout(() => {
+                // Update slider appearance
+                indicator.style.left = activeLabel.offsetLeft + 'px';
+                indicator.style.width = activeLabel.offsetWidth + 'px';
+
                 if (type === 'home') {
                     // Show home content
                     homeContent.style.display = 'block';
                     businessContent.style.display = 'none';
-
-                    // Update slider
-                    indicator.style.left = '0';
                     indicator.classList.remove('business-active');
 
-                    // Update labels
+                    // Update labels active state
                     document.querySelectorAll('.slider-label.home').forEach(label => label.classList.add('active'));
                     document.querySelectorAll('.slider-label.business').forEach(label => label.classList.remove('active'));
                 } else {
                     // Show business content
                     homeContent.style.display = 'none';
                     businessContent.style.display = 'block';
-
-                    // Update slider - turn blue
-                    indicator.style.left = '120px';
                     indicator.classList.add('business-active');
 
-                    // Update labels
+                    // Update labels active state
                     document.querySelectorAll('.slider-label.home').forEach(label => label.classList.remove('active'));
                     document.querySelectorAll('.slider-label.business').forEach(label => label.classList.add('active'));
                 }
+
+                // Store preference
+                localStorage.setItem('soontech_index_view', type);
 
                 // Remove fade out class and scroll to top
                 currentContent.classList.remove('fade-out');
@@ -404,9 +404,23 @@
             }, 300);
         }
 
-        // Initialize with home view
+        // Initialize and handle resize
         document.addEventListener('DOMContentLoaded', () => {
-            switchContent('home');
+            const savedView = localStorage.getItem('soontech_index_view') || 'home';
+            switchContent(savedView);
+
+            // Handle resize to keep indicator aligned
+            window.addEventListener('resize', () => {
+                const activeLabel = document.querySelector('.slider-label.active');
+                const indicator = document.querySelector('.slider-indicator');
+                if (activeLabel && indicator) {
+                    indicator.style.transition = 'none'; // Instant move on resize
+                    indicator.style.left = activeLabel.offsetLeft + 'px';
+                    indicator.style.width = activeLabel.offsetWidth + 'px';
+                    // Restore transition after a tiny delay
+                    setTimeout(() => indicator.style.transition = '', 50);
+                }
+            });
         });
     </script>
 </body>
