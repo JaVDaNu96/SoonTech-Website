@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="styles.css">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
     <script src="includes.js" defer></script>
+    <script src="ai-solutions.js" defer></script>
 </head>
 
 <body>
@@ -176,56 +177,83 @@
             </p>
 
             <div class="use-cases-grid">
-                <div class="use-case-card">
+                <div class="use-case-card" data-modal="customer-service">
                     <div class="use-case-icon">
                         <i class="fas fa-headset"></i>
                     </div>
                     <h3>Customer Service Automation</h3>
                     <p>Reduce response times by 80% with AI-powered chatbots that handle common inquiries 24/7</p>
+                    <div class="card-click-hint">
+                        <i class="fas fa-info-circle"></i> Click to learn more
+                    </div>
                 </div>
 
-                <div class="use-case-card">
+                <div class="use-case-card" data-modal="document-processing">
                     <div class="use-case-icon">
                         <i class="fas fa-file-invoice"></i>
                     </div>
                     <h3>Document Processing</h3>
                     <p>Extract and organize data from invoices, receipts, and contracts automatically</p>
+                    <div class="card-click-hint">
+                        <i class="fas fa-info-circle"></i> Click to learn more
+                    </div>
                 </div>
 
-                <div class="use-case-card">
+                <div class="use-case-card" data-modal="email-management">
                     <div class="use-case-icon">
                         <i class="fas fa-envelope-open-text"></i>
                     </div>
                     <h3>Email Management</h3>
                     <p>Smart inbox organization, priority detection, and automated responses</p>
+                    <div class="card-click-hint">
+                        <i class="fas fa-info-circle"></i> Click to learn more
+                    </div>
                 </div>
 
-                <div class="use-case-card">
+                <div class="use-case-card" data-modal="smart-scheduling">
                     <div class="use-case-icon">
                         <i class="fas fa-calendar-alt"></i>
                     </div>
                     <h3>Smart Scheduling</h3>
                     <p>AI-optimized calendar management and meeting coordination</p>
+                    <div class="card-click-hint">
+                        <i class="fas fa-info-circle"></i> Click to learn more
+                    </div>
                 </div>
 
-                <div class="use-case-card">
+                <div class="use-case-card" data-modal="content-translation">
                     <div class="use-case-icon">
                         <i class="fas fa-language"></i>
                     </div>
                     <h3>Content Translation</h3>
                     <p>Real-time translation and localization for global communication</p>
+                    <div class="card-click-hint">
+                        <i class="fas fa-info-circle"></i> Click to learn more
+                    </div>
                 </div>
 
-                <div class="use-case-card">
+                <div class="use-case-card" data-modal="security-monitoring">
                     <div class="use-case-icon">
                         <i class="fas fa-shield-alt"></i>
                     </div>
                     <h3>Security Monitoring</h3>
                     <p>AI-powered threat detection and anomaly identification</p>
+                    <div class="card-click-hint">
+                        <i class="fas fa-info-circle"></i> Click to learn more
+                    </div>
                 </div>
             </div>
         </div>
     </section>
+
+    <!-- Modal for AI Service Details -->
+    <div id="service-modal" class="modal-overlay hidden">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <h2 id="modal-title"></h2>
+            <p id="modal-text"></p>
+        </div>
+    </div>
 
     <!-- Footer Section -->
     <div id="footer-placeholder"></div>

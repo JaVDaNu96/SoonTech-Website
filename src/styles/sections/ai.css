@@ -361,13 +361,11 @@
     font-weight: 700;
     text-decoration: none;
     transition: all 0.3s ease;
-    box-shadow: 0 10px 30px rgba(178, 210, 53, 0.3);
 }
 
 .consultation-cta:hover {
     background: #c8e040;
     transform: translateY(-3px);
-    box-shadow: 0 15px 40px rgba(178, 210, 53, 0.4);
 }
 
 .consultation-cta i {
@@ -409,6 +407,8 @@
     text-align: center;
     transition: all 0.3s ease;
     border: 2px solid transparent;
+    cursor: pointer;
+    position: relative;
 }
 
 .use-case-card:hover {
@@ -445,6 +445,24 @@
     font-size: 0.95rem;
     color: #666;
     line-height: 1.7;
+    margin-bottom: 1rem;
+}
+
+.card-click-hint {
+    font-size: 0.85rem;
+    color: var(--accent-lime);
+    font-weight: 500;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    margin-top: 0.5rem;
+}
+
+.card-click-hint i {
+    margin-right: 0.3rem;
+}
+
+.use-case-card:hover .card-click-hint {
+    opacity: 1;
 }
 
 /* ===================================================================== */
