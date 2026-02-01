@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,143 +9,170 @@
     <link rel="stylesheet" href="main.css">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
     <script src="includes.js" defer></script>
-    <script src="filter.js" defer></script>
+    <script type="module" src="i18n.js"></script>
 </head>
 
 <body>
     <!-- Header -->
-    <div id="header-placeholder"></div>   
+    <div id="header-placeholder"></div>
     <!-- Service Header -->
     <section class="service-header">
-        <h1>Managed IT Services</h1>
-        <p>Expert solutions to keep your business running seamlessly.</p>
-        <a href="#quote" class="cta">Request a Quote</a>
+        <h1 data-i18n="managedIT.hero.title">Managed IT Services</h1>
+        <p data-i18n="managedIT.hero.subtitle">Expert solutions to keep your business running seamlessly.</p>
+        <a href="contact-us.html" class="cta" data-i18n="serviceDetailPage.requestQuote">Request a Quote</a>
     </section>
-    
+
     <div class="services-overview">
-    <div class="service-card">
-        <!-- Service Details -->
-        <section class="service-details">
-            <div class="detail-section">
-                <h2>Overview</h2>
-                <p>Our Managed IT Services ensure your systems are always optimized and protected.</p>
-            </div>
-    
-            <div class="detail-section">
-                <h2>Key Benefits</h2>
-                <ul>
-                    <li>24/7 monitoring to prevent downtime</li>
-                    <li>On-demand troubleshooting</li>
-                    <li>Customizable support plans</li>
-                </ul>
-            </div>
-    
-            <div class="detail-section">
-                <h2>Pricing</h2>
-                <p>Choose from our tiered plans to meet your needs:</p>
-                <ul>
-                    <li>Basic Plan: $199/month</li>
-                    <li>Professional Plan: $499/month</li>
-                    <li>Enterprise Plan: Custom Pricing</li>
-                </ul>
-            </div>
-        </section>
-    </div>
-    <div class="service-card">
-        <a href="business-MIT-network-management.html">
-            <div class="service-image">
-                <img src="Assets/Images/Services/Business/Network-Management.webp" alt="Managed IT Services">
-            </div>
-            <div class="service-text">
-                <h3>Network Management</h3>
-                <p>Optimize and secure your network for seamless connectivity and performance.</p>
-                <ul>
-                    <li>Continuous monitoring to prevent downtime</li>
-                    <li>Advanced troubleshooting for network issues</li>
-                    <li>Custom network optimization and upgrades</li>
-                </ul>
-                <a href="business-MIT-network-management.html" class="read-more">Read More →</a>
-            </div>
-        </a>
-    </div>
-    <div class="service-card">
-        <a href="business-MIT-server-and-infrastructure.html">
-            <div class="service-image">
-                <img src="Assets/Images/Services/Business/IT-Managed Services.jpg" alt="Cloud Solutions">
-            </div>
-            <div class="service-text">
-                <h3>Server and Infrastructure Management</h3>
-                <p>Ensure reliable, secure, and efficient IT infrastructure for your business operations.</p>
-                <ul>
-                    <li>24/7 server monitoring and maintenance</li>
-                    <li>Optimized server performance for business continuity</li>
-                    <li>Secure data centers with backup and recovery</li>
-                </ul>
-                <a href="business-MIT-server-and-infrastructure.html" class="read-more">Read More →</a>
-            </div>
-        </a>
-    </div>
-    <div class="service-card">
-        <a href="business-MIT-cloud-services.html">
-            <div class="service-image">
-                <img src="Assets/Images/Services/Business/cloud-services-and-virtualization.webp" alt="Cloud Solutions">
-            </div>
-            <div class="service-text">
-                <h3>Cloud Services and Virtualization</h3>
-                <p>Maximize productivity with flexible, scalable, and secure cloud solutions.</p>
-                <ul>
-                    <li>Cloud migration and management</li>
-                    <li>Virtual server setup for cost savings</li>
-                    <li>Remote collaboration tools for seamless workflows</li>
-                </ul>
-                <a href="business-MIT-cloud-services.html" class="read-more">Read More →</a>
-            </div>
-        </a>
-    </div>
-    <div class="service-card">
-        <a href="business-MIT-help-desk.html">
-            <div class="service-image">
-                <img src="Assets/Images/Services/Business/helpdesk-and-technical-support.webp" alt="Cloud Solutions">
-            </div>
-            <div class="service-text">
-                <h3>Help Desk and Technical Support</h3>
-                <p>Resolve technical issues quickly with expert IT support tailored to your needs.</p>
-                <ul>
-                    <li>24/7 help desk services</li>
-                    <li>Personalized troubleshooting and solutions</li>
-                    <li>Guidance on software, hardware, and system optimization</li>
-                </ul>
-                <a href="business-MIT-help-desk.html" class="read-more">Read More →</a>
-            </div>
-        </a>
-    </div>
-    <div class="service-card">
-        <a href="business-MIT-endpoint.html">
-            <div class="service-image">
-                <img src="Assets/Images/Services/Business/Endpoint-Management .webp" alt="Cloud Solutions">
-            </div>
-            <div class="service-text">
-                <h3>Endpoint Management</h3>
-                <p>Protect and manage devices across your organization with comprehensive endpoint solutions.</p>
-                <ul>
-                    <li>Real-time monitoring for all connected devices</li>
-                    <li>Automated updates and security patches</li>
-                    <li>Compliance management for remote and on-site teams</li>
-                </ul>
-                <a href="business-MIT-endpoint.html" class="read-more">Read More →</a>
-            </div>
-        </a>
-    </div>
+        <div class="service-card">
+            <!-- Service Details -->
+            <section class="service-details">
+                <div class="detail-section">
+                    <h2 data-i18n="managedIT.overview.title">Overview</h2>
+                    <p data-i18n="managedIT.overview.text">Our Managed IT Services ensure your systems are always
+                        optimized and protected.</p>
+                </div>
+
+                <div class="detail-section">
+                    <h2 data-i18n="managedIT.benefits.title">Key Benefits</h2>
+                    <ul>
+                        <li data-i18n="managedIT.benefits.items.0">24/7 monitoring to prevent downtime</li>
+                        <li data-i18n="managedIT.benefits.items.1">On-demand troubleshooting</li>
+                        <li data-i18n="managedIT.benefits.items.2">Customizable support plans</li>
+                    </ul>
+                </div>
+
+                <div class="detail-section">
+                    <h2 data-i18n="managedIT.pricing.title">Pricing</h2>
+                    <p data-i18n="managedIT.pricing.subtitle">Choose from our tiered plans to meet your needs:</p>
+                    <ul>
+                        <li data-i18n="managedIT.pricing.basic">Basic Plan: $199/month</li>
+                        <li data-i18n="managedIT.pricing.professional">Professional Plan: $499/month</li>
+                        <li data-i18n="managedIT.pricing.enterprise">Enterprise Plan: Custom Pricing</li>
+                    </ul>
+                </div>
+            </section>
+        </div>
+        <div class="service-card">
+            <a href="service-detail.html?id=business-network">
+                <div class="service-image">
+                    <img src="Assets/Images/Services/Business/Network-Management.webp" alt="Network Management"
+                        data-i18n-attr="alt" data-i18n="managedIT.services.network.title">
+                </div>
+                <div class="service-text">
+                    <h3 data-i18n="managedIT.services.network.title">Network Management</h3>
+                    <p data-i18n="managedIT.services.network.description">Optimize and secure your network for seamless
+                        connectivity and performance.</p>
+                    <ul>
+                        <li data-i18n="managedIT.services.network.features.0">Continuous monitoring to prevent downtime
+                        </li>
+                        <li data-i18n="managedIT.services.network.features.1">Advanced troubleshooting for network
+                            issues</li>
+                        <li data-i18n="managedIT.services.network.features.2">Custom network optimization and upgrades
+                        </li>
+                    </ul>
+                    <a href="service-detail.html?id=business-network" class="read-more"
+                        data-i18n="cybersecurity.readMore">Read More →</a>
+                </div>
+            </a>
+        </div>
+        <div class="service-card">
+            <a href="service-detail.html?id=business-it-support">
+                <div class="service-image">
+                    <img src="Assets/Images/Services/Business/IT-Managed Services.jpg" alt="Server Management"
+                        data-i18n-attr="alt" data-i18n="managedIT.services.server.title">
+                </div>
+                <div class="service-text">
+                    <h3 data-i18n="managedIT.services.server.title">Server and Infrastructure Management</h3>
+                    <p data-i18n="managedIT.services.server.description">Ensure reliable, secure, and efficient IT
+                        infrastructure for your business operations.</p>
+                    <ul>
+                        <li data-i18n="managedIT.services.server.features.0">24/7 server monitoring and maintenance</li>
+                        <li data-i18n="managedIT.services.server.features.1">Optimized server performance for business
+                            continuity</li>
+                        <li data-i18n="managedIT.services.server.features.2">Secure data centers with backup and
+                            recovery</li>
+                    </ul>
+                    <a href="service-detail.html?id=business-it-support" class="read-more"
+                        data-i18n="cybersecurity.readMore">Read More →</a>
+                </div>
+            </a>
+        </div>
+        <div class="service-card">
+            <a href="service-detail.html?id=business-cloud-migration">
+                <div class="service-image">
+                    <img src="Assets/Images/Services/Business/cloud-services-and-virtualization.webp"
+                        alt="Cloud Services" data-i18n-attr="alt" data-i18n="managedIT.services.cloud.title">
+                </div>
+                <div class="service-text">
+                    <h3 data-i18n="managedIT.services.cloud.title">Cloud Services and Virtualization</h3>
+                    <p data-i18n="managedIT.services.cloud.description">Maximize productivity with flexible, scalable,
+                        and secure cloud solutions.</p>
+                    <ul>
+                        <li data-i18n="managedIT.services.cloud.features.0">Cloud migration and management</li>
+                        <li data-i18n="managedIT.services.cloud.features.1">Virtual server setup for cost savings</li>
+                        <li data-i18n="managedIT.services.cloud.features.2">Remote collaboration tools for seamless
+                            workflows</li>
+                    </ul>
+                    <a href="service-detail.html?id=business-cloud-migration" class="read-more"
+                        data-i18n="cybersecurity.readMore">Read More →</a>
+                </div>
+            </a>
+        </div>
+        <div class="service-card">
+            <a href="service-detail.html?id=business-it-support">
+                <div class="service-image">
+                    <img src="Assets/Images/Services/Business/helpdesk-and-technical-support.webp" alt="Help Desk"
+                        data-i18n-attr="alt" data-i18n="managedIT.services.helpdesk.title">
+                </div>
+                <div class="service-text">
+                    <h3 data-i18n="managedIT.services.helpdesk.title">Help Desk and Technical Support</h3>
+                    <p data-i18n="managedIT.services.helpdesk.description">Resolve technical issues quickly with expert
+                        IT support tailored to your needs.</p>
+                    <ul>
+                        <li data-i18n="managedIT.services.helpdesk.features.0">24/7 help desk services</li>
+                        <li data-i18n="managedIT.services.helpdesk.features.1">Personalized troubleshooting and
+                            solutions</li>
+                        <li data-i18n="managedIT.services.helpdesk.features.2">Guidance on software, hardware, and
+                            system optimization</li>
+                    </ul>
+                    <a href="service-detail.html?id=business-it-support" class="read-more"
+                        data-i18n="cybersecurity.readMore">Read More →</a>
+                </div>
+            </a>
+        </div>
+        <div class="service-card">
+            <a href="service-detail.html?id=business-it-support">
+                <div class="service-image">
+                    <img src="Assets/Images/Services/Business/Endpoint-Management .webp" alt="Endpoint Management"
+                        data-i18n-attr="alt" data-i18n="managedIT.services.endpoint.title">
+                </div>
+                <div class="service-text">
+                    <h3 data-i18n="managedIT.services.endpoint.title">Endpoint Management</h3>
+                    <p data-i18n="managedIT.services.endpoint.description">Protect and manage devices across your
+                        organization with comprehensive endpoint solutions.</p>
+                    <ul>
+                        <li data-i18n="managedIT.services.endpoint.features.0">Real-time monitoring for all connected
+                            devices</li>
+                        <li data-i18n="managedIT.services.endpoint.features.1">Automated updates and security patches
+                        </li>
+                        <li data-i18n="managedIT.services.endpoint.features.2">Compliance management for remote and
+                            on-site teams</li>
+                    </ul>
+                    <a href="service-detail.html?id=business-it-support" class="read-more"
+                        data-i18n="cybersecurity.readMore">Read More →</a>
+                </div>
+            </a>
+        </div>
     </div>
 
     <!-- FAQ CTA -->
     <div class="faq-cta">
-        <p>Have more questions? Visit our <a href="/faq">FAQ page</a>.</p>
+        <p data-i18n="managedIT.faqCTA">Have more questions? Visit our <a href="support.html">FAQ page</a>.</p>
     </div>
 
     <!-- Footer -->
     <div id="footer-placeholder"></div>
 
 </body>
-</html>
 
+</html>

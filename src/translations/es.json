@@ -644,6 +644,7 @@
         "ready": "¿Listo para Comenzar?",
         "discuss": "Hablemos de cómo podemos ayudarte a alcanzar tus objetivos tecnológicos.",
         "contactToday": "Contáctanos Hoy",
+        "requestQuote": "Solicitar una Cotización",
         "notFound": {
             "title": "Servicio No Encontrado",
             "message": "No pudimos encontrar el servicio que buscas. Por favor, verifica la URL o explora nuestros servicios disponibles.",
@@ -665,6 +666,137 @@
                 "description": "100% de satisfacción o te devolvemos tu dinero"
             }
         }
+    },
+    "managedIT": {
+        "hero": {
+            "title": "Servicios de TI Administrados",
+            "subtitle": "Soluciones expertas para que tu negocio funcione sin interrupciones."
+        },
+        "overview": {
+            "title": "Resumen",
+            "text": "Nuestros Servicios de TI Administrados garantizan que tus sistemas estén siempre optimizados y protegidos."
+        },
+        "benefits": {
+            "title": "Beneficios Clave",
+            "items": [
+                "Monitoreo 24/7 para prevenir tiempos de inactividad",
+                "Solución de problemas bajo demanda",
+                "Planes de soporte personalizables"
+            ]
+        },
+        "pricing": {
+            "title": "Precios",
+            "subtitle": "Elige entre nuestros planes escalonados para satisfacer tus necesidades:",
+            "basic": "Plan Básico: $199/mes",
+            "professional": "Plan Profesional: $499/mes",
+            "enterprise": "Plan Empresarial: Precios Personalizados"
+        },
+        "services": {
+            "network": {
+                "title": "Gestión de Red",
+                "description": "Optimiza y asegura tu red para una conectividad y rendimiento sin fisuras.",
+                "features": [
+                    "Monitoreo continuo para prevenir tiempos de inactividad",
+                    "Solución de problemas avanzada para problemas de red",
+                    "Optimización y actualizaciones de red personalizadas"
+                ]
+            },
+            "server": {
+                "title": "Gestión de Servidores e Infraestructura",
+                "description": "Garantiza una infraestructura de TI confiable, segura y eficiente para las operaciones de tu negocio.",
+                "features": [
+                    "Monitoreo y mantenimiento de servidores 24/7",
+                    "Rendimiento de servidor optimizado para la continuidad del negocio",
+                    "Centros de datos seguros con respaldo y recuperación"
+                ]
+            },
+            "cloud": {
+                "title": "Servicios en la Nube y Virtualización",
+                "description": "Maximiza la productividad con soluciones en la nube flexibles, escalables y seguras.",
+                "features": [
+                    "Migración y gestión de la nube",
+                    "Configuración de servidores virtuales para ahorro de costos",
+                    "Herramientas de colaboración remota para flujos de trabajo fluidos"
+                ]
+            },
+            "helpdesk": {
+                "title": "Mesa de Ayuda y Soporte Técnico",
+                "description": "Resuelve problemas técnicos rápidamente con soporte de TI experto adaptado a tus necesidades.",
+                "features": [
+                    "Servicios de mesa de ayuda 24/7",
+                    "Solución de problemas y soluciones personalizadas",
+                    "Orientación sobre software, hardware y optimización de sistemas"
+                ]
+            },
+            "endpoint": {
+                "title": "Gestión de Endpoints (Puntos Finales)",
+                "description": "Protege y gestiona los dispositivos de toda tu organización con soluciones integrales de endpoint.",
+                "features": [
+                    "Monitoreo en tiempo real para todos los dispositivos conectados",
+                    "Actualizaciones automáticas y parches de seguridad",
+                    "Gestión de cumplimiento para equipos remotos y locales"
+                ]
+            }
+        },
+        "faqCTA": "¿Tienes más preguntas? Visita nuestra <a href=\"/faq\">página de FAQ</a>."
+    },
+    "cybersecurity": {
+        "hero": {
+            "title": "Servicios de Ciberseguridad",
+            "subtitle": "Protege tus activos digitales con nuestras soluciones de seguridad avanzadas."
+        },
+        "overview": {
+            "title": "Resumen",
+            "text": "Nuestros Servicios de Ciberseguridad brindan una protección integral contra las amenazas digitales en evolución."
+        },
+        "services": {
+            "vulnerability": {
+                "title": "Evaluación de Vulnerabilidades",
+                "description": "Identifica y aborda las debilidades de seguridad antes de que puedan ser explotadas.",
+                "features": [
+                    "Escaneo de red integral",
+                    "Análisis de vulnerabilidades en profundidad",
+                    "Recomendaciones de remediación priorizadas"
+                ]
+            },
+            "threat": {
+                "title": "Detección y Respuesta Ante Amenazas",
+                "description": "Monitorea y responde proactivamente a las ciberamenazas en tiempo real.",
+                "features": [
+                    "Monitoreo de amenazas 24/7",
+                    "Respuesta rápida ante incidentes",
+                    "Inteligencia de amenazas avanzada"
+                ]
+            },
+            "data": {
+                "title": "Cifrado de Datos",
+                "description": "Asegura tu información sensible con estándares de cifrado líderes en la industria.",
+                "features": [
+                    "Cifrado de datos de extremo a extremo",
+                    "Gestión segura de claves",
+                    "Cumplimiento con las regulaciones de protección de datos"
+                ]
+            },
+            "firewall": {
+                "title": "Firewall y Seguridad de Red",
+                "description": "Protección de red robusta para mantener fuera a los usuarios no autorizados.",
+                "features": [
+                    "Configuración avanzada de firewall",
+                    "Sistemas de prevención de intrusiones",
+                    "Acceso remoto seguro (VPN)"
+                ]
+            },
+            "awareness": {
+                "title": "Capacitación en Concientización de Seguridad",
+                "description": "Empodera a tus empleados para reconocer y prevenir ciberataques.",
+                "features": [
+                    "Ejercicios de simulación de phishing",
+                    "Mejores prácticas para la seguridad de contraseñas",
+                    "Módulos de capacitación en seguridad personalizados"
+                ]
+            }
+        },
+        "readMore": "Leer Más →"
     },
     "blogPage": {
         "hero": {

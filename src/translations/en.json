@@ -644,6 +644,7 @@
         "ready": "Ready to Get Started?",
         "discuss": "Let's discuss how we can help you achieve your technology goals.",
         "contactToday": "Contact Us Today",
+        "requestQuote": "Request a Quote",
         "notFound": {
             "title": "Service Not Found",
             "message": "We couldn't find the service you're looking for. Please check the URL or browse our available services.",
@@ -665,6 +666,137 @@
                 "description": "100% satisfaction or your money back"
             }
         }
+    },
+    "managedIT": {
+        "hero": {
+            "title": "Managed IT Services",
+            "subtitle": "Expert solutions to keep your business running seamlessly."
+        },
+        "overview": {
+            "title": "Overview",
+            "text": "Our Managed IT Services ensure your systems are always optimized and protected."
+        },
+        "benefits": {
+            "title": "Key Benefits",
+            "items": [
+                "24/7 monitoring to prevent downtime",
+                "On-demand troubleshooting",
+                "Customizable support plans"
+            ]
+        },
+        "pricing": {
+            "title": "Pricing",
+            "subtitle": "Choose from our tiered plans to meet your needs:",
+            "basic": "Basic Plan: $199/month",
+            "professional": "Professional Plan: $499/month",
+            "enterprise": "Enterprise Plan: Custom Pricing"
+        },
+        "services": {
+            "network": {
+                "title": "Network Management",
+                "description": "Optimize and secure your network for seamless connectivity and performance.",
+                "features": [
+                    "Continuous monitoring to prevent downtime",
+                    "Advanced troubleshooting for network issues",
+                    "Custom network optimization and upgrades"
+                ]
+            },
+            "server": {
+                "title": "Server and Infrastructure Management",
+                "description": "Ensure reliable, secure, and efficient IT infrastructure for your business operations.",
+                "features": [
+                    "24/7 server monitoring and maintenance",
+                    "Optimized server performance for business continuity",
+                    "Secure data centers with backup and recovery"
+                ]
+            },
+            "cloud": {
+                "title": "Cloud Services and Virtualization",
+                "description": "Maximize productivity with flexible, scalable, and secure cloud solutions.",
+                "features": [
+                    "Cloud migration and management",
+                    "Virtual server setup for cost savings",
+                    "Remote collaboration tools for seamless workflows"
+                ]
+            },
+            "helpdesk": {
+                "title": "Help Desk and Technical Support",
+                "description": "Resolve technical issues quickly with expert IT support tailored to your needs.",
+                "features": [
+                    "24/7 help desk services",
+                    "Personalized troubleshooting and solutions",
+                    "Guidance on software, hardware, and system optimization"
+                ]
+            },
+            "endpoint": {
+                "title": "Endpoint Management",
+                "description": "Protect and manage devices across your organization with comprehensive endpoint solutions.",
+                "features": [
+                    "Real-time monitoring for all connected devices",
+                    "Automated updates and security patches",
+                    "Compliance management for remote and on-site teams"
+                ]
+            }
+        },
+        "faqCTA": "Have more questions? Visit our <a href=\"/faq\">FAQ page</a>."
+    },
+    "cybersecurity": {
+        "hero": {
+            "title": "Cybersecurity Services",
+            "subtitle": "Protect your digital assets with our advanced security solutions."
+        },
+        "overview": {
+            "title": "Overview",
+            "text": "Our Cybersecurity Services provide comprehensive protection against evolving digital threats."
+        },
+        "services": {
+            "vulnerability": {
+                "title": "Vulnerability Assessment",
+                "description": "Identify and address security weaknesses before they can be exploited.",
+                "features": [
+                    "Comprehensive network scanning",
+                    "In-depth vulnerability analysis",
+                    "Prioritized remediation recommendations"
+                ]
+            },
+            "threat": {
+                "title": "Threat Detection and Response",
+                "description": "Proactively monitor and respond to cyber threats in real-time.",
+                "features": [
+                    "24/7 threat monitoring",
+                    "Rapid incident response",
+                    "Advanced threat intelligence"
+                ]
+            },
+            "data": {
+                "title": "Data Encryption",
+                "description": "Secure your sensitive information with industry-leading encryption standards.",
+                "features": [
+                    "End-to-end data encryption",
+                    "Secure key management",
+                    "Compliance with data protection regulations"
+                ]
+            },
+            "firewall": {
+                "title": "Firewall and Network Security",
+                "description": "Robust network protection to keep unauthorized users out.",
+                "features": [
+                    "Advanced firewall configuration",
+                    "Intrusion prevention systems",
+                    "Secure remote access (VPN)"
+                ]
+            },
+            "awareness": {
+                "title": "Security Awareness Training",
+                "description": "Empower your employees to recognize and prevent cyber attacks.",
+                "features": [
+                    "Phishing simulation exercises",
+                    "Best practices for password security",
+                    "Tailored security training modules"
+                ]
+            }
+        },
+        "readMore": "Read More →"
     },
     "blogPage": {
         "hero": {
