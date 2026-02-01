@@ -14,7 +14,7 @@ const ICON_MAP = {
     'default': 'fa-cogs'
 };
 
-document.addEventListener('DOMContentLoaded', async () => {
+async function loadServiceData() {
     console.log('Service Loader: Initializing...');
 
     // Parse URL to get service ID
@@ -69,6 +69,14 @@ document.addEventListener('DOMContentLoaded', async () => {
         console.error('Service Loader: Error loading service data:', error);
         showNotFound();
     }
+}
+
+document.addEventListener('DOMContentLoaded', loadServiceData);
+
+// Listen for language changes from i18n system
+document.addEventListener('languageChanged', () => {
+    console.log('Service Loader: Language change detected, re-loading...');
+    loadServiceData();
 });
 
 /**

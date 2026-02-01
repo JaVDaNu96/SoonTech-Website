@@ -201,6 +201,11 @@ class I18n {
         // Update HTML lang attribute
         document.documentElement.lang = lang;
 
+        // Dispatch custom event for other scripts to listen to
+        document.dispatchEvent(new CustomEvent('languageChanged', {
+            detail: { language: lang }
+        }));
+
         console.log(`Language switched to: ${lang}`);
     }
 
