@@ -1,11 +1,20 @@
 // ===================================================================
-// CONTACT FORM - Success Simulation
+// CONTACT FORM - EmailJS Integration
 // ===================================================================
 
+// EmailJS credentials
+const EMAILJS_SERVICE_ID  = 'service_ub5lmzk';
+const EMAILJS_TEMPLATE_ID = 'template_sdzzv8b';
+const EMAILJS_PUBLIC_KEY  = 'hhNru_IulPnyzbji_';
+
 document.addEventListener('DOMContentLoaded', () => {
-    const contactForm = document.getElementById('contactForm');
+    // Initialise EmailJS
+    emailjs.init(EMAILJS_PUBLIC_KEY);
+
+    const contactForm    = document.getElementById('contactForm');
     const successMessage = document.getElementById('success-message');
     const sendAnotherBtn = document.getElementById('send-another');
+    const submitBtn      = contactForm ? contactForm.querySelector('.btn-submit') : null;
 
     // Guard clause if form doesn't exist on page
     if (!contactForm || !successMessage) {
@@ -13,69 +22,87 @@ document.addEventListener('DOMContentLoaded', () => {
         return;
     }
 
-    // Handle form submission
-    contactForm.addEventListener('submit', (e) => {
-        e.preventDefault(); // Prevent page reload
+    // ── Pre-select service from URL param (?service=... or ?type=...) ──
+    const params      = new URLSearchParams(window.location.search);
+    const serviceParam = params.get('service') || params.get('type');
+    if (serviceParam) {
+        const serviceSelect = document.getElementById('service-type');
+        if (serviceSelect) {
+            const option = serviceSelect.querySelector(`option[value="${serviceParam}"]`);
+            if (option) option.selected = true;
+        }
+    }
+
+    // ── Form submission ──
+    contactForm.addEventListener('submit', async (e) => {
+        e.preventDefault();
 
         // Get form values
-        const name = document.getElementById('name').value.trim();
-        const email = document.getElementById('email').value.trim();
-        const phone = document.getElementById('phone').value.trim();
+        const name        = document.getElementById('name').value.trim();
+        const email       = document.getElementById('email').value.trim();
+        const phone       = document.getElementById('phone').value.trim();
         const serviceType = document.getElementById('service-type').value;
-        const message = document.getElementById('message').value.trim();
+        const message     = document.getElementById('message').value.trim();
 
-        // Simple validation
+        // Validation
         if (!name || !email || !phone || !serviceType || !message) {
             alert('Please fill in all required fields.');
             return;
         }
-
-        // Email validation
         const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
         if (!emailRegex.test(email)) {
             alert('Please enter a valid email address.');
             return;
         }
 
-        // Log form data (for debugging)
-        console.log('Form submitted:', {
-            name,
-            email,
-            phone,
-            serviceType,
-            message
-        });
+        // Disable button while sending
+        if (submitBtn) {
+            submitBtn.disabled = true;
+            submitBtn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Sending…';
+        }
 
-        // Hide the form
-        contactForm.classList.add('hidden');
+        try {
+            await emailjs.send(EMAILJS_SERVICE_ID, EMAILJS_TEMPLATE_ID, {
+                from_name:    name,
+                from_email:   email,
+                phone:        phone,
+                service_type: serviceType,
+                message:      message,
+                to_email:     'info@soon-tech.com'
+            });
 
-        // Show success message
-        successMessage.classList.remove('hidden');
+            // Hide the form & show success
+            contactForm.classList.add('hidden');
+            successMessage.classList.remove('hidden');
+            successMessage.scrollIntoView({ behavior: 'smooth', block: 'center' });
+            console.log('✅ Contact Form: Email sent via EmailJS');
 
-        // Scroll to success message
-        successMessage.scrollIntoView({ behavior: 'smooth', block: 'center' });
-
-        console.log('✅ Contact Form: Success message displayed');
+        } catch (error) {
+            console.error('❌ EmailJS error:', error);
+            alert('Sorry, there was an error sending your message. Please email us directly at info@soon-tech.com');
+            // Re-enable button so user can try again
+            if (submitBtn) {
+                submitBtn.disabled = false;
+                submitBtn.innerHTML = '<i class="fas fa-paper-plane"></i> <span>Send Message</span>';
+            }
+        }
     });
 
-    // Handle "Send Another Message" button
+    // ── "Send Another Message" button ──
     if (sendAnotherBtn) {
         sendAnotherBtn.addEventListener('click', () => {
-            // Hide success message
             successMessage.classList.add('hidden');
-
-            // Show form again
             contactForm.classList.remove('hidden');
-
-            // Reset form
             contactForm.reset();
-
-            // Scroll to form
+            // Re-enable submit button
+            if (submitBtn) {
+                submitBtn.disabled = false;
+                submitBtn.innerHTML = '<i class="fas fa-paper-plane"></i> <span>Send Message</span>';
+            }
             contactForm.scrollIntoView({ behavior: 'smooth', block: 'start' });
-
             console.log('🔄 Contact Form: Reset for new message');
         });
     }
 
-    console.log('Contact Form: Initialized successfully');
+    console.log('✅ Contact Form: EmailJS initialized successfully');
 });
