@@ -8,6 +8,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Overpass:wght@300;400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
     <script src="includes.js" defer></script>
     <script type="module" src="i18n.js"></script>
 </head>
@@ -111,11 +112,15 @@
             <h2 data-i18n="blogPage.newsletter.title">Never Miss an Insight</h2>
             <p data-i18n="blogPage.newsletter.subtitle">Get the latest tech tips, security alerts, and AI trends
                 delivered to your inbox.</p>
-            <form class="newsletter-form">
-                <input type="email" placeholder="Enter your email address" data-i18n-attr="placeholder"
-                    data-i18n="blogPage.newsletter.placeholder" required>
-                <button type="submit" data-i18n="blogPage.newsletter.button">Subscribe</button>
+            <form id="newsletterForm" class="newsletter-form">
+                <input type="email" id="newsletterEmail" placeholder="Enter your email address"
+                    data-i18n-attr="placeholder" data-i18n="blogPage.newsletter.placeholder" required>
+                <button type="submit" id="newsletterBtn" data-i18n="blogPage.newsletter.button">Subscribe</button>
             </form>
+            <div id="newsletterMessage" class="newsletter-message"
+                style="display: none; margin-top: 15px; color: #86efac; font-weight: 600; font-size: 1.1rem;">
+                <i class="fas fa-check-circle"></i> Thanks for subscribing!
+            </div>
         </div>
     </section>
 

@@ -274,5 +274,57 @@ document.addEventListener('DOMContentLoaded', () => {
         if (backButton) {
             backButton.addEventListener('click', handleBackToInsights);
         }
+
+        // Newsletter Subscription Handler
+        const newsletterForm = document.getElementById('newsletterForm');
+        const newsletterEmail = document.getElementById('newsletterEmail');
+        const newsletterBtn = document.getElementById('newsletterBtn');
+        const newsletterMessage = document.getElementById('newsletterMessage');
+
+        if (newsletterForm) {
+            // Initialize EmailJS for the newsletter (same credentials as contact form)
+            emailjs.init('hhNru_IulPnyzbji_');
+
+            newsletterForm.addEventListener('submit', async (e) => {
+                e.preventDefault(); // Prevent page reload
+
+                const originalBtnText = newsletterBtn.innerHTML;
+                newsletterBtn.innerHTML = '<i class="fas fa-spinner fa-spin"></i>';
+                newsletterBtn.disabled = true;
+                newsletterEmail.disabled = true;
+
+                try {
+                    // Send EmailJS request
+                    // Requires an EmailJS template ID 'template_newsletter' with an Auto-Reply configured.
+                    await emailjs.send('service_ub5lmzk', 'template_newsletter', {
+                        subscriber_email: newsletterEmail.value,
+                        reply_to: newsletterEmail.value
+                    });
+
+                    newsletterForm.style.display = 'none';
+                    newsletterMessage.style.display = 'block';
+
+                    // Reset after 5 seconds
+                    setTimeout(() => {
+                        newsletterForm.style.display = 'flex';
+                        newsletterMessage.style.display = 'none';
+                        newsletterEmail.value = '';
+                        newsletterBtn.innerHTML = originalBtnText;
+                        newsletterBtn.disabled = false;
+                        newsletterEmail.disabled = false;
+                    }, 5000);
+
+                } catch (error) {
+                    console.error('Newsletter subscription failed:', error);
+                    newsletterBtn.innerHTML = 'Error - Try Again';
+
+                    setTimeout(() => {
+                        newsletterBtn.innerHTML = originalBtnText;
+                        newsletterBtn.disabled = false;
+                        newsletterEmail.disabled = false;
+                    }, 3000);
+                }
+            });
+        }
     });
 });

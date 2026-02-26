@@ -92,8 +92,8 @@
 /* Hero Content Grid */
 .hero-content-grid {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 80px;
+    grid-template-columns: 0.9fr 1.1fr;
+    gap: 60px;
     align-items: center;
     padding-top: 120px;
 }
@@ -139,10 +139,24 @@
     transform: translateY(-3px);
 }
 
+.hero-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .hero-image img {
     width: 100%;
+    max-width: 650px;
     height: auto;
     border-radius: 20px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+    transform: scale(1.15);
+    transition: transform 0.3s ease;
+}
+
+.hero-image img:hover {
+    transform: scale(1.18);
 }
 
 /* ===================================================================== */

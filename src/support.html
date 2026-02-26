@@ -131,81 +131,112 @@
     <section class="resources-section">
         <div class="resources-container">
             <h2 class="section-heading" data-i18n="supportPage.resources.title">Self-Service Resources</h2>
-            <p class="section-subtitle" data-i18n="supportPage.resources.subtitle">Quick fixes for common issues</p>
+            <p class="section-subtitle" id="resources-subtitle">Quick fixes for common issues</p>
 
-            <div class="resources-grid">
+            <!-- ── HOME USER panel (default visible) ── -->
+            <div class="resources-grid resource-panel" id="resources-home">
                 <!-- Wi-Fi -->
                 <div class="resource-card" id="res-wifi">
-                    <div class="resource-icon">
-                        <i class="fas fa-wifi"></i>
-                    </div>
-                    <h3 data-i18n="supportPage.resources.items.wifi.title">Wi-Fi Issues</h3>
-                    <p data-i18n="supportPage.resources.items.wifi.description">Troubleshoot connectivity</p>
-                    <a href="contact-us.html?service=other-support" class="resource-link"><span
-                            data-i18n="supportPage.resources.viewGuide">View Guide</span> <i
-                            class="fas fa-chevron-right"></i></a>
+                    <div class="resource-icon"><i class="fas fa-wifi"></i></div>
+                    <h3>Wi-Fi Issues</h3>
+                    <p>Troubleshoot connectivity</p>
+                    <button class="resource-link" onclick="openGuide('wifi')">View Guide <i
+                            class="fas fa-chevron-right"></i></button>
                 </div>
-
                 <!-- Email -->
                 <div class="resource-card" id="res-email">
-                    <div class="resource-icon">
-                        <i class="fas fa-envelope"></i>
-                    </div>
-                    <h3 data-i18n="supportPage.resources.items.email.title">Email Problems</h3>
-                    <p data-i18n="supportPage.resources.items.email.description">Fix sync and access</p>
-                    <a href="contact-us.html?service=other-support" class="resource-link"><span
-                            data-i18n="supportPage.resources.viewGuide">View Guide</span> <i
-                            class="fas fa-chevron-right"></i></a>
+                    <div class="resource-icon"><i class="fas fa-envelope"></i></div>
+                    <h3>Email Problems</h3>
+                    <p>Fix sync and access</p>
+                    <button class="resource-link" onclick="openGuide('email')">View Guide <i
+                            class="fas fa-chevron-right"></i></button>
                 </div>
-
                 <!-- Printer -->
                 <div class="resource-card" id="res-printer">
-                    <div class="resource-icon">
-                        <i class="fas fa-print"></i>
-                    </div>
-                    <h3 data-i18n="supportPage.resources.items.printer.title">Printer Setup</h3>
-                    <p data-i18n="supportPage.resources.items.printer.description">Configure printers</p>
-                    <a href="contact-us.html?service=other-support" class="resource-link"><span
-                            data-i18n="supportPage.resources.viewGuide">View Guide</span> <i
-                            class="fas fa-chevron-right"></i></a>
+                    <div class="resource-icon"><i class="fas fa-print"></i></div>
+                    <h3>Printer Setup</h3>
+                    <p>Configure printers</p>
+                    <button class="resource-link" onclick="openGuide('printer')">View Guide <i
+                            class="fas fa-chevron-right"></i></button>
                 </div>
-
                 <!-- Security -->
                 <div class="resource-card" id="res-security">
-                    <div class="resource-icon">
-                        <i class="fas fa-shield-alt"></i>
-                    </div>
-                    <h3 data-i18n="supportPage.resources.items.security.title">Security Alerts</h3>
-                    <p data-i18n="supportPage.resources.items.security.description">Respond to warnings</p>
-                    <a href="contact-us.html?service=other-support" class="resource-link"><span
-                            data-i18n="supportPage.resources.viewGuide">View Guide</span> <i
-                            class="fas fa-chevron-right"></i></a>
+                    <div class="resource-icon"><i class="fas fa-shield-alt"></i></div>
+                    <h3>Security Alerts</h3>
+                    <p>Respond to warnings</p>
+                    <button class="resource-link" onclick="openGuide('security')">View Guide <i
+                            class="fas fa-chevron-right"></i></button>
                 </div>
-
                 <!-- Billing -->
                 <div class="resource-card" id="res-billing">
-                    <div class="resource-icon">
-                        <i class="fas fa-file-invoice-dollar"></i>
-                    </div>
-                    <h3 data-i18n="supportPage.resources.items.billing.title">Billing Questions</h3>
-                    <p data-i18n="supportPage.resources.items.billing.description">Invoice and payments</p>
-                    <a href="contact-us.html?service=other-support" class="resource-link"><span
-                            data-i18n="supportPage.resources.viewGuide">View Guide</span> <i
-                            class="fas fa-chevron-right"></i></a>
+                    <div class="resource-icon"><i class="fas fa-file-invoice-dollar"></i></div>
+                    <h3>Billing Questions</h3>
+                    <p>Invoice and payments</p>
+                    <button class="resource-link" onclick="openGuide('billing')">View Guide <i
+                            class="fas fa-chevron-right"></i></button>
                 </div>
-
                 <!-- Account -->
                 <div class="resource-card" id="res-account">
-                    <div class="resource-icon">
-                        <i class="fas fa-user-lock"></i>
-                    </div>
-                    <h3 data-i18n="supportPage.resources.items.account.title">Account Access</h3>
-                    <p data-i18n="supportPage.resources.items.account.description">Reset passwords</p>
-                    <a href="contact-us.html?service=other-support" class="resource-link"><span
-                            data-i18n="supportPage.resources.viewGuide">View Guide</span> <i
-                            class="fas fa-chevron-right"></i></a>
+                    <div class="resource-icon"><i class="fas fa-user-lock"></i></div>
+                    <h3>Account Access</h3>
+                    <p>Reset passwords</p>
+                    <button class="resource-link" onclick="openGuide('account')">View Guide <i
+                            class="fas fa-chevron-right"></i></button>
                 </div>
             </div>
+
+            <!-- ── BUSINESS CLIENT panel (default hidden) ── -->
+            <div class="resources-grid resource-panel" id="resources-business" style="display:none;opacity:0;">
+                <!-- Server & Infrastructure -->
+                <div class="resource-card" id="biz-server">
+                    <div class="resource-icon"><i class="fas fa-server"></i></div>
+                    <h3>Server & Infrastructure</h3>
+                    <p>Outages, performance, hardware</p>
+                    <button class="resource-link" onclick="openGuide('biz-server')">View Guide <i
+                            class="fas fa-chevron-right"></i></button>
+                </div>
+                <!-- Microsoft 365 & Cloud -->
+                <div class="resource-card" id="biz-m365">
+                    <div class="resource-icon"><i class="fas fa-cloud"></i></div>
+                    <h3>Microsoft 365 & Cloud</h3>
+                    <p>Teams, SharePoint, OneDrive</p>
+                    <button class="resource-link" onclick="openGuide('biz-m365')">View Guide <i
+                            class="fas fa-chevron-right"></i></button>
+                </div>
+                <!-- Network & VPN -->
+                <div class="resource-card" id="biz-network">
+                    <div class="resource-icon"><i class="fas fa-network-wired"></i></div>
+                    <h3>Network & VPN</h3>
+                    <p>Business connectivity & remote access</p>
+                    <button class="resource-link" onclick="openGuide('biz-network')">View Guide <i
+                            class="fas fa-chevron-right"></i></button>
+                </div>
+                <!-- Cybersecurity -->
+                <div class="resource-card" id="biz-cyber">
+                    <div class="resource-icon"><i class="fas fa-shield-alt"></i></div>
+                    <h3>Cybersecurity & Compliance</h3>
+                    <p>Threats, audits, policies</p>
+                    <button class="resource-link" onclick="openGuide('biz-cyber')">View Guide <i
+                            class="fas fa-chevron-right"></i></button>
+                </div>
+                <!-- VoIP -->
+                <div class="resource-card" id="biz-voip">
+                    <div class="resource-icon"><i class="fas fa-phone-alt"></i></div>
+                    <h3>VoIP & Communications</h3>
+                    <p>Phone systems & Teams calling</p>
+                    <button class="resource-link" onclick="openGuide('biz-voip')">View Guide <i
+                            class="fas fa-chevron-right"></i></button>
+                </div>
+                <!-- Managed IT -->
+                <div class="resource-card" id="biz-managed">
+                    <div class="resource-icon"><i class="fas fa-laptop-code"></i></div>
+                    <h3>Managed IT Support</h3>
+                    <p>Monitoring, helpdesk, devices</p>
+                    <button class="resource-link" onclick="openGuide('biz-managed')">View Guide <i
+                            class="fas fa-chevron-right"></i></button>
+                </div>
+            </div>
+
         </div>
     </section>
 
@@ -213,69 +244,440 @@
     <section class="faq-section">
         <div class="faq-container">
             <h2 class="section-heading" data-i18n="supportPage.faq.title">Frequently Asked Questions</h2>
+            <p class="section-subtitle" id="faq-subtitle"
+                style="text-align:center;margin-bottom:1.5rem;color:#6b7280;font-size:.95rem;">Common questions from
+                home users</p>
 
-            <div class="faq-list">
+            <!-- ── HOME USER FAQ panel (default visible) ── -->
+            <div class="faq-list faq-panel" id="faq-home">
                 <details class="faq-item" id="faq-1">
                     <summary class="faq-question">
-                        <span data-i18n="supportPage.faq.items.q1.q">How do I reset my password?</span>
+                        <span>How do I reset my password?</span>
                         <i class="fas fa-chevron-down"></i>
                     </summary>
                     <div class="faq-answer">
-                        <p data-i18n="supportPage.faq.items.q1.a">Click "Forgot Password" on the login page. Enter your
-                            email and we'll send a reset link
-                            within minutes.</p>
+                        <p>Click <strong>"Forgot Password"</strong> on the login page of whichever platform you're
+                            trying to access (Microsoft 365, your company portal, etc.). Enter your email address and a
+                            secure reset link will be sent to your inbox within a few minutes.</p>
+                        <p style="margin-top:.6rem;">If you don't see the email, check your <strong>Spam or Junk
+                                folder</strong> — reset emails are sometimes filtered automatically. The link typically
+                            expires after <strong>24 hours</strong>, so use it promptly.</p>
+                        <p style="margin-top:.6rem;">If you've lost access to the email account itself, or the reset
+                            link doesn't work after multiple attempts, <a href="contact-us.html?service=other-support"
+                                style="color:inherit;font-weight:600;">contact our support team</a> — we can verify your
+                            identity and manually reset access for you.</p>
                     </div>
                 </details>
 
                 <details class="faq-item" id="faq-2">
                     <summary class="faq-question">
-                        <span data-i18n="supportPage.faq.items.q2.q">What are your support hours?</span>
+                        <span>What are your support hours?</span>
                         <i class="fas fa-chevron-down"></i>
                     </summary>
                     <div class="faq-answer">
-                        <p data-i18n="supportPage.faq.items.q2.a">Monday-Friday, 8 AM - 6 PM PST. Emergency support
-                            available 24/7.</p>
+                        <p>Our standard support hours are <strong>Monday through Friday, 8:00 AM – 6:00 PM PST</strong>.
+                            During these hours, most tickets receive an initial response within <strong>1–2
+                                hours</strong>, and common issues are often resolved the same day.</p>
+                        <p style="margin-top:.6rem;">For <strong>critical emergencies</strong> — such as a complete
+                            network outage, server failure, or ransomware attack — our emergency line is available
+                            <strong>24 hours a day, 7 days a week</strong>, including weekends and holidays. Call <a
+                                href="tel:+17788624365" style="color:inherit;font-weight:600;">+1 (778) 862-4365</a> and
+                            a technician will respond within 15 minutes.
+                        </p>
+                        <p style="margin-top:.6rem;">Non-urgent requests submitted outside business hours via our
+                            contact form are <strong>prioritized first thing the next business morning</strong>.</p>
                     </div>
                 </details>
 
                 <details class="faq-item" id="faq-3">
                     <summary class="faq-question">
-                        <span data-i18n="supportPage.faq.items.q3.q">How do I schedule remote support?</span>
+                        <span>How do I schedule remote support?</span>
                         <i class="fas fa-chevron-down"></i>
                     </summary>
                     <div class="faq-answer">
-                        <p data-i18n="supportPage.faq.items.q3.a">Contact us to schedule a session. We'll provide a
-                            6-digit code to enter above.</p>
+                        <p>Scheduling a remote session is straightforward. <a
+                                href="contact-us.html?service=other-support"
+                                style="color:inherit;font-weight:600;">Contact us</a> by phone, email, or through the
+                            contact form to describe your issue and agree on a convenient time.</p>
+                        <p style="margin-top:.6rem;">At the agreed time, we'll send you a <strong>6-digit session
+                                code</strong>. Go to the <strong>Remote Support</strong> section at the top of this
+                            page, click <em>"Connect Now (TeamViewer)"</em>, download the small TeamViewer app, and
+                            enter the code when prompted.</p>
+                        <p style="margin-top:.6rem;">You are <strong>always in full control</strong> during the session
+                            — you can see every action the technician takes, and you can end the session instantly at
+                            any time by closing the TeamViewer window.</p>
                     </div>
                 </details>
 
                 <details class="faq-item" id="faq-4">
                     <summary class="faq-question">
-                        <span data-i18n="supportPage.faq.items.q4.q">What should I include in a ticket?</span>
+                        <span>What should I include in a ticket?</span>
                         <i class="fas fa-chevron-down"></i>
                     </summary>
                     <div class="faq-answer">
-                        <p data-i18n="supportPage.faq.items.q4.a">Describe the issue, when it started, what you tried,
-                            and include screenshots if possible.</p>
+                        <p>A well-written ticket helps us diagnose and resolve your issue faster. Please include:</p>
+                        <ul style="margin:.6rem 0 0 1.1rem;line-height:1.8;">
+                            <li><strong>What happened:</strong> Describe the problem clearly — what you see, any error
+                                messages or codes.</li>
+                            <li><strong>When it started:</strong> A specific date/time helps us correlate with system
+                                logs or recent changes.</li>
+                            <li><strong>What you've already tried:</strong> Restarting, reinstalling, clearing cache —
+                                this saves us from repeating steps.</li>
+                            <li><strong>How many people are affected:</strong> Just you, your whole team, or the entire
+                                office?</li>
+                            <li><strong>Screenshots or screen recordings:</strong> Attach any relevant images directly
+                                to the form.</li>
+                            <li><strong>Your device details (optional):</strong> OS version, browser, or software
+                                version affected.</li>
+                        </ul>
+                        <p style="margin-top:.7rem;">The more detail you provide upfront, the faster we can get you back
+                            up and running.</p>
                     </div>
                 </details>
+
+                <details class="faq-item" id="faq-5">
+                    <summary class="faq-question">
+                        <span>How long does it typically take to resolve an issue?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </summary>
+                    <div class="faq-answer">
+                        <p>Resolution time depends on the complexity of the issue. Most common problems — such as
+                            connectivity, password resets, or software errors — are resolved within <strong>1–2
+                                hours</strong> during business hours. For more complex issues (server migrations,
+                            network overhauls), we'll provide a clear timeline upfront. Emergency calls are answered
+                            within <strong>15 minutes</strong>, 24/7.</p>
+                    </div>
+                </details>
+
+                <details class="faq-item" id="faq-6">
+                    <summary class="faq-question">
+                        <span>What areas does SoonTech serve?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </summary>
+                    <div class="faq-answer">
+                        <p>We are based in <strong>Surrey, BC</strong> and serve clients throughout the <strong>Lower
+                                Mainland</strong>, including Vancouver, Burnaby, Richmond, Langley, Abbotsford, and the
+                            Tri-Cities. Remote support is available for clients <strong>anywhere in Canada</strong> —
+                            most issues can be fully resolved without an on-site visit. For on-site service outside our
+                            primary area, please contact us to confirm availability.</p>
+                    </div>
+                </details>
+
+                <details class="faq-item" id="faq-7">
+                    <summary class="faq-question">
+                        <span>Is my data safe when you access my computer remotely?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </summary>
+                    <div class="faq-answer">
+                        <p>Absolutely. We use <strong>TeamViewer</strong> for remote sessions, which employs end-to-end
+                            AES 256-bit encryption — the same standard used by banks. You are always in control: you can
+                            see everything our technician does on your screen in real time, and you can end the session
+                            at any moment. We never access your system without your explicit permission, and we never
+                            store or share your data.</p>
+                    </div>
+                </details>
+
+                <details class="faq-item" id="faq-8">
+                    <summary class="faq-question">
+                        <span>What happens if my issue occurs outside business hours?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </summary>
+                    <div class="faq-answer">
+                        <p>Our standard support hours are <strong>Monday–Friday, 8 AM – 6 PM PST</strong>. For urgent
+                            situations outside those hours — such as a server outage, ransomware attack, or complete
+                            system failure — our <strong>24/7 emergency line</strong> is available at <a
+                                href="tel:+17788624365" style="color:inherit;font-weight:600;">+1 (778) 862-4365</a>.
+                            Emergency calls are triaged immediately and a technician will be with you within 15 minutes.
+                            Non-urgent after-hours requests submitted via the contact form will be prioritized first
+                            thing the next business day.</p>
+                    </div>
+                </details>
+
+                <details class="faq-item" id="faq-9">
+                    <summary class="faq-question">
+                        <span>Do you offer monthly support plans for businesses?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </summary>
+                    <div class="faq-answer">
+                        <p>Yes — we offer <strong>Managed IT Service plans</strong> tailored to the size and needs of
+                            your business. Plans include proactive monitoring, regular maintenance, unlimited helpdesk
+                            support, cybersecurity protection, and priority response times. Pricing is based on the
+                            number of devices and users. <a href="contact-us.html?service=business-managed-it"
+                                style="color:inherit;font-weight:600;">Request a quote</a> and we'll put together a
+                            custom proposal within 24 hours.</p>
+                    </div>
+                </details>
+            </div>
+
+            <!-- ── BUSINESS CLIENT FAQ panel (default hidden) ── -->
+            <div class="faq-list faq-panel" id="faq-business" style="display:none;opacity:0;">
+
+                <details class="faq-item" id="bfaq-1">
+                    <summary class="faq-question">
+                        <span>What does your Managed IT service include?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </summary>
+                    <div class="faq-answer">
+                        <p>Our <strong>Managed IT plans</strong> are designed to keep your business running without you
+                            having to worry about IT. Plans include:</p>
+                        <ul style="margin:.6rem 0 0 1.1rem;line-height:1.9;">
+                            <li><strong>24/7 proactive monitoring</strong> of all endpoints, servers, and network
+                                devices</li>
+                            <li><strong>Remote & on-site helpdesk support</strong> with priority SLA response times</li>
+                            <li><strong>Patch management</strong> — critical patches within 24 hours, standard patches
+                                monthly</li>
+                            <li><strong>Endpoint security</strong> — antivirus, EDR, and threat monitoring included</li>
+                            <li><strong>Monthly reporting</strong> — device health, incidents resolved, and patch status
+                            </li>
+                            <li><strong>Microsoft 365 administration</strong> — user management, licensing, and
+                                configuration</li>
+                        </ul>
+                        <p style="margin-top:.7rem;">Pricing is per-device and scales with your organization. <a
+                                href="contact-us.html?service=business-managed-it"
+                                style="color:inherit;font-weight:600;">Request a custom quote</a> — we'll respond within
+                            24 hours.</p>
+                    </div>
+                </details>
+
+                <details class="faq-item" id="bfaq-2">
+                    <summary class="faq-question">
+                        <span>What is your SLA response time for business clients?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </summary>
+                    <div class="faq-answer">
+                        <p>Our Service Level Agreements are tiered by severity:</p>
+                        <ul style="margin:.6rem 0 0 1.1rem;line-height:1.9;">
+                            <li><strong>Critical</strong> (complete outage, ransomware, server down): Response in
+                                <strong>15 minutes</strong>, 24/7/365
+                            </li>
+                            <li><strong>High</strong> (partial outage, service degradation, multiple users affected):
+                                Response within <strong>1 hour</strong> during business hours</li>
+                            <li><strong>Medium</strong> (single user impacted, non-critical service): Response within
+                                <strong>4 hours</strong>
+                            </li>
+                            <li><strong>Low</strong> (questions, general requests, non-urgent changes): Response within
+                                <strong>1 business day</strong>
+                            </li>
+                        </ul>
+                        <p style="margin-top:.7rem;">Standard business hours are <strong>Mon–Fri, 8 AM – 6 PM
+                                PST</strong>. 24/7 emergency coverage is available to all active Managed IT clients and
+                            by direct emergency call for all others.</p>
+                    </div>
+                </details>
+
+                <details class="faq-item" id="bfaq-3">
+                    <summary class="faq-question">
+                        <span>How do you handle cybersecurity for business clients?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </summary>
+                    <div class="faq-answer">
+                        <p>Cybersecurity is built into every business engagement, not bolted on as an afterthought. Our
+                            standard protections include:</p>
+                        <ul style="margin:.6rem 0 0 1.1rem;line-height:1.9;">
+                            <li><strong>EDR (Endpoint Detection & Response)</strong> — real-time threat detection beyond
+                                traditional antivirus</li>
+                            <li><strong>MFA enforcement</strong> — across Microsoft 365, VPN, and remote access</li>
+                            <li><strong>Security patch management</strong> — critical OS and application patches
+                                deployed within 24 hours</li>
+                            <li><strong>Email security</strong> — anti-phishing, anti-spam, and spoofing protection via
+                                Microsoft Defender</li>
+                            <li><strong>Security awareness</strong> — we advise on phishing simulation and staff
+                                training programs</li>
+                            <li><strong>Incident response</strong> — if a breach occurs, we contain, investigate, and
+                                remediate</li>
+                        </ul>
+                        <p style="margin-top:.7rem;">We also help businesses achieve compliance with <strong>PIPEDA, SOC
+                                2 Type II</strong>, and industry-specific frameworks on request.</p>
+                    </div>
+                </details>
+
+                <details class="faq-item" id="bfaq-4">
+                    <summary class="faq-question">
+                        <span>Can you migrate our business to Microsoft 365?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </summary>
+                    <div class="faq-answer">
+                        <p>Yes — Microsoft 365 migrations are one of our most common business engagements. We handle the
+                            complete process:</p>
+                        <ul style="margin:.6rem 0 0 1.1rem;line-height:1.9;">
+                            <li><strong>Pre-migration audit</strong> — inventory of current email, files, and
+                                applications</li>
+                            <li><strong>Tenant setup</strong> — domain verification, DNS configuration, security
+                                defaults</li>
+                            <li><strong>Email migration</strong> — from G Suite, on-premises Exchange, or another
+                                provider with zero data loss</li>
+                            <li><strong>OneDrive & SharePoint setup</strong> — folder structure, permissions, and
+                                external sharing policies</li>
+                            <li><strong>Teams rollout</strong> — channels, meeting policies, and phone system
+                                integration if needed</li>
+                            <li><strong>User training</strong> — short onboarding sessions to ensure adoption</li>
+                        </ul>
+                        <p style="margin-top:.7rem;">Migrations are planned and executed outside business hours to
+                            minimize downtime. <a href="contact-us.html?service=business-cloud-solutions"
+                                style="color:inherit;font-weight:600;">Contact us</a> to discuss your timeline and
+                            scope.</p>
+                    </div>
+                </details>
+
+                <details class="faq-item" id="bfaq-5">
+                    <summary class="faq-question">
+                        <span>Do you offer on-site support, or is it only remote?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </summary>
+                    <div class="faq-answer">
+                        <p>We offer both. The <strong>vast majority of issues — over 80% — are fully resolved
+                                remotely</strong> via TeamViewer or RMM tools, with no need for an on-site visit. This
+                            means faster resolution and no travel costs for your business.</p>
+                        <p style="margin-top:.6rem;">For situations that require physical presence — hardware
+                            replacement, cabling, server rack work, or initial network setup — we dispatch a technician
+                            to your location. On-site support is available throughout the <strong>Lower Mainland
+                                (Surrey, Vancouver, Burnaby, Langley, Abbotsford, Tri-Cities)</strong>.</p>
+                        <p style="margin-top:.6rem;">On-site visits outside our standard area are available by
+                            arrangement. <a href="contact-us.html" style="color:inherit;font-weight:600;">Contact us</a>
+                            to confirm availability and scheduling.</p>
+                    </div>
+                </details>
+
+                <details class="faq-item" id="bfaq-6">
+                    <summary class="faq-question">
+                        <span>How do you handle backups and disaster recovery for businesses?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </summary>
+                    <div class="faq-answer">
+                        <p>Backup and disaster recovery (DR) are critical and often overlooked until it's too late. Our
+                            approach:</p>
+                        <ul style="margin:.6rem 0 0 1.1rem;line-height:1.9;">
+                            <li><strong>Automated daily backups</strong> — servers, workstations, and cloud data backed
+                                up on a defined retention schedule</li>
+                            <li><strong>Offsite & cloud replication</strong> — backups are stored in a separate
+                                geographic location to survive a site disaster</li>
+                            <li><strong>Regular restore testing</strong> — we verify backups actually work through
+                                scheduled test restores</li>
+                            <li><strong>Recovery Point Objective (RPO)</strong> — how old can the restored data be? We
+                                define this with you (typically 4–24 hours)</li>
+                            <li><strong>Recovery Time Objective (RTO)</strong> — how fast can systems be restored? We
+                                design DR plans to meet your business requirements</li>
+                        </ul>
+                        <p style="margin-top:.7rem;">We work with leading backup platforms including <strong>Veeam,
+                                Acronis, and Microsoft Azure Backup</strong>. <a
+                                href="contact-us.html?service=business-cloud-solutions"
+                                style="color:inherit;font-weight:600;">Request a backup assessment.</a></p>
+                    </div>
+                </details>
+
+                <details class="faq-item" id="bfaq-7">
+                    <summary class="faq-question">
+                        <span>Can SoonTech support a multi-location business?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </summary>
+                    <div class="faq-answer">
+                        <p>Yes — we actively support businesses with multiple offices across BC and Canada. Our
+                            remote-first model means we can manage devices, servers, and networks at any location
+                            without requiring a local technician at each site.</p>
+                        <p style="margin-top:.6rem;">For multi-site networks, we design and configure
+                            <strong>site-to-site VPNs, MPLS, or SD-WAN connections</strong> that tie all locations
+                            together securely. Centralized monitoring covers all locations from a single dashboard, with
+                            escalation to on-site when needed at the Lower Mainland location.
+                        </p>
+                        <p style="margin-top:.6rem;"><a href="contact-us.html?service=business-managed-it"
+                                style="color:inherit;font-weight:600;">Contact us</a> to discuss your multi-site setup
+                            and how we can simplify your IT management.</p>
+                    </div>
+                </details>
+
+                <details class="faq-item" id="bfaq-8">
+                    <summary class="faq-question">
+                        <span>What information do you need to onboard our business?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </summary>
+                    <div class="faq-answer">
+                        <p>Onboarding is straightforward. Once we agree on a plan, we'll schedule an <strong>IT
+                                discovery session</strong> (typically 1–2 hours, fully remote) where we collect:</p>
+                        <ul style="margin:.6rem 0 0 1.1rem;line-height:1.9;">
+                            <li>An inventory of all devices, servers, and network equipment</li>
+                            <li>Current software licenses and subscriptions (Microsoft 365 tenant, etc.)</li>
+                            <li>Network diagram or basic layout (we can help build this if you don't have one)</li>
+                            <li>List of all users and their roles/access levels</li>
+                            <li>Current backup and security tools in place</li>
+                            <li>Any known recurring issues or pain points we should prioritize</li>
+                        </ul>
+                        <p style="margin-top:.7rem;">From there, we deploy our <strong>RMM agent</strong> to all managed
+                            devices (takes under 5 minutes per machine, silently, in the background), configure
+                            monitoring, and you're live. Most business onboardings are complete within <strong>1–3
+                                business days</strong>.</p>
+                    </div>
+                </details>
+
             </div>
         </div>
     </section>
 
     <!-- CTA Section -->
     <section class="support-cta">
+
+        <!-- Decorative background blobs -->
+        <div class="cta-blob cta-blob--tl"></div>
+        <div class="cta-blob cta-blob--br"></div>
+
         <div class="cta-container">
+
+            <!-- Live availability badge -->
+            <div class="cta-badge">
+                <span class="cta-badge__dot"></span>
+                <span>Available Now &mdash; Mon&ndash;Fri 8 AM – 6 PM PST &nbsp;|&nbsp; 24/7 Emergency Line</span>
+            </div>
+
             <h2 data-i18n="supportPage.cta.title">Still Need Help?</h2>
-            <p data-i18n="supportPage.cta.subtitle">Our team is standing by</p>
-            <div class="cta-buttons">
-                <a href="contact-us.html" class="cta-btn primary">
-                    <span data-i18n="supportPage.cta.contact">Contact Us</span> <i class="fas fa-arrow-right"></i>
+            <p class="cta-lead" data-i18n="supportPage.cta.subtitle">
+                Our certified technicians are ready to jump in — remotely or on-site.<br>
+                Choose the fastest channel for your situation.
+            </p>
+
+            <!-- 3 contact channel cards -->
+            <div class="cta-channels">
+
+                <a href="tel:+17788624365" class="cta-channel" onclick="handleEmergencyCall(event)">
+                    <div class="cta-channel__icon cta-channel__icon--red">
+                        <i class="fas fa-phone-alt"></i>
+                    </div>
+                    <div class="cta-channel__body">
+                        <strong>Call Us</strong>
+                        <span>+1 (778) 862-4365</span>
+                        <em><i class="fas fa-bolt"></i> Within 15 min</em>
+                    </div>
                 </a>
+
+                <a href="mailto:info@soon-tech.com" class="cta-channel">
+                    <div class="cta-channel__icon cta-channel__icon--blue">
+                        <i class="fas fa-envelope"></i>
+                    </div>
+                    <div class="cta-channel__body">
+                        <strong>Email Us</strong>
+                        <span>info@soon-tech.com</span>
+                        <em><i class="fas fa-clock"></i> Within 2 hours</em>
+                    </div>
+                </a>
+
+                <a href="contact-us.html?type=ticket" class="cta-channel">
+                    <div class="cta-channel__icon cta-channel__icon--green">
+                        <i class="fas fa-ticket-alt"></i>
+                    </div>
+                    <div class="cta-channel__body">
+                        <strong>Submit a Ticket</strong>
+                        <span>Detailed issue logging</span>
+                        <em><i class="fas fa-calendar-check"></i> Same day</em>
+                    </div>
+                </a>
+
+            </div>
+
+            <!-- Primary action button -->
+            <div class="cta-buttons">
                 <a href="about-us.html" class="cta-btn secondary">
                     <span data-i18n="supportPage.cta.team">Meet Our Team</span> <i class="fas fa-users"></i>
                 </a>
             </div>
+
         </div>
     </section>
 
@@ -284,17 +686,77 @@
 
     <!-- User Toggle Script -->
     <script>
-        /* ── Home / Business toggle ── */
+        /* ── Home / Business toggle with smooth panel swap ── */
+        let currentMode = 'home';
+
         function toggleUser(type) {
+            if (type === currentMode) return;
+            currentMode = type;
+
             document.querySelectorAll('.toggle-btn').forEach(btn => btn.classList.remove('active'));
+            document.querySelector('.toggle-btn.' + type).classList.add('active');
+
             const inp = document.getElementById('support-search');
+            const subtitle = document.getElementById('resources-subtitle');
+            const faqSub = document.getElementById('faq-subtitle');
+            const homeRes = document.getElementById('resources-home');
+            const bizRes = document.getElementById('resources-business');
+            const homeFaq = document.getElementById('faq-home');
+            const bizFaq = document.getElementById('faq-business');
+
+            const outRes = type === 'home' ? bizRes : homeRes;
+            const inRes = type === 'home' ? homeRes : bizRes;
+            const outFaq = type === 'home' ? bizFaq : homeFaq;
+            const inFaq = type === 'home' ? homeFaq : bizFaq;
+
             if (type === 'home') {
-                document.querySelector('.toggle-btn.home').classList.add('active');
                 inp.placeholder = "Search for help... (e.g., 'wifi not working')";
+                subtitle.textContent = 'Quick fixes for common issues';
+                faqSub.textContent = 'Common questions from home users';
             } else {
-                document.querySelector('.toggle-btn.business').classList.add('active');
                 inp.placeholder = "Search for help... (e.g., 'server down')";
+                subtitle.textContent = 'Enterprise IT solutions at your fingertips';
+                faqSub.textContent = 'Enterprise IT questions answered';
             }
+
+            closeSearch();
+            inp.value = '';
+
+            /* Close any open details in the outgoing panels */
+            outRes.querySelectorAll('details[open]').forEach(d => d.removeAttribute('open'));
+            outFaq.querySelectorAll('details[open]').forEach(d => d.removeAttribute('open'));
+
+            /* Fade out both outgoing panels simultaneously */
+            [outRes, outFaq].forEach(el => {
+                el.style.transition = 'opacity .28s ease, transform .28s ease';
+                el.style.opacity = '0';
+                el.style.transform = 'translateY(-10px)';
+            });
+
+            setTimeout(() => {
+                [outRes, outFaq].forEach(el => {
+                    el.style.display = 'none';
+                    el.style.transform = '';
+                });
+
+                inRes.style.display = 'grid';
+                inFaq.style.display = 'block';
+
+                [inRes, inFaq].forEach(el => {
+                    el.style.opacity = '0';
+                    el.style.transform = 'translateY(10px)';
+                    el.style.transition = 'opacity .32s ease, transform .32s ease';
+                });
+
+                requestAnimationFrame(() => {
+                    requestAnimationFrame(() => {
+                        [inRes, inFaq].forEach(el => {
+                            el.style.opacity = '1';
+                            el.style.transform = 'translateY(0)';
+                        });
+                    });
+                });
+            }, 290);
         }
 
         /* ── Emergency call: show phone popup on desktop ── */
@@ -312,112 +774,161 @@
         /* ══════════════════════════════════════════
            LIVE SEARCH ENGINE
            ══════════════════════════════════════════ */
-        const KB = [
+
+
+        const KB_HOME = [
+            {
+                icon: 'fa-phone', color: '#ef4444', title: 'Emergency Call — +1 (778) 862-4365',
+                desc: 'Critical issue? Call our 24/7 emergency line for immediate help.',
+                keys: ['emergency', 'urgent', 'call', 'asap', '24/7', 'critical', 'outage', 'phone'],
+                go: () => { const b = document.querySelector('.red-btn'); if (b) b.click(); }
+            },
+            {
+                icon: 'fa-ticket-alt', color: '#3b82f6', title: 'Submit a Support Ticket',
+                desc: 'Open a ticket and our team will follow up within the hour.',
+                keys: ['ticket', 'submit', 'request', 'open ticket', 'log', 'issue', 'report', 'help'],
+                go: () => location.href = 'contact-us.html?type=ticket'
+            },
             {
                 icon: 'fa-desktop', color: '#22c55e', title: 'Remote Support (TeamViewer)',
                 desc: 'Connect instantly with a technician — no code needed.',
                 keys: ['remote', 'teamviewer', 'connect', 'screen share', 'session', 'tech help', 'online help', 'live support'],
                 go: () => window.open('https://get.teamviewer.com/6v4teme', '_blank')
             },
-
             {
-                icon: 'fa-ticket-alt', color: '#3b82f6', title: 'Submit a Support Ticket',
-                desc: 'Describe your issue — get a detailed response within 4 hours.',
-                keys: ['ticket', 'submit', 'report', 'create ticket', 'request', 'open ticket', 'issue', 'problem', 'log ticket'],
-                go: () => location.href = 'contact-us.html?type=ticket'
+                icon: 'fa-wifi', color: '#f59e0b', title: 'Wi-Fi Issues',
+                desc: 'Troubleshoot internet connectivity, slow speeds, or Wi-Fi drops.',
+                keys: ['wifi', 'wi-fi', 'internet', 'wireless', 'connection', 'slow internet', 'no internet', 'router', 'modem', 'network'],
+                go: () => openGuide('wifi')
             },
+            {
+                icon: 'fa-envelope', color: '#8b5cf6', title: 'Email Problems',
+                desc: 'Fix Outlook, Gmail, or webmail sync, login, and setup issues.',
+                keys: ['email', 'outlook', 'gmail', 'mail', 'smtp', 'imap', 'sync', 'not receiving', 'send', 'inbox'],
+                go: () => openGuide('email')
+            },
+            {
+                icon: 'fa-print', color: '#06b6d4', title: 'Printer Setup & Issues',
+                desc: 'Set up a new printer or troubleshoot print queue and driver problems.',
+                keys: ['printer', 'print', 'scanning', 'scanner', 'driver', 'queue', 'ink', 'paper jam', 'wireless printer'],
+                go: () => openGuide('printer')
+            },
+            {
+                icon: 'fa-shield-alt', color: '#ef4444', title: 'Security Alerts',
+                desc: 'Suspected virus, malware, ransomware, or phishing attack?',
+                keys: ['virus', 'malware', 'security', 'hacked', 'phishing', 'ransomware', 'antivirus', 'pop-up', 'scam', 'suspicious'],
+                go: () => openGuide('security')
+            },
+            {
+                icon: 'fa-file-invoice-dollar', color: '#10b981', title: 'Billing & Invoices',
+                desc: 'Questions about your invoice, payment methods, or service charges.',
+                keys: ['billing', 'invoice', 'payment', 'charge', 'receipt', 'overdue', 'refund', 'pricing', 'cost'],
+                go: () => openGuide('billing')
+            },
+            {
+                icon: 'fa-user-lock', color: '#6366f1', title: 'Account Access & Passwords',
+                desc: 'Locked out? Forgot your password? We can help you regain access.',
+                keys: ['password', 'login', 'account', 'locked', 'forgot', 'reset', 'access', 'sign in', '2fa', 'mfa', 'authenticator'],
+                go: () => openGuide('account')
+            },
+            {
+                icon: 'fa-clock', color: '#f59e0b', title: 'FAQ: Support hours',
+                desc: 'Mon–Fri 8AM–6PM PST. 24/7 emergency line for critical issues.',
+                keys: ['hours', 'when', 'open', 'schedule', 'availability', 'weekend', 'holiday'],
+                go: () => openFaq('faq-2')
+            },
+        ];
+
+        const KB_BUSINESS = [
 
             {
                 icon: 'fa-phone', color: '#ef4444', title: 'Emergency Call — +1 (778) 862-4365',
-                desc: 'System down? Critical issue? Call our 24/7 emergency line.',
-                keys: ['emergency', 'urgent', 'call', 'phone', 'critical', 'down', 'outage', 'not working', 'asap', '24/7'],
+                desc: 'Server down? Complete outage? Call our 24/7 business emergency line.',
+                keys: ['emergency', 'urgent', 'critical', 'down', 'outage', 'call', 'asap', '24/7', 'server down', 'network down'],
                 go: () => { const b = document.querySelector('.red-btn'); if (b) b.click(); }
             },
-
             {
-                icon: 'fa-wifi', color: '#f59e0b', title: 'Wi-Fi Issues',
-                desc: "Can't connect? Slow internet? Dead zones? We can help.",
-                keys: ['wifi', 'wi-fi', 'internet', 'network', 'slow', 'no internet', 'router', 'modem', 'disconnected', 'signal', 'dead zone', 'wireless', 'bandwidth', 'lag', 'ping', 'connection'],
-                go: () => highlight('res-wifi')
+                icon: 'fa-ticket-alt', color: '#3b82f6', title: 'Submit a Business Support Ticket',
+                desc: 'Log a detailed ticket — priority response for business clients.',
+                keys: ['ticket', 'submit', 'request', 'open ticket', 'log', 'issue', 'report', 'help request'],
+                go: () => location.href = 'contact-us.html?type=ticket'
             },
-
             {
-                icon: 'fa-envelope', color: '#8b5cf6', title: 'Email Problems',
-                desc: 'Fix sync issues, login failures, or access problems.',
-                keys: ['email', 'outlook', 'gmail', 'mail', 'sync', 'inbox', 'not receiving', 'spam', 'sending', 'imap', 'smtp', 'microsoft 365', 'exchange', 'calendar'],
-                go: () => highlight('res-email')
+                icon: 'fa-desktop', color: '#22c55e', title: 'Remote Business Support',
+                desc: 'Connect a technician to your server, workstation, or endpoint instantly.',
+                keys: ['remote', 'teamviewer', 'connect', 'screen share', 'session', 'technician'],
+                go: () => window.open('https://get.teamviewer.com/6v4teme', '_blank')
             },
-
             {
-                icon: 'fa-print', color: '#06b6d4', title: 'Printer Setup & Issues',
-                desc: 'Configure printers, fix errors, set up wireless printing.',
-                keys: ['printer', 'print', 'printing', 'scanner', 'scan', 'ink', 'paper', 'driver', 'install printer', 'offline printer', 'print queue', 'stuck'],
-                go: () => highlight('res-printer')
+                icon: 'fa-server', color: '#6366f1', title: 'Server & Infrastructure',
+                desc: 'Server outage, performance degradation, hardware failure.',
+                keys: ['server', 'infrastructure', 'hardware', 'rack', 'vm', 'virtual machine', 'hyper-v', 'vmware', 'esxi', 'host', 'data center', 'performance', 'slow server', 'server crash', 'reboot server'],
+                go: () => highlight('biz-server')
             },
-
             {
-                icon: 'fa-shield-alt', color: '#ef4444', title: 'Security Alerts',
-                desc: 'Respond to threats, malware warnings, and suspicious activity.',
-                keys: ['security', 'virus', 'malware', 'ransomware', 'hacked', 'phishing', 'alert', 'warning', 'firewall', 'antivirus', 'suspicious', 'threat', 'breach', 'spyware', 'attack', 'cyber'],
-                go: () => highlight('res-security')
+                icon: 'fa-cloud', color: '#0ea5e9', title: 'Microsoft 365 & Cloud Services',
+                desc: 'Teams, SharePoint, OneDrive, Exchange — setup, migration, licensing.',
+                keys: ['microsoft 365', 'm365', 'office 365', 'teams', 'sharepoint', 'onedrive', 'exchange', 'azure', 'cloud', 'licensing', 'migration', 'mailbox', 'tenant', 'intune'],
+                go: () => highlight('biz-m365')
             },
-
             {
-                icon: 'fa-file-invoice-dollar', color: '#10b981', title: 'Billing & Invoices',
-                desc: 'Invoice questions, payment methods, or subscription changes.',
-                keys: ['billing', 'invoice', 'payment', 'charge', 'subscription', 'pricing', 'refund', 'receipt', 'fee', 'monthly', 'cancel', 'upgrade', 'credit card'],
-                go: () => highlight('res-billing')
+                icon: 'fa-network-wired', color: '#f59e0b', title: 'Network & VPN',
+                desc: 'Business LAN/WAN, VPN access, switch/router config, performance.',
+                keys: ['network', 'vpn', 'lan', 'wan', 'switch', 'router', 'firewall', 'bandwidth', 'latency', 'dns', 'dhcp', 'vlan', 'remote access', 'cisco', 'ubiquiti', 'site to site'],
+                go: () => highlight('biz-network')
             },
-
             {
-                icon: 'fa-user-lock', color: '#6366f1', title: 'Account Access & Passwords',
-                desc: 'Reset passwords, unlock accounts, or fix login issues.',
-                keys: ['account', 'password', 'login', 'forgot password', 'reset password', 'locked out', 'sign in', 'credentials', '2fa', 'two factor', 'authentication', 'can\'t login'],
-                go: () => highlight('res-account')
+                icon: 'fa-shield-alt', color: '#ef4444', title: 'Cybersecurity & Compliance',
+                desc: 'Ransomware, phishing, endpoint protection, policy audits.',
+                keys: ['cybersecurity', 'security', 'ransomware', 'malware', 'phishing', 'hacked', 'breach', 'compliance', 'gdpr', 'pipa', 'endpoint', 'antivirus', 'soc', 'mfa', 'privileged access', 'vulnerability'],
+                go: () => highlight('biz-cyber')
             },
-
             {
-                icon: 'fa-question-circle', color: '#6366f1', title: 'FAQ: How do I reset my password?',
-                desc: 'Click "Forgot Password" — we\'ll send a reset link instantly.',
-                keys: ['forgot password', 'reset', 'change password', 'password help', 'lose password'],
-                go: () => openFaq('faq-1')
+                icon: 'fa-phone-alt', color: '#8b5cf6', title: 'VoIP & Business Communications',
+                desc: 'Business phone systems, Teams calling, SIP trunks, call quality.',
+                keys: ['voip', 'phone', 'sip', 'pbx', 'call', 'teams calling', 'business phone', 'extension', 'fax', 'call quality', 'dropped calls', 'ring central', '3cx'],
+                go: () => highlight('biz-voip')
             },
-
             {
-                icon: 'fa-clock', color: '#f59e0b', title: 'FAQ: Support hours',
-                desc: 'Mon–Fri 8AM–6PM PST. Emergency support available 24/7.',
-                keys: ['hours', 'when', 'open', 'schedule', 'availability', 'time', 'weekend', 'saturday', 'sunday', 'business hours'],
-                go: () => openFaq('faq-2')
+                icon: 'fa-laptop-code', color: '#10b981', title: 'Managed IT Support Plans',
+                desc: 'Proactive monitoring, helpdesk, patch management, device management.',
+                keys: ['managed', 'msp', 'managed it', 'monitoring', 'helpdesk', 'patch', 'rpa', 'endpoint management', 'maintenance', 'support plan', 'contract', 'monthly'],
+                go: () => highlight('biz-managed')
             },
-
             {
-                icon: 'fa-desktop', color: '#22c55e', title: 'FAQ: Schedule remote support',
-                desc: 'Contact us to book — we\'ll send a 6-digit session code.',
-                keys: ['schedule', 'book', 'appointment', 'remote session'],
-                go: () => openFaq('faq-3')
-            },
-
-            {
-                icon: 'fa-edit', color: '#3b82f6', title: 'FAQ: What to include in a ticket?',
-                desc: 'Describe the issue, when it started, and include screenshots.',
-                keys: ['ticket info', 'what to write', 'screenshot', 'ticket details', 'describe'],
-                go: () => openFaq('faq-4')
-            },
-
-            {
-                icon: 'fa-laptop', color: '#0ea5e9', title: 'New Device Setup',
-                desc: 'Get help setting up a new computer, phone, or tablet.',
-                keys: ['new computer', 'setup', 'new laptop', 'new phone', 'configure', 'install', 'tablet', 'mac', 'windows', 'iphone', 'android', 'new device'],
-                go: () => location.href = 'contact-us.html?service=other-support'
-            },
-
-            {
-                icon: 'fa-cloud', color: '#0ea5e9', title: 'Cloud & Backup Services',
-                desc: 'Microsoft 365, OneDrive, cloud backup and data recovery.',
-                keys: ['cloud', 'backup', 'onedrive', 'dropbox', 'restore', 'data loss', 'recovery', 'microsoft 365', 'sharepoint', 'teams', 'storage', 'files'],
+                icon: 'fa-database', color: '#06b6d4', title: 'Backup & Disaster Recovery',
+                desc: 'Business backup solutions, restore points, DR planning.',
+                keys: ['backup', 'disaster recovery', 'restore', 'data loss', 'dr', 'business continuity', 'replication', 'veeam', 'acronis', 'offsite', 'recovery point'],
                 go: () => location.href = 'contact-us.html?service=business-cloud-solutions'
             },
+            {
+                icon: 'fa-file-invoice-dollar', color: '#10b981', title: 'Business Billing & Contracts',
+                desc: 'Invoice queries, managed service plan adjustments, or renewals.',
+                keys: ['billing', 'invoice', 'contract', 'renewal', 'pricing', 'quote', 'service plan', 'payment', 'retainer'],
+                go: () => highlight('res-billing')
+            },
+            {
+                icon: 'fa-clock', color: '#f59e0b', title: 'FAQ: Support hours & SLA',
+                desc: 'Mon–Fri 8AM–6PM PST standard. 24/7 emergency for business-critical issues.',
+                keys: ['hours', 'sla', 'response time', 'when', 'open', 'availability', 'weekend', 'emergency'],
+                go: () => openFaq('faq-2')
+            },
+            {
+                icon: 'fa-question-circle', color: '#6366f1', title: 'FAQ: What to include in a ticket?',
+                desc: 'System affected, users impacted, error messages, and screenshots.',
+                keys: ['ticket info', 'what to include', 'screenshot', 'ticket details', 'describe issue'],
+                go: () => openFaq('faq-4')
+            },
+            {
+                icon: 'fa-handshake', color: '#22c55e', title: 'Request a Managed IT Quote',
+                desc: 'Get a custom proposal for your business within 24 hours.',
+                keys: ['quote', 'proposal', 'managed', 'pricing', 'plan', 'contract', 'business plan', 'new client'],
+                go: () => location.href = 'contact-us.html?service=business-managed-it'
+            },
         ];
+
+        /* Active KB — switches when mode changes */
+        function activeKB() { return currentMode === 'home' ? KB_HOME : KB_BUSINESS; }
 
         let activeIdx = -1, curResults = [];
 
@@ -446,7 +957,7 @@
             if (!query || query.length < 2) { box.style.display = 'none'; return; }
 
             const q = query.toLowerCase();
-            curResults = KB.filter(item =>
+            curResults = activeKB().filter(item =>
                 item.title.toLowerCase().includes(q) ||
                 item.desc.toLowerCase().includes(q) ||
                 item.keys.some(k => k.includes(q) || q.includes(k))
@@ -527,6 +1038,343 @@
                 if (!inp.contains(e.target) && !box.contains(e.target)) closeSearch();
             });
         });
+    </script>
+
+    <!-- ═══════════════════════════════════════════════
+         GUIDE MODAL OVERLAY
+         ═══════════════════════════════════════════════ -->
+    <div id="guide-modal" style="
+        display:none; position:fixed; inset:0; background:rgba(10,15,30,.65);
+        z-index:9998; align-items:center; justify-content:center;
+        padding:1rem; backdrop-filter:blur(4px);" onclick="if(event.target===this)closeGuide()">
+        <div style="
+            background:#fff; border-radius:20px; max-width:560px; width:100%;
+            max-height:88vh; overflow-y:auto; box-shadow:0 24px 80px rgba(0,0,0,.28);
+            animation: guideIn .22s ease;">
+            <div id="guide-inner"></div>
+        </div>
+    </div>
+
+    <style>
+        @keyframes guideIn {
+            from {
+                opacity: 0;
+                transform: scale(.94)
+            }
+
+            to {
+                opacity: 1;
+                transform: scale(1)
+            }
+        }
+
+        .guide-step {
+            display: flex;
+            gap: .85rem;
+            align-items: flex-start;
+            padding: .7rem 0;
+            border-bottom: 1px solid #f0f0f0;
+        }
+
+        .guide-step:last-child {
+            border-bottom: none;
+        }
+
+        .guide-num {
+            min-width: 28px;
+            height: 28px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 700;
+            font-size: .82rem;
+            flex-shrink: 0;
+            margin-top: .05rem;
+        }
+
+        .guide-tip {
+            background: #fffbeb;
+            border-left: 4px solid #f59e0b;
+            border-radius: 0 8px 8px 0;
+            padding: .8rem 1rem;
+            margin: .5rem 0 0;
+            font-size: .88rem;
+            color: #92400e;
+        }
+
+        .guide-tip b {
+            color: #78350f;
+        }
+
+        .guide-warning {
+            background: #fff0f0;
+            border-left: 4px solid #ef4444;
+            border-radius: 0 8px 8px 0;
+            padding: .8rem 1rem;
+            margin: .5rem 0 0;
+            font-size: .88rem;
+            color: #991b1b;
+        }
+
+        .guide-warning b {
+            color: #7f1d1d;
+        }
+
+        /* resource-link button reset to look like an anchor */
+        button.resource-link {
+            background: none;
+            border: none;
+            padding: 0;
+            cursor: pointer;
+            font-family: inherit;
+            font-size: inherit;
+        }
+    </style>
+
+    <script>
+        const GUIDES = {
+            wifi: {
+                icon: 'fa-wifi', color: '#f59e0b', bg: '#fffbeb',
+                title: 'Wi-Fi Issues',
+                subtitle: 'Troubleshoot your internet connection step by step',
+                steps: [
+                    { num: 1, text: '<strong>Restart your router & modem.</strong> Unplug both devices, wait <strong>30 seconds</strong>, then plug the modem back in first — wait until its lights stabilize — then plug the router back in. This fixes ~60% of connection problems.' },
+                    { num: 2, text: '<strong>Forget & reconnect to the network.</strong> On your device go to Wi-Fi settings, select your network and choose "Forget". Then reconnect by entering your password again. This clears stale credentials.' },
+                    { num: 3, text: '<strong>Check if other devices are affected.</strong> If only one device has issues, the problem is with that device — not the router. Try restarting it or updating its Wi-Fi driver.' },
+                    { num: 4, text: '<strong>Move closer to the router.</strong> Walls, appliances, and distance weaken signal. Test in the same room as the router to rule out a range issue.' },
+                    { num: 5, text: '<strong>Check for ISP outages.</strong> Visit your internet provider\'s status page or call them to confirm there\'s no service disruption in your area.' },
+                    { num: 6, text: '<strong>Update your network adapter drivers.</strong> On Windows: Device Manager → Network Adapters → right-click your adapter → "Update driver".' },
+                    { num: 7, text: '<strong>Try a wired Ethernet connection.</strong> If it works via cable but not Wi-Fi, the issue is wireless-specific and likely the router or its settings.' },
+                ],
+                tip: '💡 <b>Quick tip:</b> If you see "Connected but no internet", try setting your DNS to <b>8.8.8.8</b> (Google) or <b>1.1.1.1</b> (Cloudflare) in your network adapter settings.',
+            },
+            email: {
+                icon: 'fa-envelope', color: '#8b5cf6', bg: '#f5f3ff',
+                title: 'Email Problems',
+                subtitle: 'Fix sync, login, and access issues',
+                steps: [
+                    { num: 1, text: '<strong>Verify your internet connection first.</strong> Open a browser and load a webpage. If that fails, fix your connection first — email relies on it.' },
+                    { num: 2, text: '<strong>Check your login credentials.</strong> Try logging into your email via the web browser (e.g., outlook.com or mail.google.com). If that works, the issue is with your email app configuration, not your account.' },
+                    { num: 3, text: '<strong>Check your Spam / Junk folder.</strong> Missing emails are often auto-filtered. If found, mark them "Not spam" to train the filter.' },
+                    { num: 4, text: '<strong>Clear your email app\'s cache.</strong> In Outlook: File → Account Settings → Data Files → remove & re-add your account. In Gmail app: Settings → Storage → Clear Cache.' },
+                    { num: 5, text: '<strong>Check your storage quota.</strong> A full mailbox stops receiving new emails. Delete large attachments or empty your Trash & Spam to free space.' },
+                    { num: 6, text: '<strong>Re-enter your server settings.</strong> For IMAP — incoming: <code>imap.yourdomain.com</code> port 993 (SSL). Outgoing SMTP: <code>smtp.yourdomain.com</code> port 587 (TLS). Exact values vary by provider.' },
+                    { num: 7, text: '<strong>Disable email app add-ins.</strong> In Outlook: File → Options → Add-ins → disable all, then restart. A rogue plugin often causes sync failures.' },
+                ],
+                tip: '💡 <b>Quick tip:</b> Always back up your emails before removing and re-adding an account — local folders may not sync back automatically.',
+            },
+            printer: {
+                icon: 'fa-print', color: '#06b6d4', bg: '#ecfeff',
+                title: 'Printer Setup & Issues',
+                subtitle: 'Get your printer online and printing cleanly',
+                steps: [
+                    { num: 1, text: '<strong>Check power, cables, and paper.</strong> Ensure the printer is on, has paper loaded correctly, and (if USB) the cable is securely connected at both ends.' },
+                    { num: 2, text: '<strong>Set it as your default printer.</strong> Windows: Settings → Bluetooth & devices → Printers & scanners → select your printer → Set as default. macOS: System Settings → Printers & Scanners.' },
+                    { num: 3, text: '<strong>Clear the print queue.</strong> Windows: click the printer in Settings → Open print queue → cancel all stuck jobs. A jammed queue blocks all new jobs.' },
+                    { num: 4, text: '<strong>Restart the Print Spooler service.</strong> Windows: press Win+R → type <code>services.msc</code> → find "Print Spooler" → right-click → Restart. This fixes most Windows print queue issues.' },
+                    { num: 5, text: '<strong>Reinstall the printer driver.</strong> Download the latest driver from the manufacturer\'s website (HP, Canon, Brother, Epson). Uninstall the old driver first via Control Panel → Devices.' },
+                    { num: 6, text: '<strong>For wireless printers — confirm same network.</strong> Both your computer and printer must be on the same Wi-Fi network. Print a "Network Configuration Page" from the printer\'s menu to confirm its IP address.' },
+                    { num: 7, text: '<strong>Run the printer\'s self-test / nozzle clean.</strong> Access via the printer\'s menu buttons (usually Settings → Maintenance). This confirms the hardware is functional.' },
+                ],
+                tip: '💡 <b>Quick tip:</b> If your printer shows "Offline" even when on, go to Printers & Scanners → uncheck "Use Printer Offline" — this is a common Windows quirk.',
+            },
+            security: {
+                icon: 'fa-shield-alt', color: '#ef4444', bg: '#fff0f0',
+                title: 'Security Alerts',
+                subtitle: 'Respond to threats and protect your data',
+                steps: [
+                    { num: 1, text: '<strong>Do NOT click any suspicious links.</strong> If you see a security warning in your browser or email, close the tab immediately. Do not interact with the page or download anything.' },
+                    { num: 2, text: '<strong>Disconnect from the internet if actively compromised.</strong> Unplug the ethernet cable or disable Wi-Fi. This stops malware from communicating with attackers while you take action.' },
+                    { num: 3, text: '<strong>Run a full antivirus scan.</strong> Use Windows Defender (built-in) or a trusted tool like Malwarebytes. Quarantine or delete anything flagged. Restart your computer after.' },
+                    { num: 4, text: '<strong>Change your passwords immediately.</strong> Start with email, then banking, then work accounts. Use a different device or phone to change them if your computer is compromised.' },
+                    { num: 5, text: '<strong>Enable Two-Factor Authentication (2FA).</strong> On every important account — email, Microsoft 365, banking — enable 2FA via an authenticator app (Microsoft Authenticator or Google Authenticator).' },
+                    { num: 6, text: '<strong>Check for unauthorized account activity.</strong> Review your email Sent folder, Microsoft 365 login history, and banking transactions for anything unusual.' },
+                    { num: 7, text: '<strong>Keep all software updated.</strong> Windows Update, browser updates, and app patches fix known security holes that attackers exploit.' },
+                ],
+                warning: '🚨 <b>Important:</b> If you suspect a ransomware attack or data breach at your business, contact our emergency line immediately at <b>+1 (778) 862-4365</b>. Do not pay any ransom without professional guidance.',
+            },
+            billing: {
+                icon: 'fa-file-invoice-dollar', color: '#10b981', bg: '#ecfdf5',
+                title: 'Billing & Invoices',
+                subtitle: 'Understand your invoices and manage payments',
+                steps: [
+                    { num: 1, text: '<strong>Review your invoice details.</strong> Each invoice includes: service period, itemized charges, applicable taxes (GST/PST for BC), and due date. Keep these for your records.' },
+                    { num: 2, text: '<strong>Accepted payment methods.</strong> We accept e-Transfer (to billing@soon-tech.com), cheque payable to SoonTech Inc., or credit card arrangements made via our office.' },
+                    { num: 3, text: '<strong>Understanding recurring charges.</strong> Monthly retainer agreements are billed at the start of each billing cycle. One-time services appear as single charges on the invoice they were delivered.' },
+                    { num: 4, text: '<strong>Late payments & reminders.</strong> Invoices are due within 30 days of issue. You\'ll receive an automatic reminder at 7 days past due. Contact us before the due date if you need a payment arrangement.' },
+                    { num: 5, text: '<strong>Requesting a billing adjustment or dispute.</strong> If you believe a charge is incorrect, email info@soon-tech.com with your invoice number and a description of the discrepancy. We respond within 2 business days.' },
+                    { num: 6, text: '<strong>Adding or removing services.</strong> Service plan changes (upgrades, downgrades, cancellations) take effect at the start of the next billing cycle. Contact us at least 7 days before your cycle end date.' },
+                ],
+                tip: '💡 <b>Quick tip:</b> Request an itemized breakdown of any invoice by emailing <b>info@soon-tech.com</b> with your invoice number — we\'re happy to clarify every line item.',
+            },
+            account: {
+                icon: 'fa-user-lock', color: '#6366f1', bg: '#eef2ff',
+                title: 'Account Access & Passwords',
+                subtitle: 'Get back into your account quickly and securely',
+                steps: [
+                    { num: 1, text: '<strong>Use the "Forgot Password" link.</strong> On any login page, click "Forgot Password" and enter your email address. A secure reset link will be sent within a few minutes.' },
+                    { num: 2, text: '<strong>Check your spam / junk folder.</strong> Password reset emails are sometimes filtered. Look for an email from your service provider, not from SoonTech.' },
+                    { num: 3, text: '<strong>Check Caps Lock and keyboard language.</strong> Passwords are case-sensitive. Ensure Caps Lock is off and your keyboard layout hasn\'t changed (common issue when switching between languages).' },
+                    { num: 4, text: '<strong>Clear your browser\'s saved passwords.</strong> An outdated saved password can auto-fill incorrectly. In Chrome: Settings → Autofill → Passwords → find the site and delete the stored entry.' },
+                    { num: 5, text: '<strong>Try a different browser or private mode.</strong> Open an Incognito/Private window and try logging in fresh. This rules out browser extension or cache issues.' },
+                    { num: 6, text: '<strong>Check for account lockouts.</strong> After multiple failed attempts, accounts often lock for 15–30 minutes. Wait before trying again, or contact the service\'s support to unlock.' },
+                    { num: 7, text: '<strong>Enable Two-Factor Authentication (2FA) once in.</strong> Use Microsoft Authenticator or Google Authenticator to add a second layer — this prevents unauthorized access even if your password is stolen.' },
+                ],
+                tip: '💡 <b>Quick tip:</b> Use a <b>password manager</b> (such as Bitwarden — free — or 1Password) to generate and store unique passwords for every account. Never reuse passwords.',
+            },
+
+            /* ── BUSINESS GUIDES ────────────────────────────── */
+            'biz-server': {
+                icon: 'fa-server', color: '#6366f1', bg: '#eef2ff',
+                title: 'Server & Infrastructure',
+                subtitle: 'Diagnose and recover from server outages or performance issues',
+                steps: [
+                    { num: 1, text: '<strong>Check physical indicators first.</strong> Look at the server\'s front panel lights — amber/red usually means hardware fault. Check that power cables and network cables are fully seated.' },
+                    { num: 2, text: '<strong>Ping the server.</strong> From a workstation, run <code>ping [server-ip]</code> in Command Prompt. If there\'s no reply, the server is unreachable at the network level — move to step 3.' },
+                    { num: 3, text: '<strong>Check the server\'s management console or iDRAC/iLO.</strong> For Dell/HP servers, access the out-of-band management interface to see hardware health, temperatures, RAID status, and recent event logs without booting the OS.' },
+                    { num: 4, text: '<strong>Review Windows Event Viewer or syslog.</strong> On the server (or remotely via Event Viewer), check System and Application logs for critical errors in the last 24 hours. Common culprits: disk failure, memory errors, driver crashes.' },
+                    { num: 5, text: '<strong>Check disk health & RAID status.</strong> Open your RAID controller\'s management utility (e.g., MegaRAID Storage Manager or HP Smart Array). A degraded array won\'t cause immediate data loss but must be rebuilt urgently.' },
+                    { num: 6, text: '<strong>Review resource usage.</strong> Open Task Manager or Resource Monitor (or Grafana/Zabbix if monitored). CPU sustained above 90%, RAM at capacity, or disk queue length above 2 are signs of resource exhaustion.' },
+                    { num: 7, text: '<strong>Restart non-critical services first.</strong> If the OS is responsive, restart the specific service (IIS, SQL Server, etc.) before rebooting the entire server — a full reboot should always be a last resort.' },
+                ],
+                warning: '🚨 <b>Critical:</b> If the server will not boot, or you suspect data corruption or RAID failure, <b>do not attempt further restarts</b>. Call our emergency line at <b>+1 (778) 862-4365</b> immediately to prevent data loss.',
+            },
+
+            'biz-m365': {
+                icon: 'fa-cloud', color: '#0ea5e9', bg: '#f0f9ff',
+                title: 'Microsoft 365 & Cloud Services',
+                subtitle: 'Resolve Teams, SharePoint, OneDrive, and licensing issues',
+                steps: [
+                    { num: 1, text: '<strong>Check Microsoft\'s Service Health Dashboard.</strong> In the Microsoft 365 Admin Center → Health → Service health. If there\'s a widespread incident (e.g., Teams outage), the issue is on Microsoft\'s side and you\'ll need to wait.' },
+                    { num: 2, text: '<strong>Sign in via the web browser first.</strong> Go to office.com and sign in. If web access works but the desktop app fails, the problem is with the local app installation — not the account or tenant.' },
+                    { num: 3, text: '<strong>Clear credentials from Windows Credential Manager.</strong> In Control Panel → Credential Manager → Windows Credentials → remove any saved Microsoft/Office entries. Restart the app and re-sign in.' },
+                    { num: 4, text: '<strong>Repair or reinstall Microsoft 365.</strong> Control Panel → Apps → Microsoft 365 → Modify → Quick Repair (or Online Repair for more thorough fix). This resolves most local app corruption.' },
+                    { num: 5, text: '<strong>For Teams-specific issues:</strong> Teams → Settings → General → clear cache by deleting <code>%AppData%\\Microsoft\\Teams</code> contents (sign out first). Most Teams glitches are fixed this way.' },
+                    { num: 6, text: '<strong>Check license assignment.</strong> In the Microsoft 365 Admin Center → Users → Active Users → find the user → confirm a valid license is assigned and not expired. Unlicensed users lose access to all M365 services.' },
+                    { num: 7, text: '<strong>SharePoint/OneDrive sync issues:</strong> Right-click the OneDrive tray icon → Settings → Account → "Unlink this PC", then re-link. This forces a clean re-sync without data loss.' },
+                ],
+                tip: '💡 <b>Quick tip:</b> For tenant-wide issues, the <b>Microsoft 365 Message Center</b> (Admin Center → Health → Message Center) announces planned changes that may explain sudden behaviour differences.',
+            },
+
+            'biz-network': {
+                icon: 'fa-network-wired', color: '#f59e0b', bg: '#fffbeb',
+                title: 'Network & VPN',
+                subtitle: 'Restore business connectivity and remote access',
+                steps: [
+                    { num: 1, text: '<strong>Identify the scope of the outage.</strong> Is it one user, one floor, one building, or the whole company? Scope narrows the cause: single-user issues = endpoint/config; whole-company = core switch, router, or ISP.' },
+                    { num: 2, text: '<strong>Check the core network devices.</strong> Log in to your firewall/router and core switch management interface. Look for port errors, high CPU, or failover events in the event log.' },
+                    { num: 3, text: '<strong>Restart the affected network device in order.</strong> For a full outage: ISP modem → firewall → core switch → distribution switches. Wait 60 seconds between each before powering the next.' },
+                    { num: 4, text: '<strong>For VPN issues (user can\'t connect):</strong> Confirm the user\'s IP isn\'t blocked. Check the VPN gateway logs for authentication errors. Confirm the correct VPN profile/server address is configured on the endpoint.' },
+                    { num: 5, text: '<strong>Test DNS resolution.</strong> On an affected machine, run <code>nslookup google.com</code>. If it fails but ping to 8.8.8.8 succeeds, the issue is DNS — check that internal DNS servers are running and reachable.' },
+                    { num: 6, text: '<strong>Check for duplicate IPs or DHCP exhaustion.</strong> In a busy environment, DHCP pools can run out. Open your DHCP server (often on the domain controller or router) and verify there are available leases.' },
+                    { num: 7, text: '<strong>Check for ISP/WAN issues.</strong> Log in to your router and check the WAN interface status. If it shows "no link" or packets are dropping to the gateway, the problem is with your internet provider — contact them.' },
+                ],
+                tip: '💡 <b>Quick tip:</b> Always document your network\'s IP scheme, VLAN map, and device credentials in a secure internal wiki. This dramatically reduces resolution time during outages.',
+            },
+
+            'biz-cyber': {
+                icon: 'fa-shield-alt', color: '#ef4444', bg: '#fff0f0',
+                title: 'Cybersecurity & Compliance',
+                subtitle: 'Respond to threats and strengthen your business defences',
+                steps: [
+                    { num: 1, text: '<strong>Contain first — isolate the affected system.</strong> If you suspect an active breach or ransomware, immediately disconnect the affected machine from the network (unplug ethernet, disable Wi-Fi). Do NOT shut it down — live memory may contain forensic evidence.' },
+                    { num: 2, text: '<strong>Identify the threat scope.</strong> Which systems and users are affected? Are there unusual login attempts in Azure AD / Active Directory? Check sign-in logs (Azure AD → Sign-in logs → filter for failures and unfamiliar locations).' },
+                    { num: 3, text: '<strong>Revoke and reset all potentially compromised credentials.</strong> Force password resets for affected user accounts. Revoke all active sessions in Microsoft 365 Admin Center → Users → user → "Revoke sessions".' },
+                    { num: 4, text: '<strong>Enable or verify MFA on all accounts.</strong> Multi-Factor Authentication blocks 99.9% of automated credential attacks. In Azure AD → Security → MFA → enable for all users, especially admins.' },
+                    { num: 5, text: '<strong>Run a full endpoint scan.</strong> Deploy Malwarebytes or use your existing EDR solution (e.g., Defender for Business, SentinelOne) to run full scans across all endpoints. Quarantine and report threats.' },
+                    { num: 6, text: '<strong>Review audit logs.</strong> In Microsoft 365 Admin Center → Compliance → Audit → search for data access, mail forwarding rules, or admin changes made in the last 7 days. Attackers often set up forwarding rules to exfiltrate email.' },
+                    { num: 7, text: '<strong>Document everything for compliance.</strong> Canadian businesses may have breach notification obligations under PIPEDA. Record the timeline, scope, and actions taken. Your documentation protects both your clients and your business.' },
+                ],
+                warning: '🚨 <b>Do not pay any ransom</b> without contacting a professional first. Call our emergency line at <b>+1 (778) 862-4365</b> immediately. Paying does not guarantee recovery and may put you in a worse position.',
+            },
+
+            'biz-voip': {
+                icon: 'fa-phone-alt', color: '#8b5cf6', bg: '#f5f3ff',
+                title: 'VoIP & Business Communications',
+                subtitle: 'Fix call quality, dropped calls, and phone system issues',
+                steps: [
+                    { num: 1, text: '<strong>Check internet speed and Quality of Service (QoS).</strong> VoIP requires consistent low-latency bandwidth. Run a speed test — VoIP needs at least 100 kbps per concurrent call. Check if your router is prioritizing VoIP traffic via QoS settings.' },
+                    { num: 2, text: '<strong>Restart the VoIP phones or softphone app.</strong> For desk phones, unplug the network cable (they\'re PoE-powered), wait 10 seconds, and reconnect. For Teams/softphone: fully close and reopen the app.' },
+                    { num: 3, text: '<strong>Check if the issue is one-sided or widespread.</strong> If only one user has issues, check their specific device, extension, or headset. If company-wide, the SIP trunk provider or your internet connection is the likely cause.' },
+                    { num: 4, text: '<strong>Test with a different headset/handset.</strong> Audio quality issues (echo, static, cutting out) are very often caused by a faulty headset rather than a network or server problem.' },
+                    { num: 5, text: '<strong>Check the SIP trunk / provider status page.</strong> Login to your VoIP provider\'s portal (RingCentral, 3CX, Telus Business, etc.) and check for active incidents or trunk registration errors.' },
+                    { num: 6, text: '<strong>For Microsoft Teams Calling issues:</strong> Check the Teams Admin Center → Voice → Direct Routing. Verify that SBC (Session Border Controller) health is green and the PSTN route is active.' },
+                    { num: 7, text: '<strong>Review call logs for specific error codes.</strong> In your PBX or VoIP provider admin portal, check call detail records (CDR) for failed calls. SIP response codes like 503 (Service Unavailable) or 403 (Forbidden) pinpoint the issue.' },
+                ],
+                tip: '💡 <b>Quick tip:</b> If QoS is not configured on your router/firewall, VoIP traffic competes with downloads and video streams. Prioritizing <b>SIP (port 5060)</b> and <b>RTP (ports 10000–20000)</b> traffic dramatically improves call quality.',
+            },
+
+            'biz-managed': {
+                icon: 'fa-laptop-code', color: '#10b981', bg: '#ecfdf5',
+                title: 'Managed IT Support',
+                subtitle: 'Get the most from your managed service plan',
+                steps: [
+                    { num: 1, text: '<strong>Understand what\'s included in your plan.</strong> Your Managed IT agreement includes proactive monitoring, patch management, unlimited helpdesk support, antivirus, and priority response. Review your Service Level Agreement (SLA) for exact terms.' },
+                    { num: 2, text: '<strong>How to submit a priority request.</strong> For urgent issues, call <a href="tel:+17788624365" style="color:inherit;font-weight:600;">+1 (778) 862-4365</a> directly. For non-urgent matters, use the support ticket form — include as much detail as possible for the fastest resolution.' },
+                    { num: 3, text: '<strong>Check your monitoring dashboard.</strong> If you have access to your SoonTech client portal, check the device health dashboard for any alerts or patch failures we\'ve already identified and are working on.' },
+                    { num: 4, text: '<strong>Understand patch management cycles.</strong> Critical security patches are deployed within 24 hours. Standard patches are reviewed and deployed on a scheduled monthly cycle to minimize disruption. Server patches follow a separate approved change schedule.' },
+                    { num: 5, text: '<strong>Adding or removing devices.</strong> Contact us to add new endpoints to management or remove retired devices. Unmanaged devices on your network are a security risk — we can audit and enroll any missed endpoints.' },
+                    { num: 6, text: '<strong>Requesting a plan review or upgrade.</strong> If your business has grown, contact us to review your plan. We\'ll assess your current coverage, identify gaps, and provide an updated proposal tailored to your needs.' },
+                ],
+                tip: '💡 <b>Quick tip:</b> The fastest way to get help is to call us directly for urgent issues and use the ticket form for anything non-urgent. Include the <b>affected device names</b> and <b>number of users impacted</b> in every ticket to skip the first round of diagnostics.',
+            },
+        };
+
+
+        function openGuide(key) {
+            const g = GUIDES[key];
+            if (!g) return;
+
+            const cta = g.warning
+                ? `<div class="guide-warning">${g.warning}</div>`
+                : `<div class="guide-tip">${g.tip}</div>`;
+
+            const steps = g.steps.map(s => `
+                <div class="guide-step">
+                    <div class="guide-num" style="background:${g.color}1a;color:${g.color};">${s.num}</div>
+                    <div style="font-size:.9rem;color:#374151;line-height:1.55;">${s.text}</div>
+                </div>`).join('');
+
+            document.getElementById('guide-inner').innerHTML = `
+                <!-- Header -->
+                <div style="background:${g.bg};padding:1.6rem 1.6rem 1.2rem;border-radius:20px 20px 0 0;border-bottom:1px solid ${g.color}30;">
+                    <div style="display:flex;align-items:center;justify-content:space-between;">
+                        <div style="display:flex;align-items:center;gap:.9rem;">
+                            <div style="width:46px;height:46px;border-radius:12px;background:${g.color}22;display:flex;align-items:center;justify-content:center;">
+                                <i class="fas ${g.icon}" style="color:${g.color};font-size:1.3rem;"></i>
+                            </div>
+                            <div>
+                                <h2 style="margin:0;font-size:1.15rem;color:#111827;font-weight:700;">${g.title}</h2>
+                                <p style="margin:0;font-size:.82rem;color:#6b7280;">${g.subtitle}</p>
+                            </div>
+                        </div>
+                        <button onclick="closeGuide()" style="background:none;border:none;cursor:pointer;font-size:1.3rem;color:#9ca3af;padding:.25rem .4rem;border-radius:8px;line-height:1;" title="Close">✕</button>
+                    </div>
+                </div>
+                <!-- Steps -->
+                <div style="padding:1.2rem 1.6rem 0;">${steps}</div>
+                <!-- Tip / Warning -->
+                <div style="padding:.4rem 1.6rem;">${cta}</div>
+                <!-- CTA footer -->
+                <div style="padding:1.2rem 1.6rem 1.6rem;text-align:center;">
+                    <p style="margin:0 0 .8rem;font-size:.85rem;color:#6b7280;">Still having trouble after following these steps?</p>
+                    <a href="contact-us.html?service=other-support" style="display:inline-flex;align-items:center;gap:.5rem;background:${g.color};color:#fff;text-decoration:none;padding:.7rem 1.5rem;border-radius:10px;font-weight:600;font-size:.9rem;">
+                        <i class="fas fa-paper-plane"></i> Contact a Technician
+                    </a>
+                </div>`;
+
+            const modal = document.getElementById('guide-modal');
+            modal.style.display = 'flex';
+            document.body.style.overflow = 'hidden';
+        }
+
+        function closeGuide() {
+            document.getElementById('guide-modal').style.display = 'none';
+            document.body.style.overflow = '';
+        }
+
+        document.addEventListener('keydown', e => { if (e.key === 'Escape') closeGuide(); });
     </script>
 </body>
 
