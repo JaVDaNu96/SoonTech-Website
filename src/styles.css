@@ -213,23 +213,108 @@ a {
     color: var(--primary-green);
 }
 
+/* Mobile Menu Button */
+.hamburger {
+    display: none;
+    cursor: pointer;
+    flex-direction: column;
+    gap: 6px;
+    z-index: 1001;
+}
+
+.hamburger .bar {
+    width: 25px;
+    height: 3px;
+    background-color: var(--primary-green);
+    transition: all 0.3s ease-in-out;
+}
+
 /* Mobile Responsive Design */
-@media (max-width: 768px) {
+@media (max-width: 900px) {
     .site-header {
-        padding: 0.5rem 2rem;
+        padding: 1rem 2rem;
     }
 
     .header-content {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
+    .hamburger {
+        display: flex;
+    }
+
+    .site-header .header-right,
+    .site-header .menu-right {
+        width: 100%;
         flex-direction: column;
+        align-items: flex-start;
+        display: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    .site-header .menu-right {
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+        background-color: var(--pure-white);
+        box-shadow: 0 4px 6px -2px rgba(0, 0, 0, 0.1);
+    }
+
+    .site-header .header-right.nav-active,
+    .site-header .menu-right.nav-active {
+        display: flex;
+        animation: navFade 0.3s ease forwards;
+    }
+
+    @keyframes navFade {
+        from {
+            opacity: 0;
+            transform: translateY(-10px);
+        }
+
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
     }
 
     .header-nav {
         flex-direction: column;
-        gap: 1rem;
+        width: 100%;
+        gap: 0;
+        align-items: stretch;
     }
 
-    .menu-right {
-        margin-top: 1rem;
+    .header-nav li {
+        width: 100%;
+        padding: 0.8rem 0;
+        border-bottom: 1px solid #f0f0f0;
+    }
+
+    .dropdown-menu {
+        position: relative;
+        top: 0;
+        width: 100%;
+        box-shadow: none;
+        padding-left: 1rem;
+        padding-top: 0.5rem;
+        border-left: 2px solid var(--secondary-green);
+        margin-left: 0.5rem;
+    }
+
+    .hamburger.toggle .bar:nth-child(1) {
+        transform: translateY(9px) rotate(45deg);
+    }
+
+    .hamburger.toggle .bar:nth-child(2) {
+        opacity: 0;
+    }
+
+    .hamburger.toggle .bar:nth-child(3) {
+        transform: translateY(-9px) rotate(-45deg);
     }
 }
 

@@ -25,13 +25,15 @@
             "title": "Tech Support That Feels Like Family",
             "subtitle": "Your Personal IT Team",
             "description": "No more tech stress. Get expert help setting up, securing, and maintaining your home technology. Clear answers, fast solutions, and peace of mind.",
-            "cta": "Get Started Today"
+            "cta": "Get Started Today",
+            "imageAlt": "Happy family using technology"
         },
         "business": {
             "title": "Enterprise IT, Small Business Budget",
             "subtitle": "Your Competitive Edge",
             "description": "Stop worrying about technology and focus on growth. Get reliable IT support, robust security, and strategic guidance tailored to your business.",
-            "cta": "Boost Your Business"
+            "cta": "Boost Your Business",
+            "imageAlt": "Professional business team"
         }
     },
     "home": {
@@ -601,7 +603,35 @@
                     "description": "Reset passwords"
                 }
             },
-            "viewGuide": "View Guide"
+            "viewGuide": "View Guide",
+            "subtitleHome": "Quick fixes for common issues",
+            "subtitleBiz": "Enterprise IT solutions at your fingertips",
+            "itemsBiz": {
+                "bizServer": {
+                    "title": "Server & Infrastructure",
+                    "description": "Outages, performance, hardware"
+                },
+                "bizM365": {
+                    "title": "Microsoft 365 & Cloud",
+                    "description": "Teams, SharePoint, OneDrive"
+                },
+                "bizNetwork": {
+                    "title": "Network & VPN",
+                    "description": "Business connectivity & remote access"
+                },
+                "bizCyber": {
+                    "title": "Cybersecurity & Compliance",
+                    "description": "Threats, audits, policies"
+                },
+                "bizVoip": {
+                    "title": "VoIP & Communications",
+                    "description": "Phone systems & Teams calling"
+                },
+                "bizManaged": {
+                    "title": "Managed IT Support",
+                    "description": "Monitoring, helpdesk, devices"
+                }
+            }
         },
         "faq": {
             "title": "Frequently Asked Questions",
@@ -621,6 +651,62 @@
                 "q4": {
                     "q": "What should I include in a ticket?",
                     "a": "Describe the issue, when it started, what you tried, and include screenshots if possible."
+                },
+                "q5": {
+                    "q": "How long does it typically take to resolve an issue?",
+                    "a": "Resolution time depends on the complexity of the issue. Most common problems are resolved within 1–2 hours during business hours. Emergency calls are answered within 15 minutes, 24/7."
+                },
+                "q6": {
+                    "q": "What areas does SoonTech serve?",
+                    "a": "We are based in Surrey, BC and serve clients throughout the Lower Mainland. Remote support is available for clients anywhere in Canada."
+                },
+                "q7": {
+                    "q": "Is my data safe when you access my computer remotely?",
+                    "a": "Absolutely. We use TeamViewer for remote sessions, which employs AES 256-bit encryption. You can see everything our technician does and can end the session at any moment."
+                },
+                "q8": {
+                    "q": "What happens if my issue occurs outside business hours?",
+                    "a": "Our standard support hours are Mon-Fri, 8 AM - 6 PM PST. For urgent situations, our 24/7 emergency line is available at +1 (778) 862-4365."
+                },
+                "q9": {
+                    "q": "Do you offer monthly support plans for businesses?",
+                    "a": "Yes! We offer Managed IT Service plans tailored to your needs. Plans include proactive monitoring, cybersecurity protection, and priority response times."
+                }
+            },
+            "subtitleHome": "Common questions from home users",
+            "subtitleBiz": "Enterprise IT questions answered",
+            "itemsBiz": {
+                "bfaq1": {
+                    "q": "What does your Managed IT service include?",
+                    "a": "Plans include 24/7 proactive monitoring, remote/on-site helpdesk, patch management, endpoint security, monthly reporting, and MS365 administration."
+                },
+                "bfaq2": {
+                    "q": "What is your SLA response time for business clients?",
+                    "a": "Critical issues: 15 minutes, 24/7. High severity: 1 business hour. Medium severity: 4 hours. Low severity/requests: 1 business day."
+                },
+                "bfaq3": {
+                    "q": "How do you handle cybersecurity for business clients?",
+                    "a": "Standard protections include EDR, MFA enforcement, weekly security patching, email security via Defender, staff awareness training, and rapid incident response."
+                },
+                "bfaq4": {
+                    "q": "Can you migrate our business to Microsoft 365?",
+                    "a": "Yes. We handle the complete process including pre-migration audit, tenant setup, 100% data-loss-free email migration, Teams/SharePoint rollout, and user training."
+                },
+                "bfaq5": {
+                    "q": "Do you offer on-site support, or is it only remote?",
+                    "a": "Both. Over 80% of issues are resolved remotely for faster resolution. On-site support is provided for hardware, networking, and server physical tasks throughout the Lower Mainland."
+                },
+                "bfaq6": {
+                    "q": "How do you handle backups and disaster recovery for businesses?",
+                    "a": "We deploy automated daily backups, offsite cloud replication, and regular restore testing. We establish clear Recovery Time (RTO) and Recovery Point (RPO) objectives with your leadership."
+                },
+                "bfaq7": {
+                    "q": "Can SoonTech support a multi-location business?",
+                    "a": "Yes. We manage multi-site networks linking locations securely via site-to-site VPN or SD-WAN, and provide central remote device management for employees across Canada."
+                },
+                "bfaq8": {
+                    "q": "What information do you need to onboard our business?",
+                    "a": "During an IT discovery session, we collect an inventory of all hardware, software licenses, network diagrams, and current vendor contacts. From there, we take over everything seamlessly."
                 }
             }
         },

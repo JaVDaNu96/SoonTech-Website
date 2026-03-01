@@ -1,7 +1,22 @@
 // Load Header
 fetch('header.html')
     .then(response => response.text())
-    .then(data => document.getElementById('header-placeholder').innerHTML = data);
+    .then(data => {
+        document.getElementById('header-placeholder').innerHTML = data;
+
+        // Mobile Menu Toggle
+        const hamburger = document.querySelector('.hamburger');
+        const headerRight = document.querySelector('.header-right');
+        const menuRight = document.querySelector('.menu-right');
+
+        if (hamburger) {
+            hamburger.addEventListener('click', () => {
+                hamburger.classList.toggle('toggle');
+                if (headerRight) headerRight.classList.toggle('nav-active');
+                if (menuRight) menuRight.classList.toggle('nav-active');
+            });
+        }
+    });
 
 
 // Load Footer

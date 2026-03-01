@@ -25,13 +25,15 @@
             "title": "Soporte Técnico Que Se Siente Como Familia",
             "subtitle": "Tu Equipo de TI Personal",
             "description": "No más estrés tecnológico. Obtén ayuda experta para configurar, asegurar y mantener tu tecnología del hogar. Respuestas claras, soluciones rápidas y tranquilidad.",
-            "cta": "Comienza Hoy"
+            "cta": "Comienza Hoy",
+            "imageAlt": "Familia feliz usando tecnología"
         },
         "business": {
             "title": "TI Empresarial, Presupuesto de Pequeña Empresa",
             "subtitle": "Tu Ventaja Competitiva",
             "description": "Deja de preocuparte por la tecnología y enfócate en el crecimiento. Obtén soporte de TI confiable, seguridad robusta y orientación estratégica adaptada a tu negocio.",
-            "cta": "Impulsa Tu Negocio"
+            "cta": "Impulsa Tu Negocio",
+            "imageAlt": "Equipo de profesionales de negocios"
         }
     },
     "home": {
@@ -601,7 +603,35 @@
                     "description": "Restablecer contraseñas"
                 }
             },
-            "viewGuide": "Ver Guía"
+            "viewGuide": "Ver Guía",
+            "subtitleHome": "Soluciones rápidas para problemas comunes",
+            "subtitleBiz": "Soluciones de TI empresarial a tu alcance",
+            "itemsBiz": {
+                "bizServer": {
+                    "title": "Servidores e Infraestructura",
+                    "description": "Caídas, rendimiento, hardware"
+                },
+                "bizM365": {
+                    "title": "Microsoft 365 y la Nube",
+                    "description": "Teams, SharePoint, OneDrive"
+                },
+                "bizNetwork": {
+                    "title": "Red y VPN",
+                    "description": "Conectividad empresarial y acceso remoto"
+                },
+                "bizCyber": {
+                    "title": "Ciberseguridad y Cumplimiento",
+                    "description": "Amenazas, auditorías, políticas"
+                },
+                "bizVoip": {
+                    "title": "VoIP y Comunicaciones",
+                    "description": "Sistemas telefónicos y llamadas de Teams"
+                },
+                "bizManaged": {
+                    "title": "Soporte de TI Administrado",
+                    "description": "Monitoreo, mesa de ayuda, dispositivos"
+                }
+            }
         },
         "faq": {
             "title": "Preguntas Frecuentes",
@@ -621,6 +651,62 @@
                 "q4": {
                     "q": "¿Qué debo incluir en un ticket?",
                     "a": "Describe el problema, cuándo comenzó, qué intentaste e incluye capturas de pantalla si es posible."
+                },
+                "q5": {
+                    "q": "¿Cuánto tiempo toma típicamente resolver un problema?",
+                    "a": "El tiempo de resolución depende de la complejidad. Los problemas comunes se resuelven en 1–2 horas en horario comercial. Las llamadas de emergencia se responden en 15 minutos, 24/7."
+                },
+                "q6": {
+                    "q": "¿Qué áreas atiende SoonTech?",
+                    "a": "Estamos ubicados en Surrey, BC y atendemos a clientes en todo Lower Mainland. El soporte remoto está disponible en cualquier lugar de Canadá."
+                },
+                "q7": {
+                    "q": "¿Están seguros mis datos cuando acceden remotamente?",
+                    "a": "Absolutamente. Usamos TeamViewer, que emplea cifrado AES de 256 bits. Puedes ver todo lo que hace nuestro técnico y finalizar la sesión cuando desees."
+                },
+                "q8": {
+                    "q": "¿Qué pasa si ocurre un problema fuera del horario comercial?",
+                    "a": "Nuestro horario es de Lun-Vie, 8 AM - 6 PM PST. Para urgencias, nuestra línea de emergencia 24/7 está disponible en el +1 (778) 862-4365."
+                },
+                "q9": {
+                    "q": "¿Ofrecen planes de soporte mensual para empresas?",
+                    "a": "¡Sí! Ofrecemos planes de Servicios de TI Administrados a medida. Incluyen monitoreo proactivo, protección de ciberseguridad y prioridad de respuesta."
+                }
+            },
+            "subtitleHome": "Preguntas comunes de usuarios domésticos",
+            "subtitleBiz": "Respuestas a preguntas de TI empresarial",
+            "itemsBiz": {
+                "bfaq1": {
+                    "q": "¿Qué incluye su servicio de TI Administrado?",
+                    "a": "Los planes incluyen monitoreo proactivo 24/7, soporte remoto/local, gestión de parches, seguridad de endpoints, informes mensuales y administración de MS365."
+                },
+                "bfaq2": {
+                    "q": "¿Cuál es su tiempo de respuesta SLA para empresas?",
+                    "a": "Problemas críticos: 15 minutos, 24/7. Gravedad alta: 1 hora hábil. Media: 4 horas. Baja/peticiones: 1 día hábil."
+                },
+                "bfaq3": {
+                    "q": "¿Cómo manejan la ciberseguridad empresarial?",
+                    "a": "Las protecciones incluyen EDR, aplicación de MFA, parches de seguridad semanales, seguridad de correo electrónico, concientización del personal y respuesta rápida."
+                },
+                "bfaq4": {
+                    "q": "¿Pueden migrar nuestra empresa a Microsoft 365?",
+                    "a": "Sí. Manejamos todo el proceso: auditoría previa, configuración del entorno, migración de correo 100% segura, implementación de Teams/SharePoint y capacitación de usuarios."
+                },
+                "bfaq5": {
+                    "q": "¿Ofrecen soporte local, o es solo remoto?",
+                    "a": "Ambos. Más del 80% de los problemas se resuelven de forma remota. El soporte presencial está disponible para hardware y servidores en Lower Mainland."
+                },
+                "bfaq6": {
+                    "q": "¿Cómo manejan los respaldos y la recuperación ante desastres?",
+                    "a": "Implementamos respaldos diarios automáticos, replicación remota en la nube y pruebas regulares de restauración estableciendo tiempos y puntos de recuperación claros (RTO/RPO)."
+                },
+                "bfaq7": {
+                    "q": "¿Puede SoonTech asistir a una empresa con múltiples sedes?",
+                    "a": "Sí. Gestionamos redes multi-sitio conectándolas de forma segura a través de VPN e implementamos administración remota centralizada para empleados en todo Canadá."
+                },
+                "bfaq8": {
+                    "q": "¿Qué información necesitan para incorporar nuestro negocio?",
+                    "a": "En la sesión de descubrimiento, recopilamos inventario de hardware, licencias, diagramas de red y contactos de proveedores. A partir de ahí, asumimos todo el control sin problemas."
                 }
             }
         },
