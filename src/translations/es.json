@@ -556,7 +556,7 @@
         "actions": {
             "remote": {
                 "title": "Soporte Remoto",
-                "description": "¿Técnico esperando? Ingresa tu código de 6 dígitos y conéctate al instante.",
+                "description": "Ingresa tu código de 9 dígitos para conectarte al instante vía TeamViewer.",
                 "placeholder": "000000",
                 "button": "Conectar Ahora",
                 "note": "Espera prom: 2 min"

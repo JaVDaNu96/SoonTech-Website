@@ -3,6 +3,9 @@
 
 class I18n {
     constructor() {
+        if (!this.getStoredLanguage()) {
+            this.setStoredLanguage('en');
+        }
         this.currentLanguage = this.getStoredLanguage() || 'en';
         this.translations = {};
         this.initialized = false;

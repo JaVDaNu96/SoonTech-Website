@@ -7,6 +7,7 @@ let allPosts = [];
 let filteredPosts = [];
 let currentCategory = 'all';
 let currentSearchTerm = '';
+let currentPostId = null;
 
 // DOM Elements
 const blogGrid = document.getElementById('blogGrid');
@@ -105,7 +106,10 @@ function formatDate(dateString) {
 }
 
 // Attach Event Listeners
+let isEventListenersAttached = false;
 function attachEventListeners() {
+    if (isEventListenersAttached) return;
+
     // Search Input - Real-time filtering
     searchInput.addEventListener('input', (e) => {
         currentSearchTerm = e.target.value.toLowerCase().trim();
@@ -128,6 +132,8 @@ function attachEventListeners() {
             applyFilters();
         });
     });
+
+    isEventListenersAttached = true;
 }
 
 // Apply Combined Filters (Search + Category)
@@ -186,7 +192,8 @@ function toggleView(view) {
 
 // Display full article
 function displayArticle(postId) {
-    const post = allPosts.find(p => p.id === parseInt(postId));
+    currentPostId = parseInt(postId);
+    const post = allPosts.find(p => p.id === currentPostId);
 
     if (!post) {
         console.error('❌ Post not found:', postId);
@@ -206,8 +213,8 @@ function displayArticle(postId) {
     // Generate slug for URL
     const slug = post.slug || post.title.toLowerCase().replace(/[^a-z0-9\s-]/g, '').trim().replace(/\s+/g, '-');
 
-    // Update URL without reloading
-    const newUrl = `${window.location.pathname}?post=${slug}`;
+    // Update URL without reloading (use ID to avoid language conflicts, keep slug for SEO)
+    const newUrl = `${window.location.pathname}?postId=${post.id}&post=${slug}`;
     window.history.pushState({ postId: post.id }, '', newUrl);
 
     // Switch to article view
@@ -218,6 +225,7 @@ function displayArticle(postId) {
 
 // Handle back to insights
 function handleBackToInsights() {
+    currentPostId = null;
     // Clear URL parameter
     window.history.pushState({}, '', window.location.pathname);
 
@@ -246,8 +254,11 @@ function attachCardClickHandlers() {
 function checkUrlForPost() {
     const urlParams = new URLSearchParams(window.location.search);
     const postSlug = urlParams.get('post');
+    const urlPostId = urlParams.get('postId');
 
-    if (postSlug) {
+    if (urlPostId) {
+        displayArticle(urlPostId);
+    } else if (postSlug) {
         // Find post by slug
         const post = allPosts.find(p => {
             const slug = p.slug || p.title.toLowerCase().replace(/[^a-z0-9\s-]/g, '').trim().replace(/\s+/g, '-');
@@ -274,6 +285,22 @@ document.addEventListener('DOMContentLoaded', () => {
         if (backButton) {
             backButton.addEventListener('click', handleBackToInsights);
         }
+
+        // Listen for language changes from i18n.js
+        document.addEventListener('languageChanged', (e) => {
+            console.log(`Blog Engine: Language changed to ${e.detail.language}. Reloading posts...`);
+            initBlog().then(() => {
+                // Re-apply filters so we don't lose the user's category/search state
+                applyFilters();
+
+                // If we are currently viewing an article, re-render it
+                if (currentPostId !== null) {
+                    displayArticle(currentPostId);
+                } else {
+                    checkUrlForPost();
+                }
+            });
+        });
 
         // Newsletter Subscription Handler
         const newsletterForm = document.getElementById('newsletterForm');

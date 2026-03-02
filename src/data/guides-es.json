@@ -1,0 +1,176 @@
+{
+    "wifi": {
+        "title": "Problemas de Wi-Fi",
+        "subtitle": "Soluciona tu conexión a internet paso a paso",
+        "warning": "",
+        "tip": "💡 <b>Consejo rápido:</b> Si ves 'Conectado pero sin internet', intenta cambiar tu DNS a <b>8.8.8.8</b> (Google) o <b>1.1.1.1</b> (Cloudflare) en la configuración de tu adaptador de red.",
+        "steps": [
+            "<strong>Reinicia tu enrutador y módem.</strong> Desconecta ambos dispositivos, espera <strong>30 segundos</strong>, luego conecta el módem primero — espera hasta que sus luces se estabilicen — y luego conecta el enrutador. Esto soluciona ~60% de los problemas.",
+            "<strong>Olvida y vuelve a conectarte a la red.</strong> En tu dispositivo ve a la configuración de Wi-Fi, selecciona tu red y elige 'Olvidar'. Luego reconéctate ingresando tu contraseña nuevamente.",
+            "<strong>Comprueba si otros dispositivos están afectados.</strong> Si solo un dispositivo tiene problemas, el problema es con ese dispositivo, no con el enrutador. Intenta reiniciarlo o actualizar su controlador de Wi-Fi.",
+            "<strong>Acércate al enrutador.</strong> Las paredes, los electrodomésticos y la distancia debilitan la señal. Prueba en la misma habitación que el enrutador.",
+            "<strong>Comprueba si hay cortes del ISP.</strong> Visita la página de estado de tu proveedor de internet o llámalos para confirmar que no hay interrupciones del servicio en tu área.",
+            "<strong>Actualiza los controladores de tu adaptador de red.</strong> En Windows: Administrador de dispositivos → Adaptadores de red → haz clic derecho en tu adaptador → 'Actualizar controlador'.",
+            "<strong>Prueba una conexión Ethernet por cable.</strong> Si funciona por cable pero no por Wi-Fi, el problema es específico de la red inalámbrica."
+        ]
+    },
+    "email": {
+        "title": "Problemas de Correo Electrónico",
+        "subtitle": "Soluciona problemas de sincronización, inicio de sesión y acceso",
+        "warning": "",
+        "tip": "💡 <b>Consejo rápido:</b> Siempre haz una copia de seguridad de tus correos electrónicos antes de eliminar y volver a agregar una cuenta.",
+        "steps": [
+            "<strong>Verifica tu conexión a internet primero.</strong> Abre un navegador y carga una página web. Si eso falla, arregla tu conexión primero.",
+            "<strong>Verifica tus credenciales de inicio de sesión.</strong> Intenta iniciar sesión en tu correo electrónico a través del navegador web. Si funciona, el problema está en la configuración de tu aplicación de correo electrónico.",
+            "<strong>Revisa tu carpeta de Spam / Correo no deseado.</strong> Los correos electrónicos perdidos a menudo se filtran automáticamente. Si los encuentras, márcalos como 'No es spam'.",
+            "<strong>Borra la caché de tu aplicación de correo electrónico.</strong> En Outlook: Archivo → Configuración de la cuenta → Archivos de datos → elimina y vuelve a agregar tu cuenta.",
+            "<strong>Comprueba tu cuota de almacenamiento.</strong> Un buzón lleno deja de recibir nuevos correos electrónicos. Elimina archivos adjuntos grandes.",
+            "<strong>Vuelve a ingresar la configuración de tu servidor.</strong> Para IMAP — entrante: <code>imap.tudominio.com</code> puerto 993 (SSL). Saliente SMTP: <code>smtp.tudominio.com</code> puerto 587 (TLS).",
+            "<strong>Deshabilita los complementos de la aplicación.</strong> Un complemento problemático a menudo causa fallos de sincronización."
+        ]
+    },
+    "printer": {
+        "title": "Configuración y Problemas de Impresora",
+        "subtitle": "Pon tu impresora en línea y funcionando limpiamente",
+        "warning": "",
+        "tip": "💡 <b>Consejo rápido:</b> Si tu impresora dice 'Fuera de línea' incluso cuando está encendida, ve a Impresoras y escáneres → desmarca 'Usar impresora fuera de línea'.",
+        "steps": [
+            "<strong>Revisa la energía, los cables y el papel.</strong> Asegúrate de que la impresora esté encendida, tenga papel y el cable esté seguro.",
+            "<strong>Establécela como tu impresora predeterminada.</strong> Windows: Configuración → Bluetooth y dispositivos → Impresoras y escáneres.",
+            "<strong>Limpia la cola de impresión.</strong> Un trabajo atascado bloquea todos los trabajos nuevos.",
+            "<strong>Reinicia el servicio de Cola de impresión.</strong> Windows: presiona Win+R → escribe <code>services.msc</code> → encuentra 'Print Spooler' → haz clic derecho → Reiniciar.",
+            "<strong>Reinstala el controlador de la impresora.</strong> Descarga el controlador más reciente del sitio web del fabricante.",
+            "<strong>Para impresoras inalámbricas, confirma la misma red.</strong> Tanto tu computadora como tu impresora deben estar en la misma red Wi-Fi.",
+            "<strong>Ejecuta la autocomprobación / limpieza de inyectores.</strong> Esto confirma que el hardware es funcional."
+        ]
+    },
+    "security": {
+        "title": "Alertas de Seguridad",
+        "subtitle": "Responde a las amenazas y protege tus datos",
+        "warning": "🚨 <b>Importante:</b> Si sospechas de un ataque de ransomware o brecha de datos, contacta a nuestra línea de emergencia de inmediato al <b>+1 (778) 862-4365</b>.",
+        "tip": "",
+        "steps": [
+            "<strong>NO hagas clic en ningún enlace sospechoso.</strong> Cierra la pestaña de inmediato.",
+            "<strong>Desconéctate de Internet si estás activamente comprometido.</strong> Desconecta el cable ethernet o desactiva Wi-Fi.",
+            "<strong>Ejecuta un escaneo antivirus completo.</strong> Usa Windows Defender o una herramienta confiable como Malwarebytes.",
+            "<strong>Cambia tus contraseñas de inmediato.</strong> Comienza con el correo electrónico, luego la banca, luego el trabajo.",
+            "<strong>Habilita la Autenticación de Dos Factores (2FA).</strong> En cada cuenta importante.",
+            "<strong>Verifica si hay actividad de cuenta no autorizada.</strong> Revisa tu carpeta de enviados y transferencias bancarias.",
+            "<strong>Mantén todo el software actualizado.</strong> Los parches solucionan agujeros de seguridad."
+        ]
+    },
+    "billing": {
+        "title": "Preguntas de Facturación",
+        "subtitle": "Facturas, pagos y suscripciones",
+        "warning": "",
+        "tip": "💡 <b>Consejo rápido:</b> Puedes actualizar tu método de pago directamente desde el portal en línea 24/7.",
+        "steps": [
+            "<strong>Revisa tu correo electrónico.</strong> Las facturas siempre se envían a la dirección registrada.",
+            "<strong>Inicia sesión en el portal de facturación.</strong> Puedes ver tu historial de pagos mensual.",
+            "<strong>Actualiza la información de tu tarjeta de crédito.</strong> Si tu tarjeta expiró, actualízala lo antes posible.",
+            "<strong>Comprende los cargos prorrateados.</strong> Si actualizaste el servicio, verás un ajuste parcial.",
+            "<strong>Contacta al soporte de facturación.</strong> Si necesitas una extensión o ves un cargo no reconocido, envíanos un ticket.",
+            "<strong>Configura el pago automático.</strong> Para no perder ningún ciclo de facturación.",
+            "<strong>Descarga recibos en PDF.</strong> Para tus impuestos y registros contables."
+        ]
+    },
+    "account": {
+        "title": "Gestión de Cuentas",
+        "subtitle": "Restablece contraseñas y desbloquea cuentas",
+        "warning": "",
+        "tip": "💡 <b>Consejo rápido:</b> Usa un administrador de contraseñas de negocios para evitar olvidar las credenciales.",
+        "steps": [
+            "<strong>Solicita un restablecimiento de contraseña.</strong> Usa la opción 'Olvidé mi contraseña' en la pantalla de inicio de sesión.",
+            "<strong>Revisa la carpeta de correo basura para el enlace.</strong> A veces los correos de restablecimiento se filtran.",
+            "<strong>Evita los bloqueos de cuenta.</strong> Después de 5 intentos fallidos, la cuenta se bloquea por 15 minutos.",
+            "<strong>Solicita desbloqueo del administrador.</strong> Si es cuenta de empresa, tu administrador puede desbloquearla.",
+            "<strong>Verifica el dispositivo y navegador.</strong> Limpia las cookies y la caché si la página de inicio de sesión no carga.",
+            "<strong>Sincroniza el autenticador.</strong> Si los códigos 2FA no funcionan, verifica que la hora de tu teléfono sea exacta.",
+            "<strong>Llama al soporte técnico.</strong> Para la verificación manual y el restablecimiento administrativo si todo falla."
+        ]
+    },
+    "biz-server": {
+        "title": "Servidor sin conexión",
+        "subtitle": "Recuperar la infraestructura de la empresa",
+        "warning": "🚨 <b>Crítico:</b> No intente forzar el reinicio de los arreglos de discos físicos si los LED parpadean en amarillo/rojo.",
+        "tip": "",
+        "steps": [
+            "<strong>Verifique si se trata de un problema de toda la red o de un solo servidor.</strong>",
+            "<strong>Verifique la potencia y el estado del UPS.</strong>",
+            "<strong>Revise la consola del hipervisor.</strong>",
+            "<strong>Reinicie el servidor bloqueado de manera segura.</strong>",
+            "<strong>Verifique los servicios a nivel del sistema operativo.</strong>",
+            "<strong>Revise el espacio en el disco duro.</strong>"
+        ]
+    },
+    "biz-m365": {
+        "title": "Interrupciones de M365",
+        "subtitle": "Diagnóstico de Teams, Outlook y SharePoint",
+        "warning": "",
+        "tip": "💡 <b>Sugerencia:</b> Siempre revise el Panel de estado del servicio si múltiples usuarios reportan problemas.",
+        "steps": [
+            "<strong>Compruebe el portal de estado de servicio de Microsoft (X).</strong>",
+            "<strong>Inicie sesión a través de la web en lugar de la aplicación de escritorio.</strong>",
+            "<strong>Revise los conflictos de licencias.</strong>",
+            "<strong>Fuerce una sincronización de Azure AD si faltan permisos.</strong>",
+            "<strong>Restablezca la aplicación cliente local.</strong>",
+            "<strong>Recupere archivos borrados usando la papelera de reciclaje de SharePoint.</strong>"
+        ]
+    },
+    "biz-network": {
+        "title": "La red de la oficina está inactiva",
+        "subtitle": "Solución de problemas de enrutadores empresariales y VPN",
+        "warning": "🚨 <b>Precaución:</b> No restablezca de fábrica los firewalls principales (botón de reinicio) a menos que se lo indique el personal de TI. Esto borrará la configuración de la VPN.",
+        "tip": "",
+        "steps": [
+            "<strong>Identifique si afecta a LAN, WAN o Wi-Fi.</strong>",
+            "<strong>Compruebe los módems o las conexiones de fibra del ISP.</strong>",
+            "<strong>Recicle la energía del switch principal o del router BGP.</strong>",
+            "<strong>Compruebe si hay bucles de red.</strong>",
+            "<strong>Revise los certificados de la red privada virtual (VPN).</strong>",
+            "<strong>Compruebe los registros del servidor DHCP.</strong>"
+        ]
+    },
+    "biz-cyber": {
+        "title": "Incidente Cibernético",
+        "subtitle": "Respuesta inmediata al ransomware o violaciones",
+        "warning": "🚨 <b>Emergencia:</b> Desenchufe los cables de red INMEDIATAMENTE de cualquier máquina que muestre notas de rescate o actividad maliciosa. Llamar al +1 (778) 862-4365.",
+        "tip": "",
+        "steps": [
+            "<strong>Aísle la máquina o subred infectada.</strong>",
+            "<strong>No pague el rescate.</strong>",
+            "<strong>Revise los sistemas de monitoreo y EDR (Detección de puntos finales).</strong>",
+            "<strong>Invoque su Plan de Respuesta a Incidentes.</strong>",
+            "<strong>Restaure sistemas limpios utilizando las últimas copias de seguridad inmutables (Off-site/Cloud).</strong>",
+            "<strong>Inicie una auditoría obligatoria de restablecimiento de contraseña.</strong>"
+        ]
+    },
+    "biz-voip": {
+        "title": "Sistemas VoIP inactivos",
+        "subtitle": "Solución de problemas en teléfonos de escritorio empresariales",
+        "warning": "",
+        "tip": "💡 <b>Sugerencia:</b> La mayoría de los problemas de VoIP unidireccionales están relacionados con la configuración de SIP ALG en la red.",
+        "steps": [
+            "<strong>Revise su internet para ver si hay latencia.</strong>",
+            "<strong>Reinicie los teléfonos físicos.</strong>",
+            "<strong>Actualice la aplicación de teléfono (Softphone).</strong>",
+            "<strong>Compruebe que el estado de extensión de la central telefónica no esté en 'No molestar'.</strong>",
+            "<strong>Examine las fallas de PoE (PoE Power-over-Ethernet).</strong>",
+            "<strong>Verifique la configuración SIP.</strong>"
+        ]
+    },
+    "biz-managed": {
+        "title": "Soporte TI Gestionado",
+        "subtitle": "Saca el máximo provecho a tu plan",
+        "warning": "",
+        "tip": "💡 <b>Sugerencia:</b> La forma más rápida de obtener ayuda es llamarnos directamente para problemas urgentes e incluir el <b>nombre del dispositivo</b> para el resto.",
+        "steps": [
+            "<strong>Entiende lo que incluye tu plan.</strong>",
+            "<strong>Cómo enviar una solicitud de prioridad.</strong>",
+            "<strong>Verifica tu panel de monitoreo.</strong>",
+            "<strong>Comprende los ciclos de administración de parches.</strong>",
+            "<strong>Agregando o eliminando dispositivos.</strong>",
+            "<strong>Solicitando una revisión de plan o actualización.</strong>"
+        ]
+    }
+}

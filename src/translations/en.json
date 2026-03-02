@@ -556,7 +556,7 @@
         "actions": {
             "remote": {
                 "title": "Remote Support",
-                "description": "Technician waiting? Enter your 6-digit code and connect instantly.",
+                "description": "Enter your 9-digit code to connect instantly via TeamViewer.",
                 "placeholder": "000000",
                 "button": "Connect Now",
                 "note": "Avg. wait: 2 min"
