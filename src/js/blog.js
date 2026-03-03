@@ -321,12 +321,14 @@ document.addEventListener('DOMContentLoaded', () => {
                 newsletterEmail.disabled = true;
 
                 try {
-                    // Send EmailJS request
-                    // Requires an EmailJS template ID 'template_newsletter' with an Auto-Reply configured.
-                    await emailjs.send('service_ub5lmzk', 'template_newsletter', {
-                        subscriber_email: newsletterEmail.value,
-                        reply_to: newsletterEmail.value
-                    });
+                    const newsletterParams = {
+                        from_name: "Valued Subscriber",
+                        from_email: newsletterEmail.value,
+                        auto_reply_subject: "Welcome to SoonTech Insights!",
+                        auto_reply_message: "You have successfully subscribed to our newsletter. You'll now receive the latest updates on IT security, hardware performance, and e-waste prevention directly in your inbox."
+                    };
+
+                    await emailjs.send('service_ub5lmzk', 'template_kxxtdwy', newsletterParams);
 
                     newsletterForm.style.display = 'none';
                     newsletterMessage.style.display = 'block';

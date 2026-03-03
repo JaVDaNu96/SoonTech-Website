@@ -3,18 +3,18 @@
 // ===================================================================
 
 // EmailJS credentials
-const EMAILJS_SERVICE_ID  = 'service_ub5lmzk';
+const EMAILJS_SERVICE_ID = 'service_ub5lmzk';
 const EMAILJS_TEMPLATE_ID = 'template_sdzzv8b';
-const EMAILJS_PUBLIC_KEY  = 'hhNru_IulPnyzbji_';
+const EMAILJS_PUBLIC_KEY = 'hhNru_IulPnyzbji_';
 
 document.addEventListener('DOMContentLoaded', () => {
     // Initialise EmailJS
     emailjs.init(EMAILJS_PUBLIC_KEY);
 
-    const contactForm    = document.getElementById('contactForm');
+    const contactForm = document.getElementById('contactForm');
     const successMessage = document.getElementById('success-message');
     const sendAnotherBtn = document.getElementById('send-another');
-    const submitBtn      = contactForm ? contactForm.querySelector('.btn-submit') : null;
+    const submitBtn = contactForm ? contactForm.querySelector('.btn-submit') : null;
 
     // Guard clause if form doesn't exist on page
     if (!contactForm || !successMessage) {
@@ -23,7 +23,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     // ── Pre-select service from URL param (?service=... or ?type=...) ──
-    const params      = new URLSearchParams(window.location.search);
+    const params = new URLSearchParams(window.location.search);
     const serviceParam = params.get('service') || params.get('type');
     if (serviceParam) {
         const serviceSelect = document.getElementById('service-type');
@@ -38,11 +38,11 @@ document.addEventListener('DOMContentLoaded', () => {
         e.preventDefault();
 
         // Get form values
-        const name        = document.getElementById('name').value.trim();
-        const email       = document.getElementById('email').value.trim();
-        const phone       = document.getElementById('phone').value.trim();
+        const name = document.getElementById('name').value.trim();
+        const email = document.getElementById('email').value.trim();
+        const phone = document.getElementById('phone').value.trim();
         const serviceType = document.getElementById('service-type').value;
-        const message     = document.getElementById('message').value.trim();
+        const message = document.getElementById('message').value.trim();
 
         // Validation
         if (!name || !email || !phone || !serviceType || !message) {
@@ -62,14 +62,21 @@ document.addEventListener('DOMContentLoaded', () => {
         }
 
         try {
-            await emailjs.send(EMAILJS_SERVICE_ID, EMAILJS_TEMPLATE_ID, {
-                from_name:    name,
-                from_email:   email,
-                phone:        phone,
+            const serviceSelect = document.getElementById('service-type');
+            const selectedService = serviceSelect.options[serviceSelect.selectedIndex].text || serviceType;
+
+            const contactParams = {
+                from_name: name,
+                from_email: email,
+                phone: phone,
                 service_type: serviceType,
-                message:      message,
-                to_email:     'info@soon-tech.com'
-            });
+                message: message,
+                to_email: 'info@soon-tech.com',
+                auto_reply_subject: "We've received your SoonTech inquiry",
+                auto_reply_message: "Thank you for reaching out about " + selectedService + ". Our team is reviewing your request and will contact you within 24 hours."
+            };
+
+            await emailjs.send(EMAILJS_SERVICE_ID, 'template_kxxtdwy', contactParams);
 
             // Hide the form & show success
             contactForm.classList.add('hidden');
