@@ -936,6 +936,9 @@
         "follow": {
             "title": "Síguenos"
         },
+        "legal": {
+            "privacy": "Política de Privacidad"
+        },
         "copyright": "© 2024 SoonTech, Inc. Todos los derechos reservados."
     },
     "common": {
